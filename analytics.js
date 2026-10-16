@@ -1,7 +1,7 @@
 /* Privacy-first metrics on behshad.com and /ballot/. No cookies or hidden identity tracking by this application. */
 (function(){
   'use strict';
-  const allowed=new Set(['ballot-start','how-it-works-open','local-preview-open','reference-sheet-open','reference-sheet-print','priorities-dialog-open','research-tab-open','ballot-navigation','landing-feature-open']);
+  const allowed=new Set(['ballot-start','how-it-works-open','local-preview-open','reference-sheet-open','reference-sheet-print','priorities-dialog-open','research-tab-open','ballot-navigation','landing-feature-open','local-preview-selected','local-directory-search-used','homepage-linkedin-open','county-election-office-open','official-research-source-open','external-research-source-open','share-button-open','share-sheet-completed','share-link-copied']);
   const code=(window.BC_ANALYTICS_GOATCOUNTER_CODE||'').trim(), backlog=[];
   window.BCAnalytics={enabled:/^[a-z0-9-]{2,70}$/i.test(code),track:function(name){
     if(!this.enabled||!allowed.has(name))return;
