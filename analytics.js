@@ -76,7 +76,21 @@
     btn.textContent = 'Share ↗';
     btn.title = 'Share Ballot Compass with a friend';
     btn.style.whiteSpace = 'nowrap';
-    tools.appendChild(btn);
+    const mobile = document.getElementById('mobileSwitch');
+    const mq = typeof window.matchMedia === 'function' ? window.matchMedia('(max-width: 700px)') : null;
+    function positionShare(){
+      if (mobile && mq && mq.matches) {
+        btn.className = 'share-mobile';
+        btn.textContent = 'Share';
+        mobile.appendChild(btn);
+      } else {
+        btn.className = 'btn ghost slim';
+        btn.textContent = 'Share ↗';
+        tools.appendChild(btn);
+      }
+    }
+    positionShare();
+    if (mq && mq.addEventListener) mq.addEventListener('change', positionShare);
 
     btn.addEventListener('click', async () => {
       track('share-button-open');
@@ -93,8 +107,8 @@
         if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
         await navigator.clipboard.writeText(shareURL);
         track('share-link-copied');
-        btn.textContent = 'Link copied ✓';
-        setTimeout(() => { btn.textContent = 'Share ↗'; }, 2200);
+        btn.textContent = mq && mq.matches ? 'Copied' : 'Link copied ✓';
+        setTimeout(positionShare, 2200);
       } catch (_) {
         // Manual fallback isn't a confirmed copy, so no copied event is recorded.
         window.prompt('Copy this link to share Ballot Compass:', shareURL);
