@@ -1,7 +1,7 @@
 /* Privacy-first metrics on behshad.com and /ballot/. No cookies or hidden identity tracking by this application. */
 (function(){
   'use strict';
-  const allowed=new Set(['ballot-start','how-it-works-open','local-preview-open','reference-sheet-open','reference-sheet-print','priorities-dialog-open','research-tab-open','ballot-navigation','landing-feature-open','local-preview-selected','local-directory-search-used','homepage-linkedin-open','county-election-office-open','official-research-source-open','external-research-source-open','share-button-open','share-sheet-completed','share-link-copied']);
+  const allowed=new Set(['ballot-start','how-it-works-open','local-preview-open','reference-sheet-open','reference-sheet-print','priorities-dialog-open','research-tab-open','ballot-navigation','landing-feature-open','local-preview-selected','local-directory-search-used','homepage-linkedin-open','county-election-office-open','official-research-source-open','external-research-source-open','share-button-open','share-sheet-completed','share-link-copied','mobile-evidence-open']);
   const code=(window.BC_ANALYTICS_GOATCOUNTER_CODE||'').trim(), backlog=[];
   window.BCAnalytics={enabled:/^[a-z0-9-]{2,70}$/i.test(code),track:function(name){
     if(!this.enabled||!allowed.has(name))return;
@@ -55,6 +55,23 @@
     }, {capture:true});
 
     if (!isBallot) return;
+
+    // The mobile Evidence switch is separate from the research tab control.
+    // Count actual panel entry, not votes, priorities, or which question is read.
+    const mobileEvidence = document.getElementById('mobileResearch');
+    if (mobileEvidence) {
+      mobileEvidence.addEventListener('click', () => {
+        if (!mobileEvidence.classList.contains('active')) track('mobile-evidence-open');
+      }, {capture:true});
+    }
+
+    // On narrow screens this is the entry to the same local directory
+    // tracked by the desktop 'Check my local ballot' button.
+    const mobileLocal = document.getElementById('mobileLocalBtn');
+    if (mobileLocal) {
+      mobileLocal.addEventListener('click', () => track('local-preview-open'));
+    }
+
     const input = document.getElementById('cityFilter');
     if (input) {
       let counted = false;
