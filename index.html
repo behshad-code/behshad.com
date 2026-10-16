@@ -1,547 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Behshad</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #080c10;
-      --surface: #0f1419;
-      --accent1: #c8a96e;
-      --accent2: #4a9eff;
-      --text: #e8e2d9;
-      --muted: #6b7280;
-      --border: rgba(200,169,110,0.15);
-    }
-
-    html { font-size: 16px; scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Syne', sans-serif;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    .bg-mesh {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-
-    .bg-mesh::before {
-      content: '';
-      position: absolute;
-      width: 900px;
-      height: 900px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(74,158,255,0.06) 0%, transparent 70%);
-      top: -200px;
-      right: -200px;
-      animation: drift1 18s ease-in-out infinite alternate;
-    }
-
-    .bg-mesh::after {
-      content: '';
-      position: absolute;
-      width: 700px;
-      height: 700px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(200,169,110,0.07) 0%, transparent 70%);
-      bottom: -100px;
-      left: -100px;
-      animation: drift2 14s ease-in-out infinite alternate;
-    }
-
-    .bg-grid {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background-image:
-        linear-gradient(rgba(200,169,110,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200,169,110,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-
-    .wrapper {
-      position: relative;
-      z-index: 1;
-      min-height: 100vh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 2.5rem;
-      width: 100%;
-    }
-
-    nav {
-      padding: 2rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      opacity: 0;
-      animation: fadeDown 0.8s ease 0.1s forwards;
-    }
-
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      color: var(--accent1);
-    }
-
-    .nav-tag {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      padding: 0.35rem 0.85rem;
-      border-radius: 2rem;
-    }
-
-    .hero { padding: 6rem 0 4rem; }
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent2);
-      margin-bottom: 2.5rem;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.2s forwards;
-    }
-
-    .hero-tag::before {
-      content: '';
-      display: block;
-      width: 28px;
-      height: 1px;
-      background: var(--accent2);
-    }
-
-    .hero-name {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(4rem, 10vw, 8.5rem);
-      font-weight: 900;
-      line-height: 0.92;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
-      opacity: 0;
-      animation: fadeUp 0.9s ease 0.3s forwards;
-    }
-
-    .hero-name .first { display: block; color: var(--text); }
-    .hero-name .last {
-      display: block;
-      color: transparent;
-      -webkit-text-stroke: 1.5px var(--accent1);
-    }
-
-    .hero-tagline {
-      font-size: clamp(1rem, 2vw, 1.25rem);
-      font-weight: 300;
-      color: var(--muted);
-      margin-top: 2rem;
-      max-width: 480px;
-      line-height: 1.7;
-      opacity: 0;
-      animation: fadeUp 0.9s ease 0.5s forwards;
-    }
-
-    .hero-tagline strong { color: var(--text); font-weight: 500; }
-
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 3rem 0;
-      opacity: 0;
-      animation: fadeIn 1s ease 0.6s forwards;
-    }
-
-    .divider-line { flex: 1; height: 1px; background: var(--border); }
-    .divider-diamond {
-      width: 6px; height: 6px;
-      background: var(--accent1);
-      transform: rotate(45deg);
-      flex-shrink: 0;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5px;
-      margin-bottom: 1.5px;
-      opacity: 0;
-      animation: fadeUp 0.9s ease 0.7s forwards;
-    }
-
-    .cards-row2 {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 1.5px;
-      opacity: 0;
-      animation: fadeUp 0.9s ease 0.8s forwards;
-    }
-
-    @media (max-width: 700px) {
-      .cards, .cards-row2 { grid-template-columns: 1fr; }
-    }
-
-    .card {
-      background: var(--surface);
-      padding: 2rem;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s;
-    }
-
-    .card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(200,169,110,0.04) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .card:hover { background: #131920; }
-    .card:hover::before { opacity: 1; }
-
-    .card-accent {
-      background: linear-gradient(135deg, #0d1829 0%, #0a1420 100%);
-      border: 1px solid rgba(74,158,255,0.15);
-    }
-
-    .card-label {
-      font-size: 0.62rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent1);
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .card-label::after {
-      content: '';
-      display: block;
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-      max-width: 40px;
-    }
-
-    .card-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 0.8rem;
-      color: var(--text);
-    }
-
-    .card-body {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .interest-list { list-style: none; margin-top: 0.5rem; }
-
-    .interest-list li {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.875rem;
-      color: var(--text);
-      font-weight: 300;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .interest-list li:last-child { border-bottom: none; }
-
-    .interest-list li::before {
-      content: '';
-      display: block;
-      width: 4px; height: 4px;
-      border-radius: 50%;
-      background: var(--accent1);
-      flex-shrink: 0;
-    }
-
-    .location-display { margin-top: 0.5rem; }
-
-    .location-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      font-style: italic;
-      color: var(--text);
-      margin-bottom: 0.3rem;
-    }
-
-    .location-sub {
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .location-dot-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .live-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: #22c55e;
-      animation: pulse 2.5s ease-in-out infinite;
-    }
-
-    .live-label {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #22c55e;
-    }
-
-    .connect-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .linkedin-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-      text-decoration: none;
-      color: var(--text);
-      font-size: 0.9rem;
-      font-weight: 400;
-      border: 1px solid var(--border);
-      padding: 0.75rem 1.25rem;
-      border-radius: 4px;
-      transition: border-color 0.3s, color 0.3s, background 0.3s;
-      width: fit-content;
-    }
-
-    .linkedin-link:hover {
-      border-color: var(--accent2);
-      color: var(--accent2);
-      background: rgba(74,158,255,0.05);
-    }
-
-    .linkedin-link svg {
-      width: 16px; height: 16px;
-      fill: currentColor;
-      flex-shrink: 0;
-    }
-
-    .arrow-icon {
-      margin-left: auto;
-      opacity: 0.4;
-      font-size: 0.8rem;
-      transition: opacity 0.3s, transform 0.3s;
-    }
-
-    .linkedin-link:hover .arrow-icon { opacity: 1; transform: translateX(3px); }
-
-    footer {
-      padding: 3rem 0 2.5rem;
-      opacity: 0;
-      animation: fadeIn 1s ease 1s forwards;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem;
-    }
-
-    .footer-left {
-      font-family: 'Playfair Display', serif;
-      font-size: 0.85rem;
-      font-style: italic;
-      color: var(--muted);
-    }
-
-    .footer-right {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .bg-number {
-      position: fixed;
-      bottom: -0.1em;
-      right: -0.05em;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(18rem, 38vw, 36rem);
-      font-weight: 900;
-      color: rgba(200,169,110,0.022);
-      line-height: 1;
-      pointer-events: none;
-      user-select: none;
-      z-index: 0;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(22px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-12px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-    @keyframes drift1 {
-      from { transform: translate(0,0) scale(1); }
-      to   { transform: translate(-60px,80px) scale(1.1); }
-    }
-    @keyframes drift2 {
-      from { transform: translate(0,0) scale(1); }
-      to   { transform: translate(80px,-60px) scale(1.15); }
-    }
-    @keyframes pulse {
-      0%,100% { opacity:1; transform:scale(1); }
-      50%      { opacity:0.4; transform:scale(0.7); }
-    }
-  </style>
-  <!-- Shared, privacy-conscious analytics. No tracking occurs until owner configures a GoatCounter site. -->
-  <script src="./analytics-config.js" defer></script>
-  <script src="./analytics.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#061724">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="https://behshad.com/"><link rel="canonical" href="https://behshad.com/v2/">
+<title>Behshad Beheshti | Technology Leadership, AI Governance & Enterprise Value</title>
+<meta name="description" content="Behshad Beheshti is a technology executive focused on cybersecurity, AI governance, enterprise transformation, M&A integration, global operations, and enterprise value creation.">
+<!-- Public search and social metadata. All visitor analytics are aggregate and privacy-first. -->
+<meta property="og:type" content="profile"><meta property="og:title" content="Behshad Beheshti | Technology Leadership and Enterprise Value"><meta property="og:description" content="Technology leadership for security, AI governance, operational scale, and enterprise value creation.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Behshad Beheshti">
+<meta property="og:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=90">
+<meta property="og:image:alt" content="Mountain landscape representing curiosity, perspective, and technology leadership">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=90">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Behshad Beheshti","jobTitle":"SVP, Systems & Business Applications","worksFor":{"@type":"Organization","name":"NetDocuments"},"url":"https://behshad.com/","sameAs":["https://www.linkedin.com/in/behshad"],"knowsAbout":["Cybersecurity","AI governance","Enterprise technology","Mergers and acquisitions","Business transformation","Technology operations","Enterprise value creation"]}</script>
+<link rel="stylesheet" href="/site.css?v=20261016">
 </head>
 <body>
-
-  <div class="bg-mesh"></div>
-  <div class="bg-grid"></div>
-  <div class="bg-number">B</div>
-
-  <div class="wrapper">
-    <div>
-      <div class="container">
-
-        <nav>
-          <span class="nav-logo">BB</span>
-          <span class="nav-tag">beheshti.com</span>
-        </nav>
-
-        <section class="hero">
-          <p class="hero-tag">Technology Leader</p>
-          <h1 class="hero-name">
-            <span class="first">Behshad</span>
-            <span class="last">Beheshti</span>
-          </h1>
-          <p class="hero-tagline">
-            Building at the frontier of <strong>human–AI collaboration</strong>,
-            intelligent systems, and the connected world.
-          </p>
-        </section>
-
-        <div class="divider">
-          <div class="divider-line"></div>
-          <div class="divider-diamond"></div>
-          <div class="divider-line"></div>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <p class="card-label">About</p>
-            <h2 class="card-title">Thinking at the edge of what's possible.</h2>
-            <p class="card-body">Technology leader with a passion for intelligent systems, enterprise AI, and turning emerging technology into real-world outcomes.</p>
-          </div>
-
-          <div class="card">
-            <p class="card-label">Interests</p>
-            <ul class="interest-list">
-              <li>Enterprise AI &amp; Agentic Systems</li>
-              <li>Smart Home Automation</li>
-              <li>Investigative Research</li>
-              <li>Travel &amp; Exploration</li>
-              <li>Hands-on Problem Solving</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <p class="card-label">Location</p>
-            <div class="location-display">
-              <p class="location-name">Silicon Valley</p>
-              <p class="location-sub">San Francisco Bay Area, CA</p>
-              <div class="location-dot-wrap">
-                <div class="live-dot"></div>
-                <span class="live-label">Based here</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards-row2">
-          <div class="card card-accent connect-card">
-            <div>
-              <p class="card-label">Connect</p>
-              <h2 class="card-title">Let's connect on LinkedIn.</h2>
-              <p class="card-body">Find me, follow my work, or just say hello.</p>
-            </div>
-            <a class="linkedin-link" href="https://linkedin.com/in/behshad" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              linkedin.com
-              <span class="arrow-icon">→</span>
-            </a>
-          </div>
-
-          <div class="card">
-            <p class="card-label">Ethos</p>
-            <p class="card-body" style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.05rem; line-height:1.6; color:var(--text);">
-              "Ship thoughtfully.<br>Solve deeply.<br>Build what lasts."
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="footer-inner">
-          <span class="footer-left">Behshad</span>
-          <span class="footer-right">© 2026</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-</body>
-</html>
+<header class="site-header"><div class="container nav-bar"><a class="brand" href="#home" data-page-link="home" data-event="nav-home">BEHSHAD</a><button class="mobile-menu" type="button" id="mobile-menu" aria-expanded="false" aria-controls="main-nav">☰ Menu</button><nav id="main-nav" class="nav-links" aria-label="Main navigation"><a href="#home" data-page-link="home" data-event="nav-home">Home</a><a href="#about" data-page-link="about" data-event="nav-about">About</a><a href="#experience" data-page-link="experience" data-event="nav-experience">Experience</a><a href="#beyond" data-page-link="beyond" data-event="nav-beyond">Beyond Work</a><a href="#contact" data-page-link="contact" class="contact-pill" data-event="nav-contact">Contact →</a></nav></div></header>
+<main>
+<!-- HOME -->
+<section class="view" id="home" data-view="home">
+<div class="hero"><div class="container hero-inner"><div class="hero-copy"><div class="eyebrow line-eyebrow">Technology Leadership</div><h1 class="hero-title">Technology leadership for <span class="gold">security, AI governance, operational scale,</span> and <span class="gold">enterprise value creation.</span></h1><p class="hero-subtitle">I help organizations harness technology, AI, and operational excellence to drive growth, strengthen security, accelerate transformation, and create lasting enterprise value.</p><div class="hero-actions"><a href="#about" class="btn primary" data-page-link="about" data-event="hero-explore">Explore My Story <span aria-hidden="true">→</span></a><a href="#experience" class="btn" data-page-link="experience" data-event="hero-experience">See the Impact <span aria-hidden="true">→</span></a></div><div class="hero-capabilities"><span><b>↗</b> Strategy & Growth</span><span><b>⚙</b> Technology & Operations</span><span><b>◇</b> Security & Risk</span><span><b>♧</b> Leadership & Teams</span><span><b>✧</b> AI & Innovation</span><span><b>⌁</b> Enterprise Value</span></div></div><figure class="hero-portrait"><img src="/assets/behshad-headshot.webp" alt="Behshad Beheshti, original professional portrait" width="300" height="330"><figcaption>Behshad Beheshti</figcaption></figure></div></div>
+<div class="section-light"><div class="container"><div class="section-heading"><h2>Focus Areas</h2><button class="text-link" type="button" data-focus="overview" data-event="focus-overview">Explore the areas →</button></div><div class="focus-grid">
+<button class="focus-card" data-focus="transformation" data-event="focus-transformation"><img class="focus-photo" src="/assets/focus-transformation.webp" alt="Mountain peaks at sunrise"><div class="focus-content"><h3 class="focus-title">Enterprise<br>Transformation</h3><p>Turn technology and operational capabilities into measurable business outcomes.</p><span class="focus-arrow" aria-hidden="true">→</span></div></button>
+<button class="focus-card" data-focus="ai" data-event="focus-ai"><img class="focus-photo" src="/assets/focus-ai.webp" alt="Abstract blue data network"><div class="focus-content"><h3 class="focus-title">AI Governance<br>& Innovation</h3><p>Adopt and scale AI responsibly to drive real business value.</p><span class="focus-arrow" aria-hidden="true">→</span></div></button>
+<button class="focus-card" data-focus="ma" data-event="focus-ma"><img class="focus-photo" src="/assets/focus-ma.webp" alt="Suspension bridge at sunset"><div class="focus-content"><h3 class="focus-title">M&A<br>Integration</h3><p>Unify people, technology, and processes to accelerate value creation.</p><span class="focus-arrow" aria-hidden="true">→</span></div></button>
+<button class="focus-card" data-focus="risk" data-event="focus-risk"><img class="focus-photo" src="/assets/focus-security.webp" alt="Cybersecurity lock graphic"><div class="focus-content"><h3 class="focus-title">Cybersecurity<br>& Risk</h3><p>Build resilient, secure, and trusted organizations in a changing threat landscape.</p><span class="focus-arrow" aria-hidden="true">→</span></div></button>
+</div></div></div>
+<div class="section-light soft"><div class="container"><div class="section-heading"><h2>Perspectives</h2><span class="text-link">Ideas and questions I'm exploring</span></div><div class="insight-grid">
+<article class="insight-card"><img src="/assets/insight-ai.webp" alt="City and modern technology at sunset"><div><p class="insight-label">AI & GOVERNANCE</p><h3>From AI Potential to Real Business Value</h3><p>Practical adoption and meaningful outcomes.</p><button type="button" data-focus="ai" data-event="perspective-ai">Explore theme →</button></div></article>
+<article class="insight-card"><img src="/assets/insight-leadership.webp" alt="Mountain landscape"><div><p class="insight-label">LEADERSHIP</p><h3>Building High-Performing Global Teams</h3><p>People, trust, talent, and operating models.</p><button type="button" data-focus="teams" data-event="perspective-team">Explore theme →</button></div></article>
+<article class="insight-card"><img src="/assets/focus-ma.webp" alt="Bridge at sunset"><div><p class="insight-label">INTEGRATION</p><h3>Creating Value Through M&A</h3><p>Moving beyond Day 1 toward lasting impact.</p><button type="button" data-focus="ma" data-event="perspective-ma">Explore theme →</button></div></article>
+</div></div></div></section>
+<!-- ABOUT -->
+<section class="view" id="about" data-view="about" hidden><div class="page-intro"><div class="container about-layout"><img class="about-headshot" src="/assets/behshad-headshot.webp" alt="Original, unaltered professional headshot of Behshad Beheshti" width="340" height="430"><div class="about-copy"><div class="eyebrow gold">About</div><h1>A technology leader at the intersection of <span class="gold">innovation, security</span> and <span class="gold">enterprise value.</span></h1><p class="lead">I believe technology is most powerful when it helps people, strengthens organizations, and creates a better future.</p><p>My work has spanned high-growth technology businesses, global enterprises, and periods of significant change. Along the way, I've helped build teams, modernize critical systems, strengthen governance, and bring people and technology together around business goals.</p><p>Today, I focus on the opportunities at the intersection of AI, enterprise technology, cybersecurity, operational scale, and value creation. I enjoy solving complex problems, but just as much, I value the people and partnerships that make lasting change possible.</p></div></div></div><div class="values-strip"><div class="container values-grid"><div class="value"><div class="value-icon">◎</div><h3>Pragmatic Problem Solver</h3><p>Curious, analytical, and focused on what works.</p></div><div class="value"><div class="value-icon">♧</div><h3>People Builder</h3><p>Building high-performing global teams, including engineering and application delivery in India.</p></div><div class="value"><div class="value-icon">✧</div><h3>Opportunity Focused</h3><p>Seeing what is possible and turning ideas into progress.</p></div><div class="value"><div class="value-icon">↗</div><h3>Execution Oriented</h3><p>Connecting strategic ambition with delivery.</p></div><div class="value"><div class="value-icon">◇</div><h3>Integrity Driven</h3><p>Leading through trust and accountability.</p></div></div></div><div class="feature-panel"><div class="container"><h2>Technology is ultimately a people business.</h2><p>I have spent much of my career connecting teams across disciplines, geographies, and cultures. Strong technology organizations depend on capable people, clear decisions, trust, and a shared sense of what the business is trying to achieve.</p></div></div></section>
+<!-- EXPERIENCE -->
+<section class="view" id="experience" data-view="experience" hidden><div class="exp-hero"><div class="container"><div class="exp-intro"><div class="eyebrow gold">Selected Experience</div><h1>A track record of building, scaling, and transforming technology organizations <span class="gold">to create lasting value.</span></h1><p>Across emerging technology companies and global enterprises, I've worked at the intersection of change, growth, and opportunity. A few chapters that shaped how I think about technology leadership, resilience, and value creation.</p></div><div class="filter-bar" role="group" aria-label="Filter experience stories"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All stories</button><button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI & innovation</button><button class="filter-btn" type="button" data-filter="ma" aria-pressed="false">M&A</button><button class="filter-btn" type="button" data-filter="security" aria-pressed="false">Security</button><button class="filter-btn" type="button" data-filter="transformation" aria-pressed="false">Transformation</button></div></div></div>
+<div class="exp-section"><div class="container"><div class="exp-grid">
+<article class="company-card" data-company="nd" data-tags="ai transformation security"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&h=660&q=88" alt="Bright modern office and enterprise technology environment" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup brand-nd" aria-label="NetDocuments"><span class="nd-box">nd</span><span class="nd-word">NetDocuments</span></div><h2>Enabling enterprise systems for next-generation LegalTech and AI.</h2><p>Leading enterprise technology, business applications, data, and integrations supporting a secure LegalTech SaaS platform evolving with AI-enabled legal workflows.</p><div class="company-note">LegalTech SaaS · Business applications · AI enablement</div></div></article>
+<article class="company-card" data-company="verifone" data-tags="security transformation ma"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&h=660&q=88" alt="Digital commerce and secure electronic payments" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup"><img class="official-wordmark logo-verifone" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Verifone_Logo.svg" alt="Verifone" loading="lazy"></div><h2>Scaling global FinTech operations and cyber resilience.</h2><p>Led global technology and cybersecurity responsibilities across payments infrastructure, enterprise modernization, security governance, and transformation.</p><div class="company-note">FinTech · Cybersecurity · Global operations</div></div></article>
+<article class="company-card" data-company="fp" data-tags="ma security"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&h=660&q=88" alt="Executive business environment representing private equity value creation" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup"><img class="official-wordmark logo-fp" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Francisco_Partners_Logo.svg" alt="Francisco Partners" loading="lazy"></div><h2>Technology diligence and private equity value creation.</h2><p>Contributed technology due diligence for the Verifone take-private transaction, followed by executive technology leadership after the acquisition.</p><div class="company-note">Private equity · Technology diligence · Value creation</div></div></article>
+<article class="company-card" data-company="arris" data-tags="ma transformation"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&h=660&q=88" alt="High capacity enterprise data center and network infrastructure" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup"><img class="official-wordmark logo-arris" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Logo_of_Arris_Group%2C_Inc.svg" alt="ARRIS" loading="lazy"><span class="brand-note">Part of the Vistance Networks corporate lineage</span></div><h2>Transforming systems for a connected world.</h2><p>Built and scaled business systems, enterprise analytics, and IT operating capabilities supporting a global broadband and connectivity business.</p><div class="company-note">Broadband · Networking · M&A integration</div></div></article>
+<article class="company-card" data-company="tellme" data-tags="ai transformation"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1600&h=660&q=88" alt="Professional microphone and voice technology studio" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup"><svg class="tellme-mark" viewBox="0 0 280 80" role="img" aria-label="Tellme Networks"><text x="2" y="64" font-family="Arial,Helvetica,sans-serif" font-size="73" font-weight="800" letter-spacing="-5" fill="#a0a0a0">Tell</text><text x="125" y="64" font-family="Arial,Helvetica,sans-serif" font-size="73" font-weight="800" letter-spacing="-5" fill="#fa6314">me.</text></svg><span class="brand-note">Subsidiary of Microsoft</span></div><h2>Powering early voice-driven computing.</h2><p>Led network engineering and operations for pioneering cloud-based conversational voice services, long before mainstream AI assistants.</p><div class="company-note">Voice technology · Cloud communications · AI foundations</div></div></article>
+<article class="company-card" data-company="juniper" data-tags="security transformation"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1600&h=660&q=88" alt="Enterprise communications infrastructure and secure networking" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup"><img class="official-wordmark logo-juniper" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Juniper_Networks_logo.svg" alt="Juniper Networks" loading="lazy"><span class="brand-note">Acquired by HPE</span></div><h2>Scaling enterprise infrastructure during high-growth security innovation.</h2><p>Technology leadership through rapid expansion and the company's public-market journey in network security.</p><div class="company-note">NetScreen · Network security · Enterprise scale</div></div></article>
+<article class="company-card" data-company="latitude" data-tags="transformation"><img class="company-image exp-photo-hq" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&h=660&q=88" alt="Remote collaboration and video communication technology" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="company-body"><div class="brand-lockup brand-cisco"><img class="official-wordmark logo-cisco" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" alt="Cisco" loading="lazy"><span class="brand-separator" aria-hidden="true">|</span><span class="latitude-name">Latitude Communications</span></div><h2>Supporting a new generation of collaboration.</h2><p>Developed and supported the enterprise technology capabilities of a pioneering business collaboration company during its growth and IPO era.</p><div class="company-note">Collaboration · Enterprise communications · IPO</div></div></article>
+</div></div></div></section>
+<!-- BEYOND -->
+<section class="view" id="beyond" data-view="beyond" hidden><div class="beyond-shell"><div class="container beyond-layout"><div class="beyond-intro"><div class="eyebrow gold">Beyond Work</div><h1>Exploring.<br>Learning.<br><span class="gold">Staying Curious.</span></h1><p>Outside of work, I find perspective and energy through travel, the ocean, aviation, cooking, and lifelong learning. New experiences help me stay curious and see the world a little differently.</p><p>Some interests are simply personal. They don't all have to connect back to technology or leadership.</p></div><div class="beyond-grid">
+<button type="button" class="interest-tile" data-interest="travel" data-event="interest-travel"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=90" alt="Alpine landscape with an explorer"><span class="interest-label"><strong>Travel & exploration</strong><span>New places, new perspectives.</span></span></button>
+<button type="button" class="interest-tile" data-interest="diving" data-event="interest-diving"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1800&q=90" alt="Scuba diver exploring coral underwater"><span class="interest-label"><strong>Scuba & the ocean</strong><span>A different kind of world.</span></span></button>
+<button type="button" class="interest-tile" data-interest="aviation" data-event="interest-aviation"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=90" alt="Small recreational aircraft on airfield"><span class="interest-label"><strong>Aviation</strong><span>A lifelong fascination.</span></span></button>
+<button type="button" class="interest-tile" data-interest="cooking" data-event="interest-cooking"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1800&q=90" alt="Cooking food in a pan"><span class="interest-label"><strong>Cooking</strong><span>A creative outlet.</span></span></button>
+<button type="button" class="interest-tile" data-interest="reading" data-event="interest-learning"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1800&q=90" alt="Books and coffee on a tabletop"><span class="interest-label"><strong>Learning</strong><span>Always something new.</span></span></button>
+<button type="button" class="interest-tile" data-interest="nature" data-event="interest-nature"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=90" alt="Mountain scenery and nature"><span class="interest-label"><strong>Nature & the outdoors</strong><span>Time to recharge.</span></span></button>
+</div></div></div></section>
+<!-- CONTACT -->
+<section class="view" id="contact" data-view="contact" hidden><div class="contact-shell"><div class="container contact-layout"><div class="contact-copy"><div class="eyebrow gold">Get in touch</div><h1>Let's Explore<br>What's <span class="gold">Possible.</span></h1><p>I'm always interested in meaningful conversations about technology, AI, security, operational scale, and value creation. Whether you have a question, an idea, or an opportunity to explore, I'd be glad to hear from you.</p></div><div class="contact-panel"><h2>Let’s Connect</h2><p>For professional conversations, opportunities, or ideas worth exploring, LinkedIn is the best way to reach me.</p><div class="contact-connect"><a class="btn primary" href="https://www.linkedin.com/in/behshad" target="_blank" rel="noopener noreferrer" data-event="external-linkedin">Connect on LinkedIn ↗</a><p class="muted" style="font-size:.82rem;margin-top:16px">A secure direct-message form will be added when private email delivery and spam protection are configured.</p></div></div></div></div></section>
+</main><footer class="footer"><div class="container footer-inner"><small>© 2026 Behshad Beheshti</small><div><a href="https://www.linkedin.com/in/behshad" target="_blank" rel="noopener noreferrer" data-event="external-linkedin">LinkedIn ↗</a><span style="padding:0 10px;color:#6a8392">·</span><a href="https://behshad.com/ballot/" target="_blank" rel="noopener noreferrer" data-event="external-ballot">Ballot Compass ↗</a></div></div></footer>
+<div class="modal" id="info-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-content"><button class="modal-close" type="button" id="modal-close" aria-label="Close information panel">×</button><div class="eyebrow gold">Explore</div><h2 id="modal-title"></h2><p id="modal-body"></p><button class="btn small" type="button" id="modal-action">Close panel</button></div></div>
+<script src="/site.js?v=20261016" defer></script>
+</body></html>
