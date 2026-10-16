@@ -37,3 +37,10 @@
 
 /* Contact call-to-action is functional; secure form awaits owner-selected delivery service. */
 .contact-connect .btn{margin-top:15px}.contact-connect .muted{color:#bfced5}
+
+/* Contact page: scoped guidance for professional inquiries. */
+#contact .contact-boundary{color:#e7c58b;font-size:.86rem;margin-top:25px}
+#contact .contact-topics{margin:13px 0 9px;padding-left:21px;color:#eff3f6;font-size:.91rem;line-height:1.62}
+#contact .contact-topics li{padding-left:4px;margin-bottom:10px}
+#contact .contact-topics li::marker{color:var(--gold)}
+#contact .contact-connect .btn{margin-top:13px}
