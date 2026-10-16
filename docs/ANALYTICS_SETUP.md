@@ -34,6 +34,21 @@ Additional event categories:
 
 Events are recorded under `interaction-<name>` in the GoatCounter dashboard. Click and share events show intent/actions, not confirmed delivery, readership, ballot completion, or conversion.
 
+## Interpreting early launch traffic (especially mobile)
+- **Pages** rows such as `/` and `/ballot` are website views. Rows prefixed `interaction-` are **event counts**, not pageviews. GoatCounter's **Totals** can include both. Do not describe the total as unique people.
+- **iOS share** measures the operating-system share of recorded activity, not the percentage of distinct voters or people. **Screen size** helps infer phone usage but isn't a guaranteed device classification.
+- **Referrers** and **Campaigns** answer different questions and overlap. For example, Facebook referrals and the `ballot_launch` tagged campaign must not be added together as distinct people.
+- **Unknown referrer** does not prove a link was forwarded. Social apps and browser privacy controls can hide referrer headers. A tagged `ballot_shared` visit is evidence that a site-generated sharing link was opened, not that a particular person forwarded it.
+- `interaction-ballot-start` means someone clicked the entry button. It is not a verified person-level conversion rate or a completed ballot.
+- `interaction-mobile-evidence-open` counts **switches into the mobile Evidence panel**, not specific propositions or positions. It is intentionally separate from `interaction-research-tab-open`.
+- `interaction-local-preview-open` now includes both the desktop and mobile **local directory entry** buttons. The separate `interaction-local-preview-selected` records selecting an in-app community preview.
+- `interaction-reference-sheet-open` and `interaction-reference-sheet-print` show actions, not confirmed printing or voting. No ballot choices or notes are tracked.
+
+For a clean view, choose a date range after launch and look at the site page rows first. Treat interaction rows as engagement signals, not visitors. After validating analytics in your own browsers, exclude testing activity from your browser using https://www.goatcounter.com/help/skip-dev.
+
+## Mobile and performance review
+The existing HTML, CSS, media breakpoints, page design, and ballot logic are deliberately unchanged in this tracking update. Mobile testing should still include an actual iPhone Safari or iOS in-app browser walkthrough (welcome → Explore my ballot → Evidence → local directory → source link → reference sheet → Share). A source-level check cannot establish real-world page speed or prove the interaction flows on every device. Prioritize a measured field test before undertaking any changes to the large, embedded-artwork page.
+
 ## Privacy limits
 Do not send voter choices, candidate or proposition IDs, priorities, addresses, search terms, name/email values, exact source URLs, or notes in event payloads. No visitor identity tracking or ad pixels are introduced. The hosted GoatCounter service does **not store visitor IP addresses or reverse-DNS hostnames**. IPs are briefly used to derive approximate geography and session statistics, per https://www.goatcounter.com/help/privacy. GitHub Pages does not supply raw visitor request logs for this site. Capturing raw IPs would require a different server-side collection system and a deliberate privacy/legal review, which is not implemented here.
 
