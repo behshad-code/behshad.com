@@ -120,11 +120,13 @@
 #beyond .projects-heading{max-width:770px;margin-bottom:26px}
 #beyond .projects-heading h2{font:400 clamp(1.9rem,3vw,2.6rem)/1.18 var(--serif);margin:11px 0 12px}
 #beyond .projects-heading p{color:#becad1;margin:0;max-width:650px}
-#beyond .ballot-project{display:grid;grid-template-columns:minmax(200px,.65fr) minmax(0,1.6fr);border:1px solid rgba(236,193,123,.3);background:#0a1e2d;border-radius:5px;overflow:hidden}
-#beyond .ballot-project-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:35px 24px;color:#ecc17b;background:radial-gradient(ellipse at center,rgba(236,193,123,.1),transparent 70%);border-right:1px solid rgba(236,193,123,.18)}
-#beyond .ballot-project-art span{font-size:.68rem;letter-spacing:.09em;text-align:center}
+#beyond .ballot-project{display:grid;grid-template-columns:minmax(260px,.95fr) minmax(0,1.35fr);border:1px solid rgba(236,193,123,.3);background:#0a1e2d;border-radius:5px;overflow:hidden}
+#beyond .ballot-project-art{margin:0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:35px 24px;color:#ecc17b;background:radial-gradient(ellipse at center,rgba(236,193,123,.1),transparent 70%);border-right:1px solid rgba(236,193,123,.18)}
+#beyond .ballot-project-art figcaption{font-size:.68rem;letter-spacing:.09em;text-align:center}
 #beyond .ballot-project-copy{padding:34px 38px}
 #beyond .ballot-project h3{font:400 clamp(1.65rem,2.5vw,2.2rem)/1.2 var(--serif);margin:10px 0 17px}
 #beyond .ballot-project p{color:#cdd8de;font-size:.94rem;max-width:720px}
 #beyond .ballot-project .btn{margin-top:8px;color:#ecc17b}
-@media(max-width:700px){#beyond .personal-projects{padding:32px 0 40px}#beyond .ballot-project{grid-template-columns:1fr}#beyond .ballot-project-art{padding:23px;border-right:0;border-bottom:1px solid rgba(236,193,123,.18);flex-direction:row;gap:15px}#beyond .ballot-project-art svg{width:78px;height:78px}#beyond .ballot-project-copy{padding:25px 22px}#beyond .ballot-project .btn{line-height:1.4}}
+@media(max-width:700px){#beyond .personal-projects{padding:32px 0 40px}#beyond .ballot-project{grid-template-columns:1fr}#beyond .ballot-project-art{padding:23px;border-right:0;border-bottom:1px solid rgba(236,193,123,.18);flex-direction:column;gap:15px}#beyond .ballot-project-copy{padding:25px 22px}#beyond .ballot-project .btn{line-height:1.4}}
+
+#beyond .ballot-project-preview{display:block;width:100%;height:auto;max-width:520px;border-radius:3px;border:1px solid rgba(236,193,123,.3)}
