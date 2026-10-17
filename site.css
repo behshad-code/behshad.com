@@ -91,3 +91,10 @@
   background:linear-gradient(180deg,rgba(6,23,36,.90),rgba(6,23,36,.82));
  }
 }
+
+
+/* About personal statement: preserves the existing lead typography. */
+#about .about-statement{margin:0 0 24px;padding:3px 0 3px 22px;border-left:2px solid var(--gold2)}
+#about .about-quote-mark{display:block;color:var(--gold);font:400 44px/.7 var(--serif);margin:3px 0 10px}
+#about .about-statement .lead{margin:0}
+@media(max-width:600px){#about .about-statement{padding-left:16px}}
