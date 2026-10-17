@@ -1,0 +1,13 @@
+/* Preview-only hero background. Layout and portrait match production. */
+.hero {
+ background-image:linear-gradient(90deg,rgba(6,23,36,.58) 0%,rgba(6,23,36,.50) 31%,rgba(6,23,36,.28) 57%,rgba(6,23,36,.04) 100%),url('/sandbox/bridge/hero-bay-bridge.webp');
+ background-position:center,center 43%;
+ background-size:cover,cover;
+ background-repeat:no-repeat;
+}
+@media(max-width:600px) {
+ .hero {
+  background-image:linear-gradient(180deg,rgba(6,23,36,.91) 0%,rgba(6,23,36,.84) 52%,rgba(6,23,36,.40) 100%),url('/sandbox/bridge/hero-bay-bridge.webp');
+  background-position:center,72% center;
+ }
+}
