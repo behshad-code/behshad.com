@@ -1,5 +1,5 @@
 /* Branded reading layout for Privacy and Terms. */
-.legal-page .legal-hero{background:linear-gradient(90deg,rgba(6,23,36,.94),rgba(6,23,36,.8)),url('/assets/hero-bay-bridge.webp') center 43%/cover;padding:54px 0 45px;border-bottom:1px solid var(--line)}
+.legal-page .legal-hero{background:linear-gradient(90deg,rgba(6,23,36,.94),rgba(6,23,36,.8)),url('/sandbox/fp-diligence-review/assets/hero-bay-bridge.webp') center 43%/cover;padding:54px 0 45px;border-bottom:1px solid var(--line)}
 .legal-page .legal-hero h1{font:400 clamp(2.6rem,5vw,4rem)/1.1 var(--serif);letter-spacing:-.025em;margin:14px 0 18px}
 .legal-page .legal-hero .legal-deck{max-width:700px;font-size:1.1rem;color:#d7e0e6;margin-bottom:18px}
 .legal-page .legal-date{font-size:.78rem;color:#a9bdca;margin:0}
