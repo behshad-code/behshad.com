@@ -1,0 +1,17 @@
+
+.section-context{font-size:.84rem;color:#506879;font-weight:400}
+.story-feature{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.5fr);background:white;border:1px solid #e1e4e4;border-radius:6px;overflow:hidden;max-width:100%;color:#0c2231}
+.story-feature>img{width:100%;height:100%;min-height:235px;object-fit:cover;display:block}
+.story-feature-copy{padding:28px 34px}
+.story-feature .insight-label{text-transform:uppercase;font-size:.7rem;font-weight:700;letter-spacing:.1em;color:#506879;margin:0 0 12px}
+.story-feature h3{font-family:var(--serif);font-size:2rem;font-weight:500;margin:0 0 7px;line-height:1.15}
+.story-feature p{font-size:.93rem;line-height:1.6;max-width:650px;color:#506879;margin:8px 0 16px}
+.story-feature .story-deck{font-size:1.1rem;color:#16344a;margin:0 0 9px}
+.story-link{display:inline-flex;align-items:center;gap:24px;font-size:.88rem;font-weight:600;color:#16344a;text-underline-offset:5px;padding:8px 0}
+.story-link:hover{color:#8a5b18}
+.topic-intro{padding:38px 0 55px;background:linear-gradient(90deg,rgba(6,23,36,.98),rgba(6,23,36,.78)),url('/sandbox/fp-diligence-review/assets/hero-bay-bridge.webp') center/cover}
+.topic-back{display:inline-block;margin:0 0 40px;color:#d8e1e8;font-size:.85rem;text-decoration:none}
+.topic-intro h1{font-family:var(--serif);font-size:clamp(38px,5vw,64px);line-height:1.1;font-weight:400;margin:18px 0 22px}
+.topic-intro p{max-width:740px;font-size:1.05rem;line-height:1.8;color:#d8e1e8}
+.topic-stories{padding:36px 0 52px}
+@media(max-width:600px){.section-heading{align-items:flex-start;flex-wrap:wrap;gap:9px}.section-context{font-size:.76rem}.story-feature{grid-template-columns:1fr}.story-feature>img{height:155px;min-height:0}.story-feature-copy{padding:22px}.story-feature h3{font-size:1.7rem}.story-feature .insight-label{font-size:.64rem}.topic-intro{padding:26px 0 35px}.topic-back{margin-bottom:28px}}
