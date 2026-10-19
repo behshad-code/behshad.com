@@ -7,3 +7,5 @@ This review is publicly accessible but `noindex,nofollow`; do not place confiden
 Approved UI baseline to preserve in future revisions: brand typography, navy/gold colors, compact editorial story hero, chapter navigation, eight-domain side-selection explorer with light response panel, six-stage Order to Cash teaching component, Day 1/30/60/100 roadmap, mobile behavior and keyboard accessible controls. Revise content surgically rather than reconstruct the feature.
 
 All project production pages, analytics, DNS, CNAME and Ballot Compass remain outside this review's change scope.
+
+Artwork revision: feature cards use the original generated technology-diligence image encoded as a 1400-pixel WebP; the separate 1200 × 627 social preview is a cropped JPEG from that same original. Both are native self-hosted files, with no external image dependency.
