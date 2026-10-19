@@ -1,2 +1,0 @@
-/* Standalone policy navigation: no analytics or page router required. */
-(()=>{'use strict';const menu=document.getElementById('mobile-menu'),nav=document.getElementById('main-nav');if(!menu||!nav)return;menu.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));});document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});})();
