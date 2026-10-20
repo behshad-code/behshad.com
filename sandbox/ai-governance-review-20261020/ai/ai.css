@@ -239,3 +239,8 @@
 .ai-page .ai-loop-center{grid-column:1}
 }
 @media(prefers-reduced-motion:reduce){.ai-page .ai-evidence-item{transition:none}}
+
+.ai-page .ai-decision-art{background:#092537;line-height:0;overflow:hidden}
+.ai-page .ai-decision-art img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain}
+.ai-page .ai-decision-art + .ai-figure-body{padding-top:12px}
+@media(max-width:650px){.ai-page .ai-decision-art{overflow-x:auto}.ai-page .ai-decision-art img{min-width:710px;max-width:none;width:710px}.ai-page .ai-toolgrid{gap:12px}}
