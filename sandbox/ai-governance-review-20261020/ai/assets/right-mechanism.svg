@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1540 630" role="img" aria-labelledby="mechanismTitle mechanismDesc">
+<title id="mechanismTitle">Choosing the simplest dependable mechanism</title>
+<desc id="mechanismDesc">A decision map begins with the business process and branches toward reliable rules and workflow automation, language-aware AI assistance, or bounded agents that can take approved actions. The branches can be combined and are not stages of maturity.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081f30"/><stop offset="1" stop-color="#153b50"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edd09e"/><stop offset="1" stop-color="#c99a4f"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="11" flood-color="#021521" flood-opacity=".32"/></filter></defs>
+<rect width="1540" height="630" rx="16" fill="url(#bg)"/>
+<!-- root -->
+<rect x="530" y="42" width="480" height="108" rx="14" fill="#edf1ed" filter="url(#shadow)"/>
+<text x="770" y="84" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#367084" letter-spacing="2">START WITH THE WORK</text>
+<text x="770" y="120" text-anchor="middle" font-family="Georgia" font-size="29" fill="#123649">Which outcome must change?</text>
+<!-- fan connectors -->
+<g stroke="#77c4d0" stroke-width="5" fill="none"><path d="M770 150V185H275V249"/><path d="M770 185V249"/><path d="M770 185H1265V249"/></g>
+<g fill="#dcb675"><circle cx="770" cy="185" r="9"/><circle cx="275" cy="249" r="7"/><circle cx="770" cy="249" r="7"/><circle cx="1265" cy="249" r="7"/></g>
+<!-- branches -->
+<g filter="url(#shadow)">
+<rect x="65" y="249" width="415" height="303" rx="14" fill="#ecf2f0"/>
+<rect x="562" y="249" width="415" height="303" rx="14" fill="#ecf2f0"/>
+<rect x="1060" y="249" width="415" height="303" rx="14" fill="#ecf2f0"/>
+</g>
+<g font-family="Arial" font-size="15" letter-spacing="2" font-weight="700"><text x="101" y="294" fill="#337f88">RULES &amp; PREDICTABILITY</text><text x="598" y="294" fill="#337f88">LANGUAGE &amp; CONTEXT</text><text x="1096" y="294" fill="#9b712e">DELEGATED ACTION</text></g>
+<g font-family="Georgia" font-size="27" fill="#16384a">
+<text x="101" y="347">Are the steps known,</text><text x="101" y="380">with reliable inputs?</text>
+<text x="598" y="347">Does the work require</text><text x="598" y="380">interpretation?</text>
+<text x="1096" y="347">Must the system</text><text x="1096" y="380">act in other tools?</text>
+</g>
+<path d="M100 409H448M596 409H944M1095 409H1442" stroke="#c4d4d4" stroke-width="2"/>
+<g font-family="Arial" font-size="23" font-weight="700">
+<text x="101" y="451" fill="#166f76">Use existing workflows</text>
+<text x="598" y="451" fill="#166f76">Use AI assistance</text>
+<text x="1096" y="451" fill="#91672b">Consider a bounded agent</text>
+</g>
+<g font-family="Arial" font-size="18" fill="#516b77">
+<text x="101" y="484">Automation, routing, rules</text>
+<text x="598" y="484">Human review and evaluation</text>
+<text x="1096" y="484">Permissions, logs, approval</text>
+</g>
+<g fill="#236a78"><circle cx="430" cy="504" r="14"/><circle cx="927" cy="504" r="14"/></g><circle cx="1428" cy="504" r="14" fill="#bb904c"/>
+<g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M423 504l5 5 9-11M920 504l5 5 9-11M1420 504l7 7 10-12"/></g>
+<text x="770" y="600" text-anchor="middle" font-family="Arial" font-size="19" fill="#c9d9dd">Often one process uses more than one mechanism. Choose for cost, reliability, quality and risk.</text>
+</svg>

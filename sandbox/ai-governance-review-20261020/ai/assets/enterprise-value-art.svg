@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1040" role="img" aria-labelledby="title desc">
+<title id="title">Connected enterprise: technology, people, risk and value</title>
+<desc id="desc">An original nocturnal architectural landscape with illuminated interconnected systems converging on a warm-gold center. Turquoise and gold routes suggest people, data, governance and measurable enterprise outcomes.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#03131f"/><stop offset=".42" stop-color="#0c2b43"/><stop offset="1" stop-color="#0d4055"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2d6780" stop-opacity=".66"/><stop offset="1" stop-color="#062137" stop-opacity=".09"/></linearGradient>
+<linearGradient id="road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6fd5df" stop-opacity="0"/><stop offset=".53" stop-color="#67d9e7" stop-opacity=".81"/><stop offset="1" stop-color="#e5ba6c" stop-opacity=".83"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#e7bf78" stop-opacity=".35"/><stop offset=".43" stop-color="#41b5c8" stop-opacity=".14"/><stop offset="1" stop-color="#061c2a" stop-opacity="0"/></radialGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
+<pattern id="windows" width="22" height="27" patternUnits="userSpaceOnUse"><rect x="8" y="8" width="4" height="8" rx="1" fill="#9cdae1" opacity=".43"/></pattern>
+</defs>
+<rect width="1500" height="1040" fill="url(#sky)"/>
+<path d="M0 0 H1500 V1040 H0" fill="none"/>
+<circle cx="974" cy="408" r="478" fill="url(#halo)"/>
+<g opacity=".24" fill="none" stroke="#72c3d0">
+<circle cx="970" cy="416" r="360" stroke-width="2"/><circle cx="970" cy="416" r="275"/><circle cx="970" cy="416" r="190"/>
+<path d="M400 295 Q865 -40 1410 248" stroke-width="1.5"/><path d="M330 590 Q885 0 1485 560" stroke-width="2"/>
+</g>
+<path d="M0 766 Q260 687 450 748 T950 735 T1500 760 V1040 H0Z" fill="#061a29"/>
+<g opacity=".64">
+<path d="M0 696h58v-94h35v94h37v-158h41v158h26v-210h33v210h24v-131h56v131h37v-288h51v288h33v-167h41v167h30v-234h39v234h43v-354h44v354h37v-185h41v185h28v-299h52v299h32v-211h36v211h24v-401h47v401h40v-264h44v264h26v-346h38v346h42v-215h48v215h29v-322h43v322h42v-252h37v252h33v-380h43v380h24v-219h38v219h63v345H0" fill="#143a51"/>
+<path d="M0 696h58v-94h35v94h37v-158h41v158h26v-210h33v210h24v-131h56v131h37v-288h51v288h33v-167h41v167h30v-234h39v234h43v-354h44v354h37v-185h41v185h28v-299h52v299h32v-211h36v211h24v-401h47v401h40v-264h44v264h26v-346h38v346h42v-215h48v215h29v-322h43v322h42v-252h37v252h33v-380h43v380h24v-219h38v219h63v345H0" fill="url(#windows)" opacity=".45"/>
+</g>
+<!-- Transforming architectural blocks -->
+<path d="M370 580 L650 485 L750 552 L484 669 Z" fill="#2f6578" opacity=".64"/>
+<path d="M370 580 V805 L484 885 V669Z" fill="#082437" stroke="#62acc0" stroke-opacity=".55"/>
+<path d="M484 669 L750 552 V757 L484 885Z" fill="url(#glass)" stroke="#71c8d6" stroke-opacity=".55"/>
+<path d="M1138 615 L1300 530 L1416 604 L1231 695Z" fill="#3b7188" opacity=".72"/>
+<path d="M1138 615V834L1231 892V695Z" fill="#102e41" stroke="#71c8d6" stroke-opacity=".43"/>
+<path d="M1231 695L1416 604V812L1231 892Z" fill="url(#glass)" stroke="#71c8d6" stroke-opacity=".46"/>
+<g fill="none" stroke="#6dd1dc" stroke-opacity=".4"><path d="M565 639v197M626 612v194M687 583v190M1288 667v202M1357 631v207"/></g>
+<!-- Human-and-system constellation -->
+<g fill="none" stroke-linecap="round">
+<path d="M510 650 Q642 358 949 409" stroke="#7cd6e0" stroke-width="3.5"/>
+<path d="M1385 661 Q1275 410 949 409" stroke="#eac17b" stroke-width="3"/>
+<path d="M768 180 Q884 222 949 409" stroke="#62c9d6" stroke-width="2.3"/>
+<path d="M476 790 Q770 580 949 409" stroke="url(#road)" stroke-width="4"/>
+<path d="M1283 779 Q1140 580 949 409" stroke="#eac17b" stroke-width="2.5" stroke-opacity=".8"/>
+<path d="M186 705 Q476 390 749 317 Q827 293 949 409" stroke="#65bfd2" stroke-opacity=".45" stroke-width="2.2" stroke-dasharray="5 15"/>
+<path d="M949 409 Q1168 246 1409 298" stroke="#dcb875" stroke-opacity=".43" stroke-width="2.2" stroke-dasharray="5 15"/>
+</g>
+<g fill="#0c3248" stroke="#71d3df" stroke-width="3">
+<circle cx="510" cy="650" r="23"/><circle cx="768" cy="180" r="19"/><circle cx="476" cy="790" r="18"/><circle cx="1385" cy="661" r="20"/><circle cx="1283" cy="779" r="17"/>
+</g>
+<g fill="#7ce1ec"><circle cx="510" cy="650" r="9"/><circle cx="768" cy="180" r="8"/><circle cx="476" cy="790" r="7"/><circle cx="1385" cy="661" r="8"/></g><circle cx="1283" cy="779" r="8" fill="#e5bf76"/>
+<circle cx="949" cy="409" r="130" fill="#efc27b" opacity=".13" filter="url(#glow)"/>
+<circle cx="949" cy="409" r="90" fill="#f3d69c" opacity=".12"/>
+<circle cx="949" cy="409" r="57" fill="#f4d398" opacity=".19" stroke="#f2cb87" stroke-width="2"/>
+<circle cx="949" cy="409" r="19" fill="#f0c37c"/>
+<g opacity=".32" fill="#77dce7"><circle cx="288" cy="280" r="3"/><circle cx="1170" cy="130" r="3"/><circle cx="1350" cy="184" r="3"/><circle cx="630" cy="213" r="3"/><circle cx="1073" cy="644" r="3"/></g>
+<path d="M0 896C320 789 495 952 807 891S1230 851 1500 910" stroke="#ebb86b" stroke-width="3" opacity=".33" fill="none"/>
+<rect x="0" y="1008" width="1500" height="32" fill="#031522"/>
+</svg>
