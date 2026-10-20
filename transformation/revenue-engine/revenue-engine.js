@@ -1,0 +1,11 @@
+(()=>{'use strict';
+  const menu=document.querySelector('[data-menu]');
+  const nav=document.getElementById('topnav');
+  if(menu&&nav){menu.addEventListener('click',()=>{const expanded=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!expanded));nav.classList.toggle('open',!expanded)});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('open')}});}
+  const stages=[...document.querySelectorAll('[data-stage]')];
+  const panels=[...document.querySelectorAll('[data-panel]')];
+  function selectStage(name){const active=stages.find(b=>b.dataset.stage===name);if(!active)return;stages.forEach(b=>{const selected=b===active;b.setAttribute('aria-expanded',String(selected));b.classList.toggle('is-active',selected);});panels.forEach(p=>{p.hidden=p.dataset.panel!==name;});}
+  stages.forEach((b,index)=>{b.addEventListener('click',()=>selectStage(b.dataset.stage));b.addEventListener('keydown',e=>{if(!['ArrowRight','ArrowDown','ArrowLeft','ArrowUp','Home','End'].includes(e.key))return;e.preventDefault();let i=index;if(e.key==='Home')i=0;else if(e.key==='End')i=stages.length-1;else i=(index+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+stages.length)%stages.length;stages[i].focus();selectStage(stages[i].dataset.stage);});});
+  // Chapter highlighting only; no behavioral analytics in sandbox or collection of visitor inputs.
+  if('IntersectionObserver' in window){const links=[...document.querySelectorAll('.chapter-nav a')];const sections=links.map(a=>document.getElementById(a.hash.slice(1))).filter(Boolean);const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);if(!visible.length)return;links.forEach(a=>a.removeAttribute('aria-current'));const current=links.find(a=>a.hash==='#'+visible[0].target.id);if(current)current.setAttribute('aria-current','location');},{rootMargin:'-96px 0px -62% 0px',threshold:0});sections.forEach(s=>observer.observe(s));}
+})();
