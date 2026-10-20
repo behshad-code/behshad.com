@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 780" role="img" aria-labelledby="airportTitle airportDesc">
+<title id="airportTitle">AI journeys through a conceptual airport</title>
+<desc id="airportDesc">A stylized airport terminal. Travelers start at tools and pilots, then follow connected pathways toward workflow redesign and measurable results. Some paths loop backwards to symbolize learning. No adoption statistics are shown.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#112c46"/><stop offset="1" stop-color="#76b6cc"/></linearGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#143d53"/><stop offset="1" stop-color="#061e30"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#bc8940"/><stop offset="1" stop-color="#f0cf92"/></linearGradient>
+<linearGradient id="window" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#326782" stop-opacity=".6"/><stop offset=".5" stop-color="#a7d1dc" stop-opacity=".23"/><stop offset="1" stop-color="#275577" stop-opacity=".7"/></linearGradient>
+<filter id="lite"><feGaussianBlur stdDeviation="9"/></filter>
+<symbol id="person" viewBox="0 0 80 180"><circle cx="40" cy="29" r="20" fill="#dab38a"/><path d="M21 52 Q39 40 60 52L68 110H10Z" fill="currentColor"/><path d="M21 110L16 178H33L43 112M56 110L68 178H51L39 112" fill="#0b2332"/><path d="M17 65L1 112M63 65L76 112" stroke="currentColor" stroke-width="13" stroke-linecap="round"/></symbol>
+<symbol id="case" viewBox="0 0 70 90"><rect x="10" y="18" width="47" height="67" rx="7" fill="#15445d" stroke="#7bc0c9" stroke-width="3"/><path d="M22 20V5H43V20" fill="none" stroke="#7bc0c9" stroke-width="5"/><circle cx="20" cy="84" r="4" fill="#e9c285"/><circle cx="49" cy="84" r="4" fill="#e9c285"/></symbol>
+</defs>
+<rect width="1600" height="780" fill="#082235"/>
+<!-- Sky beyond glass -->
+<rect x="0" y="80" width="1600" height="410" fill="url(#sky)"/>
+<path d="M0 470Q270 409 548 463T1060 441T1600 456V530H0" fill="#325975" opacity=".45"/>
+<path d="M900 325 l95 18 108 -65 17 6 -75 72 113 18 7 15 -137 -9 -40 51 -15 -3 21 -55 -94 -20z" fill="#e9eef0" opacity=".95"/>
+<path d="M0 0H1600V86H0Z" fill="#061b2a"/>
+<path d="M0 86H1600" stroke="#d2aa66" stroke-width="5"/>
+<g stroke="#143f54" stroke-width="16"><path d="M180 84V495M470 84V495M765 84V495M1050 84V495M1344 84V495"/></g>
+<rect x="0" y="87" width="1600" height="400" fill="url(#window)" opacity=".36"/>
+<!-- Perspective floor -->
+<path d="M0 490H1600V780H0" fill="url(#floor)"/>
+<path d="M0 490L730 780M1600 490L870 780M800 490V780" stroke="#41849b" stroke-opacity=".31" stroke-width="3"/>
+<path d="M0 555H1600M0 655H1600" stroke="#6cb9c2" stroke-opacity=".16" stroke-width="3"/>
+<!-- Signage -->
+<rect x="143" y="98" width="1270" height="115" rx="5" fill="#061b2b" stroke="#7b9fa8" stroke-width="3"/>
+<path d="M143 98H1413" stroke="#e5c179" stroke-width="4"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#eaf2f4">
+<text x="184" y="141" font-size="21" letter-spacing="5" fill="#a2c6ce">AI DEPARTURES</text>
+<text x="184" y="187" font-size="32" font-weight="700">Tools</text>
+<text x="501" y="187" font-size="32" font-weight="700">Pilots</text>
+<text x="835" y="187" font-size="32" font-weight="700">Redesign</text>
+<text x="1169" y="187" font-size="32" font-weight="700" fill="#eac680">Results</text>
+</g>
+<g stroke="#79cdd7" stroke-width="4" fill="none"><path d="M320 160H410m-16 -12 16 12 -16 12M633 160H722m-16 -12 16 12 -16 12M1017 160H1106m-16 -12 16 12 -16 12"/></g>
+<!-- Control desks -->
+<g>
+<path d="M100 415H354L383 523H70Z" fill="#173e55" stroke="#70a8b8" stroke-width="4"/><rect x="155" y="383" width="138" height="60" rx="5" fill="#092b41" stroke="#75c3cc"/><circle cx="224" cy="412" r="12" fill="#77d0dc"/>
+<path d="M480 420H730L754 522H456Z" fill="#173e55" stroke="#70a8b8" stroke-width="4"/><rect x="534" y="386" width="139" height="61" rx="5" fill="#092b41" stroke="#75c3cc"/><circle cx="602" cy="415" r="12" fill="#77d0dc"/>
+<path d="M857 412H1110L1135 521H833Z" fill="#174859" stroke="#79b9bf" stroke-width="4"/><rect x="913" y="381" width="137" height="63" rx="5" fill="#092b41" stroke="#75c3cc"/><path d="M968 417l13 12 25-29" fill="none" stroke="#eac680" stroke-width="7"/>
+<path d="M1240 418H1503L1528 521H1215Z" fill="#38533f" stroke="#c7ab6f" stroke-width="4"/><rect x="1292" y="375" width="155" height="73" rx="5" fill="#213b42" stroke="#e8c477" stroke-width="3"/><path d="M1325 424 l31 -29 33 33 33 -47" stroke="#e8c477" stroke-width="8" stroke-linecap="round" fill="none"/>
+</g>
+<!-- Perspective movement lanes -->
+<path d="M197 548L130 780M610 546L517 780M980 546L1069 780M1394 547L1492 780" stroke="#76cbd8" stroke-width="6" opacity=".53"/>
+<path d="M314 546L298 780M728 546L766 780M1099 546L1256 780" stroke="#d5b26f" stroke-width="5" opacity=".4"/>
+<path d="M145 706C370 625 570 632 723 694" fill="none" stroke="#9ed2d8" stroke-opacity=".43" stroke-width="3" stroke-dasharray="10 15"/>
+<path d="M1098 703Q1201 617 1433 645" fill="none" stroke="#e8c27c" stroke-width="4" stroke-dasharray="8 11"/>
+<!-- Travelers in foreground with shadows -->
+<ellipse cx="245" cy="698" rx="60" ry="14" fill="#031a28" opacity=".45"/><g style="color:#214b5d"><use href="#person" x="200" y="541" width="94" height="163"/></g><use href="#case" x="267" y="638" width="34" height="52"/>
+<ellipse cx="433" cy="742" rx="80" ry="12" fill="#031a28" opacity=".45"/><g style="color:#263d57"><use href="#person" x="385" y="540" width="100" height="195"/></g><use href="#case" x="457" y="670" width="42" height="62"/>
+<ellipse cx="816" cy="709" rx="62" ry="12" fill="#031a28" opacity=".5"/><g style="color:#285c66"><use href="#person" x="780" y="556" width="86" height="148"/></g>
+<ellipse cx="1122" cy="749" rx="68" ry="15" fill="#031a28" opacity=".45"/><g style="color:#3c5960"><use href="#person" x="1085" y="539" width="101" height="198"/></g><use href="#case" x="1148" y="676" width="38" height="56"/>
+<ellipse cx="1450" cy="712" rx="58" ry="12" fill="#031a28" opacity=".5"/><g style="color:#89724f"><use href="#person" x="1410" y="552" width="90" height="158"/></g>
+<!-- Destination emphasis -->
+<path d="M1134 358 Q1340 281 1500 375" stroke="#eac57f" stroke-width="5" opacity=".4" fill="none"/>
+<circle cx="1393" cy="320" r="41" fill="#f0cc84" opacity=".16" filter="url(#lite)"/>
+<circle cx="1393" cy="320" r="15" fill="#f2d193"/>
+</svg>
