@@ -6,7 +6,7 @@
 .ai-page :where(.ai-prose){max-width:765px}
 .ai-page .ai-skip{position:absolute;left:20px;top:-100px;background:#ecc17b;color:#061724;padding:13px 18px;z-index:100}
 .ai-page .ai-skip:focus{top:10px}
-.ai-page .ai-hero{position:relative;isolation:isolate;overflow:hidden;min-height:570px;display:flex;align-items:center;padding:92px 0 96px;background:linear-gradient(95deg,rgba(4,19,29,.98) 7%,rgba(5,21,34,.93) 47%,rgba(7,26,41,.56) 100%),url('https://behshad.com/assets/hero-bay-bridge.webp') center 47%/cover no-repeat}
+.ai-page .ai-hero{position:relative;isolation:isolate;overflow:hidden;min-height:570px;display:flex;align-items:center;padding:92px 0 96px;background:linear-gradient(95deg,rgba(4,19,29,.98) 7%,rgba(5,21,34,.93) 47%,rgba(7,26,41,.56) 100%),url('/sandbox/ai-governance-review-20261020/assets/hero-bay-bridge.webp') center 47%/cover no-repeat}
 .ai-page .ai-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 83% 45%,rgba(45,176,195,.23),transparent 32%),linear-gradient(0deg,rgba(3,14,23,.7),transparent 65%);z-index:-1}
 .ai-page .ai-hero-grid{display:grid;grid-template-columns:minmax(0,1.34fr) minmax(280px,.66fr);gap:45px;align-items:center}
 .ai-page .ai-kicker{font-size:.69rem;letter-spacing:.24em;font-weight:800;text-transform:uppercase;color:#ecc17b}
