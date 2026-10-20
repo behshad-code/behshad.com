@@ -32,3 +32,11 @@ The site currently uses a working LinkedIn contact link. A private direct-messag
 
 Update the canonical URL, description, Open Graph metadata, and preview image when changing the public positioning. Keep the canonical URL at `https://behshad.com/`. Main site is indexable; temporary previews should not be.
 
+
+### Approved preview hosting and security
+
+- Use only this repository and its GitHub Pages host for website previews: a complete, navigable sandbox under `https://behshad.com/sandbox/<feature>-review/`. Keep the approved entry URL stable across revisions.
+- Do not create, share, embed, or request previews through third-party repository-rendering or caching services, including `raw.githack.com`, `rawcdn.githack.com`, RawGit, or equivalent proxy/CDN preview hosts. Do not substitute a different hosting provider for the approved GitHub Pages workflow.
+- A public branch, unlisted URL, or `noindex` tag is not private. Keep credentials, private source documents, personal data, and confidential working materials out of every public branch and sandbox.
+- Preserve current feature branches and approved sandboxes during unrelated security work. Do not delete history or rewrite commits to remove a preview URL. Cache invalidation cannot prevent a public GitHub file from being fetched again.
+- Use a scoped pull request for changes to protected `main`; never bypass branch protections. Publish feature content only after explicit approval, verify Pages deployment and desktop/mobile behavior, then remove obsolete sandboxes in a separate scoped change.
