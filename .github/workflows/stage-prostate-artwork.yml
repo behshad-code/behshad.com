@@ -1,0 +1,33 @@
+name: Stage approved prostate illustration
+on:
+  push:
+    branches:
+      - artwork/prostate-anatomy-20261105
+permissions:
+  contents: write
+jobs:
+  stage-image:
+    if: "!contains(github.event.head_commit.message, '[image-sync]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out review branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch approved full-resolution artwork
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 2 --output health/assets/prostate-anatomy-3d.png "https://at.adobe.com/N7cKGThHA34LgXHS"
+          printf '4ea62a388fff9de8090cd4aa4820fd2adb82f2d117f1a758547cc71cbc763ec8  health/assets/prostate-anatomy-3d.png\n' | sha256sum --check
+          file health/assets/prostate-anatomy-3d.png
+      - name: Commit artwork update
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- health/assets/prostate-anatomy-3d.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Replace prostate illustration with approved Vitruvian artwork [image-sync]"
+            git push
+          fi
