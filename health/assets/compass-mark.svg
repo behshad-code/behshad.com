@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+<title id="title">Men's Health Compass logo</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68d8c4"/><stop offset="1" stop-color="#d8f5e7"/></linearGradient></defs>
+<rect width="96" height="96" rx="23" fill="#0e3440"/>
+<circle cx="48" cy="48" r="32" stroke="#a5d7cb" stroke-width="1.8" fill="none" opacity=".85"/>
+<circle cx="48" cy="48" r="24" stroke="#4b928d" stroke-width="1" fill="none" stroke-dasharray="2 5"/>
+<path d="M48 13V24M48 72V83M13 48H24M72 48H83" stroke="#afddd2" stroke-width="2" stroke-linecap="round"/>
+<path d="M59.9 36.1 53 53l-16.9 6.9L43 43z" fill="url(#g)"/>
+<circle cx="48" cy="48" r="3.2" fill="#0e3440" stroke="#d6f2e9" stroke-width="1.5"/>
+</svg>

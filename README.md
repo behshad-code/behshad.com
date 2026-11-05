@@ -9,6 +9,7 @@ Source for the public personal website at https://behshad.com, hosted on GitHub 
 - `site.js` — navigation, Experience filters, interest panels, and GoatCounter event tracking.
 - `assets/` — original portrait and images used by the main site.
 - `ballot/` — **separate Ballot Compass application**; preserve its code and assets when editing the main site.
+- `health/` — independent Men's Health Compass publication, with its own pages, styles and artwork; see `health/README.md`.
 - `analytics-config.js` and `analytics.js` — existing analytics integration used by Ballot Compass.
 - `CNAME` — GitHub Pages custom domain.
 

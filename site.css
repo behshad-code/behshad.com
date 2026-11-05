@@ -130,3 +130,7 @@
 @media(max-width:700px){#beyond .personal-projects{padding:32px 0 40px}#beyond .ballot-project{grid-template-columns:1fr}#beyond .ballot-project-art{padding:23px;border-right:0;border-bottom:1px solid rgba(236,193,123,.18);flex-direction:column;gap:15px}#beyond .ballot-project-copy{padding:25px 22px}#beyond .ballot-project .btn{line-height:1.4}}
 
 #beyond .ballot-project-preview{display:block;width:100%;height:auto;max-width:520px;border-radius:3px;border:1px solid rgba(236,193,123,.3)}
+
+/* Beyond Work: the health tile is a direct, accessible navigation link. */
+#beyond a.interest-tile.health-entry{display:block;text-decoration:none}
+#beyond a.interest-tile.health-entry:focus-visible{outline:3px solid #f0c981;outline-offset:4px}

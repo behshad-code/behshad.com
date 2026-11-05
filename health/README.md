@@ -1,0 +1,27 @@
+# Men's Health Compass
+
+An independent educational publication within behshad.com, accessible at https://behshad.com/health/.
+
+## Scope
+
+- /health/ is the publication's front page.
+- /health/prostate/ is the first navigable topic guide.
+- health.css contains the publication's isolated responsive design.
+- assets/ holds original artwork for this publication.
+
+Keep this publication separate from the main site's layout, Ballot Compass, and other projects. The Beyond Work entry tile links directly here.
+
+## Editorial standards for expansion
+
+1. Write clear, source-linked health education, not individualized medical advice.
+2. Distinguish peer-reviewed findings, expert guidelines, regulatory approvals, and preliminary research.
+3. Verify medical claims against authoritative sources before publishing. Include publication/review dates and meaningful change notes for substantive articles.
+4. Do not claim medical review or certification unless a named qualified reviewer has actually approved the content.
+5. Do not automatically publish research alerts; require human editorial review.
+6. Do not collect visitor health information or record individual medical interests in interaction analytics.
+7. Keep advertising, if introduced, plainly labeled and independent of editorial decisions.
+8. Do not add empty article links. Publish a new article URL only when its full, verified content is ready.
+
+## Implementation
+
+Use static HTML and CSS under this path. Reuse the existing privacy-conscious GoatCounter account for aggregate page views. Do not introduce new hosting providers, scripts collecting personal data, or external publication dependencies. Maintain canonical URLs and the root sitemap when adding published pages.

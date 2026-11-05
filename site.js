@@ -2,7 +2,7 @@
 (function(){
  'use strict';
  // Privacy-first site analytics: only fixed event names; never capture message text, contact data or personal details.
- const eventNames=new Set(['nav-home','nav-about','nav-experience','nav-beyond','nav-contact','hero-explore','hero-experience','focus-overview','focus-transformation','focus-ai','focus-ma','focus-risk','perspective-biz2','perspective-ai','perspective-team','perspective-ma','perspective-diligence','interest-travel','interest-diving','interest-aviation','interest-cooking','interest-learning','interest-nature','external-linkedin','external-ballot','experience-filter-all','experience-filter-ai','experience-filter-ma','experience-filter-security','experience-filter-transformation','view-home','view-about','view-experience','view-beyond','view-contact']);
+ const eventNames=new Set(['nav-home','nav-about','nav-experience','nav-beyond','nav-contact','hero-explore','hero-experience','focus-overview','focus-transformation','focus-ai','focus-ma','focus-risk','perspective-biz2','perspective-ai','perspective-team','perspective-ma','perspective-diligence','interest-travel','interest-diving','interest-aviation','interest-cooking','interest-learning','interest-health','external-linkedin','external-ballot','experience-filter-all','experience-filter-ai','experience-filter-ma','experience-filter-security','experience-filter-transformation','view-home','view-about','view-experience','view-beyond','view-contact']);
  const isLive=location.hostname==='behshad.com' && (location.pathname==='/' || location.pathname==='/index.html');
  const code='behshad';
  if(isLive){let s=document.createElement('script');s.src='https://gc.zgo.at/count.js';s.async=true;s.dataset.goatcounter='https://'+code+'.goatcounter.com/count';s.addEventListener('load',()=>{const hash=location.hash.slice(1).split('/')[0];track('view-'+(['home','about','experience','beyond','contact'].includes(hash)?hash:'home'));});document.head.appendChild(s);}
@@ -26,8 +26,7 @@
  diving:['Scuba diving','I enjoy the discipline and wonder of exploring the underwater world. It is a different experience from the pace of everyday work.'],
  aviation:['Aviation','Recreational flying combines curiosity, preparation, technology, and a unique perspective on the world.'],
  cooking:['Cooking','Experimenting with recipes and cuisines is a creative way to learn and connect with others.'],
- reading:['Learning','I am drawn to technology, history, society, and the questions that challenge how we think about the future.'],
- nature:['Nature & the outdoors','Time outdoors offers perspective, quiet, and the chance to reset.']};
+ reading:['Learning','I am drawn to technology, history, society, and the questions that challenge how we think about the future.']};
  const modal=document.querySelector('#info-modal'),mTitle=document.querySelector('#modal-title'),mBody=document.querySelector('#modal-body'),mClose=document.querySelector('#modal-close'),mAction=document.querySelector('#modal-action');let lastFocus=null;
  function openModal(item){lastFocus=document.activeElement;mTitle.textContent=item[0];mBody.textContent=item[1];modal.hidden=false;document.body.style.overflow='hidden';mClose.focus();}
  function closeModal(){modal.hidden=true;document.body.style.overflow='';if(lastFocus?.focus)lastFocus.focus();}
