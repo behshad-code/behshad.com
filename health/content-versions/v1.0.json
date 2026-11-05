@@ -1,0 +1,38 @@
+{
+  "name": "Men's Health Compass · Prostate Education Library",
+  "version": "1.0",
+  "released": "2026-11-05",
+  "baseline_commit": "ed01b4ad952a6f303662be235652bf134e65e7bd",
+  "status": "Content baseline locked; visual and navigation changes are separate.",
+  "articles": {
+    "/health/prostate/rising-psa/": {
+      "path": "health/prostate/rising-psa/index.html",
+      "github_blob_sha": "944bd29987237584ec52ec858f2dbd5f593700e7"
+    },
+    "/health/prostate/tests-explained/": {
+      "path": "health/prostate/tests-explained/index.html",
+      "github_blob_sha": "fd9df7e1d9f2a67fa353729ecf51d7cf48aa3452"
+    },
+    "/health/prostate/active-surveillance/": {
+      "path": "health/prostate/active-surveillance/index.html",
+      "github_blob_sha": "7860f3205a41d2e451f7b7fda390eaf424c8c005"
+    },
+    "/health/prostate/treatment-decisions/": {
+      "path": "health/prostate/treatment-decisions/index.html",
+      "github_blob_sha": "e2cfae1c6c0ae7e08cd2d88d7c682f0ab771cb6d"
+    },
+    "/health/prostate/recovery-follow-up/": {
+      "path": "health/prostate/recovery-follow-up/index.html",
+      "github_blob_sha": "f293e06e1a4f3300d853d0388d7488bed0b611cf"
+    },
+    "/health/prostate/insurance-access/": {
+      "path": "health/prostate/insurance-access/index.html",
+      "github_blob_sha": "997031519bd83dd11092b61cc92a190e7034d561"
+    }
+  },
+  "rules": [
+    "Never replace or silently overwrite version 1.0 editorial text.",
+    "Record source-backed factual revisions and reasons in a new version.",
+    "Do not publish or commit private clinical source files."
+  ]
+}
