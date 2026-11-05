@@ -5,7 +5,13 @@ An independent educational publication within behshad.com, accessible at https:/
 ## Scope
 
 - /health/ is the publication's front page.
-- /health/prostate/ is the first navigable topic guide.
+- /health/prostate/ is the first navigable topic guide, now with six complete practical articles:
+  - /health/prostate/rising-psa/
+  - /health/prostate/tests-explained/
+  - /health/prostate/active-surveillance/
+  - /health/prostate/treatment-decisions/
+  - /health/prostate/recovery-follow-up/
+  - /health/prostate/insurance-access/
 - health.css contains the publication's isolated responsive design.
 - assets/ holds original artwork for this publication.
 
@@ -33,3 +39,7 @@ Use static HTML and CSS under this path. Reuse the existing privacy-conscious Go
 - `assets/doctor-hero.png`: transparent doctor-costume character illustration used only in the health homepage hero.
 - The illustration is fictional. It must not be presented as evidence that the publisher is a licensed medical professional.
 - Keep the rendered page text and navigation as HTML, not flattened image screenshots.
+
+## Editorial privacy boundary
+
+Clinical insights can inform general educational explanations, questions and references. Never publish personal clinical histories, timelines, unique results, individual consultations, unpublished patient materials, or source files in the repository or public preview. The new guides contain only generalized education and public references. Preserve evidence boundaries and clinical uncertainty.
