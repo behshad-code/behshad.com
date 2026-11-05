@@ -36,10 +36,21 @@ Use static HTML and CSS under this path. Reuse the existing privacy-conscious Go
 
 - `assets/mens-health-compass-logo.png`: full illustrated Compass wordmark with the publisher depicted in a fictional medical outfit.
 - `assets/mens-health-compass-mark.png`: transparent emblem for the compact header logo.
-- `assets/doctor-hero.png`: transparent doctor-costume character illustration used only in the health homepage hero.
+- `assets/doctor-hero.png`: transparent character illustration reused on the health homepage hero and in the Beyond Work discovery imagery.
 - The illustration is fictional. It must not be presented as evidence that the publisher is a licensed medical professional.
 - Keep the rendered page text and navigation as HTML, not flattened image screenshots.
 
 ## Editorial privacy boundary
 
 Clinical insights can inform general educational explanations, questions and references. Never publish personal clinical histories, timelines, unique results, individual consultations, unpublished patient materials, or source files in the repository or public preview. The new guides contain only generalized education and public references. Preserve evidence boundaries and clinical uncertainty.
+
+## Content version baseline
+
+**Version 1.0** is the released six-guide prostate education library at Git commit `ed01b4ad952a6f303662be235652bf134e65e7bd` (November 5, 2026). Its article bodies and their exact source blobs are recorded in `content-versions/v1.0.json`. Future substantive editorial changes require a new content version and changelog entry. Design and navigation improvements do not silently modify the frozen article texts. The medical-guide source PDF and any individual clinical records are not in this repository.
+
+## Navigation and artwork
+
+- Main site: `/#beyond` > Men's Health Compass tile or Personal Projects feature > `/health/`.
+- Health landing page: Explore prostate health or featured topic > `/health/prostate/` > six education articles.
+- `assets/prostate-anatomy-3d.png` is a conceptual 3D prostate illustration supplied for this site. It is not patient imaging or a diagnostic representation. It is reused on the health homepage and prostate topic header.
+- The original compass mark and approved health hero portrait are preserved.
