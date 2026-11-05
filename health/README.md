@@ -25,3 +25,11 @@ Keep this publication separate from the main site's layout, Ballot Compass, and 
 ## Implementation
 
 Use static HTML and CSS under this path. Reuse the existing privacy-conscious GoatCounter account for aggregate page views. Do not introduce new hosting providers, scripts collecting personal data, or external publication dependencies. Maintain canonical URLs and the root sitemap when adding published pages.
+
+## Visual identity (November 2026)
+
+- `assets/mens-health-compass-logo.png`: full illustrated Compass wordmark with the publisher depicted in a fictional medical outfit.
+- `assets/mens-health-compass-mark.png`: transparent emblem for the compact header logo.
+- `assets/doctor-hero.png`: transparent doctor-costume character illustration used only in the health homepage hero.
+- The illustration is fictional. It must not be presented as evidence that the publisher is a licensed medical professional.
+- Keep the rendered page text and navigation as HTML, not flattened image screenshots.
