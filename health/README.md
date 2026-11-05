@@ -36,7 +36,7 @@ Use static HTML and CSS under this path. Reuse the existing privacy-conscious Go
 
 - `assets/mens-health-compass-logo.png`: full illustrated Compass wordmark with the publisher depicted in a fictional medical outfit.
 - `assets/mens-health-compass-mark.png`: transparent emblem for the compact header logo.
-- `assets/doctor-hero.png`: transparent doctor-costume character illustration used only in the health homepage hero.
+- `assets/doctor-hero.png`: transparent character illustration reused on the health homepage hero and in the Beyond Work discovery imagery.
 - The illustration is fictional. It must not be presented as evidence that the publisher is a licensed medical professional.
 - Keep the rendered page text and navigation as HTML, not flattened image screenshots.
 
