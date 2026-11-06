@@ -353,7 +353,7 @@
     },
     {
       "path": "/health/prostate/diagnosis/",
-      "title": "Prostate Cancer & Diagnosis",
+      "title": "Prostate Cancer",
       "kind": "hub",
       "status": "published"
     },
