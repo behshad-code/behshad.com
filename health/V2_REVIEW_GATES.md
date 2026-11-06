@@ -1,3 +1,5 @@
+> **Release note (November 6, 2026):** The owner subsequently granted explicit production approval. This document preserves the prior draft review findings and ongoing editorial opportunities; it is a historical quality checkpoint, not a statement that production is still unauthorized. The release does not imply a completed clinical peer review or validation of every discovered Flipboard article.
+
 # Men's Health Compass v2.0 | Review and Publication Gates
 
 **Status:** Draft implementation quality review, November 6, 2026. **Not approved for merge or public deployment.**

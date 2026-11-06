@@ -1,3 +1,11 @@
+## 2.0 | Production release | November 6, 2026
+
+The owner explicitly approved production release. This version preserves all six v1.0 flagship guide URLs, introduces six category hubs, 24 supporting articles including the robotic-surgery series, and four resources (source library, glossary, appointment question builder and editorial methods). The prostate landing page continues to show six flagship cards and three evidence-labeled research highlights. The release has 36 curated public reference entries and 78 glossary terms. The original v1.0 content snapshot remains in `content-versions/v1.0.json`.
+
+The material is independent education, not individually tailored medical advice or a licensed clinician's peer review. The Flipboard intake was closed at 151 accessible discovery records; the website does not claim primary-source verification of every original article. New v2 pages are indexable. Medical evidence is subject to future revision.
+
+---
+
 ## 2.0 | Editorial review branch | November 6, 2026
 
 **Not published.** Owner approved scoped development, not a merge to `main` or production release. The v2 review branch now stages six category hubs, 24 authored supporting articles, 4 practical resources, and 33 evidence-linked additions to the six unchanged flagship URLs. The topic home retains exactly six flagship cards and three sourced research highlights. Source catalog: 36 selected references; glossary: 78 definitions. New pages are noindex pending approval.

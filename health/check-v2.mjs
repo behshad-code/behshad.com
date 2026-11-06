@@ -35,7 +35,7 @@ for(const p of paths){
   linkCount++;
  }
  for(const match of h.matchAll(/(?:href|src)="(\/health\/[^"#?]+\.(?:css|js|png|svg|webp))"/g))assert(existsSync(resolve(root,match[1].slice(1))),"Missing asset "+match[1]+" on "+p);
- if(!guides.some(g=>p==="health/prostate/"+g+"/index.html")&&p!=="health/prostate/index.html")assert(h.includes("noindex,nofollow"),"Review-only robots missing on "+p);
+ if(!guides.some(g=>p==="health/prostate/"+g+"/index.html")&&p!=="health/prostate/index.html")assert(h.includes('name="robots" content="index,follow,max-image-preview:large"'),"Published page incorrectly marked noindex: "+p);
 }
 for(const a of articles){
  assert(a.sections.length>=4,"Incomplete article "+a.path);
@@ -45,4 +45,6 @@ for(const a of articles){
  for(const s of a.sections)for(const id of s.refs)assert(ids.has(id),"Unknown evidence ID: "+id+" on "+a.path);
 }
 assert(read("health/v2.js").includes("data-question-choice"),"Question builder script missing");
+const sitemap=read("sitemap.xml");
+for(const p of paths)assert(sitemap.includes("<loc>https://behshad.com/"+p.replace(/index\.html$/,"")+"</loc>"),"Sitemap missing "+p);
 console.log("Men's Health Compass v2 checks PASS: 24 articles; 6 hubs; 4 resources; 6 flagship guides; "+glossary.length+" glossary terms; "+sources.length+" sources; "+linkCount+" internal links");

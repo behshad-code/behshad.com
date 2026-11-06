@@ -1,0 +1,26 @@
+{
+  "name": "Men's Health Compass Prostate Health",
+  "version": "2.0",
+  "status": "published",
+  "released": "2026-11-06",
+  "production_approval": "Owner explicitly approved on November 6, 2026",
+  "production_pr": 59,
+  "source_branch": "feature/mens-health-compass-v2-review",
+  "development_baseline": "04f986734b9cbb279dcbfd487b14730061add21b",
+  "preserved_v1": "health/content-versions/v1.0.json",
+  "published_scope": {
+    "flagship_guides": 6,
+    "secondary_hubs": 6,
+    "supporting_articles": 24,
+    "resource_pages": 4,
+    "public_sources": 36,
+    "glossary_terms": 78
+  },
+  "review_limits": {
+    "clinical_peer_review": false,
+    "flipboard_discovery_records": 151,
+    "flipboard_claims_all_verified": false
+  },
+  "privacy": "No private medical histories or visitor medical profile collection",
+  "release_note": "Review-only pages indexable; duplicate branch preview not promoted to public site"
+}
