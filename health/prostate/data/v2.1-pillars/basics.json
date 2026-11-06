@@ -1,0 +1,132 @@
+{
+  "slug": "basics",
+  "name": "Prostate Basics",
+  "title": "Prostate Basics: what the gland does, what can change, and when to get checked",
+  "dek": "A complete foundation for understanding prostate anatomy, enlargement, inflammation, cancer, urinary symptoms and common misconceptions.",
+  "lead": "The prostate is a normal part of the urinary and reproductive system. Enlargement, inflammation and cancer can affect it in different ways. Learning the differences makes symptoms and test results easier to discuss without assuming that every urinary problem is cancer.",
+  "sections": [
+    {
+      "heading": "The prostate and the structures around it",
+      "paragraphs": [
+        "The prostate is a walnut-sized gland in younger adults, located directly below the bladder and in front of the rectum. It surrounds the upper segment of the urethra, the passage urine follows out of the body. Its glandular tissue contributes fluid to semen, and its smooth muscle helps move reproductive fluid during ejaculation. The seminal vesicles sit behind the bladder and contribute additional fluid.",
+        "This small anatomical space explains why one condition can affect urination and another can affect sexual function. The external urinary sphincter sits close to the prostate and helps control leakage. Nerve and blood-vessel pathways involved in erections run alongside it. They matter during prostate surgery, but they do not mean everyday urinary symptoms diagnose cancer."
+      ],
+      "bullets": [
+        "Bladder: stores urine.",
+        "Urethra: carries urine through the prostate and outward.",
+        "Pelvic floor and sphincter: help control urination.",
+        "Nerves and vessels: contribute to erectile function; their location affects surgical planning."
+      ],
+      "refs": [
+        "NIDDK",
+        "NCI-T",
+        "URO-REC"
+      ]
+    },
+    {
+      "heading": "What changes as men age",
+      "paragraphs": [
+        "Benign prostate growth becomes more common with age. The gland can press on the urethra, leading to a slower stream, delay before urination begins, stopping and starting, urgency or getting up at night. Symptoms depend on more than gland size; bladder function, fluid intake, medications, sleep and other medical conditions can also contribute.",
+        "Prostate-specific antigen, or PSA, is produced by normal and abnormal prostate cells. Larger benign glands can produce more PSA. Age affects the probability of both benign changes and cancer, but there is no single symptom or PSA value that reliably distinguishes them. If symptoms are new or troublesome, a healthcare professional can evaluate them rather than guessing at the cause."
+      ],
+      "bullets": [],
+      "refs": [
+        "NIDDK",
+        "NCI-S"
+      ]
+    },
+    {
+      "heading": "BPH: benign enlargement, not a cancer diagnosis",
+      "paragraphs": [
+        "Benign prostatic hyperplasia (BPH) describes noncancerous growth of prostate tissue. It is not prostate cancer and does not, by itself, mean that cancer will develop. A clinician may review symptoms, examine medications, perform a urine test, assess how well the bladder empties or discuss PSA when appropriate. Evaluation looks for urinary infection, retention and other causes as well.",
+        "Treatment depends on the degree of bother, complications and individual preferences. Some men benefit from monitoring, adjustments to evening fluid or caffeine intake, or timed voiding. Others discuss medicines that relax outlet muscles or reduce prostate size; side effects can include dizziness, changes in ejaculation or sexual function. Procedures may be considered when symptoms remain significant or complications arise. No single option is best for everyone.",
+        "Newer BPH procedures, including waterjet-based tissue removal, should be evaluated for their actual indications, durability and adverse effects rather than by device marketing. BPH operations differ from radical prostatectomy for cancer."
+      ],
+      "bullets": [
+        "Ask whether symptoms are caused mainly by obstruction, bladder overactivity or another problem.",
+        "Report inability to urinate, recurrent urinary infections or blood in the urine promptly.",
+        "Discuss medication effects on dizziness, erections, ejaculation and blood pressure."
+      ],
+      "refs": [
+        "NIDDK",
+        "NCI-S"
+      ]
+    },
+    {
+      "heading": "Prostatitis: inflammation with more than one cause",
+      "paragraphs": [
+        "Prostatitis is a broad term for prostate-area inflammation and pain syndromes. Acute bacterial prostatitis can cause fever, chills, pelvic pain and painful urination and needs prompt medical assessment. Other presentations include recurrent bacterial infections and chronic pelvic pain without a proven infection. Not every case should receive antibiotics.",
+        "A detailed history, examination and sometimes urine studies help determine what is happening. Pelvic floor dysfunction or bladder pain can overlap with chronic symptoms. Treatment may involve antibiotics for confirmed bacterial infection, pain management, pelvic-floor approaches and attention to urinary problems. Because the categories differ, self-diagnosis based only on pelvic discomfort can be misleading."
+      ],
+      "bullets": [],
+      "refs": [
+        "NIDDK"
+      ]
+    },
+    {
+      "heading": "Prostate cancer: a separate process",
+      "paragraphs": [
+        "Prostate cancer begins when cells in the prostate grow abnormally. Many cancers are slow-growing and remain confined to the gland for years, while others can progress or spread. A diagnosis and treatment decision depend on biopsy pathology, PSA, imaging and overall risk, not on urinary symptoms alone.",
+        "Early prostate cancer often causes no noticeable symptoms. Weak flow or nighttime urination more commonly has benign or bladder-related explanations, although symptoms still deserve assessment. This is why a discussion of screening for someone without symptoms is different from evaluating a person who is already experiencing a new problem.",
+        "A family history of prostate cancer, certain inherited gene variants and older age can affect risk. Risk also differs across populations and care settings. This information helps personalize screening discussions, but it does not determine whether any particular person has cancer."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-S",
+        "NCI-T",
+        "EAU",
+        "SEER"
+      ]
+    },
+    {
+      "heading": "When to seek medical evaluation",
+      "paragraphs": [
+        "Arrange an appointment for persistent or worsening urinary symptoms, pain, recurrent infections, blood in urine or semen, or questions about inherited risk. Sudden inability to urinate, fever with painful urinary symptoms, or feeling severely unwell can require urgent care. Those situations should not wait for a routine screening conversation.",
+        "A typical evaluation begins with what is happening, when it started, medications, infections, fluid habits and existing health conditions. The next test should answer a defined question. A PSA test cannot alone diagnose prostatitis, BPH or cancer; a prostate MRI is not an all-purpose screening tool; and biopsy, when indicated, answers whether tissue contains cancer and how it appears under the microscope."
+      ],
+      "bullets": [],
+      "refs": [
+        "NIDDK",
+        "NCI-S",
+        "EAU-D"
+      ]
+    },
+    {
+      "heading": "Common misconceptions worth correcting",
+      "paragraphs": [
+        "An enlarged prostate does not automatically mean cancer. Normal PSA does not guarantee the absence of cancer. A high PSA does not prove cancer. Prostate cancer is not always aggressive, and treatment is not always immediate surgery. These distinctions matter because overtesting can cause harm, but dismissing concerning findings can also delay needed care.",
+        "The best starting point is the question you need answered. For urinary symptoms, begin with a clinician's assessment of possible benign or other causes. For screening, consider age, risk and preferences. After cancer is diagnosed, use pathology and risk information to understand surveillance or treatment options."
+      ],
+      "bullets": [],
+      "refs": [
+        "NIDDK",
+        "NCI-S",
+        "NCI-T"
+      ]
+    }
+  ],
+  "questions": [
+    "What could explain my symptoms besides prostate cancer?",
+    "Which findings would justify a urine test, PSA, examination or imaging?",
+    "What should prompt an urgent call?",
+    "How do my family history and medications affect the evaluation?"
+  ],
+  "related": [
+    {
+      "title": "When PSA Is Rising",
+      "path": "rising-psa",
+      "note": "Understand an unexpected PSA result."
+    },
+    {
+      "title": "Prostate anatomy and function",
+      "path": "basics/anatomy",
+      "note": "See how nearby structures affect treatment and recovery."
+    },
+    {
+      "title": "BPH, prostatitis and cancer",
+      "path": "basics/common-conditions",
+      "note": "Compare symptoms and care options."
+    }
+  ],
+  "evidence_note": "General descriptions reflect NIDDK and NCI educational guidance; symptoms and examinations require individualized evaluation."
+}
