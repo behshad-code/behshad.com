@@ -18,11 +18,26 @@ assert.equal(articles.length,24,"24 authored articles expected");
 assert.equal(new Set(articles.map(x=>x.path)).size,24,"Unique article routes required");
 assert.equal(glossary.length,78,"78 glossary entries expected");
 assert.equal(ids.size,sources.length,"Source IDs must be unique");
-assert.equal((topic.match(/class="guide-library-card"/g)||[]).length,6,"Prostate page must have exactly six flagship guide cards");
+assert.equal((topic.match(/class="guide-library-card"/g)||[]).length,0,"Prostate page cannot duplicate the flagship guide library");
+assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,6,"Prostate page must have one six-category navigation");
 assert.equal((topic.match(/class="prostate-research-card"/g)||[]).length,3,"Three research highlights maximum");
-assert.equal((topic.match(/class="v2-card"/g)||[]).length,6,"Six secondary hub links expected");
+assert.equal((topic.match(/class="v2-card"/g)||[]).length,0,"A secondary six-card Explore Further grid is prohibited");
 assert.equal((home.match(/class="guide-library-card"/g)||[]).length,0,"No guide library on general health home");
 const paths=[...articles.map(a=>"health/prostate/"+a.path+"/index.html"),...hubs.map(h=>"health/prostate/"+h+"/index.html"),...resources.map(r=>"health/prostate/resources/"+r+"/index.html"),"health/prostate/index.html",...guides.map(g=>"health/prostate/"+g+"/index.html")];
+const pillarMap={basics:"Prostate Basics",screening:"Screening & PSA",diagnosis:"Prostate Cancer",treatments:"Treatment Options","living-well":"Living Well",research:"Research & Updates"};
+let pillarWords=0;
+for(const hub of hubs){
+ const p=JSON.parse(read("health/prostate/data/v2.1-pillars/"+hub+".json"));
+ assert.equal(p.slug,hub,"Pillar slug mismatch "+hub);
+ assert.equal(p.name,pillarMap[hub],"Pillar title mismatch "+hub);
+ assert(p.sections.length>=6,"Too few educational sections: "+hub);
+ const words=p.sections.flatMap(s=>s.paragraphs||[]).join(" ").split(/\\s+/).length;
+ assert(words>=650,"Pillar needs more substantive content: "+hub+" has "+words+" words");
+ pillarWords+=words;
+ for(const s of p.sections){assert(s.heading&&s.paragraphs.length,"Incomplete section "+hub);for(const id of s.refs||[])assert(ids.has(id),"Unknown pillar source "+id+" in "+hub)}
+ const html=read("health/prostate/"+hub+"/index.html");
+ assert((html.match(/id="pillar-\\d+"/g)||[]).length===p.sections.length,"Rendered pillar section count mismatch: "+hub);
+}
 let linkCount=0;
 for(const p of paths){
  assert(existsSync(resolve(root,p)),"Missing route "+p);
@@ -47,4 +62,4 @@ for(const a of articles){
 assert(read("health/v2.js").includes("data-question-choice"),"Question builder script missing");
 const sitemap=read("sitemap.xml");
 for(const p of paths)assert(sitemap.includes("<loc>https://behshad.com/"+p.replace(/index\.html$/,"")+"</loc>"),"Sitemap missing "+p);
-console.log("Men's Health Compass v2 checks PASS: 24 articles; 6 hubs; 4 resources; 6 flagship guides; "+glossary.length+" glossary terms; "+sources.length+" sources; "+linkCount+" internal links");
+console.log("Men's Health Compass v2.1 checks PASS: 24 articles; 6 hubs; 4 resources; 6 flagship guides; "+glossary.length+" glossary terms; "+sources.length+" sources; "+linkCount+" internal links; "+pillarWords+" verified-source-linked pillar words");
