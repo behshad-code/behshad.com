@@ -1,0 +1,63 @@
+{
+  "schema": "2.1-article-enrichment",
+  "entries": [
+    {
+      "path": "living-well/continence",
+      "heading": "Choosing meaningful urinary recovery measures",
+      "paragraphs": [
+        "Ask how the treating team defines continence before comparing its outcome statistics with another clinic. No pads, one security pad and questionnaire-based leakage scores are not interchangeable. Recovery reports can also exclude patients with baseline leakage or use different follow-up periods. Keeping a symptom diary describing pads, urgency, exertional leakage and quality-of-life effects helps a specialist identify what remains bothersome.",
+        "Persistent leakage deserves a structured assessment, because stress incontinence, urgency and incomplete emptying may require different approaches. Pelvic-floor therapy is not simply a fixed number of contractions; instruction should account for correct technique and relaxation. Continued symptoms may warrant evaluation for devices, medications or procedural options in selected patients rather than indefinite waiting."
+      ],
+      "refs": [
+        "URO-REC",
+        "BRISBANE",
+        "NCI-T"
+      ]
+    },
+    {
+      "path": "living-well/sexual-health",
+      "heading": "Define the outcomes that matter before and after treatment",
+      "paragraphs": [
+        "Erectile hardness, ability to have partnered sexual activity, orgasm, sensation, ejaculation and fertility are distinct outcomes. A patient may regain one function without another. Surgery, radiation and hormone therapy affect them differently, and baseline sexual function is important when interpreting later measurements. After radical prostatectomy, ejaculation of semen does not return, although orgasmic sensation may remain.",
+        "Rehabilitation options can include a discussion of oral medicines, vacuum devices, injections, specialized counseling and, for some patients, other interventions. Decisions should reflect medical suitability, preferences, partner circumstances and uncertainty about long-term effectiveness. Ask the team about realistic time frames and whether they can provide inclusive sexual-health care that addresses the person's actual practices and priorities."
+      ],
+      "refs": [
+        "NCI-T",
+        "NEUROSAFE",
+        "AUA-L",
+        "PCFA-S"
+      ]
+    },
+    {
+      "path": "living-well/survivorship",
+      "heading": "Build one plan across cancer follow-up and general health",
+      "paragraphs": [
+        "A survivorship plan should specify which clinician orders PSA testing, the next date for interpreting results, what change prompts re-evaluation, and who manages urinary, bowel, sexual or emotional complications. The definition of a concerning PSA differs after surgery and radiation; a published cutoff should not be copied from one setting into another. Shared follow-up responsibilities can help prevent gaps when the original oncology team transfers care.",
+        "Men receiving androgen deprivation therapy may need an individualized plan for metabolic, cardiovascular and bone risks alongside symptom management. Supervised aerobic and resistance activity can support functional health, but treatment should take account of existing cardiovascular or musculoskeletal problems. A balanced diet, smoking cessation and psychosocial support are appropriate general-health measures, not substitutes for cancer treatment. Persistent pain, new neurological symptoms, blood in urine or major functional change deserve clinical review."
+      ],
+      "refs": [
+        "EAU",
+        "NCI-T",
+        "URO-REC",
+        "PCFA-S"
+      ]
+    },
+    {
+      "path": "research/evidence-tracker",
+      "heading": "A dated finding is useful only with its actual clinical status",
+      "paragraphs": [
+        "The 2026 guidance updates from AUA/SUO, EAU and PCFA should be assessed as professional recommendations for different healthcare settings and risk groups. PROTEUS and related treatment-intensification studies should be classified by trial design and exact population, not by whether a headline calls them breakthroughs. FDA approval of a targeted treatment applies only within the stated regulatory indication and does not replace a specialist's individualized treatment plan.",
+        "Observational comparisons of robotic techniques, promising biomarker panels and company roadmaps answer narrower questions than randomized trials of clinical benefit. This tracker should distinguish when a result was reported, when it was verified, whether it is in clinical guidelines and what remains unresolved. A research update does not become an automatic recommendation simply because it has a publication date."
+      ],
+      "refs": [
+        "AUA-E",
+        "EAU",
+        "PCFA",
+        "PROTEUS",
+        "PLUVICTO",
+        "STOCKHOLM3",
+        "INTUITIVE-SEC"
+      ]
+    }
+  ]
+}
