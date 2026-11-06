@@ -1,0 +1,261 @@
+{
+  "schema": "2.0-content-draft",
+  "articles": [
+    {
+      "path": "living-well/continence",
+      "cat": "living-well",
+      "title": "Urinary continence and pelvic-floor recovery",
+      "dek": "What recovery statistics mean, when pelvic-floor care may help, and what to do if leakage persists.",
+      "lead": "Urinary leakage after radical prostatectomy is common, particularly after catheter removal. Most men improve, but the pace and final outcome vary considerably, and persistent leakage should not simply be ignored.",
+      "sections": [
+        {
+          "heading": "What early recovery may look like",
+          "paragraphs": [
+            "The urinary sphincter, bladder neck and supporting structures are affected by prostate removal. Leakage can be more noticeable on standing, coughing or exercising, and recovery often takes months. The type of surgery, age, baseline bladder function and other conditions influence the course.",
+            "A reported continence rate is incomplete without a definition. 'No pads' differs from 'one precautionary pad' and from questionnaire-based scores. Some highly selected robotic cohorts report encouraging early results, but these should not be presented as a personal prediction."
+          ],
+          "refs": [
+            "URO-REC",
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Pelvic-floor muscle training",
+          "paragraphs": [
+            "A therapist specializing in pelvic health can teach correct pelvic-floor contraction and relaxation, and help avoid excessive or ineffective exercises. Some teams advise learning the technique before surgery and resuming exercises at an appropriate point afterward.",
+            "Ask your surgeon when pelvic-floor therapy is safe and suitable, and whether urinary urgency, bladder overactivity or other causes should be evaluated. A generic Kegel schedule is not appropriate for every recovery stage."
+          ],
+          "refs": [
+            "URO-REC",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What techniques may influence recovery",
+          "paragraphs": [
+            "Retzius-sparing and other tissue-preserving techniques may accelerate early continence in selected patients. Longer-term advantages are less certain and must be considered alongside cancer clearance. No access route or reconstruction can guarantee pad-free recovery.",
+            "Studies vary in how long patients are followed and how they define improvement. The surgical team's experience and your individual circumstances often matter more than one headline percentage."
+          ],
+          "refs": [
+            "RETZIUS",
+            "SPARC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "When leakage continues",
+          "paragraphs": [
+            "Persistent or distressing leakage deserves assessment rather than indefinite reassurance. Options can include specialized physical therapy, medication for certain symptoms, continence devices or procedures in appropriately selected patients.",
+            "Describe how many pads are used, what triggers leakage, whether urgency accompanies it and how daily life is affected. A urology continence specialist can explain benefits, harms and timing of further treatment."
+          ],
+          "refs": [
+            "URO-REC",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "How does this team define successful continence?",
+        "When should I meet a pelvic-floor specialist?",
+        "Which changes are expected and which need evaluation?",
+        "What options exist if leakage remains troublesome?"
+      ],
+      "evidence": "There is no reliable universal month-by-month recovery timetable."
+    },
+    {
+      "path": "living-well/sexual-health",
+      "cat": "living-well",
+      "title": "Sexual health and intimacy after treatment",
+      "dek": "Erections, orgasm, ejaculation, relationships and how to discuss meaningful outcomes.",
+      "lead": "Sexual recovery is more than whether an erection returns. Prostate cancer treatment can change desire, orgasm, sensation, semen, body image, intimacy and relationships in different ways.",
+      "sections": [
+        {
+          "heading": "Surgery and radiation affect function differently",
+          "paragraphs": [
+            "Nerves involved in erection lie near the prostate and may be affected by surgery, even when nerve-sparing is attempted. Recovery may be gradual, sometimes over many months, and depends on previous function, health and treatment details.",
+            "Radiation can affect blood vessels, nerves or surrounding structures over time, while hormone therapy commonly changes libido and sexual function. Discuss likely effects before treatment so that goals and support can be built into the plan."
+          ],
+          "refs": [
+            "NCI-T",
+            "NEUROSAFE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Orgasm, ejaculation and other concerns",
+          "paragraphs": [
+            "After radical prostatectomy, the prostate and seminal vesicles are removed, so semen is no longer ejaculated even when orgasm remains possible. Some men experience changes in orgasm sensation, urinary leakage during sexual activity or penile shortening.",
+            "Different sexual practices, partners, orientations and personal priorities can change which outcomes matter most. A respectful consultation should ask what is important to the person, rather than assuming erectile firmness is the only meaningful measure."
+          ],
+          "refs": [
+            "NCI-T",
+            "URO-REC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Supportive options",
+          "paragraphs": [
+            "Depending on circumstances, clinicians may discuss PDE5 inhibitors, vacuum devices, injections, implants, pelvic-floor therapy, counseling or specialist sexual-medicine care. Benefits and safety differ by medical history and timing.",
+            "Nerve-sparing surgery does not guarantee that any particular intervention will restore erections. Beware of commercial therapies marketed as instant or certain recovery without strong clinical evidence."
+          ],
+          "refs": [
+            "NCI-T",
+            "AUA-L"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Relationships and mental well-being",
+          "paragraphs": [
+            "A change in sexual function can affect confidence, closeness and communication. Couples counseling, mental-health services or peer support can be valuable when desired. People without partners also deserve care that acknowledges sexual well-being.",
+            "A practical starting point is to discuss desired outcomes early with the treatment team and ask for a referral before frustration or distress becomes entrenched."
+          ],
+          "refs": [
+            "PCFA-S",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "What sexual changes are common with the proposed treatment?",
+        "Which functions may return and which changes are permanent?",
+        "Can I meet a sexual-medicine specialist before treatment?",
+        "What resources are available for relationship and emotional concerns?"
+      ],
+      "evidence": "Outcomes depend on baseline function, age, treatment and patient-defined priorities."
+    },
+    {
+      "path": "living-well/survivorship",
+      "cat": "living-well",
+      "title": "Long-term health after prostate cancer treatment",
+      "dek": "Exercise, bone and heart health, late effects, nutrition and support services.",
+      "lead": "Care does not end when active treatment ends. Long-term follow-up combines cancer monitoring with attention to the physical and emotional effects of surgery, radiation and systemic treatment.",
+      "sections": [
+        {
+          "heading": "A written survivorship plan",
+          "paragraphs": [
+            "Ask for a written record of treatments, important pathology, the PSA schedule, known side effects and the clinician responsible for each follow-up. PSA is interpreted differently after surgery and radiation; a single number has meaning only within the patient's treatment history.",
+            "Some symptoms require ongoing attention even when PSA is stable. Urinary, bowel, sexual, fatigue, sleep and emotional concerns can all affect quality of life long after treatment."
+          ],
+          "refs": [
+            "NCI-T",
+            "URO-REC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Muscle, bone and cardiovascular health",
+          "paragraphs": [
+            "Androgen deprivation therapy (ADT) may contribute to muscle loss, fatigue, body-composition changes, reduced bone density and metabolic or cardiovascular problems. Assessment of blood pressure, lipids, diabetes, fracture risk and bone health should be coordinated appropriately.",
+            "Exercise programs combining resistance and aerobic activity can be valuable when matched to health and mobility. Plans need special consideration for bone metastases, cardiovascular disease or physical limitations; a qualified team should tailor activity."
+          ],
+          "refs": [
+            "EAU",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Late effects and new symptoms",
+          "paragraphs": [
+            "Radiation-related urinary or bowel irritation can arise later, and bleeding, persistent pain or changes in function deserve evaluation. These symptoms should not automatically be attributed to treatment without assessment for other causes.",
+            "Surgeons and radiation teams may recommend specialist rehabilitation or referral for ongoing incontinence, sexual changes, bowel symptoms and fatigue. Knowing whom to call prevents survivors from falling between services."
+          ],
+          "refs": [
+            "NCI-T",
+            "URO-REC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Nutrition, emotions and practical support",
+          "paragraphs": [
+            "A balanced eating pattern, movement, smoking cessation and management of other medical conditions support general health. No mushroom, dairy restriction or supplement has been established as a universal prostate cancer treatment.",
+            "Cancer-related anxiety, especially before PSA testing, is common. In Australia, PCFA offers specialist nursing and support; elsewhere a nurse navigator, social worker or cancer support organization can help coordinate care."
+          ],
+          "refs": [
+            "PCFA-S",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Who owns follow-up tests and referrals?",
+        "How will bone, heart and metabolic risks be monitored during ADT?",
+        "What late effects should trigger an appointment?",
+        "What support exists for anxiety, intimacy or practical care needs?"
+      ],
+      "evidence": "Lifestyle support is adjunctive care, not a substitute for recommended cancer therapy."
+    },
+    {
+      "path": "research/evidence-tracker",
+      "cat": "research",
+      "title": "Prostate research and guideline tracker",
+      "dek": "A curated overview of meaningful guideline, trial and regulatory developments and how to interpret them.",
+      "lead": "Research is moving quickly, but not every headline changes clinical practice. This tracker highlights developments with identifiable sources and explains the population and evidence type behind each one.",
+      "sections": [
+        {
+          "heading": "2026 screening and biopsy guidance",
+          "paragraphs": [
+            "The AUA/SUO early detection amendment reviewed newer evidence on MRI, biomarkers and biopsy technique. EAU and Australian PCFA guidance also emphasize risk-adapted decisions, although exact screening ages and pathways differ by jurisdiction.",
+            "These are professional recommendations, not universal instructions. Use the detailed screening guide for regional comparisons, and consult current source text when discussing eligibility or intervals."
+          ],
+          "refs": [
+            "AUA-E",
+            "EAU",
+            "PCFA"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "New high-risk localized-cancer trial evidence",
+          "paragraphs": [
+            "PROTEUS reported improved five-year metastasis-free survival with additional perioperative apalutamide on top of ADT in carefully selected men undergoing prostatectomy. Grade 3 or 4 adverse events were more frequent.",
+            "The published phase 3 study supports a specialist discussion, not routine use for all patients. Treatment indication and guideline adoption should be independently rechecked if a reader is considering care."
+          ],
+          "refs": [
+            "PROTEUS"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Advanced disease regulatory development",
+          "paragraphs": [
+            "On July 31, 2026, the U.S. FDA expanded the use of PSMA-targeted Pluvicto in combination with an androgen receptor pathway inhibitor for a defined PSMA-positive metastatic hormone-sensitive population. This was a regulatory action supported by clinical trial evidence.",
+            "The drug is not a screening technique or localized-cancer therapy. It requires a qualifying disease state and PSMA imaging. Regulatory status and availability differ by country."
+          ],
+          "refs": [
+            "PLUVICTO"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Promising research not yet routine care",
+          "paragraphs": [
+            "Stockholm3 screening, experimental blood or urine tests, focal therapies, data-assisted surgery and telesurgery illustrate different degrees of investigation. Some have published clinical cohorts; others have only feasibility evidence or company plans.",
+            "We do not put preclinical mechanisms, observational associations, conference abstracts and FDA authorizations on the same evidence tier. Only developments that improve patients' understanding and have traceable support enter this public tracker."
+          ],
+          "refs": [
+            "STOCKHOLM3",
+            "NICE-IRE",
+            "INTUITIVE-SEC"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Is this a guideline, trial, approval or preliminary study?",
+        "What patients were actually studied?",
+        "Did the study improve a clinical outcome or only a test result?",
+        "Has regulatory or guideline status changed since publication?"
+      ],
+      "evidence": "Snapshot reviewed November 6, 2026. This page is curated, not a live newsfeed."
+    }
+  ]
+}
