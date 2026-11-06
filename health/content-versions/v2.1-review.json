@@ -1,0 +1,35 @@
+{
+  "version": "2.1-review",
+  "status": "development-not-published",
+  "date": "2026-11-06",
+  "branch": "feature/mens-health-compass-v2-1-integrated",
+  "production_baseline": "15016590b37c7ed188dfaa6ecf89202f62fd79ee",
+  "production_release_authorized_conditionally": true,
+  "clinical_peer_review": false,
+  "review_requirements": [
+    "Full research-to-page reconciliation",
+    "Independent claim verification on consequential details",
+    "Specialized article depth and overlap review",
+    "First-party hosted review experience",
+    "Desktop/mobile browser validation",
+    "Accessibility, functional and external source-link QA",
+    "Production version snapshot and release checks"
+  ],
+  "primary_categories": [
+    "Prostate Basics",
+    "Screening & PSA",
+    "Prostate Cancer",
+    "Treatment Options",
+    "Living Well",
+    "Research & Updates"
+  ],
+  "pillars": 6,
+  "existing_flagship_routes_preserved": 6,
+  "specialist_article_routes_preserved": 24,
+  "resource_routes_preserved": 4,
+  "source_collection": "Flipboard intake closed at 151 accessible records; no assertion that every record was medically verified",
+  "research_assets": "31-card consumer compilation and 21-card institutional compilation, reviewed as evidence-sensitive secondary research inputs",
+  "public_release": false,
+  "privacy": "No private medical records or personalized histories in public content",
+  "note": "Only release after documented mandatory gates; do not mark publish complete for a passing code build."
+}
