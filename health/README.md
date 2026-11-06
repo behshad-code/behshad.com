@@ -7,7 +7,7 @@ An independent educational publication within behshad.com, accessible at https:/
 ## Scope
 
 - /health/ is the publication's front page.
-- /health/prostate/ is the first navigable topic guide, now with six complete practical articles:
+- /health/prostate/ is the prostate topic landing page with one six-category navigation system. The six original guide URLs remain supported and linked from their relevant categories:
   - /health/prostate/rising-psa/
   - /health/prostate/tests-explained/
   - /health/prostate/active-surveillance/
@@ -77,3 +77,9 @@ The research source intake is tracked in [research/README.md](research/README.md
 ## v2.0 production edition | November 6, 2026
 
 Developed in branch `feature/mens-health-compass-v2-review`, the v2.0 edition contains 24 source-linked educational articles, six secondary hubs, four resources and enriched copies of the six original guides. General `/health/` stays unchanged and the content v1.0 baseline remains locked. The original new-article content is in `health/prostate/data/`. Run `node health/build-v2.mjs` to regenerate only new pages, then `node health/check-hierarchy.mjs` and `node health/check-v2.mjs`. The owner granted the separate production GO on November 6, 2026. The educational content is not clinician peer reviewed, and source-specific applicability should be checked against current guidance.
+
+## v2.1 integrated six-category edition (review status, November 6, 2026)
+
+The prostate topic homepage now has one six-category navigation: Prostate Basics, Screening & PSA, Prostate Cancer, Treatment Options, Living Well, and Research & Updates. Each category hub contains a substantive evidence-linked pillar and focused supporting articles. The six original flagship routes are preserved as related deep dives and do not form a competing second homepage grid. Insurance and Access is cross-cutting. Review the current content and publishing rules in `SITE-ARCHITECTURE.md` and the draft release details in `content-versions/v2.1-review.json`.
+
+The owner authorized conditional v2.1 production release, **only when all documented medical, content and browser gates pass**. The first-party review sandbox at `/sandbox/mhc-v21-review/` is public but excluded from indexing, marked as a preview, and does not collect user health questions. Do not confuse that preview with the production release. The 31-card consumer and 21-card global compilations are secondary evidence-discovery inputs. The 151-item Flipboard intake is closed and is not presented as a completely verified primary evidence register.
