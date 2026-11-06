@@ -1,0 +1,392 @@
+[
+  {
+    "term": "Active surveillance",
+    "description": "Scheduled PSA, imaging, examination and possible repeat biopsies for appropriately selected cancer without immediate curative treatment.",
+    "topic": "Monitoring"
+  },
+  {
+    "term": "Watchful waiting",
+    "description": "Symptom-focused follow-up, generally with a different treatment intent from active surveillance.",
+    "topic": "Monitoring"
+  },
+  {
+    "term": "Androgen deprivation therapy (ADT)",
+    "description": "Treatment that lowers or suppresses the effects of male hormones that stimulate prostate cancer.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "Androgen receptor pathway inhibitor",
+    "description": "Medicine that blocks androgen signaling through mechanisms distinct from testosterone suppression alone.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "Anastomosis",
+    "description": "Surgical connection, such as the bladder being joined to the remaining urethra after prostatectomy.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "Anterior approach",
+    "description": "A route to the prostate through the tissues in front of the gland.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "Apalutamide",
+    "description": "An androgen receptor inhibitor studied or used in defined prostate cancer treatment settings.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "BPH",
+    "description": "Benign prostatic hyperplasia: enlargement of the prostate that is not cancer.",
+    "topic": "Basics"
+  },
+  {
+    "term": "Biochemical recurrence",
+    "description": "A PSA pattern after treatment meeting criteria for concern about cancer recurrence.",
+    "topic": "Follow-up"
+  },
+  {
+    "term": "Biomarker",
+    "description": "A measurable characteristic used to estimate risk, disease status or treatment response.",
+    "topic": "Testing"
+  },
+  {
+    "term": "Biparametric MRI",
+    "description": "Prostate MRI protocol without the contrast-enhanced sequence of a multiparametric study.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Biopsy",
+    "description": "Removal of tissue samples for examination under a microscope.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Brachytherapy",
+    "description": "Radiation delivered from sources placed in or near the prostate.",
+    "topic": "Radiation"
+  },
+  {
+    "term": "BRCA2",
+    "description": "A gene in which certain inherited variants can increase prostate cancer and other cancer risks.",
+    "topic": "Genetics"
+  },
+  {
+    "term": "Cancer stage",
+    "description": "Description of how far cancer has spread from its original location.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Catheter",
+    "description": "Tube used to drain urine, including after prostate surgery while healing occurs.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "Castration-resistant",
+    "description": "Traditional term for cancer progressing despite very low testosterone levels.",
+    "topic": "Advanced cancer"
+  },
+  {
+    "term": "Clinical risk group",
+    "description": "Category combining PSA, grade, stage and other findings to inform decisions.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Climacturia",
+    "description": "Urine leakage during orgasm, which can occur after prostate surgery.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "Continence",
+    "description": "Ability to control urine; research may define it as no pads or allowing a safety pad.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "Cryotherapy",
+    "description": "Treatment using extreme cold to destroy tissue.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "Decipher",
+    "description": "A tissue gene-expression classifier used in selected settings for prognosis.",
+    "topic": "Testing"
+  },
+  {
+    "term": "Denonvilliers fascia",
+    "description": "Tissue layer between the prostate and rectum involved in pelvic surgical anatomy.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Distant metastasis",
+    "description": "Cancer spread to organs or bones away from its original site.",
+    "topic": "Advanced cancer"
+  },
+  {
+    "term": "Dorsal venous complex",
+    "description": "Veins near the front of the prostate that surgeons manage during removal.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Erectile function",
+    "description": "Ability to achieve and maintain an erection, influenced by multiple nerves and vascular factors.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "External-beam radiation",
+    "description": "Treatment directed at cancer from an external radiation machine.",
+    "topic": "Radiation"
+  },
+  {
+    "term": "External urinary sphincter",
+    "description": "Muscle below the prostate that helps with voluntary urine control.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "FDA authorization",
+    "description": "U.S. regulatory decision applying to a specified product and intended use.",
+    "topic": "Evidence"
+  },
+  {
+    "term": "Focal therapy",
+    "description": "An approach treating selected prostate tissue rather than the whole gland.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "Free PSA",
+    "description": "The portion of PSA in blood not bound to certain proteins; may aid risk estimation.",
+    "topic": "Screening"
+  },
+  {
+    "term": "Fusion biopsy",
+    "description": "Biopsy technique using MRI targets overlaid on ultrasound guidance.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Germline testing",
+    "description": "Testing for inherited genetic variants potentially shared among family members.",
+    "topic": "Genetics"
+  },
+  {
+    "term": "Gleason score",
+    "description": "Pathology assessment of microscopic prostate cancer growth patterns.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Grade Group",
+    "description": "A five-level system derived from Gleason patterns describing cancer grade.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "High-risk localized cancer",
+    "description": "Cancer confined to the pelvis with features indicating higher chance of spread or recurrence.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "Hormone-sensitive",
+    "description": "Traditional term for cancer that remains responsive to androgen-pathway suppression.",
+    "topic": "Advanced cancer"
+  },
+  {
+    "term": "Hypofractionation",
+    "description": "Radiation delivered in fewer sessions with larger doses per session.",
+    "topic": "Radiation"
+  },
+  {
+    "term": "Irreversible electroporation (IRE)",
+    "description": "Focal technique using electrical pulses to damage targeted tissue.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "MRI",
+    "description": "Magnetic resonance imaging, used to examine prostate anatomy and suspicious lesions.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Metastasis-free survival",
+    "description": "Time without cancer spread to distant sites or death, as defined by a study.",
+    "topic": "Research"
+  },
+  {
+    "term": "Micro-ultrasound",
+    "description": "High-resolution ultrasound under study or used in selected prostate assessment settings.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Multiparametric MRI",
+    "description": "Prostate MRI using multiple sequences, commonly including contrast-enhanced imaging.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Nadir",
+    "description": "Lowest PSA level reached after treatment, particularly relevant after radiation.",
+    "topic": "Follow-up"
+  },
+  {
+    "term": "Nerve sparing",
+    "description": "Surgical technique seeking to protect nerve networks involved in erections when cancer safety permits.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "NeuroSAFE",
+    "description": "Intraoperative frozen-section examination near nerve bundles to help guide surgical margins.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "No-pad continence",
+    "description": "Definition of urinary control with no protective pads.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "Overdiagnosis",
+    "description": "Finding cancer that would not otherwise have caused symptoms or harm during a person's lifetime.",
+    "topic": "Screening"
+  },
+  {
+    "term": "Pelvic-floor rehabilitation",
+    "description": "Assessment and exercises or treatments aimed at improving urinary and pelvic function.",
+    "topic": "Recovery"
+  },
+  {
+    "term": "Perineum",
+    "description": "Area between the scrotum and anus, used as one route for prostate biopsy.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "PI-RADS",
+    "description": "Standardized system for describing prostate MRI findings and suspicion.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Positive surgical margin",
+    "description": "Cancer cells present at the edge of a removed surgical specimen.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "PSA",
+    "description": "Prostate-specific antigen, a protein measured in blood that may increase for benign or cancerous reasons.",
+    "topic": "Screening"
+  },
+  {
+    "term": "PSA density",
+    "description": "PSA value divided by estimated prostate volume.",
+    "topic": "Screening"
+  },
+  {
+    "term": "PSA doubling time",
+    "description": "Estimated time for serial PSA values to double; interpretation depends on context and reliable measurements.",
+    "topic": "Follow-up"
+  },
+  {
+    "term": "PSMA",
+    "description": "Prostate-specific membrane antigen, a molecular target expressed by many prostate cancers.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "PSMA PET",
+    "description": "Positron emission tomography with a PSMA-targeting tracer used for defined imaging indications.",
+    "topic": "Imaging"
+  },
+  {
+    "term": "Radioligand therapy",
+    "description": "Treatment using a radioactive molecule directed toward a target such as PSMA.",
+    "topic": "Advanced cancer"
+  },
+  {
+    "term": "Randomized controlled trial",
+    "description": "Study assigning participants to comparison groups by chance to reduce bias.",
+    "topic": "Evidence"
+  },
+  {
+    "term": "Retzius-sparing",
+    "description": "Posterior prostatectomy approach intended to preserve tissue in front of the bladder.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "Salvage treatment",
+    "description": "Treatment after an earlier approach did not fully control cancer or recurrence occurred.",
+    "topic": "Follow-up"
+  },
+  {
+    "term": "Seminal vesicles",
+    "description": "Glands behind the bladder contributing much of the fluid in semen.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Single-port prostatectomy",
+    "description": "Robotic operation using one principal access port rather than several.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "Stereotactic body radiotherapy (SBRT)",
+    "description": "Precise high-dose external radiation delivered in a small number of sessions.",
+    "topic": "Radiation"
+  },
+  {
+    "term": "Systematic biopsy",
+    "description": "Sampling prostate regions according to a pattern, not only MRI targets.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Targeted biopsy",
+    "description": "Sampling a suspicious area indicated by imaging or another localization method.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Theranostics",
+    "description": "Pairing molecular imaging of a target with a treatment directed at the same target.",
+    "topic": "Advanced cancer"
+  },
+  {
+    "term": "Transperineal biopsy",
+    "description": "Biopsy route through disinfected skin of the perineum.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Transrectal biopsy",
+    "description": "Biopsy route passing through the wall of the rectum.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Transvesical approach",
+    "description": "Surgical access through the bladder.",
+    "topic": "Surgery"
+  },
+  {
+    "term": "Urethra",
+    "description": "Tube that carries urine from the bladder out of the body.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Urinary sphincter",
+    "description": "Muscle or muscles contributing to urinary control.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Very low risk",
+    "description": "Older or version-specific category for certain minimal localized cancers; classifications can change.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Watchful waiting versus surveillance",
+    "description": "Comparison of symptom-led care and planned testing with intent to treat if risk changes.",
+    "topic": "Monitoring"
+  },
+  {
+    "term": "Whole-gland treatment",
+    "description": "Treatment directed at the entire prostate rather than a selected focal region.",
+    "topic": "Treatment"
+  },
+  {
+    "term": "pT3 disease",
+    "description": "Pathologic stage describing cancer extension beyond the prostate or into seminal vesicles.",
+    "topic": "Diagnosis"
+  },
+  {
+    "term": "Prostate apex",
+    "description": "Lower tip of the prostate near the external urinary sphincter.",
+    "topic": "Anatomy"
+  },
+  {
+    "term": "Vesicourethral connection",
+    "description": "Reconstructed joining of bladder and urethra following prostatectomy.",
+    "topic": "Surgery"
+  }
+]
