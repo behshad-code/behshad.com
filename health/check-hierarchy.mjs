@@ -44,7 +44,7 @@ for(const slug of categories){
  assert(prostate.includes('href="'+href+'"'),'Missing primary category '+href);
  assert(existsSync(new URL('health/prostate/'+slug+'/index.html',root)),'Missing pillar '+slug);
  const pillar=read('health/prostate/'+slug+'/index.html');
- assert(count(pillar, /id="pillar-\\d+"/g)>=6,'Category lacks substantive sections '+slug);
+ assert(count(pillar, /id="pillar-\d+"/g)>=6,'Category lacks substantive sections '+slug);
 }
 for (const slug of guides) {
   const href = '/health/prostate/' + slug + '/';
