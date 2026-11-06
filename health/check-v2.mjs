@@ -59,6 +59,24 @@ for(const a of articles){
  assert(a.questions.length>=4,"Questions missing: "+a.path);
  for(const s of a.sections)for(const id of s.refs)assert(ids.has(id),"Unknown evidence ID: "+id+" on "+a.path);
 }
+const supplements=slugs.flatMap(k=>JSON.parse(read("health/prostate/data/v2.1-supplements-"+k+".json")).entries);
+assert.equal(supplements.length,24,"Every specialist article needs a distinct v2.1 enrichment");
+assert.equal(new Set(supplements.map(s=>s.path)).size,24,"Duplicate specialist enrichment path");
+let supplementedWords=0;
+for(const s of supplements){
+ const a=articles.find(a=>a.path===s.path);
+ assert(a,"Supplement for unknown article "+s.path);
+ assert(s.heading&&s.paragraphs.length>=2,"Incomplete enriched explanation "+s.path);
+ assert(s.refs.length>=1,"Missing evidence on enrichment "+s.path);
+ for(const id of s.refs)assert(ids.has(id),"Unknown source "+id+" for "+s.path);
+ const html=read("health/prostate/"+s.path+"/index.html");
+ assert(html.includes('id="topic-5"'),"Missing generated enrichment in "+s.path);
+ assert(html.includes(">"+s.heading+"</h2>"),"Wrong enrichment heading "+s.path);
+ const words=s.paragraphs.join(" ").trim().split(/\s+/).length;
+ assert(words>=90,"Too little explanatory depth on "+s.path);
+ supplementedWords+=words;
+}
+
 assert(read("health/v2.js").includes("data-question-choice"),"Question builder script missing");
 const sitemap=read("sitemap.xml");
 for(const p of paths)assert(sitemap.includes("<loc>https://behshad.com/"+p.replace(/index\.html$/,"")+"</loc>"),"Sitemap missing "+p);
