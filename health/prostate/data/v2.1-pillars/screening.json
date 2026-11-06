@@ -1,0 +1,135 @@
+{
+  "slug": "screening",
+  "name": "Screening & PSA",
+  "title": "Screening & PSA: understanding risk, results and the next decision",
+  "dek": "A practical guide to screening tradeoffs, PSA interpretation, risk-based follow-up, biomarkers, MRI and regional recommendations.",
+  "lead": "Screening means looking for prostate cancer before symptoms appear. An elevated PSA is information about the prostate, not a diagnosis. The right next step depends on your personal risk, the history of your results and whether another test would meaningfully change the need for biopsy.",
+  "sections": [
+    {
+      "heading": "Screening, symptoms and shared decisions",
+      "paragraphs": [
+        "PSA is a protein made by prostate cells. A blood test measures its concentration, but both benign tissue and cancer can release it. Screening may reduce the chance of dying from prostate cancer for some groups, while also detecting slow-growing cancers that would never cause harm. Unnecessary biopsies, anxiety and treatment side effects are meaningful downsides.",
+        "A screening decision should reflect age, estimated life expectancy, inherited and family risk, individual preferences and previous PSA values. A person with urinary symptoms needs a diagnostic evaluation of those symptoms; that is not the same decision as whether an otherwise well person should begin routine screening. Professional groups differ in recommended ages and intervals, which makes a documented discussion more useful than a universal rule."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-S",
+        "AUA-E",
+        "ACS",
+        "PCFA"
+      ]
+    },
+    {
+      "heading": "Who may need earlier or closer attention",
+      "paragraphs": [
+        "Risk rises with age, but age alone is not a sufficient screening policy. Family history is particularly relevant when a father, brother or multiple close relatives have had prostate cancer, especially at young ages or with aggressive disease. Certain inherited variants, including pathogenic BRCA2 variants, can increase risk and may lead to genetic counseling and a different screening discussion.",
+        "Clinicians may also consider ancestry, prior biopsy findings and personal concerns. A family history of several related cancers can warrant a hereditary-cancer risk discussion rather than only a PSA test. A genetic test that evaluates inherited variants is not the same as a genomic test performed on an existing tumor."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU-D",
+        "PCFA"
+      ]
+    },
+    {
+      "heading": "What an unexpected PSA result can and cannot say",
+      "paragraphs": [
+        "PSA varies with benign enlargement, inflammation, infection and other factors, and laboratories may use different methods. An unexpectedly high result is often repeated before decisions about further testing. The significance of a change depends partly on the previous baseline, time between tests, age, family history, examination and other available findings. The speed of PSA change alone should not automatically dictate a biopsy.",
+        "PSA density divides PSA by prostate volume and helps distinguish PSA associated with a larger gland from some situations with greater concern. The percent free PSA and selected tests such as PHI, 4Kscore or other validated biomarkers may refine a biopsy discussion. None of these numbers reliably identifies all significant cancers in isolation. A clinician must explain what the proposed test would change."
+      ],
+      "bullets": [
+        "Bring a dated list of previous PSA values rather than a single recent result.",
+        "Mention urinary infections, recent procedures and relevant medications.",
+        "Ask why a repeat or secondary test is recommended and how its result would affect the plan."
+      ],
+      "refs": [
+        "AUA-E",
+        "NCI-S",
+        "EAU-D"
+      ]
+    },
+    {
+      "heading": "The usual path from persistent concern to tissue diagnosis",
+      "paragraphs": [
+        "When PSA remains unexpectedly elevated, a clinician may use risk assessment, prostate size, validated calculators, MRI or an appropriate biomarker to determine whether a biopsy is worth considering. A multiparametric prostate MRI can show areas that require targeted sampling. It can also be negative despite some cancers, so the decision to biopsy still considers overall clinical suspicion.",
+        "Biopsy provides tissue for microscopic evaluation and Grade Group assignment. Transperineal and transrectal routes reach the gland differently; the PREVENT randomized trial supports discussing infection risk, antibiotic use and local expertise when selecting the route. A test should not be presented as a universally required step; pathway choices vary by clinical circumstances and local guidelines."
+      ],
+      "bullets": [
+        "Repeat PSA where appropriate.",
+        "Assess personal risk and prostate volume.",
+        "Use MRI or selected biomarkers if they can meaningfully refine the biopsy decision.",
+        "Discuss biopsy benefits, harms and sampling limitations when indicated."
+      ],
+      "refs": [
+        "AUA-E",
+        "EAU-D",
+        "PREVENT",
+        "ACR"
+      ]
+    },
+    {
+      "heading": "How international recommendations differ",
+      "paragraphs": [
+        "The AUA/SUO, EAU and Australia's PCFA/NHMRC use risk-informed approaches but are not interchangeable instructions. The AUA/SUO's 2026 amendment addresses screening, imaging, biomarkers and initial or repeat biopsy decisions. European guidance emphasizes structured risk assessment and MRI before biopsy in appropriate suspected localized disease. Australia's final 2026 guidance, approved by NHMRC in May and released by PCFA in August, supersedes its earlier consultation draft.",
+        "A visitor reading recommendations written for another country should check whether they refer to organized population screening, a primary-care referral pathway, an already elevated PSA, or someone at inherited high risk. The age bands, action levels, availability and insurance pathways can differ. Presenting one country's threshold as a universal medical requirement would be misleading."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU-D",
+        "PCFA",
+        "NHMRC"
+      ]
+    },
+    {
+      "heading": "Newer screening tests: promising but not interchangeable",
+      "paragraphs": [
+        "Multi-marker tests such as Stockholm3 combine PSA with additional proteins, genetic markers and clinical characteristics to estimate the chance of clinically significant prostate cancer. Results from a Swedish screening setting are encouraging, but availability and performance may differ elsewhere. A new urine signature, electronic nose or blood-protein discovery is not automatically a validated population-screening replacement.",
+        "FDA-cleared or approved products also have specified intended populations and claims. Regulatory status should be checked in the official device database; approval of one test is not approval of a wholly different test. When a new biomarker is offered, ask whether it has been validated in people like you and what clinical decision it would change."
+      ],
+      "bullets": [],
+      "refs": [
+        "STOCKHOLM3",
+        "FDA-ISO",
+        "AUA-E",
+        "NCI-S"
+      ]
+    },
+    {
+      "heading": "Questions that turn a number into a plan",
+      "paragraphs": [
+        "Before leaving a consultation, establish who will communicate the result, whether another PSA is needed, what risk changes the next step, and when follow-up should occur. Ask what would happen after a negative MRI, an inconclusive biomarker or a benign biopsy if the clinical suspicion remains. The goal is a documented pathway, not reassurance or alarm from one laboratory number."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU-D"
+      ]
+    }
+  ],
+  "questions": [
+    "Is this PSA unusual for my own history and risk?",
+    "What would a repeat PSA, MRI or biomarker change?",
+    "What are the potential benefits and harms of biopsy in my situation?",
+    "What is our follow-up date if the next result is reassuring or uncertain?"
+  ],
+  "related": [
+    {
+      "title": "When PSA Is Rising",
+      "path": "rising-psa",
+      "note": "The practical guide for an unexpected or changing result."
+    },
+    {
+      "title": "Beyond the PSA number",
+      "path": "screening/beyond-psa",
+      "note": "Understand PSA density and other refinements."
+    },
+    {
+      "title": "MRI and prostate biopsy",
+      "path": "diagnosis/mri-biopsy",
+      "note": "What happens if additional evaluation is needed."
+    }
+  ],
+  "evidence_note": "Regional guidelines differ. The final 2026 Australian recommendations, not draft age bands, are the applicable source for Australian-specific statements."
+}
