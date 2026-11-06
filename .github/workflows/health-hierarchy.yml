@@ -1,0 +1,22 @@
+name: Health Compass hierarchy
+on:
+  pull_request:
+    paths:
+      - "health/**"
+      - ".github/workflows/health-hierarchy.yml"
+  push:
+    branches: [main]
+    paths:
+      - "health/**"
+      - ".github/workflows/health-hierarchy.yml"
+permissions:
+  contents: read
+jobs:
+  check-hierarchy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node health/check-hierarchy.mjs

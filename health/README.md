@@ -60,3 +60,13 @@ Clinical insights can inform general educational explanations, questions and ref
 The `/health/prostate/` landing page now has one coherent reading path: a compact introduction with optional explanations of BPH, prostatitis and cancer; the six original, unchanged guide cards; three dated, sourced research highlights; and an expandable list of trusted reference organizations. The older duplicated six-part overview and sidebar were removed from this landing page only. The full guide pages and their frozen v1.0 article texts are untouched.
 
 The research source intake is tracked in [research/README.md](research/README.md). The initial Flipboard capture includes **12 of 160 displayed stories**. A future exhaustive audit must retrieve the remaining stories and then verify original source evidence before editorial enrichment. Research highlights shown to visitors are curated and reviewed; the site does not automatically publish from Flipboard or other feeds.
+
+## Information architecture boundary (required for all future changes)
+
+**General hub:** `/health/` introduces Men's Health Compass and lists available men's health **topics**, not individual prostate guides, news articles, or a second numbered prostate content series. It currently has one complete, clickable topic: Prostate Health & Prostate Cancer. Future topics belong alongside prostate as they are ready. Never add empty or placeholder topic links.
+
+**Topic home:** `/health/prostate/` owns the prostate-specific brief introduction, six guide cards, significant research highlights, and related source shelf. Only this page should serve as the prostate topic directory.
+
+**Deep guides:** The six `/health/prostate/<slug>/` articles retain their URLs and versioned editorial text. Changes to their clinical content require source verification and content version tracking.
+
+**Regression rule:** Run `node health/check-hierarchy.mjs` before each Health Compass change. CI runs the same test for health-path pull requests. Never copy the topic library, research highlights, or guide summaries into `/health/` in the name of discovery. Verify **both** `/health/` and `/health/prostate/` side by side, including mobile behavior, before publication.
