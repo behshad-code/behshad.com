@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0-review",
+  "status": "branch-only editorial implementation",
+  "original_base_sha": "04f986734b9cbb279dcbfd487b14730061add21b",
+  "branch": "feature/mens-health-compass-v2-review",
+  "production_approved": false,
+  "content_review_date": "2026-11-06",
+  "intake": "Flipboard intake closed by owner; 151 accessible leads; 9 count discrepancy preserved",
+  "medical_review": "Independent research synthesis, not physician peer reviewed",
+  "sources_count": 36,
+  "disclaimer": "Do not merge or publish main without a separate production GO"
+}
