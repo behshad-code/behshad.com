@@ -1,13 +1,13 @@
-// Rebuild only the new v2.0 article, hub, and resource pages from the source data.
+// Build new v2 articles and comprehensive v2.1 pillar guides from the source data.
 // The existing v1.0 flagship guides are never overwritten by this generator.
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {dirname,resolve} from 'node:path';
-const buildV2=function buildV2(articles,sources,glossary){
+const buildV2=function buildV2(articles,sources,glossary,pillars){
  const E=(s)=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
  const cats={
- basics:{name:"Prostate Basics",slug:"basics",dek:"Anatomy, benign conditions and the context that makes later decisions easier.",lead:"Understand the organ before interpreting symptoms or surgery descriptions.",flag:["rising-psa"]},
+ basics:{name:"Prostate Basics",slug:"basics",dek:"Anatomy, benign conditions and the context that makes later decisions easier.",lead:"Understand the organ before interpreting symptoms or surgery descriptions.",flag:[]},
  screening:{name:"Screening & PSA",slug:"screening",dek:"Risk-based screening, blood tests and questions after an unexpected PSA result.",lead:"A number is the start of a conversation, not a diagnosis.",flag:["rising-psa"]},
- diagnosis:{name:"Prostate Cancer & Diagnosis",slug:"diagnosis",dek:"Imaging, tissue diagnosis, risk groups, inherited genetics and what results can establish.",lead:"Understand how results fit together instead of seeking one definitive test.",flag:["tests-explained"]},
+ diagnosis:{name:"Prostate Cancer",slug:"diagnosis",dek:"Imaging, tissue diagnosis, risk groups, inherited genetics and what results can establish.",lead:"Understand how results fit together instead of seeking one definitive test.",flag:["tests-explained"]},
  treatments:{name:"Treatment Options",slug:"treatments",dek:"Surveillance, surgery, radiation and medicines with a careful look at newer techniques.",lead:"Begin with the disease state and evidence, then compare expected benefits and tradeoffs.",flag:["active-surveillance","treatment-decisions"]},
  "living-well":{name:"Living Well",slug:"living-well",dek:"The physical, emotional and practical parts of recovery and survivorship.",lead:"Cancer control is essential; quality of life matters before, during and after treatment.",flag:["recovery-follow-up"]},
  research:{name:"Research & Updates",slug:"research",dek:"Meaningful clinical trials, guideline changes and emerging science, carefully separated.",lead:"What is approved, what has strong trial evidence, and what remains investigational.",flag:[]}
@@ -73,12 +73,34 @@ const buildV2=function buildV2(articles,sources,glossary){
  const index=[...articles.map(a=>({path:root+a.path+"/",title:a.title,category:cats[a.cat].name,kind:"article",sources:[...new Set(a.sections.flatMap(x=>x.refs))],status:"published"})),...Object.values(cats).map(c=>({path:root+c.slug+"/",title:c.name,kind:"hub",status:"published"})),...Object.entries(flag).map(([slug,title])=>({path:root+slug+"/",title,kind:"flagship",status:"v2-enriched"})),...["sources","glossary","questions","editorial-methods"].map(s=>({path:root+"resources/"+s+"/",title:s,kind:"resource",status:"published"}))];
  output["health/prostate/content-index.json"]=JSON.stringify({schema_version:"2.0",status:"published",last_checked:"2026-11-06",note:"Only published source references and authored content, no private clinical data.",pages:index},null,2);
  output["health/prostate/source-index.json"]=JSON.stringify({schema_version:"2.0",status:"published",editorial_note:"Sources are classified by evidence type; Readers should check current clinical indications and guideline updates.",sources},null,2);
+
+ // v2.1: the six categories are substantive educational pillars, not duplicate link directories.
+ // Source manuscripts are separate structured JSON files to keep edits reproducible.
+ for(const [key,p] of Object.entries(pillars)){
+  const c=cats[key];if(!c||p.slug!==key)throw Error("Unexpected v2.1 pillar "+key);
+  if(!Array.isArray(p.sections)||p.sections.length<6)throw Error("Incomplete v2.1 pillar "+key);
+  const href=(path)=>root+path.replace(/^\\/+/,"").replace(/\\/+$ /,"")+"/";
+  const bodySections=p.sections.map((s,i)=>{
+   for(const id of s.refs||[])if(!src.has(id))throw Error("Unknown pillar source "+id+" on "+key);
+   return `<section id="pillar-${i+1}"><h2>${E(s.heading)}</h2>${(s.paragraphs||[]).map(x=>`<p>${E(x)}</p>`).join("")}${s.bullets?.length?`<ul>${s.bullets.map(b=>`<li>${E(b)}</li>`).join("")}</ul>`:""}<p class="v2-evidence"><strong>Sources:</strong> ${(s.refs||[]).map(sourceLink).join(" · ")}</p></section>`;
+  }).join("");
+  const f=c.flag.map(slug=>`<a href="${root+slug}/">${E(flag[slug])} →</a>`).join("");
+  const within=articles.filter(a=>a.cat===key);
+  const regular=within.filter(a=>!a.series),robotic=within.filter(a=>a.series);
+  const table=key==="treatments"?`<section id="treatment-at-a-glance"><h2>Approaches at a glance</h2><div class="v2-table-wrap"><table class="v2-table"><thead><tr><th scope="col">Approach</th><th scope="col">Where it fits</th><th scope="col">Tradeoffs to discuss</th></tr></thead><tbody><tr><th scope="row">Active surveillance</th><td>Selected lower-risk localized disease</td><td>Structured PSA, imaging and repeat-biopsy monitoring; possible later treatment</td></tr><tr><th scope="row">Radical prostatectomy</th><td>Selected localized disease</td><td>Surgical/anesthetic risk, continence and erectile recovery; detailed pathology</td></tr><tr><th scope="row">Radiation</th><td>Selected localized or advanced settings</td><td>Urinary, bowel and sexual effects; schedules and possible ADT</td></tr><tr><th scope="row">Systemic treatment</th><td>Specified high-risk, recurrent or metastatic settings</td><td>Eligibility, combinations, adverse effects and follow-up</td></tr></tbody></table></div><p>This is an educational overview, not a treatment assignment. Stage, grade, PSA, imaging and individual circumstances determine suitability.</p></section>`:"";
+  const sectionsHTML=bodySections+table;
+  const links=`<section id="related-guides"><h2>Focused guides and practical next steps</h2><p>The detailed guides below answer narrower questions. The category above is the overview; these pages deepen one decision or technique rather than restart the subject.</p>${f?`<nav class="v2-mini-nav" aria-label="Flagship guides">${f}</nav>`:""}${regular.length?`<h3>Detailed topics</h3>${cards(regular,"Specific topic")}`:""}${robotic.length?`<h3>Robotic prostatectomy: the technique and the evidence</h3><p>Learn what happens during surgery, how nerve sparing and different access routes work, and how to separate device capabilities from proven outcomes.</p>${cards(robotic,"Robotic surgery")}`:""}<nav class="v2-mini-nav" aria-label="Reference resources"><a href="${root}insurance-access/">Insurance and access</a><a href="${root}resources/sources/">Source library</a><a href="${root}resources/glossary/">Glossary</a><a href="${root}resources/questions/">Appointment questions</a></nav></section>`;
+  const nav=p.sections.map((s,i)=>`<a href="#pillar-${i+1}">${E(s.heading)}</a>`).join("")+(table?`<a href="#treatment-at-a-glance">Approaches at a glance</a>`:"")+`<a href="#related-guides">Deep dives and guides</a>`;
+  const body=`<div class="v2-page v2-pillar"><div class="v2-container v2-article-layout"><article class="v2-article"><p class="v2-intro">${E(p.lead)}</p><div class="v2-callout"><p><strong>Evidence and scope:</strong> ${E(p.evidence_note)}</p></div>${sectionsHTML}${links}</article><aside class="v2-aside" aria-label="In this category"><h2>On this page</h2>${nav}</aside></div></div>`;
+  output[`health/prostate/${c.slug}/index.html`]=htmlPage({title:p.title,dek:p.dek,path:c.slug,crumb:E(c.name),body,type:"hub"});
+ }
  return output;
 };
 const base=resolve(import.meta.dirname,'..');
 const load=(p)=>JSON.parse(readFileSync(resolve(base,p),'utf8'));
 const parts=['part1','part2','part3a','part3b','part4'];
 const articles=parts.flatMap(p=>load('health/prostate/data/v2-articles-'+p+'.json').articles);
-const pages=buildV2(articles,load('health/prostate/data/v2-sources.json'),load('health/prostate/data/v2-glossary.json'));
+const pillars=Object.fromEntries(["basics","screening","diagnosis","treatments","living-well","research"].map(k=>[k,load("health/prostate/data/v2.1-pillars/"+k+".json")]));
+const pages=buildV2(articles,load('health/prostate/data/v2-sources.json'),load('health/prostate/data/v2-glossary.json'),pillars);
 for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content);}
 console.log('Generated',Object.keys(pages).length,'v2.0 files');
