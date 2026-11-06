@@ -1,0 +1,24 @@
+name: Men's Health Compass v2.1 hosted review
+on:
+  pull_request:
+    paths:
+      - 'health/**'
+      - '.github/workflows/health-v21-hosted.yml'
+  workflow_dispatch:
+jobs:
+  hosted-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated Playwright Chromium
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Validate actual first-party GitHub Pages sandbox
+        run: node health/qa-v21-hosted.mjs
