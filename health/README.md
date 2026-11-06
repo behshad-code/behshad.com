@@ -54,3 +54,9 @@ Clinical insights can inform general educational explanations, questions and ref
 - Health landing page: Explore prostate health or featured topic > `/health/prostate/` > six education articles.
 - `assets/prostate-anatomy-3d.png` is a conceptual 3D prostate illustration supplied for this site. It is not patient imaging or a diagnostic representation. It is reused on the health homepage and prostate topic header.
 - The original compass mark and approved health hero portrait are preserved.
+
+## Prostate topic landing page (November 2026)
+
+The `/health/prostate/` landing page now has one coherent reading path: a compact introduction with optional explanations of BPH, prostatitis and cancer; the six original, unchanged guide cards; three dated, sourced research highlights; and an expandable list of trusted reference organizations. The older duplicated six-part overview and sidebar were removed from this landing page only. The full guide pages and their frozen v1.0 article texts are untouched.
+
+The research source intake is tracked in [research/README.md](research/README.md). The initial Flipboard capture includes **12 of 160 displayed stories**. A future exhaustive audit must retrieve the remaining stories and then verify original source evidence before editorial enrichment. Research highlights shown to visitors are curated and reviewed; the site does not automatically publish from Flipboard or other feeds.
