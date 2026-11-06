@@ -31,12 +31,12 @@ for(const hub of hubs){
  assert.equal(p.slug,hub,"Pillar slug mismatch "+hub);
  assert.equal(p.name,pillarMap[hub],"Pillar title mismatch "+hub);
  assert(p.sections.length>=6,"Too few educational sections: "+hub);
- const words=p.sections.flatMap(s=>s.paragraphs||[]).join(" ").split(/\\s+/).length;
+ const words=p.sections.flatMap(s=>s.paragraphs||[]).join(" ").split(/\s+/).length;
  assert(words>=650,"Pillar needs more substantive content: "+hub+" has "+words+" words");
  pillarWords+=words;
  for(const s of p.sections){assert(s.heading&&s.paragraphs.length,"Incomplete section "+hub);for(const id of s.refs||[])assert(ids.has(id),"Unknown pillar source "+id+" in "+hub)}
  const html=read("health/prostate/"+hub+"/index.html");
- assert((html.match(/id="pillar-\\d+"/g)||[]).length===p.sections.length,"Rendered pillar section count mismatch: "+hub);
+ assert((html.match(/id="pillar-\d+"/g)||[]).length===p.sections.length,"Rendered pillar section count mismatch: "+hub);
 }
 let linkCount=0;
 for(const p of paths){
