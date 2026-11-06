@@ -81,7 +81,7 @@
     {
       "path": "/health/prostate/diagnosis/mri-biopsy/",
       "title": "MRI and prostate biopsy",
-      "category": "Prostate Cancer & Diagnosis",
+      "category": "Prostate Cancer",
       "kind": "article",
       "sources": [
         "ACR",
@@ -95,7 +95,7 @@
     {
       "path": "/health/prostate/diagnosis/grade-stage-risk/",
       "title": "Gleason, Grade Group, stage and risk",
-      "category": "Prostate Cancer & Diagnosis",
+      "category": "Prostate Cancer",
       "kind": "article",
       "sources": [
         "NCI-T",
@@ -108,7 +108,7 @@
     {
       "path": "/health/prostate/diagnosis/genomic-genetic/",
       "title": "Genomic, genetic and AI risk tests explained",
-      "category": "Prostate Cancer & Diagnosis",
+      "category": "Prostate Cancer",
       "kind": "article",
       "sources": [
         "AUA-L",
@@ -121,7 +121,7 @@
     {
       "path": "/health/prostate/diagnosis/psma-pet/",
       "title": "PSMA PET and modern prostate imaging",
-      "category": "Prostate Cancer & Diagnosis",
+      "category": "Prostate Cancer",
       "kind": "article",
       "sources": [
         "PSMA-APP",
