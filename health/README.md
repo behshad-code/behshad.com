@@ -2,6 +2,8 @@
 
 An independent educational publication within behshad.com, accessible at https://behshad.com/health/.
 
+**Start here for any future website change:** [Site architecture and editorial operating model](SITE-ARCHITECTURE.md). This document establishes the mandatory publication → topic → article hierarchy, permitted content at each level, research intake process, and release checklist.
+
 ## Scope
 
 - /health/ is the publication's front page.
