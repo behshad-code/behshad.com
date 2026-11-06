@@ -1,7 +1,7 @@
 // First-party hosted v2.1 preview validation; uses real Chromium, never a local mockup.
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-const root='https://behshad.com/sandbox/mhc-v21-review/';
+const root='https://behshad.com/';
 const routes=['','health/','health/prostate/','health/prostate/basics/','health/prostate/screening/','health/prostate/diagnosis/','health/prostate/treatments/','health/prostate/living-well/','health/prostate/research/','health/prostate/rising-psa/','health/prostate/tests-explained/','health/prostate/active-surveillance/','health/prostate/treatment-decisions/','health/prostate/recovery-follow-up/','health/prostate/insurance-access/','health/prostate/treatments/robotic-surgery/operation/','health/prostate/treatments/robotic-surgery/surgeon-questions/','health/prostate/resources/glossary/','health/prostate/resources/sources/','health/prostate/resources/questions/'];
 const viewports=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
@@ -34,5 +34,5 @@ try{
   checks+=4;await page.close();
  }
  assert.deepEqual(errors,[],'Browser errors: '+errors.join('; '));
- console.log('Hosted first-party v2.1 preview PASS: '+checks+' checks over '+routes.length+' routes and two viewports');
+ console.log('LIVE v2.1 production PASS: '+checks+' checks over '+routes.length+' routes and two viewports');
 }finally{await browser.close()}
