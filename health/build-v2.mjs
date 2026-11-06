@@ -79,7 +79,6 @@ const buildV2=function buildV2(articles,sources,glossary,pillars){
  for(const [key,p] of Object.entries(pillars)){
   const c=cats[key];if(!c||p.slug!==key)throw Error("Unexpected v2.1 pillar "+key);
   if(!Array.isArray(p.sections)||p.sections.length<6)throw Error("Incomplete v2.1 pillar "+key);
-  const href=(path)=>root+path.replace(/^\\/+/,"").replace(/\\/+$ /,"")+"/";
   const bodySections=p.sections.map((s,i)=>{
    for(const id of s.refs||[])if(!src.has(id))throw Error("Unknown pillar source "+id+" on "+key);
    return `<section id="pillar-${i+1}"><h2>${E(s.heading)}</h2>${(s.paragraphs||[]).map(x=>`<p>${E(x)}</p>`).join("")}${s.bullets?.length?`<ul>${s.bullets.map(b=>`<li>${E(b)}</li>`).join("")}</ul>`:""}<p class="v2-evidence"><strong>Sources:</strong> ${(s.refs||[]).map(sourceLink).join(" · ")}</p></section>`;
