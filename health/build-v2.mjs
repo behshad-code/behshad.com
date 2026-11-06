@@ -99,6 +99,20 @@ const base=resolve(import.meta.dirname,'..');
 const load=(p)=>JSON.parse(readFileSync(resolve(base,p),'utf8'));
 const parts=['part1','part2','part3a','part3b','part4'];
 const articles=parts.flatMap(p=>load('health/prostate/data/v2-articles-'+p+'.json').articles);
+
+// v2.1: supplemental, source-backed additions to all existing specialist articles.
+// Keep these as structured content so re-running the generator does not erase editorial improvements.
+const supplements=parts.flatMap(k=>load('health/prostate/data/v2.1-supplements-'+k+'.json').entries);
+const seenSupplements=new Set();
+for(const s of supplements){
+ const article=articles.find(a=>a.path===s.path);
+ if(!article||seenSupplements.has(s.path))throw Error("Unknown or repeated article supplement: "+s.path);
+ if(!s.heading||!Array.isArray(s.paragraphs)||s.paragraphs.length<2||!Array.isArray(s.refs)||!s.refs.length)throw Error("Incomplete supplement "+s.path);
+ seenSupplements.add(s.path);
+ article.sections.push({heading:s.heading,paragraphs:s.paragraphs,refs:s.refs,bullets:[]});
+}
+if(seenSupplements.size!==articles.length)throw Error("Expected supplements for all "+articles.length+" specialist articles; found "+seenSupplements.size);
+
 const pillars=Object.fromEntries(["basics","screening","diagnosis","treatments","living-well","research"].map(k=>[k,load("health/prostate/data/v2.1-pillars/"+k+".json")]));
 const pages=buildV2(articles,load('health/prostate/data/v2-sources.json'),load('health/prostate/data/v2-glossary.json'),pillars);
 for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content);}
