@@ -1,6 +1,6 @@
 # Men's Health Compass | v2.1 Information Architecture and Editorial Operating Model
 
-**Status:** Approved development specification, November 6, 2026. Production pending release gates.
+**Status:** Approved v2.1 production architecture, November 6, 2026. Conditional release gates completed in GitHub Actions; no independent clinician peer review is claimed.
 **Applies to:** `/health/` and its prostate topic. Supersedes the v1/v2 instruction that the prostate home must carry six flagship guide cards.
 **Previous designs and snapshots:** Preserved in Git history and the v1.0/v2.0 content version records.
 

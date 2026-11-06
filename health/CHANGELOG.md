@@ -1,3 +1,13 @@
+## 2.1 | Integrated six-category prostate education | November 6, 2026
+
+Rebuilt the prostate landing page around **one** six-category navigation, replacing the redundant six-card flagship guide library and the second Explore Further category grid. Added six comprehensive evidence-linked category pillars, strengthened all 24 specialized supporting articles, clarified cross-cutting Insurance and Access, and preserved all six original guide routes and v1.0/v2.0 snapshots. Retained the approved health design, anatomy illustration, 36 curated references, 78-term glossary and private-on-device appointment question builder.
+
+The 31-card consumer and 21-card global research compilations were mapped to topic ownership and editorial dispositions. Experimental and low-certainty findings remain qualified or deferred; the 151-record Flipboard discovery intake is **not** represented as complete independent medical verification. Source checks corrected the moved ACR PI-RADS reference. A first-party noindex review preview was deployed and real Chromium desktop/mobile navigation checks passed; no independent licensed clinician peer review has been performed or claimed.
+
+Version record: `content-versions/v2.1.json`. Development PR #60. Preserved rollback baseline: production commit `9018ef5b16f3652a19cb5b6fb96c3cba48847c34` (includes the separate first-party review sandbox but not the v2.1 feature).
+
+---
+
 ## 2.0 | Production release | November 6, 2026
 
 The owner explicitly approved production release. This version preserves all six v1.0 flagship guide URLs, introduces six category hubs, 24 supporting articles including the robotic-surgery series, and four resources (source library, glossary, appointment question builder and editorial methods). The prostate landing page continues to show six flagship cards and three evidence-labeled research highlights. The release has 36 curated public reference entries and 78 glossary terms. The original v1.0 content snapshot remains in `content-versions/v1.0.json`.
