@@ -71,7 +71,7 @@ for(const s of supplements){
  for(const id of s.refs)assert(ids.has(id),"Unknown source "+id+" for "+s.path);
  const html=read("health/prostate/"+s.path+"/index.html");
  assert(html.includes('id="topic-5"'),"Missing generated enrichment in "+s.path);
- assert(html.includes(">"+s.heading+"</h2>"),"Wrong enrichment heading "+s.path);
+ assert(html.includes(">"+s.heading.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/\u0027/g,"&#39;")+"</h2>"),"Wrong enrichment heading "+s.path);
  const words=s.paragraphs.join(" ").trim().split(/\s+/).length;
  assert(words>=90,"Too little explanatory depth on "+s.path);
  supplementedWords+=words;
