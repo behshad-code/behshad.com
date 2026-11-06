@@ -1,0 +1,132 @@
+{
+  "slug": "research",
+  "name": "Research & Updates",
+  "title": "Research & Updates: what is changing and how strong is the evidence?",
+  "dek": "A curated, evidence-labeled guide to screening guidelines, treatment trials, diagnostic technology, survivorship and surgical innovation.",
+  "lead": "Research is most useful when a reader knows whether a finding is current clinical guidance, an approved option, a randomized comparison, an association or an early experiment. This collection focuses on changes that may alter conversations with care teams rather than reproducing every medical news headline.",
+  "sections": [
+    {
+      "heading": "How to read a prostate research claim",
+      "paragraphs": [
+        "Start with the study question, population, methods and outcomes. A randomized trial comparing treatment strategies can provide stronger evidence of benefits and harms than a single-center case series; a retrospective study can identify useful associations without proving causation. Conference abstracts, prototypes and company press releases may generate hypotheses but do not establish standards of care.",
+        "Watch for the difference between detecting more cancers and improving patient outcomes. A new test can find more abnormalities while also increasing false positives or procedures. Similarly, an imaging or robotic feature may improve workflow without proving better survival, urinary continence or sexual outcomes."
+      ],
+      "bullets": [
+        "Guideline: recommendations for defined clinical situations, updated periodically.",
+        "Regulatory decision: official authorization for specified uses and populations.",
+        "Randomized trial: comparison requiring close attention to endpoints and harms.",
+        "Observational study: association, with potential selection and confounding.",
+        "Early research: promising questions, not automatic treatment recommendations."
+      ],
+      "refs": [
+        "AUA-E",
+        "EAU",
+        "NCI-T"
+      ]
+    },
+    {
+      "heading": "2026 screening and biopsy updates",
+      "paragraphs": [
+        "The 2026 AUA/SUO amendment addresses risk-based screening, imaging, biomarker use and decisions about initial and repeat biopsy. The EAU updated diagnostic recommendations, while Australia's final PCFA/NHMRC early-detection guidance replaced the previous national version. These are practical updates because clinicians and patients can use them now, although implementation differs by region.",
+        "Some multi-marker tests such as Stockholm3 have encouraging screening-study results in defined populations. They should be discussed as emerging refinements rather than universal replacements for PSA and established diagnostic pathways. The value of a biomarker depends on whether it changes a particular person's need for further investigation."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU-D",
+        "PCFA",
+        "STOCKHOLM3"
+      ]
+    },
+    {
+      "heading": "Treatment intensification and new evidence",
+      "paragraphs": [
+        "Phase 3 trials continue to evaluate adding androgen-receptor pathway agents to established treatments for selected high-risk prostate cancer. PROTEUS studied apalutamide added around prostatectomy with ADT, and other studies have evaluated intensification alongside radiation. The important question is not whether a drug improved a headline percentage, but what population, comparator, outcome, adverse effects and follow-up support the claim.",
+        "Radiation schedules are changing as well. PACE-B supports five-session SBRT for selected localized patients compared with longer radiation schedules. It does not show that SBRT is superior to prostatectomy. Early results from other short-course regimens and smaller surgical comparisons require their own evidence maturity labels."
+      ],
+      "bullets": [],
+      "refs": [
+        "PROTEUS",
+        "PACEB",
+        "EAU",
+        "AUA-L"
+      ]
+    },
+    {
+      "heading": "Regulatory change: PSMA-targeted therapy",
+      "paragraphs": [
+        "On July 31, 2026, the FDA approved Pluvicto with an androgen receptor pathway inhibitor for adults with PSMA-positive metastatic androgen-pathway modulation-naïve or -sensitive prostate cancer, with selection based on an approved PSMA PET product. This is a defined metastatic indication, not an authorization for localized cancer or general preventive treatment.",
+        "Clinical access, contraindications and current prescribing requirements should be checked in official FDA labeling and with appropriate specialists. Trial endpoints such as radiographic progression-free survival and overall survival are not interchangeable, especially while a survival analysis is still immature."
+      ],
+      "bullets": [],
+      "refs": [
+        "PLUVICTO",
+        "PSMA-APP"
+      ]
+    },
+    {
+      "heading": "Robotic platforms and telesurgery: distinguish plans from outcomes",
+      "paragraphs": [
+        "Robotic instruments, single-port surgery, force feedback, telepresence and automation research are evolving quickly. The Brisbane randomized robotic-versus-open trial and the observational SPARC single-port analyses provide different kinds of evidence. A manufacturer announcing a new capability does not mean that it has been shown to improve cancer outcomes or that remote surgery is authorized as routine care.",
+        "Intuitive's 2026 disclosures discuss future telesurgery and automation plans. These are forward-looking company statements, not proven patient benefits. Regulatory clearance is country- and procedure-specific. For the patient, surgical experience, oncologic decision-making and comparable functional outcomes remain more useful questions than platform brand alone."
+      ],
+      "bullets": [],
+      "refs": [
+        "BRISBANE",
+        "SPARC",
+        "INTUITIVE-SEC",
+        "HUGO"
+      ]
+    },
+    {
+      "heading": "What stays in the editorial research library",
+      "paragraphs": [
+        "Research on blood proteins years before diagnosis, electronic-nose urine prototypes, experimental tumor metabolism, early immunotherapies, novel compounds and observational prevention associations is useful for monitoring. It does not yet justify recommending a new screening method, supplement or treatment to visitors.",
+        "The original Flipboard collection was a discovery source rather than a verified clinical bibliography. It yielded 151 accessible records from a magazine showing 160, with some publisher pages not reviewed and multiple headlines describing the same studies. We use curated primary evidence and record uncertainty rather than suggesting that every headline was independently validated."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-S",
+        "NCI-T",
+        "EAU"
+      ]
+    },
+    {
+      "heading": "Follow research without becoming overwhelmed",
+      "paragraphs": [
+        "For a new result, check whether it is published in a peer-reviewed journal, whether the study included patients in the relevant disease state, whether the outcomes matter clinically and whether guidance has changed. Confirm that a regulatory statement names the exact population and use. If the finding is preliminary, ask the care team whether it changes any actual choice now or is simply worth monitoring.",
+        "The publication will update major guideline, regulatory and trial changes through human editorial review. It is not a continuously updated treatment recommendation engine. Source links, review dates and evidence labels should make that boundary visible to readers."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU",
+        "NCI-T"
+      ]
+    }
+  ],
+  "questions": [
+    "Does this result change current guideline-supported care?",
+    "Was the finding randomized, observational or experimental?",
+    "Which disease stage and treatment history did the study include?",
+    "What benefit, harms and uncertainties were actually measured?"
+  ],
+  "related": [
+    {
+      "title": "Prostate Research and Guideline Tracker",
+      "path": "research/evidence-tracker",
+      "note": "A dated overview of meaningful developments."
+    },
+    {
+      "title": "Source Library",
+      "path": "resources/sources",
+      "note": "Find primary studies, regulations and guidelines."
+    },
+    {
+      "title": "Editorial Methods",
+      "path": "resources/editorial-methods",
+      "note": "How we classify evidence and disclose limitations."
+    }
+  ],
+  "evidence_note": "This publication is curated education, not a real-time clinical recommendation service. Research status can change after the stated review date."
+}
