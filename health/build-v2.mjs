@@ -80,5 +80,5 @@ const load=(p)=>JSON.parse(readFileSync(resolve(base,p),'utf8'));
 const parts=['part1','part2','part3a','part3b','part4'];
 const articles=parts.flatMap(p=>load('health/prostate/data/v2-articles-'+p+'.json').articles);
 const pages=buildV2(articles,load('health/prostate/data/v2-sources.json'),load('health/prostate/data/v2-glossary.json'));
-for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content+'\n');}
+for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content);}
 console.log('Generated',Object.keys(pages).length,'v2.0 files');

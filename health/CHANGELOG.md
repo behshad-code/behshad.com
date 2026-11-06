@@ -1,3 +1,11 @@
+## 2.0 | Editorial review branch | November 6, 2026
+
+**Not published.** Owner approved scoped development, not a merge to `main` or production release. The v2 review branch now stages six category hubs, 24 authored supporting articles, 4 practical resources, and 33 evidence-linked additions to the six unchanged flagship URLs. The topic home retains exactly six flagship cards and three sourced research highlights. Source catalog: 36 selected references; glossary: 78 definitions. New pages are noindex pending approval.
+
+The locked v1.0 version record is preserved. New content has not received independent clinician peer review; some study-specific numbers, regulatory indications and external links still require final checks. Flipboard source collection is closed at 151 accessible records with nine unexplained platform-count differences. No personal clinical details are published.
+
+---
+
 # Men's Health Compass: editorial versions
 
 ## 1.1 Navigation correction | November 5, 2026

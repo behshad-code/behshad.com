@@ -72,3 +72,8 @@ The research source intake is tracked in [research/README.md](research/README.md
 **Deep guides:** The six `/health/prostate/<slug>/` articles retain their URLs and versioned editorial text. Changes to their clinical content require source verification and content version tracking.
 
 **Regression rule:** Run `node health/check-hierarchy.mjs` before each Health Compass change. CI runs the same test for health-path pull requests. Never copy the topic library, research highlights, or guide summaries into `/health/` in the name of discovery. Verify **both** `/health/` and `/health/prostate/` side by side, including mobile behavior, before publication.
+
+
+## v2.0 editorial review branch (not published)
+
+Branch `feature/mens-health-compass-v2-review` prepares 24 source-linked educational articles, six secondary hubs, four resources and enriched copies of the six original guides. General `/health/` stays unchanged and the content v1.0 baseline remains locked. The original new-article content is in `health/prostate/data/`. Run `node health/build-v2.mjs` to regenerate only new pages, then `node health/check-hierarchy.mjs` and `node health/check-v2.mjs`. Do not publish or merge without a separate production GO. The public-facing sandbox path is only prepared on the branch, not deployed.
