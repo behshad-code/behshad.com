@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "status": "review-not-published",
+  "status": "published",
   "last_checked": "2026-11-06",
   "note": "Only published source references and authored content, no private clinical data.",
   "pages": [
@@ -18,7 +18,7 @@
         "SPARC",
         "URO-REC"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/basics/common-conditions/",
@@ -31,7 +31,7 @@
         "AUA-E",
         "NCI-T"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/screening/when-to-screen/",
@@ -47,7 +47,7 @@
         "PCFA",
         "NHMRC"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/screening/beyond-psa/",
@@ -62,7 +62,7 @@
         "FDA-ISO",
         "PREVENT"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/screening/inherited-risk/",
@@ -76,7 +76,7 @@
         "EAU",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/diagnosis/mri-biopsy/",
@@ -90,7 +90,7 @@
         "PREVENT",
         "PSMA-APP"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/diagnosis/grade-stage-risk/",
@@ -103,7 +103,7 @@
         "EAU",
         "PROPSMA"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/diagnosis/genomic-genetic/",
@@ -116,7 +116,7 @@
         "EAU-D",
         "ACR"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/diagnosis/psma-pet/",
@@ -130,7 +130,7 @@
         "EAU",
         "PLUVICTO"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/surgery-vs-radiation/",
@@ -144,7 +144,7 @@
         "PACEB",
         "PROTECT"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/radiation-options/",
@@ -157,7 +157,7 @@
         "PACEB",
         "EAU"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/focal-therapy/",
@@ -170,7 +170,7 @@
         "NICE-IRE",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/hormone-combinations/",
@@ -183,7 +183,7 @@
         "PROTEUS",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/recurrence-advanced/",
@@ -197,7 +197,7 @@
         "NCI-T",
         "PLUVICTO"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/operation/",
@@ -211,7 +211,7 @@
         "NEUROSAFE",
         "URO-REC"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/nerve-sparing/",
@@ -226,7 +226,7 @@
         "EAU",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/single-port/",
@@ -239,7 +239,7 @@
         "BRISBANE",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/robot-platforms/",
@@ -252,7 +252,7 @@
         "HUGO",
         "AUA-L"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/telesurgery/",
@@ -264,7 +264,7 @@
         "AUA-L",
         "HUGO"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/robotic-surgery/surgeon-questions/",
@@ -279,7 +279,7 @@
         "URO-REC",
         "NCI-T"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/living-well/continence/",
@@ -293,7 +293,7 @@
         "RETZIUS",
         "SPARC"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/living-well/sexual-health/",
@@ -307,7 +307,7 @@
         "AUA-L",
         "PCFA-S"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/living-well/survivorship/",
@@ -320,7 +320,7 @@
         "EAU",
         "PCFA-S"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/research/evidence-tracker/",
@@ -337,103 +337,103 @@
         "NICE-IRE",
         "INTUITIVE-SEC"
       ],
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/basics/",
       "title": "Prostate Basics",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/screening/",
       "title": "Screening & PSA",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/diagnosis/",
       "title": "Prostate Cancer & Diagnosis",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/treatments/",
       "title": "Treatment Options",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/living-well/",
       "title": "Living Well",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/research/",
       "title": "Research & Updates",
       "kind": "hub",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/rising-psa/",
       "title": "When PSA Is Rising",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/tests-explained/",
       "title": "Tests That Clarify the Picture",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/active-surveillance/",
       "title": "Active Surveillance",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/treatment-decisions/",
       "title": "Choosing a Treatment",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/recovery-follow-up/",
       "title": "Recovery and Life Afterward",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/insurance-access/",
       "title": "Insurance and Access",
       "kind": "flagship",
-      "status": "existing-v1-to-be-enriched"
+      "status": "v2-enriched"
     },
     {
       "path": "/health/prostate/resources/sources/",
       "title": "sources",
       "kind": "resource",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/resources/glossary/",
       "title": "glossary",
       "kind": "resource",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/resources/questions/",
       "title": "questions",
       "kind": "resource",
-      "status": "editorial-review"
+      "status": "published"
     },
     {
       "path": "/health/prostate/resources/editorial-methods/",
       "title": "editorial-methods",
       "kind": "resource",
-      "status": "editorial-review"
+      "status": "published"
     }
   ]
 }

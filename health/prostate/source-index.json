@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "status": "review-not-published",
-  "editorial_note": "Sources are classified by evidence type; links/indications require final publication checks.",
+  "status": "published",
+  "editorial_note": "Sources are classified by evidence type; Readers should check current clinical indications and guideline updates.",
   "sources": [
     {
       "id": "NIDDK",
