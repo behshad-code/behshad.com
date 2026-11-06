@@ -61,7 +61,7 @@ Clinical insights can inform general educational explanations, questions and ref
 
 The `/health/prostate/` landing page now has one coherent reading path: a compact introduction with optional explanations of BPH, prostatitis and cancer; the six original, unchanged guide cards; three dated, sourced research highlights; and an expandable list of trusted reference organizations. The older duplicated six-part overview and sidebar were removed from this landing page only. The full guide pages and their frozen v1.0 article texts are untouched.
 
-The research source intake is tracked in [research/README.md](research/README.md). The initial Flipboard capture includes **12 of 160 displayed stories**. A future exhaustive audit must retrieve the remaining stories and then verify original source evidence before editorial enrichment. Research highlights shown to visitors are curated and reviewed; the site does not automatically publish from Flipboard or other feeds.
+The research source intake is tracked in [research/README.md](research/README.md). The initial Flipboard capture includes **12 of 160 displayed stories**. The subsequent owner-editor collection captured 151 accessible records from a magazine displaying 160; that intake is now closed. The nine-story discrepancy and incomplete publisher-article verification are documented in the off-repository working research package, not represented as completed medical evidence. Research highlights shown to visitors are curated and reviewed; the site does not automatically publish from Flipboard or other feeds.
 
 ## Information architecture boundary (required for all future changes)
 
@@ -72,3 +72,8 @@ The research source intake is tracked in [research/README.md](research/README.md
 **Deep guides:** The six `/health/prostate/<slug>/` articles retain their URLs and versioned editorial text. Changes to their clinical content require source verification and content version tracking.
 
 **Regression rule:** Run `node health/check-hierarchy.mjs` before each Health Compass change. CI runs the same test for health-path pull requests. Never copy the topic library, research highlights, or guide summaries into `/health/` in the name of discovery. Verify **both** `/health/` and `/health/prostate/` side by side, including mobile behavior, before publication.
+
+
+## v2.0 production edition | November 6, 2026
+
+Developed in branch `feature/mens-health-compass-v2-review`, the v2.0 edition contains 24 source-linked educational articles, six secondary hubs, four resources and enriched copies of the six original guides. General `/health/` stays unchanged and the content v1.0 baseline remains locked. The original new-article content is in `health/prostate/data/`. Run `node health/build-v2.mjs` to regenerate only new pages, then `node health/check-hierarchy.mjs` and `node health/check-v2.mjs`. The owner granted the separate production GO on November 6, 2026. The educational content is not clinician peer reviewed, and source-specific applicability should be checked against current guidance.

@@ -1,0 +1,325 @@
+{
+  "schema": "2.0-content-draft",
+  "revision": "2026-11-06",
+  "status": "Review only",
+  "articles": [
+    {
+      "path": "treatments/surgery-vs-radiation",
+      "cat": "treatments",
+      "title": "Surgery or radiation: comparing the tradeoffs",
+      "dek": "Two established local treatments, different recovery experiences, and the questions that matter before choosing.",
+      "lead": "For many people with localized prostate cancer, both surgery and radiation can provide excellent cancer control. The meaningful comparison depends on risk group, existing function, treatment logistics and the consequences of each option.",
+      "sections": [
+        {
+          "heading": "Start with who is eligible",
+          "paragraphs": [
+            "A newly diagnosed patient needs to understand Grade Group, PSA, stage, MRI and any additional risk findings before deciding whether active surveillance, surgery or radiation should be discussed. Favorable low-risk disease often does not require immediate treatment. Higher-risk cancers may need intensified local or combined therapy.",
+            "Age and general health matter, but they do not make surgery or radiation automatically superior. A urologic oncologist and radiation oncologist can explain why different options may be appropriate for the same findings."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What surgery offers and risks",
+          "paragraphs": [
+            "Radical prostatectomy removes the gland and seminal vesicles, provides a fuller pathology specimen, and generally leads PSA to fall to very low or undetectable levels. Recovery involves anesthesia, a catheter, activity restrictions, and possible urinary leakage or erectile changes. Some men later need salvage radiation or systemic therapy.",
+            "Robotic surgery is less invasive than open surgery in important respects, but it does not guarantee better long-term continence or erectile function. A randomized Brisbane study found similar urinary and sexual outcomes at two years, although surgical technologies and practices have evolved since that trial."
+          ],
+          "refs": [
+            "BRISBANE",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What radiation offers and risks",
+          "paragraphs": [
+            "External-beam radiation treats the prostate without removing it. Options include different daily schedules and five-session SBRT for eligible lower-risk patients. Brachytherapy places a radiation source inside or near the gland and is suitable for selected patients.",
+            "Radiation may cause urinary urgency, bowel changes, fatigue or later erectile difficulties. Hormone therapy is sometimes recommended with radiation depending on cancer risk. Because the prostate remains, PSA falls and is interpreted differently after radiation than after surgery."
+          ],
+          "refs": [
+            "PACEB",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The evidence is not a universal head-to-head verdict",
+          "paragraphs": [
+            "The 15-year ProtecT randomized results provide important context about cancer-specific outcomes and tradeoffs among assigned treatments, but that trial's active-monitoring methods differ from modern active surveillance and treatment techniques have evolved. It does not provide a personalized ranking of current surgical and radiation approaches.",
+            "Ask each specialist to estimate cancer control, urinary, bowel and sexual outcomes using patients like you, and to explain how they measure those outcomes. A second opinion may clarify an irreversible decision."
+          ],
+          "refs": [
+            "PROTECT",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Why is my disease risk group suitable for one or both options?",
+        "How are your own functional and cancer-control outcomes measured?",
+        "What happens to PSA after treatment, and how would recurrence be recognized?",
+        "If the first treatment fails, what salvage options remain?"
+      ],
+      "evidence": "No trial establishes a universal winner for all ages, stages and treatment settings."
+    },
+    {
+      "path": "treatments/radiation-options",
+      "cat": "treatments",
+      "title": "Radiation options for localized prostate cancer",
+      "dek": "From conventional schedules to five-session SBRT and brachytherapy, with benefits and late side effects.",
+      "lead": "Radiation is not a single technique. The number of sessions, targeting method, use of internal radiation and whether hormone therapy is combined all depend on disease risk and anatomy.",
+      "sections": [
+        {
+          "heading": "External beam: several schedules",
+          "paragraphs": [
+            "Standard external-beam radiotherapy may be given over multiple weeks. Moderate hypofractionation delivers somewhat larger doses per session over fewer visits, while stereotactic body radiotherapy (SBRT) uses very precise, high-dose treatment over about five sessions in eligible patients.",
+            "Fewer appointments can reduce travel and time away from work, but shorter courses are not automatically better for every person's urinary function, gland size or cancer characteristics."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The PACE-B comparison",
+          "paragraphs": [
+            "PACE-B randomized 874 patients with low- or intermediate-risk localized prostate cancer to five-session SBRT or longer conventional/moderately hypofractionated radiation. At five years, freedom from biochemical or clinical failure was 95.8% with SBRT and 94.6% with the longer schedule, meeting the study's noninferiority criterion.",
+            "Moderate-or-worse late urinary toxicity was higher with SBRT, 26.9% versus 18.3%, while reported bowel toxicity was similar. These are group results, not individual predictions. Importantly, PACE-B did not compare radiation with surgery."
+          ],
+          "refs": [
+            "PACEB"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Brachytherapy and combined treatments",
+          "paragraphs": [
+            "Brachytherapy places radioactive sources in or near the prostate. It may be an option alone for certain risk categories or combined with external radiation for others. Suitability depends on urinary symptoms, anatomy, cancer risk and access to an experienced specialist.",
+            "For some unfavorable intermediate-risk or high-risk cases, androgen deprivation therapy (ADT) is added to radiation because randomized evidence supports combined treatment in specified populations. Duration and side effects require an individual discussion."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Plan for long-term effects",
+          "paragraphs": [
+            "After radiation, PSA typically declines gradually to a nadir rather than becoming undetectable immediately. Temporary PSA bounces can occur. New urinary or rectal bleeding after treatment should be assessed and not automatically assumed to be radiation injury.",
+            "Ask the treatment team about bladder and bowel preparation, baseline urinary symptoms, supportive care and how long-term outcomes are tracked. A multidisciplinary comparison can be valuable before choosing a schedule."
+          ],
+          "refs": [
+            "NCI-T",
+            "EAU"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Which radiation schedules are evidence-supported for my risk group?",
+        "What is the absolute chance of significant urinary or bowel side effects?",
+        "Would hormone therapy be recommended and for how long?",
+        "How will PSA follow-up and late symptoms be handled?"
+      ],
+      "evidence": "PACE-B's results are applicable to its defined low/intermediate-risk population, not all high-risk disease."
+    },
+    {
+      "path": "treatments/focal-therapy",
+      "cat": "treatments",
+      "title": "Focal therapy: promising concept, important uncertainties",
+      "dek": "What HIFU, irreversible electroporation and other targeted approaches can and cannot establish.",
+      "lead": "Focal therapy aims to treat a cancerous region while leaving more prostate tissue in place. The appeal is understandable, but less treatment does not automatically mean equivalent cancer control or freedom from side effects.",
+      "sections": [
+        {
+          "heading": "What focal treatment attempts",
+          "paragraphs": [
+            "Methods can include high-intensity focused ultrasound, cryotherapy or irreversible electroporation (IRE, sometimes marketed as NanoKnife). Imaging and biopsy are used to identify a target, but prostate cancer may be multifocal and areas outside the target may contain clinically important disease.",
+            "Preserving tissue could help some men avoid certain harms of whole-gland treatment, yet treatment location, nerve proximity, baseline function and cancer volume still affect urinary and sexual outcomes."
+          ],
+          "refs": [
+            "NCI-T",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Evidence is different from established surgery and radiation",
+          "paragraphs": [
+            "Many focal-therapy reports are small, nonrandomized or have shorter follow-up than studies of established whole-gland treatments. Comparisons can be complicated because patients chosen for focal treatment may have different risks from patients assigned to surgery or radiation.",
+            "NICE's 2026 IRE guidance recommends special arrangements for clinical governance, consent, and audit or research. This is not an endorsement of marketing claims that a one-hour procedure cures prostate cancer or eliminates the need for follow-up."
+          ],
+          "refs": [
+            "NICE-IRE",
+            "AUA-L"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Monitoring still matters",
+          "paragraphs": [
+            "Cancer may persist in the treated region or later be detected elsewhere in the prostate. PSA interpretation is more complex when prostate tissue remains, and treatment teams may recommend serial MRI, PSA testing and additional biopsy.",
+            "Before proceeding, ask what constitutes failure, which follow-up procedures are required, and how salvage surgery or radiation would be approached if the cancer returns."
+          ],
+          "refs": [
+            "EAU",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What to ask about a clinical trial",
+          "paragraphs": [
+            "A clinical trial or specialized multidisciplinary evaluation can clarify eligibility and what is known about the proposed device. Ask for independently published cancer-control outcomes, duration of follow-up, adverse effects, competing alternatives, and whether all outcomes were collected systematically.",
+            "Regulatory availability of a device does not prove that a particular cancer treatment protocol has superior long-term outcomes. Separate the promise of precision from the evidence for durable benefit."
+          ],
+          "refs": [
+            "NICE-IRE",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Is this procedure considered standard care, special governance, or research?",
+        "How might cancer outside the treated region be found?",
+        "Which long-term comparative outcomes are published?",
+        "What follow-up biopsies and salvage options would be required?"
+      ],
+      "evidence": "Avoid absolute cure or potency claims; long-term comparative evidence remains limited."
+    },
+    {
+      "path": "treatments/hormone-combinations",
+      "cat": "treatments",
+      "title": "Hormone therapy and combination treatments",
+      "dek": "Why androgen suppression is used in certain prostate cancers and what 2026 high-risk trials actually studied.",
+      "lead": "Prostate cancer often relies on androgen signaling. Medicines that reduce testosterone or block androgen pathways can be important, but their benefits and adverse effects depend on disease stage and the treatments combined with them.",
+      "sections": [
+        {
+          "heading": "ADT and androgen receptor agents",
+          "paragraphs": [
+            "Androgen deprivation therapy (ADT) reduces testosterone activity through medication or surgery. Androgen receptor pathway inhibitors block or interfere with androgen signaling in other ways. These treatments are not interchangeable with local treatment for every patient.",
+            "In selected localized disease, ADT can be combined with radiation; in metastatic disease it is often part of systemic treatment. Common consequences include hot flashes, sexual symptoms, fatigue, bone loss, metabolic changes and possible cardiovascular concerns."
+          ],
+          "refs": [
+            "NCI-T",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "PROTEUS: before and after high-risk surgery",
+          "paragraphs": [
+            "The phase 3 PROTEUS trial randomized 2,109 men with high-risk localized or locally advanced cancer planned for prostatectomy. Both groups received ADT; one also received apalutamide and the other placebo before and after surgery. Five-year metastasis-free survival was 78.2% versus 73.5%, respectively.",
+            "Grade 3 or 4 adverse events were reported in 39.6% of the apalutamide arm versus 31.0% in the control arm. This is an important peer-reviewed result, but it applies to a highly selected population and is not a general recommendation for low-risk patients."
+          ],
+          "refs": [
+            "PROTEUS"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Interpreting newer trial reports",
+          "paragraphs": [
+            "Trials of additional drugs with radiation, such as DASL-HiCaP, have generated promising reports in very high-risk patients. Their treatment combinations, study populations and follow-up maturity differ from PROTEUS. A conference headline does not establish overall-survival benefit or regulatory approval.",
+            "A patient-facing summary should say whether results are interim, which endpoint improved, and whether harms or other options were measured. Before treatment selection, confirm current specialist guidance and the drug's approval for the intended setting."
+          ],
+          "refs": [
+            "AUA-L",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Managing long-term health on ADT",
+          "paragraphs": [
+            "Loss of muscle, fatigue, bone-density changes, metabolic risk and sexual effects deserve proactive discussion. A care plan may involve appropriate exercise, cardiovascular risk management, bone-health evaluation and symptom support, adjusted for overall health and disease burden.",
+            "Ask who coordinates follow-up among oncology, primary care and supportive services. Never start or stop hormone medicines based on a research summary alone."
+          ],
+          "refs": [
+            "NCI-T",
+            "EAU"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Why is hormone therapy appropriate for my disease state?",
+        "What benefit does the combination offer compared with its exact control group?",
+        "How are bone, heart, metabolic and sexual side effects monitored?",
+        "Is the proposed drug approved for this specific treatment setting?"
+      ],
+      "evidence": "Some 2026 high-risk regimens remain evolving; regulatory and guideline status must be rechecked before publication."
+    },
+    {
+      "path": "treatments/recurrence-advanced",
+      "cat": "treatments",
+      "title": "If prostate cancer returns or spreads",
+      "dek": "PSA recurrence, salvage options, metastatic treatments and how PSMA-targeted therapy fits.",
+      "lead": "A recurrence after local treatment and cancer that has spread to distant sites are different situations. Terms such as biochemical recurrence, hormone-sensitive and resistant identify distinct decisions, not one uniform stage.",
+      "sections": [
+        {
+          "heading": "Biochemical recurrence is a signal, not a scan result",
+          "paragraphs": [
+            "After prostatectomy, PSA is expected to become very low or undetectable. A confirmed rise can prompt evaluation for recurrence, sometimes before scans show a lesion. After radiation, PSA often remains measurable and recurrence is interpreted relative to its lowest value.",
+            "A treatment team considers PSA pattern, original pathology, interval since treatment and imaging findings. A negative PSMA PET does not prove microscopic disease is absent; waiting for a positive scan can sometimes affect salvage treatment opportunities."
+          ],
+          "refs": [
+            "EAU",
+            "PSMA-APP"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Salvage and local treatment discussions",
+          "paragraphs": [
+            "Depending on the previous therapy and individual risk, selected patients may consider salvage radiotherapy, surgery, local procedures or systemic approaches. The risk of complications and likely benefit differs substantially depending on what treatment was delivered first.",
+            "The useful question is what the next intervention is intended to control and how its possible benefit compares with quality-of-life costs. Multidisciplinary consultation matters, especially when disease cannot be clearly localized."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "When cancer is metastatic",
+          "paragraphs": [
+            "Metastatic prostate cancer may be treated with ADT, androgen receptor pathway drugs, chemotherapy, selected radiopharmaceuticals, other targeted agents or clinical trials. Which therapies apply depends on prior treatments, genetic features, imaging, symptoms and whether the cancer remains responsive to androgen-pathway suppression.",
+            "The evolving terminology in trial frameworks can differ from older patient documents. Ask the oncology team to describe the current disease state and planned sequence in plain language."
+          ],
+          "refs": [
+            "EAU",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "PSMA-targeted radioligand treatment",
+          "paragraphs": [
+            "The FDA expanded Pluvicto's indication on July 31, 2026 for adults with PSMA-positive metastatic androgen pathway modulation-naïve or -sensitive prostate cancer, combined with an androgen receptor pathway inhibitor. Patient selection requires appropriate PSMA imaging. Separate indications also exist for defined resistant metastatic settings.",
+            "The PSMAddition trial supported the new indication through improved radiographic progression-free survival, while overall-survival data were not mature at approval. This does not apply to a new localized diagnosis or mean that every person with a positive PSMA scan should receive the drug."
+          ],
+          "refs": [
+            "PLUVICTO",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Is this a PSA-only recurrence or disease visible on imaging?",
+        "Would salvage therapy still be useful with a negative PET scan?",
+        "What treatments am I eligible for now versus later?",
+        "What is the evidence for the proposed sequence and its side effects?"
+      ],
+      "evidence": "Approved drug indications vary by prior therapy, biomarker result and jurisdiction; verify them at point of care."
+    }
+  ]
+}

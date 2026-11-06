@@ -1,0 +1,199 @@
+{
+  "schema": "2.0-content-draft",
+  "articles": [
+    {
+      "path": "treatments/robotic-surgery/robot-platforms",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "Surgical robot platforms compared",
+      "dek": "What da Vinci Xi, da Vinci 5, SP, Hugo and newer systems actually change.",
+      "lead": "Robot names describe instruments and workflows. The latest device does not automatically deliver better prostate cancer or recovery outcomes.",
+      "sections": [
+        {
+          "heading": "The da Vinci family",
+          "paragraphs": [
+            "Da Vinci Xi is an established multiport system. Da Vinci 5 adds updated ergonomics, sensing and force-feedback instruments, while da Vinci SP places camera and instruments through a single access device. These features can affect workflow and surgeon training.",
+            "Claims about greater computing power or reduced instrument force are product characteristics, not definitive randomized evidence of better cancer control, urinary continence or erectile recovery. The surgeon still directs the operation."
+          ],
+          "refs": [
+            "INTUITIVE-SEC",
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Additional robotic systems",
+          "paragraphs": [
+            "Medtronic announced FDA clearance in December 2025 for its Hugo robotic-assisted system in urologic procedures including prostatectomy. Regulatory clearance establishes an authorized scope of device use; it does not rank patient outcomes versus other platforms.",
+            "Toumai and other systems have differing country-specific authorization and investigational status. Versius and SSI Mantra should be added to a regulatory comparison only after official device documentation and intended uses are independently verified."
+          ],
+          "refs": [
+            "HUGO",
+            "INTUITIVE-SEC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What the patient can compare",
+          "paragraphs": [
+            "Ask the surgeon about experience with the exact platform, annual volume, approach selection, complication management, cancer margins, urinary outcomes and erectile outcomes. Do not assume a hospital's technology purchase is a clinical recommendation.",
+            "Meaningful outcomes include how success is defined, baseline patient characteristics and follow-up duration. When no independently audited center-specific outcomes are available, that uncertainty should be acknowledged."
+          ],
+          "refs": [
+            "AUA-L",
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Technology versus outcomes",
+          "paragraphs": [
+            "Robot systems differ in arm design, port placement, camera capability, data ecosystem, force feedback, setup and training requirements. Most head-to-head clinical studies are not randomized, and selection and learning curves matter.",
+            "Before relying on a claim of superiority, check whether it reflects a device feature, a company report, an observational comparison or randomized patient outcomes. Recheck authorization by procedure and country."
+          ],
+          "refs": [
+            "INTUITIVE-SEC",
+            "HUGO"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Which robot and surgical approach will be used, and why?",
+        "How many cases has this team completed with the system?",
+        "What are its risk-adjusted cancer, continence and sexual-function outcomes?",
+        "Which claimed advantages are proven patient benefits?"
+      ],
+      "evidence": "Regulatory approvals and company disclosures are not comparative patient-outcome trials."
+    },
+    {
+      "path": "treatments/robotic-surgery/telesurgery",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "Surgical data, telesurgery and emerging automation",
+      "dek": "Separating current surgical assistance from company roadmaps and future remote operation.",
+      "lead": "Connected operating rooms and surgical data may improve training and collaboration. Development announcements, however, are not evidence that remote or partially automated prostatectomy has become routine care.",
+      "sections": [
+        {
+          "heading": "Surgical data science",
+          "paragraphs": [
+            "Robotic operating systems can capture video, instrument signals and workflow information. Researchers are examining whether these data can help training, identify performance variation and support quality improvement.",
+            "Measuring a task, recognizing an instrument on video or suggesting a movement is not equivalent to independently performing cancer surgery. Clinical validation and attention to privacy, bias and data governance remain necessary."
+          ],
+          "refs": [
+            "INTUITIVE-SEC",
+            "AUA-L"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Telecollaboration is not telesurgery",
+          "paragraphs": [
+            "Telecollaboration lets a remote expert observe or advise while the local team operates. Telesurgery involves remote control of instruments and raises additional requirements for latency, network resilience, security, emergency backup and licensing.",
+            "A feasibility demonstration should be clearly labeled research and not described as a treatment option available at ordinary medical centers. On-site clinical backup remains essential."
+          ],
+          "refs": [
+            "INTUITIVE-SEC",
+            "HUGO"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What manufacturers are planning",
+          "paragraphs": [
+            "Intuitive has described telepresence as foundational for future telesurgery, along with development of automation-related features. The company's expectations for possible 2028 regulatory clearances are forward-looking statements and can change.",
+            "Force feedback, camera assistance and other tools may help surgeon workflows, but claims of improved long-term prostate cancer or functional outcomes need patient-level studies. Company timelines cannot be substituted for actual FDA decisions."
+          ],
+          "refs": [
+            "INTUITIVE-SEC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Questions worth asking about new technology",
+          "paragraphs": [
+            "Ask whether a proposed feature is currently authorized for the procedure and whether it is investigational. Understand who controls the operation, the role of any remote participant and how a technical failure would be managed.",
+            "Product news belongs in a dated research update section. Treatment comparisons should continue to rely on clinical outcomes, experienced surgical teams and patient-specific oncology priorities."
+          ],
+          "refs": [
+            "AUA-L",
+            "INTUITIVE-SEC"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Is this feature currently authorized for prostate surgery?",
+        "Is any part of the operation remote, and who has control?",
+        "How would a system or network interruption be handled?",
+        "What independently studied patient outcomes have improved?"
+      ],
+      "evidence": "Company product roadmaps are not regulatory approvals or demonstrated clinical benefits."
+    },
+    {
+      "path": "treatments/robotic-surgery/surgeon-questions",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "Questions to ask a prostate surgeon",
+      "dek": "A printable guide covering surgeon experience, nerve sparing, recovery and follow-up.",
+      "lead": "The most useful surgical consultation explains why surgery is recommended, what the plan is, what the realistic outcomes are, and how recovery and later PSA monitoring will be supported.",
+      "sections": [
+        {
+          "heading": "Before choosing surgery",
+          "paragraphs": [
+            "Ask which findings establish your risk category and why surgery is preferred over monitoring or radiation. Request comparable evidence for expected cancer control and side effects. A second opinion from radiation oncology may clarify the decision.",
+            "Ask who will perform the procedure, who supervises any trainees, and how complications are handled. Case volume can reflect experience, but is not a complete quality measure."
+          ],
+          "refs": [
+            "AUA-L",
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The operative plan",
+          "paragraphs": [
+            "Discuss the proposed access route, whether nerve sparing is reasonable on each side, the need for lymph-node dissection and circumstances that could change the operation. Ask whether intraoperative frozen-section assessment is available or indicated.",
+            "Cancer margin safety can limit nerve preservation. A realistic consent conversation addresses this uncertainty rather than guaranteeing full sexual function after surgery."
+          ],
+          "refs": [
+            "NEUROSAFE",
+            "RETZIUS"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Recovery and function",
+          "paragraphs": [
+            "Ask the center how it defines continence and erections in its reported rates. A zero-pad outcome and a one-safety-pad outcome are different. Baseline health and nerve preservation strongly influence sexual recovery.",
+            "Confirm catheter instructions, activity restrictions, potential complications, pelvic-floor therapy and sexual rehabilitation. Learn which symptoms require urgent contact and who coordinates follow-up."
+          ],
+          "refs": [
+            "URO-REC",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What happens after pathology",
+          "paragraphs": [
+            "Know when the final pathology will be reviewed, who will order and interpret PSA tests, and what might prompt additional treatment discussions. Higher-risk pathology can change follow-up or make salvage treatment relevant.",
+            "Write down questions and request written discharge and monitoring instructions. The printable checklist can help ensure that priorities are discussed."
+          ],
+          "refs": [
+            "NCI-T",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Why do you recommend surgery rather than reasonable alternatives?",
+        "How experienced is the team with this specific approach and risk group?",
+        "What is my nerve-sparing and cancer-margin strategy?",
+        "What are the catheter, rehabilitation and PSA follow-up plans?"
+      ],
+      "evidence": "The questions are educational prompts, not a substitute for informed consent."
+    }
+  ]
+}

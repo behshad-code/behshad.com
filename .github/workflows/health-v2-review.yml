@@ -1,0 +1,26 @@
+name: Health Compass v2 review
+on:
+  pull_request:
+    paths:
+      - 'health/**'
+      - 'sandbox/mhc-v2-review/**'
+      - '.github/workflows/health-v2-review.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Health site hierarchy
+        run: node health/check-hierarchy.mjs
+      - name: v2 pages and links
+        run: node health/check-v2.mjs
+      - name: Generated pages are current
+        run: |
+          node health/build-v2.mjs
+          git diff --exit-code -- health/prostate

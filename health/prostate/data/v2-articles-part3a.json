@@ -1,0 +1,198 @@
+{
+  "schema": "2.0-content-draft",
+  "articles": [
+    {
+      "path": "treatments/robotic-surgery/operation",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "What happens during robotic prostatectomy?",
+      "dek": "A patient-centered explanation of the major stages, the reasons for each step, and what follows surgery.",
+      "lead": "Robot-assisted radical prostatectomy is major cancer surgery performed through small access points. The surgeon controls instruments and makes the operative decisions; the robot does not independently remove the cancer.",
+      "sections": [
+        {
+          "heading": "Before the operation",
+          "paragraphs": [
+            "The treatment team reviews PSA, MRI, biopsy pathology, staging information, previous operations, medications and health risks. They discuss whether nerve sparing is oncologically safe and whether pelvic lymph-node dissection is indicated. The choice of robotic versus other surgery is only one part of informed consent.",
+            "Under general anesthesia, the surgical team positions the patient and creates access to the pelvis. Standard multiport surgery uses several small incisions. Certain single-port approaches use one access site but different internal routes."
+          ],
+          "refs": [
+            "NCI-T",
+            "AUA-L"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Removing the gland while protecting nearby structures",
+          "paragraphs": [
+            "The surgeon separates tissues around the bladder neck, prostate, seminal vesicles and rectum. Nerves supporting erections lie near the gland; preservation depends partly on where cancer is suspected and how safely a surgeon can dissect. A cancer-free surgical margin remains a primary objective.",
+            "The prostate and seminal vesicles are removed. When clinically indicated, lymph nodes may also be sampled. The bladder is reconnected to the remaining urethra and a temporary urinary catheter is left to allow healing."
+          ],
+          "refs": [
+            "BRISBANE",
+            "NEUROSAFE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What the robot changes",
+          "paragraphs": [
+            "Magnified three-dimensional vision and wristed instruments can help access the deep pelvis. Minimally invasive surgery may involve less blood loss and shorter hospitalization than traditional open surgery. These differences should not be translated into a guarantee of superior long-term continence, erections or cancer control.",
+            "In a Brisbane randomized trial, urinary and sexual outcomes at 24 months were similar between robotic and open surgery. Technologies have evolved since the trial, but choosing a team only for a machine model remains a poor substitute for evaluating experience and outcomes."
+          ],
+          "refs": [
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Recovery and the pathology conversation",
+          "paragraphs": [
+            "Catheter duration and discharge timing depend on the approach, complications and local protocols. Leakage after catheter removal is common and erectile recovery can be slower. Final pathology may revise the assessment of grade or extent.",
+            "Ask when catheter removal, pathology review and the first PSA check will occur; who handles urgent symptoms; and how pelvic-floor and sexual rehabilitation will be coordinated. Individual discharge instructions take precedence over generic timelines."
+          ],
+          "refs": [
+            "NCI-T",
+            "URO-REC"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Who performs the critical stages of the operation?",
+        "Will nerve sparing be attempted on one or both sides?",
+        "Will lymph nodes be removed, and why?",
+        "How will pathology, rehabilitation and PSA follow-up be organized?"
+      ],
+      "evidence": "A general conceptual guide, not surgical instruction; sequence and approach vary."
+    },
+    {
+      "path": "treatments/robotic-surgery/nerve-sparing",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "Nerve sparing, continence and cancer margins",
+      "dek": "How nerve preservation, bladder support, Retzius-sparing and margin assessment influence the plan.",
+      "lead": "Technical refinements may protect urinary and sexual function, but must be weighed against the central objective of adequate cancer removal.",
+      "sections": [
+        {
+          "heading": "Nerve preservation is not a promise",
+          "paragraphs": [
+            "Erectile nerve networks lie close to the prostate surface. Surgeons may preserve both sides, one side, part of a nerve bundle, or neither, depending on cancer location, stage and baseline function. The plan can change during surgery.",
+            "Preservation can improve the chances of functional recovery but cannot guarantee erections. Age, vascular health, previous function and later treatment are also important."
+          ],
+          "refs": [
+            "NEUROSAFE",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Urinary control and measurement",
+          "paragraphs": [
+            "The external urinary sphincter and surrounding support maintain continence. Bladder-neck preservation, urethral length, posterior reconstruction and pelvic-floor training may influence recovery. If bothersome leakage persists, specialist evaluation and rehabilitation options exist.",
+            "Continence reports differ according to whether they count patients as dry with zero pads, one safety pad, or based on questionnaire measures. Always request the definition and time point when comparing percentages."
+          ],
+          "refs": [
+            "URO-REC",
+            "RETZIUS"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Retzius-sparing and reconstruction",
+          "paragraphs": [
+            "Retzius-sparing surgery approaches the prostate from behind to preserve structures in front of the bladder. Reviews suggest faster early continence for some groups, but long-term differences are often smaller, and margin findings may be a concern in particular higher-stage cases.",
+            "Other approaches may preserve the bladder neck or reconstruct tissue support. Cancer characteristics, anatomy and surgeon experience determine which techniques are appropriate."
+          ],
+          "refs": [
+            "RETZIUS",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "NeuroSAFE and margin checks",
+          "paragraphs": [
+            "NeuroSAFE involves frozen-section assessment of tissue near the neurovascular bundles during surgery. The randomized NeuroSAFE PROOF study showed functional benefits in selected men undergoing robot-assisted prostatectomy.",
+            "Its relevance varies by center and patient. Margin safety must remain a central consideration even when a technique is intended to improve recovery."
+          ],
+          "refs": [
+            "NEUROSAFE",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Why is nerve sparing planned or limited on each side?",
+        "Which continence and erectile-function definitions does the center use?",
+        "Is Retzius-sparing or reconstruction suitable for my cancer?",
+        "Is intraoperative margin assessment available or appropriate?"
+      ],
+      "evidence": "Functional benefits and cancer margins vary by patient selection, stage, surgeon and study design."
+    },
+    {
+      "path": "treatments/robotic-surgery/single-port",
+      "cat": "treatments",
+      "series": "Robotic prostatectomy",
+      "title": "Single-port robotic prostatectomy",
+      "dek": "How the approaches differ, what SPARC found, and why observational outcomes need context.",
+      "lead": "Single-port systems pass a camera and instruments through one access point. That changes access, but does not make prostate removal a minor operation.",
+      "sections": [
+        {
+          "heading": "Five surgical routes",
+          "paragraphs": [
+            "Single-port approaches include transperitoneal, extraperitoneal, transvesical, transperineal and Retzius-sparing techniques. The transvesical route enters through the bladder; extraperitoneal access can avoid the main abdominal cavity. Each has different exposure and selection considerations.",
+            "One external incision does not determine cancer control. Internal dissection, nerve preservation, surgical margins and the team's experience matter more."
+          ],
+          "refs": [
+            "SPARC",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The 2026 SPARC study",
+          "paragraphs": [
+            "A multicentre SPARC analysis reviewed 2,230 single-port cases, including 1,699 extraperitoneal and 531 transvesical procedures. Researchers compared propensity-matched patients and reported differences in discharge patterns and earlier continence.",
+            "The study was retrospective, not randomized. Matching addresses some known differences but not every selection factor. Short follow-up cannot establish equal long-term cancer control."
+          ],
+          "refs": [
+            "SPARC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Interpreting recovery figures",
+          "paragraphs": [
+            "Continence reports vary in definition, time point and baseline patient function. A finding of earlier pad-free recovery in a selected center does not predict an individual's outcome. Similarly, erectile results depend on baseline health and degree of nerve preservation.",
+            "The most useful comparison is the surgeon's risk-adjusted results for patients with similar risk and anatomy, alongside the published limitations."
+          ],
+          "refs": [
+            "SPARC",
+            "BRISBANE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Questions about suitability",
+          "paragraphs": [
+            "Ask why a particular approach offers a practical advantage for the individual case and what experience the surgeon has with that route. Past abdominal procedures may affect options but do not independently determine eligibility.",
+            "Also review complication rates, cancer margins by risk group, follow-up duration and what would happen if the planned access route needed to be changed."
+          ],
+          "refs": [
+            "SPARC",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Which single-port route is proposed and why?",
+        "What are the surgeon's outcomes for this exact technique?",
+        "Are recovery percentages pad-free or safety-pad definitions?",
+        "How long have the cancer outcomes been followed?"
+      ],
+      "evidence": "SPARC is a retrospective comparison and does not establish universal superiority."
+    }
+  ]
+}

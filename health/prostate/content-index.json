@@ -1,0 +1,439 @@
+{
+  "schema_version": "2.0",
+  "status": "published",
+  "last_checked": "2026-11-06",
+  "note": "Only published source references and authored content, no private clinical data.",
+  "pages": [
+    {
+      "path": "/health/prostate/basics/anatomy/",
+      "title": "Prostate anatomy and function",
+      "category": "Prostate Basics",
+      "kind": "article",
+      "sources": [
+        "NIDDK",
+        "NCI-T",
+        "BRISBANE",
+        "NEUROSAFE",
+        "RETZIUS",
+        "SPARC",
+        "URO-REC"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/basics/common-conditions/",
+      "title": "BPH, prostatitis and prostate cancer",
+      "category": "Prostate Basics",
+      "kind": "article",
+      "sources": [
+        "NIDDK",
+        "NCI-S",
+        "AUA-E",
+        "NCI-T"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/screening/when-to-screen/",
+      "title": "When should PSA screening start?",
+      "category": "Screening & PSA",
+      "kind": "article",
+      "sources": [
+        "AUA-E",
+        "ACS",
+        "NCI-S",
+        "EAU-D",
+        "EAU",
+        "PCFA",
+        "NHMRC"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/screening/beyond-psa/",
+      "title": "Beyond the PSA number",
+      "category": "Screening & PSA",
+      "kind": "article",
+      "sources": [
+        "AUA-E",
+        "NCI-S",
+        "EAU-D",
+        "STOCKHOLM3",
+        "FDA-ISO",
+        "PREVENT"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/screening/inherited-risk/",
+      "title": "Family history and inherited prostate cancer risk",
+      "category": "Screening & PSA",
+      "kind": "article",
+      "sources": [
+        "EAU-D",
+        "NCI-S",
+        "NCI-T",
+        "EAU",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/diagnosis/mri-biopsy/",
+      "title": "MRI and prostate biopsy",
+      "category": "Prostate Cancer & Diagnosis",
+      "kind": "article",
+      "sources": [
+        "ACR",
+        "AUA-E",
+        "EAU-D",
+        "PREVENT",
+        "PSMA-APP"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/diagnosis/grade-stage-risk/",
+      "title": "Gleason, Grade Group, stage and risk",
+      "category": "Prostate Cancer & Diagnosis",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "AUA-L",
+        "EAU",
+        "PROPSMA"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/diagnosis/genomic-genetic/",
+      "title": "Genomic, genetic and AI risk tests explained",
+      "category": "Prostate Cancer & Diagnosis",
+      "kind": "article",
+      "sources": [
+        "AUA-L",
+        "NCI-T",
+        "EAU-D",
+        "ACR"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/diagnosis/psma-pet/",
+      "title": "PSMA PET and modern prostate imaging",
+      "category": "Prostate Cancer & Diagnosis",
+      "kind": "article",
+      "sources": [
+        "PSMA-APP",
+        "NCI-T",
+        "PROPSMA",
+        "EAU",
+        "PLUVICTO"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/surgery-vs-radiation/",
+      "title": "Surgery or radiation: comparing the tradeoffs",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "AUA-L",
+        "NCI-T",
+        "BRISBANE",
+        "PACEB",
+        "PROTECT"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/radiation-options/",
+      "title": "Radiation options for localized prostate cancer",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "AUA-L",
+        "NCI-T",
+        "PACEB",
+        "EAU"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/focal-therapy/",
+      "title": "Focal therapy: promising concept, important uncertainties",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "EAU",
+        "NICE-IRE",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/hormone-combinations/",
+      "title": "Hormone therapy and combination treatments",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "EAU",
+        "PROTEUS",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/recurrence-advanced/",
+      "title": "If prostate cancer returns or spreads",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "EAU",
+        "PSMA-APP",
+        "AUA-L",
+        "NCI-T",
+        "PLUVICTO"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/operation/",
+      "title": "What happens during robotic prostatectomy?",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "AUA-L",
+        "BRISBANE",
+        "NEUROSAFE",
+        "URO-REC"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/nerve-sparing/",
+      "title": "Nerve sparing, continence and cancer margins",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "NEUROSAFE",
+        "NCI-T",
+        "URO-REC",
+        "RETZIUS",
+        "EAU",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/single-port/",
+      "title": "Single-port robotic prostatectomy",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "SPARC",
+        "NCI-T",
+        "BRISBANE",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/robot-platforms/",
+      "title": "Surgical robot platforms compared",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "INTUITIVE-SEC",
+        "BRISBANE",
+        "HUGO",
+        "AUA-L"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/telesurgery/",
+      "title": "Surgical data, telesurgery and emerging automation",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "INTUITIVE-SEC",
+        "AUA-L",
+        "HUGO"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/robotic-surgery/surgeon-questions/",
+      "title": "Questions to ask a prostate surgeon",
+      "category": "Treatment Options",
+      "kind": "article",
+      "sources": [
+        "AUA-L",
+        "BRISBANE",
+        "NEUROSAFE",
+        "RETZIUS",
+        "URO-REC",
+        "NCI-T"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/living-well/continence/",
+      "title": "Urinary continence and pelvic-floor recovery",
+      "category": "Living Well",
+      "kind": "article",
+      "sources": [
+        "URO-REC",
+        "BRISBANE",
+        "NCI-T",
+        "RETZIUS",
+        "SPARC"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/living-well/sexual-health/",
+      "title": "Sexual health and intimacy after treatment",
+      "category": "Living Well",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "NEUROSAFE",
+        "URO-REC",
+        "AUA-L",
+        "PCFA-S"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/living-well/survivorship/",
+      "title": "Long-term health after prostate cancer treatment",
+      "category": "Living Well",
+      "kind": "article",
+      "sources": [
+        "NCI-T",
+        "URO-REC",
+        "EAU",
+        "PCFA-S"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/research/evidence-tracker/",
+      "title": "Prostate research and guideline tracker",
+      "category": "Research & Updates",
+      "kind": "article",
+      "sources": [
+        "AUA-E",
+        "EAU",
+        "PCFA",
+        "PROTEUS",
+        "PLUVICTO",
+        "STOCKHOLM3",
+        "NICE-IRE",
+        "INTUITIVE-SEC"
+      ],
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/basics/",
+      "title": "Prostate Basics",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/screening/",
+      "title": "Screening & PSA",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/diagnosis/",
+      "title": "Prostate Cancer & Diagnosis",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/treatments/",
+      "title": "Treatment Options",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/living-well/",
+      "title": "Living Well",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/research/",
+      "title": "Research & Updates",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/rising-psa/",
+      "title": "When PSA Is Rising",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/tests-explained/",
+      "title": "Tests That Clarify the Picture",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/active-surveillance/",
+      "title": "Active Surveillance",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/treatment-decisions/",
+      "title": "Choosing a Treatment",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/recovery-follow-up/",
+      "title": "Recovery and Life Afterward",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/insurance-access/",
+      "title": "Insurance and Access",
+      "kind": "flagship",
+      "status": "v2-enriched"
+    },
+    {
+      "path": "/health/prostate/resources/sources/",
+      "title": "sources",
+      "kind": "resource",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/resources/glossary/",
+      "title": "glossary",
+      "kind": "resource",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/resources/questions/",
+      "title": "questions",
+      "kind": "resource",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/resources/editorial-methods/",
+      "title": "editorial-methods",
+      "kind": "resource",
+      "status": "published"
+    }
+  ]
+}

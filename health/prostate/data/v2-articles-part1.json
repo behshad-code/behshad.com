@@ -1,0 +1,583 @@
+{
+  "schema": "2.0-content-draft",
+  "revision": "2026-11-06",
+  "status": "Review branch only; editorial approval not publication",
+  "articles": [
+    {
+      "path": "basics/anatomy",
+      "cat": "basics",
+      "title": "Prostate anatomy and function",
+      "dek": "Where the prostate sits, what it does, and why neighboring structures matter during treatment.",
+      "lead": "The prostate is a small gland with a large effect on medical decisions. Its position explains urinary symptoms, and its close relationship to the urinary sphincter and erectile nerves helps explain the tradeoffs of surgery.",
+      "sections": [
+        {
+          "heading": "A small gland in a crowded space",
+          "paragraphs": [
+            "The prostate sits below the bladder and surrounds the first part of the urethra, the channel that carries urine out of the body. It contributes fluid to semen. The seminal vesicles behind the bladder contribute additional fluid; their ducts connect with the prostate. The rectum lies directly behind the gland, which is why prostate examination and some treatments involve the rectal region.",
+            "The prostate commonly enlarges with age. Enlargement can compress the urethra and interfere with urine flow without being cancer. The organ's shape and position also explain why a procedure intended to relieve obstruction is different from an operation to remove the entire prostate."
+          ],
+          "refs": [
+            "NIDDK",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The structures that matter during surgery",
+          "paragraphs": [
+            "Near the prostate's outer sides run networks of nerves and vessels that contribute to erections. Below it, the external urinary sphincter helps maintain continence. The bladder neck connects the bladder to the prostate and urethra; supporting tissues and ligaments help stabilize this area.",
+            "During radical prostatectomy, the gland and seminal vesicles are removed and the bladder is reconnected to the remaining urethra. Cancer location may limit how close the surgeon can dissect while preserving nerves. No technique can guarantee both cancer clearance and perfect recovery of sexual or urinary function."
+          ],
+          "refs": [
+            "BRISBANE",
+            "NEUROSAFE"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why surgical approaches differ",
+          "paragraphs": [
+            "Most robot-assisted operations approach the prostate through the abdomen, but other routes spare certain tissues or avoid entering the abdominal cavity. Retzius-sparing surgery preserves structures in front of the bladder. Single-port systems place several instruments through one access site, although the internal operation remains complex.",
+            "These approaches may influence early recovery in selected groups. Evidence quality and selection vary, and no specific port arrangement ensures better long-term cancer outcomes. An experienced multidisciplinary team should explain which anatomy and cancer features make a given approach reasonable."
+          ],
+          "refs": [
+            "RETZIUS",
+            "SPARC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The anatomy behind recovery",
+          "paragraphs": [
+            "Urinary leakage after surgery can result from temporary changes to sphincter function and support, while erection recovery depends partly on prior function and nerve preservation. Since seminal vesicles are removed, dry ejaculation is expected even if orgasm remains possible. Rehabilitation may help address urinary and sexual consequences.",
+            "Learning a few basic terms before a consultation makes the treatment conversation more concrete: bladder neck, external sphincter, neurovascular bundle, apex, surgical margin and anastomosis."
+          ],
+          "refs": [
+            "URO-REC",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Which parts of my anatomy or cancer location limit nerve sparing?",
+        "What urinary and sexual functions are most likely to change?",
+        "Is a particular surgical approach appropriate in my case, and why?",
+        "How will I know whether recovery is progressing as expected?"
+      ],
+      "evidence": "Anatomical explanations are general. Patient anatomy and surgical plans vary."
+    },
+    {
+      "path": "basics/common-conditions",
+      "cat": "basics",
+      "title": "BPH, prostatitis and prostate cancer",
+      "dek": "Understand three different conditions that can cause overlapping concerns without assuming every urinary symptom is cancer.",
+      "lead": "Urinary symptoms do not tell you by themselves whether the prostate is enlarged, inflamed or cancerous. The right response is to evaluate the cause rather than treat a symptom list as a diagnostic test.",
+      "sections": [
+        {
+          "heading": "Benign enlargement is common",
+          "paragraphs": [
+            "Benign prostatic hyperplasia, or BPH, is noncancerous prostate enlargement. It may narrow the urethra, causing a slower stream, hesitancy, incomplete emptying, nighttime urination or urgency. Symptoms depend on more than gland size, so a large prostate may cause little trouble and a smaller one may cause substantial difficulty.",
+            "Clinicians may review symptoms, urine tests, medications, kidney function and the degree of bladder emptying before recommending observation, medication or procedures. BPH and prostate cancer can coexist, but BPH does not mean cancer is present."
+          ],
+          "refs": [
+            "NIDDK",
+            "NCI-S"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Prostatitis has several patterns",
+          "paragraphs": [
+            "Prostatitis means inflammation or a condition involving pain in the prostate/pelvic region. A sudden bacterial infection can produce fever, chills, pelvic pain and urinary difficulties and deserves urgent assessment. Chronic symptoms can have several causes and may not represent a persistent bacterial infection.",
+            "Treatment therefore depends on the specific syndrome. Antibiotics are important for bacterial infection but are not a universal solution for every chronic pelvic pain complaint. A clinician may assess the urinary tract and other causes of pelvic pain."
+          ],
+          "refs": [
+            "NIDDK"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Cancer may be silent",
+          "paragraphs": [
+            "Many early prostate cancers cause no symptoms. A person can feel well and still have a cancer worth finding. On the other hand, urinary urgency, a weak stream and nocturia often have benign explanations and should not be labeled cancer without testing.",
+            "Prostate cancer risk is assessed using age, ancestry, family history, inherited variants, PSA results and other clinical context. Screening decisions are distinct from evaluating symptoms: a new symptom deserves its own assessment even when routine screening is not otherwise being considered."
+          ],
+          "refs": [
+            "NCI-S",
+            "AUA-E"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "When to seek prompt help",
+          "paragraphs": [
+            "Seek urgent medical evaluation for inability to pass urine, fever with significant urinary symptoms, severe pain or signs of serious illness. Visible blood in urine also needs medical evaluation. For persistent but nonurgent changes, record when symptoms started, medications, bladder symptoms and any associated pain before an appointment.",
+            "The practical goal is not to guess which condition is present. It is to ensure that symptoms, testing and the follow-up plan are connected."
+          ],
+          "refs": [
+            "NIDDK",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Which conditions could explain these symptoms?",
+        "What urine or bladder-emptying tests would be useful?",
+        "Do my PSA results need separate follow-up?",
+        "What symptoms should prompt same-day or emergency care?"
+      ],
+      "evidence": "Symptoms alone cannot distinguish prostate cancer from benign conditions."
+    },
+    {
+      "path": "screening/when-to-screen",
+      "cat": "screening",
+      "title": "When should PSA screening start?",
+      "dek": "How U.S., European and Australian recommendations differ, and why risk matters more than one birthday.",
+      "lead": "There is no universal age at which every man must start or stop PSA screening. Professional guidance weighs possible reduction in prostate cancer deaths against false positives, overdiagnosis and treatment harms.",
+      "sections": [
+        {
+          "heading": "The U.S. conversation",
+          "paragraphs": [
+            "The American Urological Association's early detection guideline emphasizes shared decision-making and risk-adapted PSA testing. The American Cancer Society encourages an informed conversation with a clinician, with earlier discussions for those at higher risk. Exact timing depends on health, life expectancy, family history, inherited variants and preferences.",
+            "A PSA screening result is not a diagnosis. An unexpected elevation often warrants repeat testing and individualized assessment before an imaging or biopsy decision. Testing every man at the same interval can miss meaningful differences in baseline risk."
+          ],
+          "refs": [
+            "AUA-E",
+            "ACS",
+            "NCI-S"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Europe uses explicit risk groups",
+          "paragraphs": [
+            "The EAU's 2026 guidance discusses earlier PSA testing for men at higher risk, including those with family history, African ancestry or BRCA2 mutations. It also considers life expectancy and baseline PSA in designing follow-up intervals. This is guidance for informed patients and their clinicians, not a reason to import a single European threshold into every setting.",
+            "Risk calculators and MRI can help interpret a persistent abnormal result. Screening intervals should not be confused with follow-up schedules for a man who already has elevated PSA or a prior biopsy."
+          ],
+          "refs": [
+            "EAU-D",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Australia updated its guideline in 2026",
+          "paragraphs": [
+            "Australia's final PCFA early-detection recommendations, approved by NHMRC on May 18, 2026, emphasize clinician-initiated discussion and risk-based testing. Average-risk recommendations focus on ages 50 to 69; conversations start earlier for specified higher-risk groups. The earlier draft proposal for a routine age-40 baseline is not the final recommendation.",
+            "Readers outside Australia should treat those ages as jurisdiction-specific context. A particular person's risk, health and choice matter more than importing rules across healthcare systems."
+          ],
+          "refs": [
+            "PCFA",
+            "NHMRC"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What screening can and cannot accomplish",
+          "paragraphs": [
+            "PSA-based screening can help find cancers that may benefit from early treatment, but it can also lead to unnecessary investigations or treatment of slow-growing disease. Modern diagnostic approaches aim to reduce avoidable biopsies, yet a reassuring MRI or marker does not eliminate all risk.",
+            "A useful screening discussion ends with a plan: whether to test, what result would trigger reassessment, when the test will be repeated and who will review the result."
+          ],
+          "refs": [
+            "NCI-S",
+            "AUA-E"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "How does my family history or ancestry affect the discussion?",
+        "What are the possible benefits and harms of PSA testing for me?",
+        "If we test, what would change the follow-up interval?",
+        "How would an elevated result be confirmed before biopsy?"
+      ],
+      "evidence": "US, EU and Australian organizations do not publish one interchangeable screening schedule."
+    },
+    {
+      "path": "screening/beyond-psa",
+      "cat": "screening",
+      "title": "Beyond the PSA number",
+      "dek": "What PSA density, free PSA, risk calculators and additional blood tests can add to a screening discussion.",
+      "lead": "PSA measures a protein, not a cancer. Doctors may combine it with other information to decide whether testing should stop, be repeated, or progress to MRI or biopsy.",
+      "sections": [
+        {
+          "heading": "The value of context and repeat measurement",
+          "paragraphs": [
+            "PSA can rise with benign enlargement, inflammation and procedures, and values can fluctuate between tests. Finasteride and dutasteride can lower measured PSA. Clinicians interpret values using prior results, medications and the clinical situation rather than treating one reading as a definitive diagnosis.",
+            "PSA velocity, or change over time, may support a discussion but should not by itself drive a biopsy decision. An unexpected elevation may reasonably be confirmed first unless there are other indications for prompt evaluation."
+          ],
+          "refs": [
+            "AUA-E",
+            "NCI-S"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "PSA density and free PSA",
+          "paragraphs": [
+            "PSA density divides the PSA result by prostate volume, often estimated by imaging. It can help distinguish a PSA that might partly reflect a large prostate from a result that merits further evaluation. Percent-free PSA compares the unbound portion of PSA with total PSA in contexts where that information may improve risk estimation.",
+            "Neither measure establishes whether cancer exists. Cutoffs vary with patient selection and local clinical protocols, and a lower-risk estimate can still miss clinically significant disease."
+          ],
+          "refs": [
+            "EAU-D",
+            "AUA-E"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Specialized tests answer narrower questions",
+          "paragraphs": [
+            "Tests such as PHI, 4Kscore, IsoPSA and Stockholm3 combine biochemical markers or clinical factors to estimate the chance that biopsy will find important cancer. Their populations, availability, thresholds, regulatory status and evidence differ. IsoPSA's U.S. authorization is for a defined group already being considered for biopsy, not universal screening.",
+            "A 2026 Swedish follow-up found Stockholm3 promising for detecting clinically significant cancers, but it does not establish improved cancer-specific survival or prove that all health systems should adopt it. Newer experimental blood and urine tests require clinical validation before routine use."
+          ],
+          "refs": [
+            "AUA-E",
+            "STOCKHOLM3",
+            "FDA-ISO"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Choosing a next step",
+          "paragraphs": [
+            "A risk calculator or biomarker can help when the result would genuinely change whether a biopsy is recommended. MRI can locate suspicious areas and help target sampling, while biopsy remains the usual method of confirming cancer and its grade.",
+            "Ask what a specific test will change, not merely whether it exists. A strong plan explains what happens after high, intermediate and reassuring results."
+          ],
+          "refs": [
+            "EAU-D",
+            "PREVENT"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Would repeating PSA change the decision?",
+        "Would prostate volume or PSA density clarify risk?",
+        "What additional test has been validated for my situation?",
+        "If a marker is reassuring, what risk still remains?"
+      ],
+      "evidence": "Different biomarkers and regulatory indications are not directly interchangeable."
+    },
+    {
+      "path": "screening/inherited-risk",
+      "cat": "screening",
+      "title": "Family history and inherited prostate cancer risk",
+      "dek": "How inherited variants and family patterns can change screening and treatment discussions.",
+      "lead": "Family history is more than whether a father or brother had prostate cancer. The number of affected relatives, age at diagnosis, cancer severity and other cancers in the family may all matter.",
+      "sections": [
+        {
+          "heading": "Recognizing a pattern",
+          "paragraphs": [
+            "Prostate cancer in multiple close relatives or a diagnosis at a young age can raise concern for an inherited predisposition. Some families have patterns of breast, ovarian, pancreatic or colorectal cancers that are relevant to genetic assessment. A family history on either side matters.",
+            "Gather a simple family history with relatives, cancer type and approximate age at diagnosis. A clinician or genetic counselor can determine whether inherited testing is appropriate without requiring that every relative complete the same panel."
+          ],
+          "refs": [
+            "EAU-D",
+            "NCI-S"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "BRCA2 and other established risk genes",
+          "paragraphs": [
+            "Inherited BRCA2 variants are associated with higher prostate cancer risk and can affect discussions about earlier screening and, in some circumstances, treatment. Other genes may be relevant depending on the family history and clinical question, but their significance is not identical.",
+            "Clinical genetic testing is different from direct-to-consumer reports. Professional interpretation considers variants of uncertain significance, whether a finding is truly inherited, and what relatives could responsibly do with the information."
+          ],
+          "refs": [
+            "EAU-D",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Germline versus tumor testing",
+          "paragraphs": [
+            "A germline test looks for inherited changes present across the body and potentially shared by relatives. Tumor sequencing studies mutations acquired in cancer cells. A tumor finding may suggest a need for inherited testing, but it does not automatically prove that every relative carries the variant.",
+            "Some tumor features may affect eligibility for specific drugs or clinical trials, while a germline finding can influence family counseling. Ask which type of test is being recommended and the particular decision it is meant to inform."
+          ],
+          "refs": [
+            "NCI-T",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Avoid overinterpreting rare discoveries",
+          "paragraphs": [
+            "Research continues to identify uncommon hereditary variants, including reports involving CDK12. Rare associations in highly selected cancer populations should not become blanket family screening mandates or a claim that one unusual result determines treatment.",
+            "A thoughtful next step is a genetics referral when family patterns or personal cancer characteristics meet current guidance. Genetic information can create uncertainty as well as clarity and benefits from careful counseling."
+          ],
+          "refs": [
+            "EAU-D",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Do I meet criteria for genetic counseling?",
+        "Would inherited testing change my screening or family advice?",
+        "Is the proposed test germline or tumor-based?",
+        "What would an uncertain genetic finding mean?"
+      ],
+      "evidence": "Rare genetic findings need specialist interpretation and may not have established screening actions."
+    },
+    {
+      "path": "diagnosis/mri-biopsy",
+      "cat": "diagnosis",
+      "title": "MRI and prostate biopsy",
+      "dek": "How imaging and sampling work together, why MRI can miss cancer, and what biopsy route changes.",
+      "lead": "An MRI pictures areas of suspicion; a biopsy samples tissue to establish cancer and grade. They answer related but distinct questions, and neither is perfect in isolation.",
+      "sections": [
+        {
+          "heading": "What PI-RADS communicates",
+          "paragraphs": [
+            "Prostate MRI produces images radiologists use to identify suspicious regions. PI-RADS assigns scores that describe how likely a lesion is to harbor clinically significant cancer. Quality, reader experience, technical protocol and prostate characteristics affect how useful the scan is.",
+            "A low-suspicion MRI can reduce the chance of significant cancer but cannot exclude it. When other risk information remains concerning, a clinician may still recommend biopsy despite a reassuring scan."
+          ],
+          "refs": [
+            "ACR",
+            "AUA-E"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Targeted and systematic sampling",
+          "paragraphs": [
+            "MRI-targeted biopsy samples suspicious areas. Systematic cores sample additional regions because MRI can miss lesions or underestimate their extent. The preferred combination depends on whether the patient has had a prior biopsy, overall risk, imaging quality and guideline recommendations.",
+            "A biopsy reports Gleason patterns and Grade Group from sampled tissue. Sampling error matters, and a higher grade may occasionally be found on later biopsy or after surgery."
+          ],
+          "refs": [
+            "AUA-E",
+            "EAU-D"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Transperineal and transrectal routes",
+          "paragraphs": [
+            "A transperineal biopsy passes the needle through disinfected skin between the scrotum and anus; a transrectal biopsy passes through the rectal wall. Both can obtain targeted and systematic cores. Practical considerations include anesthesia, discomfort, infection prevention, local expertise and access.",
+            "The final PREVENT randomized study compared transperineal biopsy without prophylactic antibiotics with transrectal biopsy using tailored prophylaxis. No infections were reported among 372 transperineal participants, compared with six among 370 transrectal participants; detection of higher-grade cancer was similar. This is an important comparison, not a guarantee of zero risk in every clinic."
+          ],
+          "refs": [
+            "PREVENT"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Emerging imaging techniques",
+          "paragraphs": [
+            "Shorter biparametric MRI and high-resolution micro-ultrasound are being studied or adopted in selected settings. PSMA PET has established roles in staging or recurrence for certain patients but is not a default substitute for MRI or tissue biopsy at first diagnosis.",
+            "Ask which test answers the current question and whether repeating a scan would change the decision. Avoid adding imaging solely because a headline describes a novel machine or algorithm."
+          ],
+          "refs": [
+            "EAU-D",
+            "PSMA-APP"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Would a negative MRI change my need for biopsy?",
+        "Will the biopsy use targeted, systematic or both forms of sampling?",
+        "Which route is used and how is infection risk managed?",
+        "When and how will the pathology be explained?"
+      ],
+      "evidence": "PREVENT infection counts apply to the trial's specific methods and follow-up."
+    },
+    {
+      "path": "diagnosis/grade-stage-risk",
+      "cat": "diagnosis",
+      "title": "Gleason, Grade Group, stage and risk",
+      "dek": "The difference between tumor grade, how far cancer has spread, and the overall risk category.",
+      "lead": "Prostate cancer is not one diagnosis with one treatment. The biopsy grade, PSA, clinical stage and extent of disease determine whether monitoring or treatment is most appropriate.",
+      "sections": [
+        {
+          "heading": "Grade measures how cells look",
+          "paragraphs": [
+            "A pathologist examines biopsy tissue and reports Gleason patterns. The Grade Group system translates pattern combinations into five categories. Grade Group 1 is the lowest, while higher groups generally indicate more aggressive-looking disease.",
+            "Grade is not the same as stage. A biopsy samples parts of the gland, so the apparent grade can sometimes change after another biopsy or prostatectomy. The number of positive cores and the amount of cancer in each core may also matter."
+          ],
+          "refs": [
+            "NCI-T",
+            "AUA-L"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Stage measures where cancer is",
+          "paragraphs": [
+            "Clinical stage describes what can be inferred from examination, MRI and other tests. Cancer confined to the prostate differs from cancer extending outside the capsule, reaching nearby tissues or spreading to lymph nodes and distant organs.",
+            "Imaging is selected for the risk group and treatment question. PSMA PET may improve staging in selected higher-risk situations, but a normal scan does not guarantee the absence of microscopic disease."
+          ],
+          "refs": [
+            "EAU",
+            "PROPSMA"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Risk groups combine signals",
+          "paragraphs": [
+            "Clinical risk groups use several findings together, often including PSA, Grade Group, clinical stage and biopsy volume. Guidelines can revise category definitions over time; an older report's label may not align exactly with the current version.",
+            "The point of a risk group is to inform options, not to reduce a person to one number. Some low-risk cancers can be actively monitored, whereas other cases benefit from treatment or additional staging. Even within a category, patient health and preferences matter."
+          ],
+          "refs": [
+            "AUA-L",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Making reports actionable",
+          "paragraphs": [
+            "A productive consultation reviews the pathology report alongside MRI, PSA history and any additional tests. Ask the team to identify what remains uncertain and whether another review or second opinion could change management.",
+            "If a report contains unfamiliar terms such as perineural invasion, cribriform pattern, intraductal carcinoma or positive margins, ask what each means in the specific context rather than interpreting it alone."
+          ],
+          "refs": [
+            "NCI-T",
+            "AUA-L"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "What are my Grade Group, stage and risk category?",
+        "Which result is most influential in the recommendation?",
+        "Would pathology review or further imaging change the plan?",
+        "What is uncertain despite the tests already completed?"
+      ],
+      "evidence": "Risk-group names and definitions differ between guideline editions."
+    },
+    {
+      "path": "diagnosis/genomic-genetic",
+      "cat": "diagnosis",
+      "title": "Genomic, genetic and AI risk tests explained",
+      "dek": "How tissue classifiers, inherited genetic tests and image-based risk tools differ.",
+      "lead": "Two tests may give different risk impressions without either being wrong. They can measure different aspects of prostate cancer and were often developed for different decisions.",
+      "sections": [
+        {
+          "heading": "Diagnostic, prognostic and predictive mean different things",
+          "paragraphs": [
+            "A diagnostic test helps determine whether cancer is present. A prognostic test estimates an outcome such as recurrence or metastasis risk for someone with a known diagnosis. A predictive test estimates whether a particular treatment is likely to help more than another.",
+            "A classifier that is prognostic does not automatically demonstrate which drug or radiation regimen should be chosen. Treatment-selection claims require evidence that using the score to guide care improves the relevant outcome."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Tissue-based genomic classifiers",
+          "paragraphs": [
+            "Tests such as Decipher analyze patterns of gene expression in prostate tumor tissue. They may add prognostic information to Grade Group, PSA and stage in selected circumstances. Whether ordering one changes a decision depends on the clinical situation and guideline context.",
+            "Exploratory analyses may suggest that groups with different classifier scores have different treatment benefits. Such findings are not the same as a prospectively validated instruction to intensify or omit treatment. Ask exactly which result, population and outcome the report predicts."
+          ],
+          "refs": [
+            "AUA-L",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Inherited genetics answers a family question",
+          "paragraphs": [
+            "Germline genetic testing seeks inherited variants such as certain BRCA2 changes; tumor sequencing looks at acquired cancer mutations. They may inform different decisions. A tumor test does not replace counseling when an inherited predisposition is suspected.",
+            "A genetic counselor can explain family implications, uncertain variants and potential next steps. A broad gene panel can discover changes of uncertain significance that should not trigger unsupported medical actions."
+          ],
+          "refs": [
+            "EAU-D",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "AI tools need precise claims",
+          "paragraphs": [
+            "AI-based analysis of MRI or pathology can assist professionals with detection or risk estimation. Regulatory authorization, when granted, applies to a specific product, population, purpose and output. It does not certify that the AI can select every cancer treatment or outperform every specialist.",
+            "Ask whether the tool is available as routine clinical care, what evidence supports its intended use, and how the treating team combines it with conventional pathology and imaging."
+          ],
+          "refs": [
+            "AUA-L",
+            "ACR"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "Is this test diagnostic, prognostic or predictive?",
+        "What decision could change because of the result?",
+        "Has the proposed use been tested in people like me?",
+        "Does the result have implications for relatives?"
+      ],
+      "evidence": "No genomic or AI score should be treated as a stand-alone treatment directive."
+    },
+    {
+      "path": "diagnosis/psma-pet",
+      "cat": "diagnosis",
+      "title": "PSMA PET and modern prostate imaging",
+      "dek": "When molecular imaging can help stage cancer or find recurrence, and why negative results have limits.",
+      "lead": "PSMA PET uses a tracer that binds to a target expressed by many prostate cancers. It can reveal sites of disease not seen clearly on conventional CT or bone scans, but its appropriate role depends on the clinical question.",
+      "sections": [
+        {
+          "heading": "What a PSMA PET scan shows",
+          "paragraphs": [
+            "A tracer is injected before PET imaging and shows areas where it accumulates. PSMA is highly expressed by many prostate cancer cells, yet other tissues and conditions can also show uptake. A scan result therefore needs expert interpretation alongside pathology, PSA and the patient's history.",
+            "The FDA authorized Ga-68 PSMA-11 for defined imaging uses in 2020 following work led by UCSF and UCLA. Different PSMA tracers can have their own regulatory indications and local availability."
+          ],
+          "refs": [
+            "PSMA-APP",
+            "NCI-T"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Staging higher-risk disease",
+          "paragraphs": [
+            "For selected patients with higher-risk newly diagnosed cancer, PSMA PET may improve accuracy of staging compared with conventional imaging. The randomized Australian proPSMA study helped establish this role, although detection does not automatically prove that every change in management improves survival.",
+            "A specialist may recommend imaging based on risk group, planned treatment and whether the result will change management. Patients with low-risk localized disease do not routinely need every available scan."
+          ],
+          "refs": [
+            "PROPSMA",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Looking for cancer after treatment",
+          "paragraphs": [
+            "A PSA rise after prostatectomy or radiation can raise concern for recurrence. PSMA PET may help locate disease and refine treatment planning in selected circumstances. Detection generally depends on disease burden and PSA level, so a negative scan at a low PSA does not exclude microscopic recurrence.",
+            "Sometimes the appropriate decision about salvage treatment cannot wait for imaging to become positive. Ask the treating team how pathology, PSA doubling pattern, elapsed time and competing health concerns affect timing."
+          ],
+          "refs": [
+            "PSMA-APP",
+            "EAU"
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Imaging and treatment are not the same",
+          "paragraphs": [
+            "PSMA PET is a diagnostic imaging method. PSMA-targeted radioligand therapy is a different intervention using a radioactive drug to treat selected metastatic cancers. A positive scan is one part of eligibility, not an automatic indication for treatment.",
+            "Research on using PSMA PET before first biopsy or to monitor all low-risk cases remains investigational. Established scan indications should not be confused with these emerging studies."
+          ],
+          "refs": [
+            "PLUVICTO",
+            "NCI-T"
+          ],
+          "bullets": []
+        }
+      ],
+      "questions": [
+        "What question is PSMA PET intended to answer now?",
+        "Could the scan change treatment, and how?",
+        "What would a negative result mean for the next decision?",
+        "Does my insurance cover the proposed imaging indication?"
+      ],
+      "evidence": "Availability, tracer approval and reimbursement vary by indication and country."
+    }
+  ]
+}
