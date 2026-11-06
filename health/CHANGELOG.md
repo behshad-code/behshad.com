@@ -1,5 +1,13 @@
 # Men's Health Compass: editorial versions
 
+## 1.1 Navigation correction | November 5, 2026
+
+Corrected a duplicated publishing hierarchy: the root `/health/` had a second copy of the six prostate article cards plus prostate-specific FAQ and updates sections, despite being the general Men's Health Compass homepage. The root now introduces Men's Health Compass, offers one featured Prostate Health topic, and explains the publication's editorial approach. The detailed prostate introduction, six guide cards, research highlights and source shelf remain only at `/health/prostate/`.
+
+The six published article bodies, URLs, visual assets, Ballot Compass, and behshad.com main website are unchanged.
+
+Added automated `health/check-hierarchy.mjs` regression checks and a scoped GitHub Actions workflow so future Health Compass changes cannot accidentally copy the article library back into the general homepage.
+
 ## Landing page structure and research highlights | November 5, 2026
 
 Replaced duplicated introductory six-part overview with one concise intro, preserved all six full guide URLs and cards, and added three dated source-verified research updates linked to Oxford, UCL and FDA primary institutional announcements. The main site's files, branding, images, article bodies and Ballot Compass remain unchanged.
