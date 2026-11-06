@@ -48,3 +48,8 @@ Use a large source pool without turning the reader-facing website into a long ne
 - FDA July 31, 2026 PSMA-targeted treatment approval: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway-inhibitor-therapy
 
 Reviewed for landing-page source context November 5, 2026. Review statuses are about source interpretation, not individual medical guidance.
+
+
+## Flipboard intake closure | November 6, 2026
+
+Additional Flipboard collection stopped after capturing 151 accessible records from a reported 160 stories. The unresolved nine-record platform gap has been documented. The separate evidence audit and institutional research compilations informed selected v2.0 topics; they do not certify that every news article was opened or each claim clinically validated. The historical 12-record JSON remains as an early intake snapshot. Further releases require independent source checking before any clinical statement is changed.
