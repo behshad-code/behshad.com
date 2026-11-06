@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "collection": "PROSTATE HEALTH",
+  "collection_url": "https://flipboard.com/@behshad/prostate-health-7nod7tnry",
+  "capture_date": "2026-11-05",
+  "provenance": "Connected browser tab rendered text; only initially loaded cards, not full archive.",
+  "flipboard_displayed_story_count": 160,
+  "items_visible_in_capture": 12,
+  "items_not_yet_extracted": 148,
+  "scope_and_caveat": "This is an incomplete intake ledger. Recording a headline does not mean the original article or primary evidence was read. Editorial_status does not certify the source. Do not publish unverified findings.",
+  "records": [
+    {
+      "id": "FB-001",
+      "headline": "Diagnostic test could flag which men need aggressive prostate cancer treatment and which don't",
+      "original_url": "https://www.foxnews.com/health/new-test-flag-which-men-need-aggressive-prostate-cancer-treatment",
+      "topic": "Treatment decisions",
+      "review_status": "verified-primary-context",
+      "primary_context_url": "https://www.ucl.ac.uk/news/2026/oct/diagnostic-test-could-help-doctors-refine-prostate-cancer-treatment",
+      "editorial_note": "Decipher treatment intensification evidence; further validation explicitly required"
+    },
+    {
+      "id": "FB-002",
+      "headline": "Prostate cancer risk may be detectable in blood 15 years before diagnosis",
+      "original_url": "https://www.medicalnewstoday.com/articles/prostate-cancer-risk-detectable-blood-15-years-before-diagnosis",
+      "topic": "Screening and emerging risk science",
+      "review_status": "verified-primary-context",
+      "primary_context_url": "https://www.ox.ac.uk/news/2026-10-22-blood-proteins-could-reveal-clues-to-prostate-cancer-risk-more-than-a-decade-before",
+      "editorial_note": "Oxford proteomics observational finding; not clinical test"
+    },
+    {
+      "id": "FB-003",
+      "headline": "Jo Malone donates £100k for cancer-detecting 'nose'",
+      "original_url": "https://www.aol.com/articles/jo-malone-donates-100k-cancer-061749000.html",
+      "topic": "Other cancer detection",
+      "review_status": "not-directly-relevant",
+      "primary_context_url": null,
+      "editorial_note": "General cancer detection technology; not yet eligible for prostate guide"
+    },
+    {
+      "id": "FB-004",
+      "headline": "Doctor-controlled robot removes patient’s prostate 35 miles away in first US telerobotic surgery",
+      "original_url": "https://nypost.com/2026/10/27/us-news/doctor-controlled-robot-removes-patients-prostate-35-miles-away-in-first-us-telerobotic-surgery/",
+      "topic": "Surgical technology",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Telerobotic surgery implementation, not a treatment-outcomes comparison"
+    },
+    {
+      "id": "FB-005",
+      "headline": "Darolutamide Ups Metastasis-Free Survival in Prostate Cancer",
+      "original_url": "https://www.medscape.com/viewarticle/darolutamide-improves-metastasis-free-survival-prostate-2026a10014uh",
+      "topic": "Treatment decisions",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Needs original darolutamide study and population definition"
+    },
+    {
+      "id": "FB-006",
+      "headline": "Prostate cancer breakthrough as scientists discover a way to spot men at risk of the deadly disease more than a DECADE before symptoms strike",
+      "original_url": "https://www.dailymail.com/health/article-16226931/Prostate-cancer-breakthrough-spot-men-risk-DECADE-symptoms-strike.html",
+      "topic": "Screening and emerging risk science",
+      "review_status": "duplicate-topic-verified-context",
+      "primary_context_url": "https://www.ox.ac.uk/news/2026-10-22-blood-proteins-could-reveal-clues-to-prostate-cancer-risk-more-than-a-decade-before",
+      "editorial_note": "Same Oxford proteomics research topic as earlier item, distinct publisher"
+    },
+    {
+      "id": "FB-007",
+      "headline": "Prostate cancer deaths are finally on the decline – the breakthrough treatments giving men hope",
+      "original_url": "https://mensfitness.co.uk/health/prostate-cancer-deaths-decline-new-treatments/",
+      "topic": "Treatment overview",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Broad trend reporting needs source mortality and survival statistics"
+    },
+    {
+      "id": "FB-008",
+      "headline": "Can Ejaculation Frequency Affect Prostate Cancer Risk?",
+      "original_url": "https://epageone.com/ejaculation-frequency-prostate-cancer-risk/",
+      "topic": "Lifestyle and risk",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Observational associations must not be represented as causal prevention advice"
+    },
+    {
+      "id": "FB-009",
+      "headline": "Single tRNA controls prostate cancer identity and treatment resistance",
+      "original_url": "https://www.news-medical.net/news/20261007/Single-tRNA-controls-prostate-cancer-identity-and-treatment-resistance.aspx",
+      "topic": "Molecular biology",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Lab mechanism; determine whether preclinical before patient summary"
+    },
+    {
+      "id": "FB-010",
+      "headline": "Dried placenta may help men regain erections faster after prostate surgery - Study",
+      "original_url": "https://www.vanguardngr.com/2026/10/dried-placenta-may-help-men-regain-erections-faster-after-prostate-surgery-study-2/",
+      "topic": "Recovery and quality of life",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Needs study design and efficacy/safety confirmation before public use"
+    },
+    {
+      "id": "FB-011",
+      "headline": "Prostate cancer: Free exercise scheme helping men regain strength",
+      "original_url": "https://www.bbc.co.uk/news/articles/c6m2d3y813ywo",
+      "topic": "Recovery and quality of life",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Potential supportive care content; check primary exercise evidence"
+    },
+    {
+      "id": "FB-012",
+      "headline": "Smoking may weaken immune defenses in prostate cancer, study suggests",
+      "original_url": "https://pontotocnews.com/pontotoc-news/smoking-may-weaken-immune-defenses-in-prostate-cancer-study-suggests/",
+      "topic": "Lifestyle and risk",
+      "review_status": "awaiting-primary-review",
+      "primary_context_url": null,
+      "editorial_note": "Find original research on smoking and prostate-cancer immune responses"
+    }
+  ]
+}
