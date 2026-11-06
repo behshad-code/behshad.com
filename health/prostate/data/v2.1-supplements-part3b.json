@@ -1,0 +1,46 @@
+{
+  "schema": "2.1-article-enrichment",
+  "entries": [
+    {
+      "path": "treatments/robotic-surgery/robot-platforms",
+      "heading": "How to compare devices without confusing features with patient results",
+      "paragraphs": [
+        "Da Vinci Xi and da Vinci 5 are multiport robotic systems, while da Vinci SP is designed for single-port access. The systems differ in arm layout, instrument articulation, sensors, ergonomics and surgical workflow. Medtronic's Hugo system has received U.S. clearance for specified urologic procedures, but authorization must be checked for the particular model, date, country and use. Other platforms, including systems used internationally, may have different regulatory statuses.",
+        "Technical characteristics such as force feedback, computing capability or camera positioning can matter to operating teams. They do not establish superiority in margins, continence or erectile outcomes without appropriate comparative clinical research. Ask whether the surgeon has completed the learning curve on the exact platform, what outcomes are tracked using consistent definitions, and how the institution monitors complications or converts to another approach when needed."
+      ],
+      "refs": [
+        "INTUITIVE-SEC",
+        "HUGO",
+        "BRISBANE",
+        "AUA-L"
+      ]
+    },
+    {
+      "path": "treatments/robotic-surgery/telesurgery",
+      "heading": "Safety, connectivity and regulation matter as much as distance",
+      "paragraphs": [
+        "Remote consultation, remote surgical mentoring and a surgeon directly controlling instruments from another location are different activities. True telesurgery introduces questions about network reliability, latency, failover, cybersecurity, licensing, training, emergency conversion and accountability for a patient on the operating table. Technical demonstrations do not show that a procedure is routinely authorized or improves patient outcomes.",
+        "Companies are exploring more connected surgical systems, telepresence and automation. Intuitive's 2026 disclosures describe prospective capabilities and expected regulatory milestones, not guarantees of clearance or demonstrated benefits. Before relying on a remote operation claim, ask which authority approved the exact clinical use, where the supervising and backup teams are located, what happens during loss of connectivity and what clinical outcomes have been independently published."
+      ],
+      "refs": [
+        "INTUITIVE-SEC",
+        "HUGO",
+        "AUA-L"
+      ]
+    },
+    {
+      "path": "treatments/robotic-surgery/surgeon-questions",
+      "heading": "Turn the consultation into a comparable decision record",
+      "paragraphs": [
+        "Ask each surgeon to describe how many similar operations the team performs annually, the proportion of patients with a comparable risk group, how the surgical margin is defined, and when urinary or sexual outcomes are measured. A hospital's overall success number may reflect a very different patient mix. A prospective patient should understand whether results are audited, self-reported or drawn from a published study, and whether one precautionary pad counts as continent.",
+        "Ask how decisions about unilateral or bilateral nerve sparing, lymph nodes, frozen sections, bladder neck preservation and operative access will be made. Discuss recovery, catheter removal, pelvic-floor support, sexual rehabilitation, pathology review and first PSA. Request a written plan with specific contacts for urgent symptoms. Comparing the quality and transparency of these explanations is more helpful than focusing only on a robot model."
+      ],
+      "refs": [
+        "AUA-L",
+        "BRISBANE",
+        "NEUROSAFE",
+        "URO-REC"
+      ]
+    }
+  ]
+}

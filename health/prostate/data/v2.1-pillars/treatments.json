@@ -1,0 +1,180 @@
+{
+  "slug": "treatments",
+  "name": "Treatment Options",
+  "title": "Treatment Options: choosing care by risk, goals and evidence",
+  "dek": "A complete pathway through surveillance, surgery, radiation, hormone therapy, advanced disease and robotic surgical technology.",
+  "lead": "There is no one best prostate cancer treatment. The choice depends on how the cancer was classified, whether it has spread, expected benefit, overall health, urinary and sexual priorities, and the risks of each option. Good comparisons begin with the disease state, not the newest device.",
+  "sections": [
+    {
+      "heading": "First establish the clinical situation",
+      "paragraphs": [
+        "Localized disease is confined to the prostate on available assessment; locally advanced disease extends into nearby structures; recurrent disease may be detected by PSA before a scan finds a lesion; metastatic disease has spread to distant sites. These categories have different goals and treatment pathways. Grade Group, PSA, clinical stage, imaging and life expectancy help classify risk for localized disease.",
+        "Ask for the risk group and what findings support it. A person with low-risk, organ-confined cancer may reasonably choose active surveillance. Someone with high-risk disease may need combinations of local and systemic therapy. A therapy tested only in metastatic cancer should not be applied to someone with localized disease simply because the drug is newer."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-T",
+        "AUA-L",
+        "EAU"
+      ]
+    },
+    {
+      "heading": "Active surveillance and watchful waiting",
+      "paragraphs": [
+        "Active surveillance is a structured plan to defer treatment for selected lower-risk cancers while monitoring for changes that could make treatment appropriate. It generally includes PSA testing, clinical review, MRI and repeat biopsy when indicated. A low-risk diagnosis is not permission to ignore follow-up; the schedule and triggers should be written down.",
+        "Watchful waiting has a different purpose. It usually emphasizes symptom management rather than repeated testing aimed at preserving a future curative-treatment window, often where life expectancy or other medical conditions make immediate curative therapy unlikely to help. Treatment decisions should consider both expected cancer behavior and the person's priorities.",
+        "MRI scoring systems and investigational urine biomarkers may help refine surveillance, but stable imaging does not automatically eliminate the need for tissue re-evaluation. A PSA change by itself is a reason to assess the situation, not a complete indication for treatment."
+      ],
+      "bullets": [],
+      "refs": [
+        "EAU",
+        "AUA-L",
+        "MSK-AS",
+        "PRECISE"
+      ]
+    },
+    {
+      "heading": "Surgery and radiation: compare what matters after treatment",
+      "paragraphs": [
+        "Radical prostatectomy removes the prostate and seminal vesicles, sometimes with lymph-node assessment. Radiation treats cancer in place and may use external beams or brachytherapy; hormone therapy is sometimes added depending on disease risk. Both are established options for appropriate localized cancers, but side-effect patterns and future management differ.",
+        "Surgery produces a full pathology report and typically causes an immediate drop in PSA after recovery. Urinary leakage and erectile dysfunction are important potential effects; there are also anesthetic and surgical risks. Radiation avoids removal of the gland but can cause bowel, urinary and sexual effects that may appear during or after treatment. PSA after radiation falls more slowly and is interpreted differently.",
+        "The 15-year ProtecT trial informs long-term counseling about management strategies in selected localized cancers, but no single trial should be treated as proof that surgery and radiation give identical outcomes for every risk group. Seek consultations with both a urologic oncologist and radiation oncologist when the choice is meaningful."
+      ],
+      "bullets": [
+        "Compare cancer-control outcomes for your actual risk group, not a hospital's average patient.",
+        "Ask how continence, sexual and bowel outcomes are measured and over what time.",
+        "Discuss what follow-up looks like and what salvage options remain if PSA later rises."
+      ],
+      "refs": [
+        "NCI-T",
+        "AUA-L",
+        "PROTECT",
+        "BRISBANE"
+      ]
+    },
+    {
+      "heading": "Radiation options and modern schedules",
+      "paragraphs": [
+        "External beam techniques include conventional fractionation, moderately hypofractionated schedules and very short stereotactic body radiation therapy (SBRT) for appropriately selected patients. Brachytherapy places a radioactive source in or near the gland and may be used alone or in combination. Choice depends on risk group, prostate size, urinary function, prior treatment, anatomy and local expertise.",
+        "PACE-B compared five-session SBRT with longer radiation schedules in selected lower-risk localized disease. It did not compare SBRT with prostatectomy. Early reports of two-fraction approaches and small head-to-head surgery comparisons are not a reason to assume equivalent long-term control. Ask about the treatment volume, image guidance, use and duration of hormone therapy, bowel risks and late urinary effects."
+      ],
+      "bullets": [],
+      "refs": [
+        "PACEB",
+        "NCI-T",
+        "EAU",
+        "AUA-L"
+      ]
+    },
+    {
+      "heading": "Robotic prostatectomy: useful technology, not an independent surgeon",
+      "paragraphs": [
+        "Robot-assisted prostatectomy is minimally invasive surgery under direct control of a trained surgeon. The system provides magnified visualization and articulated instruments. A Brisbane randomized trial reported broadly similar urinary and sexual outcomes at two years for robotic and open surgery under its trial conditions. Surgical technologies have evolved, but a newer platform is not automatically evidence of superior cancer control or recovery.",
+        "Nerve-sparing decisions balance the possibility of erectile recovery against the location and extent of cancer. Retzius-sparing, bladder-neck preservation, reconstructive techniques and frozen-section margin assessment may influence selected outcomes, particularly early continence, but studies vary in design and definition. The operation, approach, surgeon experience and postoperative care form one overall plan.",
+        "Single-port systems use different access routes, including transvesical and extraperitoneal approaches. The multicenter SPARC comparison is observational and cannot establish that one approach is best for every patient. Different robotic brands have differing regulatory authorization and clinical evidence. Telepresence and remote surgery research must remain separate from proven routine care."
+      ],
+      "bullets": [
+        "Ask who performs the critical operative steps and how frequently.",
+        "Ask about risk-adjusted positive margins, complications, pad-free recovery and erectile function.",
+        "Ask whether nerve sparing is oncologically suitable, and what the contingency is if intraoperative findings differ."
+      ],
+      "refs": [
+        "BRISBANE",
+        "NEUROSAFE",
+        "RETZIUS",
+        "SPARC",
+        "INTUITIVE-SEC",
+        "HUGO"
+      ]
+    },
+    {
+      "heading": "Focal treatments and investigational ablation",
+      "paragraphs": [
+        "Focal therapies attempt to treat a selected region of the prostate while leaving other tissue intact. Techniques include focused ultrasound, irreversible electroporation and other thermal or nonthermal ablation methods. Avoiding whole-gland treatment is appealing, but long-term evidence about cancer control, retreatment, surveillance and comparison with established options remains less mature.",
+        "Claims that a procedure is a quick or one-hour cure are misleading without long-term outcomes and careful patient selection. NICE has emphasized special arrangements for certain irreversible-electroporation uses. Discuss whether the approach is approved, guideline-supported, available through a trial or registry, and what follow-up biopsies or imaging remain necessary."
+      ],
+      "bullets": [],
+      "refs": [
+        "NICE-IRE",
+        "EAU",
+        "AUA-L"
+      ]
+    },
+    {
+      "heading": "Hormone therapy and intensification",
+      "paragraphs": [
+        "Androgen deprivation therapy (ADT) lowers or blocks testosterone signaling, which can slow hormone-sensitive prostate cancer. Its use depends on stage, risk, radiation plans and other treatment history. Potential effects include hot flashes, fatigue, muscle loss, metabolic and cardiovascular changes, bone loss and changes in sexual function. These harms should be discussed alongside potential cancer benefit.",
+        "High-risk disease may require local therapy plus systemic treatment. Trials such as PROTEUS tested intensified androgen signaling inhibition around prostatectomy in selected high-risk patients. Other trials have tested medicines with ADT and radiation. Benefit estimates must be interpreted using the actual eligibility criteria, comparator, endpoint, maturity and adverse events. A positive high-risk trial does not make combination treatment necessary for a low-risk patient."
+      ],
+      "bullets": [],
+      "refs": [
+        "PROTEUS",
+        "EAU",
+        "NCI-T",
+        "AUA-L"
+      ]
+    },
+    {
+      "heading": "When cancer returns or spreads",
+      "paragraphs": [
+        "After prostatectomy, a confirmed detectable or rising PSA may prompt evaluation for biochemical recurrence. After radiation, PSA interpretation differs because benign prostate tissue can remain. The next decision depends on PSA pattern, initial risk, prior treatment and imaging. Salvage radiation or other local approaches may be considered when appropriate; not every recurrence means visible distant metastases.",
+        "For metastatic disease, treatment may include androgen-pathway therapies, chemotherapy, radiotherapy to selected sites and radioligand therapy in defined populations. PSMA PET helps identify suitable disease patterns and select certain therapies, but a positive scan does not automatically determine the best regimen. In July 2026, FDA expanded Pluvicto's indication for a specified PSMA-positive metastatic androgen-pathway-sensitive population in combination with an androgen receptor pathway inhibitor. This approval does not apply to localized prostate cancer.",
+        "Immunotherapies, blood-based tumor DNA monitoring, adaptive dosing and bispecific antibodies are areas of active research. Their early results should not be described as standard treatment until replicated clinical evidence and authorization support that use."
+      ],
+      "bullets": [],
+      "refs": [
+        "EAU",
+        "NCI-T",
+        "PLUVICTO",
+        "PSMA-APP"
+      ]
+    },
+    {
+      "heading": "Making a side-by-side decision",
+      "paragraphs": [
+        "Ask each specialist to explain the likely cancer-control benefit, how the result is measured, and which outcomes are uncertain for your risk group. Record the chance of needing additional treatment, the timing of effects, costs and access, time away from normal activities and how the plan fits your values. A second opinion is reasonable when the options have different burdens or if risk classification is uncertain.",
+        "A good decision concludes with an accountable plan: who orders the next step, what treatment and recovery will require, when follow-up begins and how new findings would change the recommendation. No comparative table can replace the clinical context, but an explicit comparison is much better than choosing from marketing claims."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-L",
+        "NCI-T",
+        "PROTECT"
+      ]
+    }
+  ],
+  "questions": [
+    "What risk group and disease state drive the treatment recommendation?",
+    "What benefit and harm data apply to patients like me, over what follow-up?",
+    "What does recovery look like for urinary, sexual, bowel and general health?",
+    "What are the alternatives and what happens if the first treatment fails?"
+  ],
+  "related": [
+    {
+      "title": "Active Surveillance",
+      "path": "active-surveillance",
+      "note": "How monitoring works and when to reassess."
+    },
+    {
+      "title": "Choosing a Treatment",
+      "path": "treatment-decisions",
+      "note": "Focused side-by-side consultation guide."
+    },
+    {
+      "title": "Surgery or Radiation",
+      "path": "treatments/surgery-vs-radiation",
+      "note": "Practical tradeoffs by treatment type."
+    },
+    {
+      "title": "Robotic Surgery: the Operation",
+      "path": "treatments/robotic-surgery/operation",
+      "note": "Explore the step-by-step procedure and other robotic modules."
+    },
+    {
+      "title": "If Cancer Returns or Spreads",
+      "path": "treatments/recurrence-advanced",
+      "note": "Understand recurrence and metastatic care."
+    }
+  ],
+  "evidence_note": "Treatment evidence is specific to stage, risk and studied populations. Early trials, observational surgical studies and manufacturer roadmaps do not establish routine superiority."
+}

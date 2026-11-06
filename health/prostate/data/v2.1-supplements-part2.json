@@ -1,0 +1,75 @@
+{
+  "schema": "2.1-article-enrichment",
+  "entries": [
+    {
+      "path": "treatments/surgery-vs-radiation",
+      "heading": "A practical comparison framework, not a winner-takes-all verdict",
+      "paragraphs": [
+        "Begin by comparing the outcomes for patients with the same risk group and general health, not simply all patients receiving a particular treatment. Surgery and radiation can each be appropriate for selected localized cancers. The operation supplies definitive pathology and an early post-treatment PSA baseline but carries surgical risks and potential urinary leakage. Radiation may preserve the gland and avoid surgery while bringing bowel, urinary or sexual effects that can develop later.",
+        "The best conversation addresses cancer control, possible need for ADT, side effects at one and several years, recovery time, follow-up and what salvage options remain. The ProtecT trial provides long-term comparisons across treatment strategies in selected localized disease; PACE-B compares radiation schedules, not surgery versus radiation. A balanced decision often benefits from both urologic and radiation oncology perspectives."
+      ],
+      "refs": [
+        "PROTECT",
+        "AUA-L",
+        "NCI-T",
+        "PACEB"
+      ]
+    },
+    {
+      "path": "treatments/radiation-options",
+      "heading": "How the radiation schedule changes the experience",
+      "paragraphs": [
+        "External-beam treatment can be spread across many smaller doses or delivered in a more concentrated schedule for selected patients. Shorter is convenient, but suitability depends on cancer stage, anatomy, urinary function and whether lymph nodes are included. SBRT typically uses precise image guidance and planning to protect organs near the prostate; the total course is shorter, but follow-up for late effects remains important.",
+        "PACE-B supports five-session SBRT compared with longer radiotherapy schedules in its defined study population. It does not prove equivalence to surgery, and studies of two-fraction approaches or higher-risk patients should be evaluated separately. Brachytherapy may also be appropriate in some settings. Ask about expected urinary, bowel and sexual effects, ADT, how daily positioning is managed and the long-term monitoring plan."
+      ],
+      "refs": [
+        "PACEB",
+        "AUA-L",
+        "EAU",
+        "NCI-T"
+      ]
+    },
+    {
+      "path": "treatments/focal-therapy",
+      "heading": "What must be shown before a focal procedure becomes routine care",
+      "paragraphs": [
+        "Treating only a mapped portion of the gland may reduce injury to uninvolved tissue, but untreated prostate tissue remains and can contain additional disease. Success cannot be defined merely as an uncomplicated procedure, same-day discharge or a short-term PSA drop. It requires durable cancer control, clearly defined recurrence, biopsy and MRI follow-up, retreatment rates and meaningful urinary and sexual outcomes.",
+        "Studies of HIFU, irreversible electroporation and other ablation techniques vary substantially in disease selection and follow-up. NICE's position on irreversible electroporation includes special governance and audit or research arrangements, not an unrestricted cure claim. If offered a focal procedure, ask whether a randomized comparison exists, how recurrence will be detected and what happens if whole-gland treatment is later required."
+      ],
+      "refs": [
+        "NICE-IRE",
+        "EAU",
+        "AUA-L",
+        "NCI-T"
+      ]
+    },
+    {
+      "path": "treatments/hormone-combinations",
+      "heading": "Why high-risk trial results do not answer every patient's question",
+      "paragraphs": [
+        "Trials testing androgen pathway intensification around prostatectomy or radiation generally recruit selected men with higher-risk cancer. Their treatment burden and baseline probability of recurrence differ from those of someone with favorable localized disease. The PROTEUS phase 3 program evaluated apalutamide added to ADT around surgery; interpretation should include event-free or metastasis-free endpoints, absolute results, duration of follow-up and adverse effects.",
+        "Patients receiving ADT should also understand effects on energy, libido, metabolic risk, cardiovascular health, muscle and bone. Asking about baseline risk assessment and exercise is part of proper treatment planning. Do not infer that the newest combination is approved or recommended for every situation merely because it showed a positive trial result in a specific high-risk population."
+      ],
+      "refs": [
+        "PROTEUS",
+        "EAU",
+        "NCI-T",
+        "AUA-L"
+      ]
+    },
+    {
+      "path": "treatments/recurrence-advanced",
+      "heading": "Different recurrence patterns lead to different options",
+      "paragraphs": [
+        "A detectable or rising PSA after initial local treatment may be the earliest sign of recurrence, well before any scan reveals a lesion. Interpretation differs after surgery and radiation, and timing, original risk, PSA doubling pattern and previous treatments affect decisions. Local salvage therapy, systemic therapy and careful follow-up can have different roles; not every recurrence represents distant metastases.",
+        "PSMA-targeted radioligand therapy is a specialized treatment for defined PSMA-positive metastatic populations, not a general response to any elevated PSA. FDA decisions can expand who is eligible, but current labeling, imaging selection, prior treatment and adverse effects still matter. Promising ctDNA measurements, immunotherapies and adaptive-treatment strategies should be identified as clinical research until supported by applicable regulatory and guideline evidence."
+      ],
+      "refs": [
+        "EAU",
+        "PLUVICTO",
+        "NCI-T",
+        "PSMA-APP"
+      ]
+    }
+  ]
+}

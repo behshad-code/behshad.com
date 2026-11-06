@@ -1,0 +1,144 @@
+{
+  "slug": "diagnosis",
+  "name": "Prostate Cancer",
+  "title": "Understanding prostate cancer: diagnosis, grading, staging and risk",
+  "dek": "How MRI, biopsy, pathology, inherited genetics, tumor genomic tests and PSMA imaging fit together to characterize prostate cancer.",
+  "lead": "A prostate cancer diagnosis is not one number or one scan. Doctors combine tissue findings, PSA, imaging and personal circumstances to understand what has been found and what choices are reasonable. Different tests answer different questions, and some apparent contradictions are expected.",
+  "sections": [
+    {
+      "heading": "What a diagnosis establishes",
+      "paragraphs": [
+        "Prostate cancer is usually an adenocarcinoma, a cancer arising in glandular prostate cells. The important first distinction is whether it appears confined to the prostate, extends into nearby tissues or has spread to lymph nodes or distant organs. Disease state matters because the expected benefit of surgery, radiation and medicines changes across these settings.",
+        "A suspicious PSA or imaging result is not by itself a tissue diagnosis. Biopsy pathology typically determines whether cancer is present and the grade of sampled tissue. Imaging and the clinician's assessment help estimate local extent and whether additional staging is appropriate. Neither test guarantees the complete picture: biopsies sample portions of the gland and imaging has sensitivity limits."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-T",
+        "EAU-D",
+        "AUA-L"
+      ]
+    },
+    {
+      "heading": "MRI and PI-RADS: locating areas of concern",
+      "paragraphs": [
+        "A prostate MRI uses multiple sequences to characterize tissue and identify lesions that may represent clinically important cancer. PI-RADS communicates the likelihood of clinically significant cancer on a standardized 1-to-5 scale, with higher numbers indicating greater suspicion, not a cancer stage. MRI also helps plan targeted biopsy in many people with suspected localized disease.",
+        "A negative MRI reduces but does not eliminate the possibility of important cancer. Results depend on imaging quality, experienced interpretation, lesion characteristics and clinical risk. Some cancers are not visible or are underestimated. If risk remains high despite an MRI report, clinicians may still recommend biopsy or repeat evaluation rather than treating the scan as a definitive clearance."
+      ],
+      "bullets": [],
+      "refs": [
+        "ACR",
+        "EAU-D",
+        "AUA-E"
+      ]
+    },
+    {
+      "heading": "Biopsy: sampling, route and practical tradeoffs",
+      "paragraphs": [
+        "Systematic biopsy samples predefined regions of the prostate; targeted biopsy samples suspicious MRI areas. Depending on circumstances, these approaches may be used together to reduce the chance of missing disease that imaging did not show. The number and location of cores, tumor involvement and pathology findings all contribute to risk classification.",
+        "Transperineal biopsy passes through the skin between the scrotum and anus; transrectal biopsy passes through the rectal wall. These routes differ in infection prevention, anesthesia, discomfort and logistics. The PREVENT randomized trial supplies evidence for counseling about infection and detection, but local skill and patient factors remain relevant. Ask how the planned method addresses lesions that are not visible on MRI."
+      ],
+      "bullets": [],
+      "refs": [
+        "PREVENT",
+        "AUA-E",
+        "EAU-D"
+      ]
+    },
+    {
+      "heading": "Gleason pattern, Grade Group, stage and risk are not the same thing",
+      "paragraphs": [
+        "Gleason patterns describe how prostate cancer looks under the microscope. Grade Groups translate the pattern combination into five categories, with Grade Group 1 generally representing the least aggressive pattern commonly diagnosed and Grade Group 5 representing high-grade disease. Grade Group is about cell appearance, not about whether cancer has spread.",
+        "Clinical stage describes the apparent anatomical extent, while a risk group combines grade, PSA, stage and sometimes the amount of cancer seen on biopsy. A Grade Group 2 cancer can have very different implications depending on PSA, imaging, tumor volume and other factors. Pathology after surgery can differ from biopsy findings because the entire removed gland is examined.",
+        "Some professional discussions question whether Grade Group 1 should be labeled differently, but a naming debate does not justify ignoring the diagnosis or discontinuing surveillance. The relevant question is how well the tests predict clinically important progression for that individual."
+      ],
+      "bullets": [],
+      "refs": [
+        "NCI-T",
+        "AUA-L",
+        "EAU"
+      ]
+    },
+    {
+      "heading": "Germline genetics versus tumor genomic tests",
+      "paragraphs": [
+        "Germline testing looks for inherited variants in DNA that may be shared by relatives. A result may influence counseling, testing for family members and eligibility for certain treatments. Tumor genomic classifiers instead measure characteristics of the cancer sample to estimate outcomes or sometimes inform therapy discussions. Neither is a replacement for biopsy grade or clinical stage.",
+        "A prognostic test helps estimate a future event such as recurrence. A predictive biomarker identifies who is more or less likely to benefit from a particular treatment. A classifier can be prognostic without having proven predictive value for choosing a therapy. If a genomic score and conventional risk factors seem to disagree, ask what endpoint each measured, which population it was validated in, and whether using it would change an established management recommendation."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-L",
+        "EAU",
+        "NCI-T"
+      ]
+    },
+    {
+      "heading": "Staging with imaging, including PSMA PET",
+      "paragraphs": [
+        "PSMA PET uses a radiotracer to highlight tissues expressing prostate-specific membrane antigen, often combined with CT or MRI for anatomical context. It has improved staging accuracy in selected higher-risk patients and evaluation of certain biochemical recurrences compared with older imaging strategies. It can be especially helpful when knowing the site of disease will change treatment planning.",
+        "PSMA PET is not a universal substitute for MRI, biopsy, pathology or standard clinical judgment. Tracer uptake can be imperfect, microscopic disease may remain below detection, and not every scan result means the same thing at a given PSA level. A scan used to select patients for a radioligand therapy follows specific criteria different from initial diagnosis."
+      ],
+      "bullets": [],
+      "refs": [
+        "PROPSMA",
+        "PSMA-APP",
+        "EAU",
+        "PLUVICTO"
+      ]
+    },
+    {
+      "heading": "AI pathology and new diagnostics: separate capability from validation",
+      "paragraphs": [
+        "AI systems can support image review, pathology analysis and prediction research, but technical accuracy in a validation set is not the same as a proven improvement in survival, quality of life or treatment decisions. Devices and algorithms need appropriate external validation, regulatory status and clinical integration. Research on urine signatures, methylation and blood proteins may eventually support risk assessment, but early associations do not constitute validated routine tests.",
+        "When reading a research headline, ask whether the study involved people receiving real care, whether investigators compared the new approach with existing pathways, whether the result changed the right clinical decision, and whether the method is available and recommended where you live."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-E",
+        "EAU-D",
+        "NCI-S"
+      ]
+    },
+    {
+      "heading": "Make sense of a complete diagnostic report",
+      "paragraphs": [
+        "Keep copies of PSA dates, MRI impressions, biopsy core results, Grade Group, stage and any genetic or genomic test. Ask a specialist to explain what is known, what is estimated and what remains uncertain. If pathology findings materially change management, a second expert pathology opinion or multidisciplinary review may be valuable.",
+        "The goal of testing is not to collect every available technology. It is to establish enough reliable information to choose surveillance, curative treatment, systemic therapy or further evaluation appropriately."
+      ],
+      "bullets": [],
+      "refs": [
+        "AUA-L",
+        "NCI-T",
+        "EAU"
+      ]
+    }
+  ],
+  "questions": [
+    "What exactly is confirmed by biopsy and what is an imaging estimate?",
+    "Which Grade Group and risk group apply to me, and why?",
+    "What would genetic or genomic testing change about treatment or family counseling?",
+    "Is further staging imaging appropriate, or would it not change the plan?"
+  ],
+  "related": [
+    {
+      "title": "Tests That Clarify the Picture",
+      "path": "tests-explained",
+      "note": "Read the focused guide to integrating medical reports."
+    },
+    {
+      "title": "MRI and Prostate Biopsy",
+      "path": "diagnosis/mri-biopsy",
+      "note": "Understand imaging and sampling."
+    },
+    {
+      "title": "PSMA PET Explained",
+      "path": "diagnosis/psma-pet",
+      "note": "Where advanced imaging fits."
+    },
+    {
+      "title": "Choosing a Treatment",
+      "path": "treatment-decisions",
+      "note": "Translate risk assessment into options."
+    }
+  ],
+  "evidence_note": "The same result can have different significance by disease stage and risk. Diagnostic, prognostic and predictive evidence should not be conflated."
+}

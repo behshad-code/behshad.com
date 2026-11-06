@@ -1,104 +1,66 @@
-# Men's Health Compass | Site Architecture and Editorial Operating Model
+# Men's Health Compass | v2.1 Information Architecture and Editorial Operating Model
 
-**Status:** Approved publishing hierarchy, recorded November 5, 2026.  
-**Applies to:** `/health/` and all present or future health topics.  
-**Purpose:** Prevent duplicate content and preserve an intuitive, expandable educational publication.
+**Status:** Approved v2.1 production architecture, November 6, 2026. Conditional release gates completed in GitHub Actions; no independent clinician peer review is claimed.
+**Applies to:** `/health/` and its prostate topic. Supersedes the v1/v2 instruction that the prostate home must carry six flagship guide cards.
+**Previous designs and snapshots:** Preserved in Git history and the v1.0/v2.0 content version records.
 
-## 1. Nonnegotiable visitor hierarchy
+## Visitor hierarchy
 
 ```text
-behshad.com > Beyond Work
-    |
-    v
-/health/                          MEN'S HEALTH COMPASS (publication homepage)
-    |  What the publication covers; one card per complete health topic;
-    |  how we use evidence. No prostate article library on this page.
-    |
-    +-- /health/prostate/         PROSTATE HEALTH (one topic landing page)
-    |       |  Brief introduction to prostate health
-    |       |  Six practical guide cards
-    |       |  Carefully selected, dated research developments
-    |       |  Trusted source library
-    |       |
-    |       +-- rising-psa/             Detailed guide
-    |       +-- tests-explained/        Detailed guide
-    |       +-- active-surveillance/    Detailed guide
-    |       +-- treatment-decisions/    Detailed guide
-    |       +-- recovery-follow-up/    Detailed guide
-    |       +-- insurance-access/      Detailed guide
-    |
-    +-- /health/<future-topic>/   NEW TOPIC (only when fully ready)
-            |  Its own landing page and appropriately scoped education
-            +-- optional topic-specific guides, if genuinely useful
+behshad.com → Beyond Work
+  /health/                    General Men's Health Compass publication, one card per complete health topic
+    /health/prostate/         Prostate topic home, one six-category primary navigation
+      /basics/                1. Prostate Basics, complete pillar and related focused explanations
+      /screening/             2. Screening & PSA, including the original rising-psa guide
+      /diagnosis/             3. Prostate Cancer, including tests-explained
+      /treatments/            4. Treatment Options, including active-surveillance, treatment-decisions, robotic surgery
+      /living-well/           5. Living Well, including recovery-follow-up
+      /research/              6. Research & Updates, curated and evidence-labeled
+      /insurance-access/      Cross-cutting original guide linked from relevant categories
+      /resources/             Source library, glossary, questions, editorial methods
 ```
 
-**The general homepage is not a second topic homepage.** Each item of content has one primary home. Do not repeat the same numbered cards, FAQ sequence, or topic research panel at more than one layer. A short topic teaser that links to the topic landing page is acceptable; duplicating the topic's full guide directory is not.
+The general `/health/` home must NOT duplicate prostate categories or the guide library.
+The prostate topic home has **one** six-category grid. The original six-flagship-card grid and the second "Explore Further" grid are removed. A compact "Find answers for your situation" area may link to existing pages but is not a second topic directory.
 
-## 2. Ownership and boundaries
+## Content ownership, depth and redundancy
 
-| Level | File | Contains | Must not contain |
-| --- | --- | --- | --- |
-| Publication | `health/index.html` | Brand introduction, topic discovery, editorial approach, one topic card per *complete* focus area | Six prostate guide cards, prostate research feed, prostate-only FAQs, competing numbered series, links to every prostate article |
-| Topic | `health/prostate/index.html` | Prostate intro, optional brief explanations of BPH/prostatitis/cancer, exactly six current guide cards, limited dated discoveries, source shelf | A repeated second numbered overview, unverified headlines, a general all-men's-health directory |
-| Article | `health/prostate/<slug>/index.html` | Full focused educational guide, questions, clinical uncertainty, qualified primary references, related links | Repeated general homepage, full listing of all future health topics |
-| Source intake | `health/research/` | Public bibliographic metadata, intake status, evidence assessment, source URLs and editorial change log | Private health information, pasted copyrighted articles, automatic publishing of unverified claims |
+Every category page is a substantive patient education **pillar**, not merely a directory. It explains the overall subject, context, major choices, practical implications, evidence limits and authoritative references, then links to narrow deep dives where the visitor can learn more.
 
-**Navigation intent:** Main site → Men’s Health Compass → chosen topic → selected guide. The reverse breadcrumb/brand navigation should lead back toward the topic and general hub. Topic links should be discoverable but not duplicated into another full library on the root.
+- Basics owns foundational anatomy, BPH, prostatitis, symptoms and distinctions from cancer.
+- Screening owns PSA, risk-based decisions, biomarkers and screening pathways.
+- Diagnosis owns biopsy, MRI, pathology, Grade Group, staging and diagnostic versus prognostic versus predictive tools.
+- Treatment owns surveillance, surgery, radiation, systemic therapy, recurrence, comparison and the six robotic surgery modules.
+- Living Well owns urinary, sexual, bowel, exercise, emotional, bone/heart and PSA follow-up issues.
+- Research owns curated guidance, phase 3 studies, regulatory developments and qualified emerging research.
 
-**Growth:** Adding a new topic means introducing a new completed topic entry from `/health/`, not extending the prostate guide with unrelated material. Do not create dead-end "coming soon" cards or unfinished public guides.
+An established guide's URL is preserved and must remain discoverable through its category; its more focused content must complement, not duplicate, the pillar. No blanket redirects or deletions of established articles. Review the necessity of each short supporting article before expansion or consolidation. A page count is not an educational completeness metric.
 
-## 3. Prostate topic content model
+## Editorial and evidence boundaries
 
-The six currently approved published guides are:
-1. When PSA is rising (`rising-psa`)
-2. Tests that clarify the picture (`tests-explained`)
-3. Active surveillance (`active-surveillance`)
-4. Choosing a treatment (`treatment-decisions`)
-5. Recovery and life afterward (`recovery-follow-up`)
-6. Insurance and access (`insurance-access`)
+Research intake and public claims are different layers. The owner ended Flipboard harvesting at 151 accessible records from a displayed 160; the count discrepancy and publisher-access gaps remain recorded. The 31-card consumer compilation and 21-card institutional compilation are **research inputs**, not a validated clinical evidence registry.
 
-Preserve these URLs and the verified v1.0 guide bodies. A short overview belongs *before* the cards and is not another numbered guide sequence. Dated research highlights belong *after* the cards and are not a substitute for evidence-based guide updates. The source shelf can remain collapsed until requested.
+When publishing a consequential claim:
+1. Check the original guideline, trial, regulatory document, peer-reviewed paper or appropriate official institution.
+2. Record population, design, comparator, measured outcomes, benefits/harms, date and limitations.
+3. Distinguish FDA approval, guideline recommendations, randomized evidence, observational evidence, conference claims, preclinical findings and company plans.
+4. Map only source-backed educational findings to a pillar or focused article.
+5. Date the material and source the statement close to where it appears. No personalized medical instructions, private cases or professional peer-review claims without qualified review.
 
-If new research reveals a gap, first enrich the relevant existing guide where appropriate. Add a new guide only for a meaningfully distinct reader need. Avoid depth for its own sake or making the landing page long.
+The reference library is a curated verified-source layer, not an unfiltered Flipboard export. Do not copy licensed papers or expose private working research artifacts in public GitHub or sandbox.
 
-## 4. Research-to-publication pipeline
+## Technical implementation and QA
 
-1. **Collect:** Inventorize Flipboard and new research with source URL, publisher, publication date when known, topic and extraction provenance.
-2. **Deduplicate:** Group headlines covering the same study. Do not count repeated press stories as independent evidence.
-3. **Verify:** Check the original paper, professional guideline, trial registry, university notice, or FDA decision. Capture population, methods, outcomes, limitations and current clinical relevance.
-4. **Classify:** Established guidance/regulatory action; clinical research; early or preclinical findings; unverified news; excluded/duplicate. An interesting claim is not automatically a patient recommendation.
-5. **Map:** Decide whether the finding corrects or enriches an existing guide, deserves a brief dated research highlight, belongs in the source register only, or should be excluded.
-6. **Review, version, publish:** Human editorial review precedes publication. Substantive changes to the six guide bodies require a new content version and a `CHANGELOG.md` entry. Preserve prior facts unless updated evidence warrants correction.
+The site remains static HTML, CSS and JavaScript on GitHub Pages. Preserve the established health identity, visual assets, colors, typography, main site, Ballot Compass, analytics and DNS. The canonical source for generated v2.1 category HTML is `health/prostate/data/v2.1-pillars/*.json`, rendered by `node health/build-v2.mjs`.
 
-No automatic newsfeed and no one-page-per-article pattern. Keep the visitor experience concise while allowing the behind-the-scenes research library to expand.
+Run:
+- `node health/build-v2.mjs`; generated page diffs must be intentional.
+- `node health/check-hierarchy.mjs`; one category grid and preserved guide routes.
+- `node health/check-v2.mjs`; source, page, asset and content structure checks.
+- External link and claim verification, HTML and accessibility checks, and **real desktop and mobile browser journeys**.
 
-**Flipboard intake baseline (November 5, 2026):** Magazine displayed 160 stories; 12 initially visible stories were cataloged in `research/flipboard-intake-2026-11-05.json`. The remaining 148 have **not** been inventoried. Logging a story headline is **not** the same as reading and verifying the original article. Some of the first source leads have primary-source context; most remain unreviewed. See `research/README.md` for the actual evidence-status register. Do not report the complete magazine as analyzed until every accessible item has been inspected and coverage limitations logged.
+The approved first-party preview is a complete, navigable GitHub Pages sandbox at a stable `/sandbox/<feature>-review/` URL. A branch-only directory is not a hosted preview, and noindex does not make public files private. Do not use third-party mirror hosts.
 
-## 5. Design and publishing safeguards
+## Release protection
 
-- Keep the established Men's Health Compass typography, colors, compact header mark, fictional illustrated homepage hero, and prostate anatomical artwork. Do not redesign them during editorial cleanup.
-- Reuse `health/health.css` for scoped styles. Do not change `index.html`, `site.css`, Ballot Compass, CNAME, site-wide analytics, or unrelated assets as a side effect of a health change.
-- Maintain unique page titles, canonical URLs, semantic headers, accessible image alternatives, working anchor links and mobile layouts.
-- Analytics should remain aggregate only. Do not log identifiable health questions or individual research interests.
-- Make medical uncertainty explicit; do not claim a clinician reviewed content unless that review actually occurred.
-- Avoid copying articles verbatim or exposing source material that is private or licensed.
-- Use an isolated branch and pull request. The approved review URL is a complete navigable first-party GitHub Pages sandbox under `/sandbox/<feature>-review/`. Review desktop **and** mobile, and follow the repository `AGENTS.md` rules for approval, production verification and separate sandbox cleanup.
-
-## 6. Required checks before every health release
-
-1. **Review both entry pages together**, not just the file being edited: `/health/` and `/health/prostate/`.
-2. Run `node health/check-hierarchy.mjs`. Its invariant is a general topic hub with **0 guide cards**, a prostate topic with the **6 existing guide cards**, and all six article URLs present. Extend the check deliberately when future topics are added.
-3. Click-test the visitor route: Beyond Work → Men's Health Compass → Prostate Health → a guide → back navigation. Verify there is no loop, duplicate six-card grid, dead end or unrelated topic under prostate.
-4. Verify responsive desktop/mobile layout, images, link targets and accordions with a real browser. Static source checks and a successful Pages deployment are not substitutes for visual/browser validation.
-5. Compare the changed-file list to the requested scope. Preserve each guide's exact content baseline unless an explicitly reviewed editorial update requires versioning.
-6. Confirm the GitHub Pages production deployment succeeds. Remove temporary previews only in a separate scoped change afterward.
-
-## 7. Governing references
-
-- [Health Compass README](README.md)
-- [Prostate research workflow and coverage](research/README.md)
-- [Editorial changelog](CHANGELOG.md)
-- [Automated hierarchy test](check-hierarchy.mjs)
-- [Repository-wide publishing rules](../AGENTS.md)
-
-**Design lesson:** Do not optimize two pages independently. Design the *visitor journey and content ownership* first, then update only the layer that owns the information.
+Use an isolated branch and PR. Treat CI success as a code gate, not complete clinical or UX verification. Preserve v1.0 and v2.0 history and publish v2.1 only after all agreed medical, content, browser and technical gates pass. Explicit owner GO authorizes conditional publication, not bypassing failed checks. Verify the GitHub Pages deployment and public pages before declaring completion. Keep rollback references and remove previews only through separate scoped changes.

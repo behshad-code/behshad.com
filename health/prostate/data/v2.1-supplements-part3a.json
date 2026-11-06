@@ -1,0 +1,46 @@
+{
+  "schema": "2.1-article-enrichment",
+  "entries": [
+    {
+      "path": "treatments/robotic-surgery/operation",
+      "heading": "Understanding the milestones and decisions in a robotic prostatectomy",
+      "paragraphs": [
+        "The major steps are carefully sequenced, but their order can vary by surgeon and access route. The team establishes safe pelvic access, identifies the bladder neck and prostate, separates the seminal vesicles and surrounding tissues, decides how closely to dissect near the erectile neurovascular bundles, removes the specimen and reconnects the bladder to the urethra. A pelvic lymph-node dissection may be appropriate in selected risk groups. These are clinical judgments, not autonomous robot functions.",
+        "The final pathology report can change the understanding of grade, cancer extent and surgical margins compared with preoperative scans and biopsy. Before surgery, ask how the team weighs cancer clearance against nerve preservation, when the catheter is typically evaluated for removal, and which recovery complications demand prompt contact. The surgical plan and postoperative PSA strategy matter more to outcomes than a robot's product generation."
+      ],
+      "refs": [
+        "NCI-T",
+        "AUA-L",
+        "BRISBANE",
+        "URO-REC"
+      ]
+    },
+    {
+      "path": "treatments/robotic-surgery/nerve-sparing",
+      "heading": "Balancing functional preservation with oncologic safety",
+      "paragraphs": [
+        "Erectile nerves are adjacent to the prostate, and the safe plane for dissection depends on suspected cancer location and stage. Bilateral nerve sparing may be possible for some patients; unilateral or non-nerve-sparing surgery may be safer for others. Preserving more tissue is not automatically the right choice when the tumor may extend beyond the gland. A surgeon should explain the individual margin risk and how intraoperative findings could change the initial plan.",
+        "Continence-preserving approaches such as Retzius-sparing and bladder support reconstruction can influence early leakage in some studies, but technique, patient selection and definitions complicate comparisons. NeuroSAFE uses intraoperative frozen-section assessment in selected settings and has trial evidence, but it requires specialist workflow and is not universally available. Ask separately about measured cancer margins, long-term continence, erectile outcomes and recovery support, because no technique guarantees all four."
+      ],
+      "refs": [
+        "NEUROSAFE",
+        "RETZIUS",
+        "URO-REC",
+        "EAU"
+      ]
+    },
+    {
+      "path": "treatments/robotic-surgery/single-port",
+      "heading": "What single-port comparisons can actually demonstrate",
+      "paragraphs": [
+        "A single-port platform enters through one access point, but the internal route can still differ substantially. Transvesical techniques access through the bladder; extraperitoneal approaches avoid entering the abdominal cavity; other routes require different positioning and dissection. The potential benefits and risks may differ with prior surgery, prostate size, anatomy and the surgeon's experience. Fewer skin incisions alone is not proof of better long-term function or cancer control.",
+        "The multicenter SPARC comparison included 2,230 cases and provides useful observational evidence about selected single-port approaches. Because the compared groups were not randomized, differences in case mix, surgeon experience and practice patterns may influence continence and recovery estimates. Compare the exact procedure, complication definitions, length of follow-up, pathology results and need for additional treatment rather than selecting an approach from an isolated percentage."
+      ],
+      "refs": [
+        "SPARC",
+        "BRISBANE",
+        "AUA-L"
+      ]
+    }
+  ]
+}
