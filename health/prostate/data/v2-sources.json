@@ -394,5 +394,82 @@
     "institution": "U.S. FDA",
     "reviewed": "2026-11-06",
     "status": "Public reference candidate; clinical claims cross-checked where cited"
+  },
+  {
+    "id": "NIDDK-BPH",
+    "title": "Enlarged Prostate (Benign Prostatic Hyperplasia): symptoms, diagnosis and care",
+    "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+    "type": "Patient education",
+    "region": "United States",
+    "year": 2026,
+    "institution": "NIH / NIDDK",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "BPH26-I",
+    "title": "2026 AUA BPH guideline, Part I: presentation and evaluation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42095481/",
+    "type": "Professional guideline, PubMed abstract",
+    "region": "United States",
+    "year": 2026,
+    "institution": "American Urological Association",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "BPH26-II",
+    "title": "2026 AUA BPH guideline, Part II: medical management",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42095477/",
+    "type": "Professional guideline, PubMed abstract",
+    "region": "United States",
+    "year": 2026,
+    "institution": "American Urological Association",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "BPH26-III",
+    "title": "2026 AUA BPH guideline, Part III: procedures and surgery",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42095468/",
+    "type": "Professional guideline, PubMed abstract",
+    "region": "United States",
+    "year": 2026,
+    "institution": "American Urological Association",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "FDA-TAD",
+    "title": "Cialis (tadalafil) U.S. prescribing information, revised March 2026",
+    "url": "https://pi.lilly.com/us/cialis-pi.pdf",
+    "type": "U.S. prescribing label",
+    "region": "United States",
+    "year": 2026,
+    "institution": "FDA-approved prescribing information",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "FDA-SILD",
+    "title": "Sildenafil tablets U.S. prescribing information, revised December 2025",
+    "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1af7b6a-378e-4337-858f-85a926eec102",
+    "type": "U.S. prescribing label",
+    "region": "United States",
+    "year": 2025,
+    "institution": "NIH / DailyMed",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "AUA-ED",
+    "title": "American Urological Association erectile dysfunction guideline",
+    "url": "https://www.auanet.org/Documents/Guidelines/PDF/ED%20Website%20Final.pdf",
+    "type": "Professional guideline",
+    "region": "United States",
+    "year": 2018,
+    "institution": "American Urological Association",
+    "reviewed": "2026-11-07",
+    "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
   }
 ]
