@@ -19,6 +19,7 @@
             "Tell the care team about cold remedies, antihistamines and other medicines that might make urination harder."
           ],
           "refs": [
+            "AUA-BPH23",
             "BPH26-I",
             "NIDDK-BPH"
           ]
@@ -32,6 +33,7 @@
           ],
           "bullets": [],
           "refs": [
+            "AUA-BPH23",
             "BPH26-II",
             "NIDDK-BPH"
           ]
@@ -74,6 +76,7 @@
           "q": "What does an IPSS score tell me?",
           "a": "It puts seven common urinary symptoms on a consistent scale so you and your clinician can assess how much trouble you are having and whether care is helping. It is not a cancer test or a diagnosis by itself. The separate quality-of-life question matters because two people with the same score may want different approaches.",
           "refs": [
+            "AUA-BPH23",
             "BPH26-I"
           ]
         },
@@ -81,6 +84,7 @@
           "q": "Why can one BPH medicine help quickly while another takes months?",
           "a": "Alpha-blockers ease the muscular tension around the urinary outlet, so some people notice a change relatively soon. Finasteride or dutasteride work on the hormonal process involved in tissue growth, so shrinking an enlarged prostate takes longer. Their uses and side effects differ, and the choice depends on the clinical findings.",
           "refs": [
+            "AUA-BPH23",
             "BPH26-II",
             "NIDDK-BPH"
           ]
@@ -97,6 +101,7 @@
           "q": "Will finasteride or dutasteride affect my PSA tests?",
           "a": "Yes. These medicines commonly lower measured PSA, so a later value should not be compared with older results without accounting for treatment. Tell the clinician interpreting your PSA which medicine you take and when you started it. A lower PSA number on treatment does not itself rule out cancer.",
           "refs": [
+            "AUA-BPH23",
             "BPH26-II"
           ]
         },
