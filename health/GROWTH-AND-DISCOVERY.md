@@ -7,7 +7,7 @@
 - `robots.txt` generally allows crawling, including Googlebot, Bingbot and OpenAI's **OAI-SearchBot**; it does not separately grant or deny model-training use by **GPTBot**. Do not equate AI search crawl access with model training. Source: https://developers.openai.com/api/docs/bots
 - `health/check-discovery.mjs` verifies the health URLs, homepage and guide metadata, JSON-LD validity, transparency links, health privacy disclosure, and unchanged GoatCounter inclusion.
 - GoatCounter at `behshad.goatcounter.com`, already deployed sitewide. **Do not add additional scripts, tracking pixels, or health-interest interaction events without an explicit privacy review.**
-- New publication-level About and editorial standards at `/health/about/`, linked from guide footers; sitewide privacy coverage at `/privacy/`.
+- New publication-level About and editorial standards at `/health/about/`, linked from guide footers; dedicated health publication privacy coverage at `/health/privacy/`.
 
 ## Search ownership and measurement: account step still required
 Domain ownership verification and search-performance data require a signed-in property owner. Repository or public page access alone cannot complete this.
