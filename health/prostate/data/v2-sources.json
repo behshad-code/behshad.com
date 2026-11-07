@@ -471,5 +471,16 @@
     "institution": "American Urological Association",
     "reviewed": "2026-11-07",
     "status": "Original guideline/label or institutional patient education; cited for specific v2.2 claims. 2026 guideline abstracts do not expose full recommendation details."
+  },
+  {
+    "id": "AUA-BPH23",
+    "title": "AUA lower urinary tract symptoms/BPH guideline amendment (2023): detailed clinical recommendations and IPSS",
+    "url": "https://www.auanet.org/documents/Guidelines/PDF/2023%20Guidelines/BPH%20Unabridged%2009-26-23%20Final.pdf",
+    "type": "Professional guideline, full text",
+    "region": "United States",
+    "year": 2023,
+    "institution": "American Urological Association",
+    "reviewed": "2026-11-07",
+    "status": "Used for detailed IPSS classification and treatment discussion alongside the published 2026 AUA guideline abstracts."
   }
 ]
