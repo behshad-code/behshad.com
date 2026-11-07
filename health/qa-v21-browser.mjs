@@ -52,7 +52,7 @@ try{
   assert((await page.locator('main').textContent()).includes('not been independently peer reviewed by a licensed clinician'),'Editorial transparency missing');
   await page.locator('footer a[href="/health/privacy/"]').click();
   assert(page.url().endsWith('/health/privacy/'),'Privacy link failed');
-  assert((await page.locator('main').textContent()).includes('Men’s Health Compass'),'Health privacy notice missing');
+  assert((await page.locator('main').textContent()).includes("Men's Health Compass"),'Health privacy notice missing');
   checks+=4;
   await page.goto(base+'/health/prostate/treatments/',{waitUntil:'domcontentloaded'});
   assert(await page.locator('section#treatment-at-a-glance').count()===1,'Treatment comparison missing');
