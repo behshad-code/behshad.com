@@ -22,7 +22,7 @@ const out=resolve(root,'health/qa-screenshots');
 mkdirSync(out,{recursive:true});
 let browser, checks=0, errors=[];
 const widths=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
+const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/basics/common-conditions/','/health/prostate/living-well/sexual-health/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  for(const vp of widths){
@@ -38,6 +38,25 @@ try{
    assert.equal(measure.missingAlt,0,route+' image missing alt attribute');
    checks++;
   }
+
+  // v2.2: exercise both updated deep guides in a real browser and capture review screenshots.
+  for(const slug of ['basics/common-conditions','living-well/sexual-health']){
+   const route='/health/prostate/'+slug+'/';
+   await page.goto(base+route,{waitUntil:'domcontentloaded'});
+   assert.equal(await page.locator('section#common-questions').count(),1,route+' missing answered FAQ section');
+   assert.equal(await page.locator('.v2-faq-item').count(),6,route+' must have six complete FAQs');
+   assert.equal(await page.locator('section[id^="topic-"]').count(),9,route+' must preserve five prior and four new sections');
+   assert.equal(await page.locator('aside a[href="#common-questions"]').count(),vp.width>960?1:1,route+' missing FAQ anchor');
+   assert((await page.locator('.v2-meta').textContent()).includes('Updated November 7, 2026'),route+' editorial update date mismatch');
+   assert.equal(await page.locator('div.v2-questions').count(),1,route+' appointment questions must remain distinct');
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+   assert(overflow<=2,route+' horizontal overflow on '+vp.name);
+   await page.screenshot({path:resolve(out,'v22-'+slug.replace('/','-')+'-'+vp.name+'.png'),fullPage:true});
+   checks+=7;
+  }
+  await page.goto(base+'/health/prostate/resources/sources/',{waitUntil:'domcontentloaded'});
+  assert.equal(await page.locator('article.v2-source-entry').count(),44,'Source library should include new v2.2 citations');
+  checks++;
   await page.goto(base+'/health/prostate/',{waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('a.v21-topic-card').count(),6,'Six topic cards required');
   assert.equal(await page.locator('a.guide-library-card').count(),0,'No competing guide card grid');

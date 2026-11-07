@@ -80,6 +80,39 @@ for(const s of supplements){
  supplementedWords+=words;
 }
 
+// v2.2 preserves the published article routes and adds only targeted, sourced explanations.
+const v22=JSON.parse(read("health/prostate/data/v2.2-enrichment.json"));
+assert.equal(v22.version,"2.2","Unexpected editorial version");
+assert.deepEqual(v22.entries.map(x=>x.path).sort(),["basics/common-conditions","living-well/sexual-health"],"Only two articles may be enriched in v2.2");
+const faqQuestions=new Set();
+for(const e of v22.entries){
+ assert.equal(e.sections.length,4,"Each v2.2 article should have four substantive new sections: "+e.path);
+ assert.equal(e.faq.length,6,"Each v2.2 article should have six answerable FAQs: "+e.path);
+ const html=read("health/prostate/"+e.path+"/index.html");
+ assert(html.includes('id="common-questions"')&&html.includes('href="#common-questions"'),"Missing FAQ section and navigation: "+e.path);
+ assert(html.includes('Updated November 7, 2026'),"Incorrect editorial update date: "+e.path);
+ assert(html.includes('"dateModified":"2026-11-07"'),"Out-of-date structured metadata: "+e.path);
+ for(let i=0;i<4;i++)assert(html.includes('id="topic-'+(i+6)+'"'),"Missing v2.2 section "+(i+6)+" on "+e.path);
+ for(const sect of e.sections){
+  assert(sect.heading&&sect.paragraphs.length>=2&&sect.refs.length,"Incomplete v2.2 section: "+e.path);
+  for(const id of sect.refs)assert(ids.has(id),"Unknown v2.2 section source "+id);
+  assert(html.includes(sect.heading.replace(/&/g,"&amp;")),"Missing authored section: "+sect.heading);
+ }
+ for(const f of e.faq){
+  assert(f.q&&f.a&&f.a.length>=100&&f.refs.length,"Incomplete FAQ for "+e.path);
+  assert(!faqQuestions.has(f.q.toLowerCase()),"Duplicate v2.2 FAQ: "+f.q);
+  faqQuestions.add(f.q.toLowerCase());
+  assert(html.includes(f.q.replace(/&/g,"&amp;")),"FAQ not rendered: "+f.q);
+  for(const id of f.refs)assert(ids.has(id),"Unknown FAQ reference "+id);
+ }
+ assert(html.includes("Questions to bring to your appointment"),"Original appointment questions must remain");
+}
+assert.equal(faqQuestions.size,12,"12 unique answered FAQs expected");
+const library=read("health/prostate/resources/sources/index.html");
+for(const id of ["BPH26-I","BPH26-II","BPH26-III","NIDDK-BPH","AUA-BPH23","FDA-TAD","FDA-SILD","AUA-ED"]){
+ assert(library.includes("Reference ID "+id+"."),"New v2.2 reference omitted from source library: "+id);
+}
+
 assert(read("health/v2.js").includes("data-question-choice"),"Question builder script missing");
 const sitemap=read("sitemap.xml");
 for(const p of paths)assert(sitemap.includes("<loc>https://behshad.com/"+p.replace(/index\.html$/,"")+"</loc>"),"Sitemap missing "+p);

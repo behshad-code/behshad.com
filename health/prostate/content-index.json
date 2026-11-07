@@ -29,7 +29,13 @@
         "NIDDK",
         "NCI-S",
         "AUA-E",
-        "NCI-T"
+        "NCI-T",
+        "AUA-BPH23",
+        "BPH26-I",
+        "NIDDK-BPH",
+        "BPH26-II",
+        "FDA-TAD",
+        "BPH26-III"
       ],
       "status": "published"
     },
@@ -305,7 +311,10 @@
         "NEUROSAFE",
         "URO-REC",
         "AUA-L",
-        "PCFA-S"
+        "PCFA-S",
+        "AUA-ED",
+        "FDA-SILD",
+        "FDA-TAD"
       ],
       "status": "published"
     },

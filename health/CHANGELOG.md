@@ -1,3 +1,13 @@
+## 2.2 | BPH, sexual health and answered FAQs | Editorial review, November 7, 2026
+
+**Proposed and staged, not published.** Expanded two existing v2.1 deep guides with eight new original educational sections: BPH symptom scoring and evaluation, medication classes, tadalafil safety, procedures, prostate-treatment erectile recovery, medication comparisons, contraindications and cardiovascular context. Added six complete answered FAQs to each guide, separate from the existing appointment-question lists. Preserved the six-category prostate architecture, all URLs, original guides, branding, analytics and personal data safeguards.
+
+Added references to the current 2026 AUA BPH three-part guideline series, detailed AUA BPH guidance, NIDDK patient information, FDA-approved medication labels and the AUA ED guideline. Acknowledge that the 2026 AUA Part I-III abstract records do not supply full clinical recommendation details. No third-party article language or answer text was copied. No independent clinician peer review is claimed.
+
+This is the **v2.2 clinical-content edition** requested on November 7, distinct from the earlier November 6 technical entries also numbered 2.2 and 2.2.1. Clinical content changes remain review-only until explicitly approved for production. Version record: `health/content-versions/v2.2.json`. Evidence notes: `health/V22_EDITORIAL_QA.md`.
+
+---
+
 ## 2.2.1 | Publication identity and health privacy | November 6, 2026
 
 Removed the personal publisher/editor name from the Men's Health Compass About and editorial-methods content, homepage structured metadata, and six original guides' editor metadata. All Health Compass pages now link to a dedicated `/health/privacy/` summary. Added the privacy route to the sitemap and browser/discovery tests. No fictitious editorial committee is claimed, and no change was made to the main behshad.com privacy policy, unrelated websites, clinical guidance, ads, or analytics vendors.

@@ -1,0 +1,38 @@
+{
+  "name": "Men's Health Compass v2.2 | BPH, Sexual Recovery, and Answered FAQs",
+  "version": "2.2",
+  "status": "review_pending_not_published",
+  "editorial_date": "2026-11-07",
+  "feature_branch": "feature/mhc-v2-2-bph-sexual-faq-20261107",
+  "prior_version": "health/content-versions/v2.1.json",
+  "scope": [
+    "Enrich existing /health/prostate/basics/common-conditions/ without creating a competing BPH guide",
+    "Enrich existing /health/prostate/living-well/sexual-health/ without creating a competing general ED topic",
+    "Add six answered FAQs to each deep guide, separate from appointment questions",
+    "Add eight authoritative references: 2026 AUA BPH Parts I-III, 2023 AUA BPH full guidance, NIDDK BPH, official tadalafil and sildenafil labeling, and the AUA ED guideline"
+  ],
+  "changed_public_articles": 2,
+  "added_educational_sections": 8,
+  "added_answered_faqs": 12,
+  "preserved_original_guides": 6,
+  "preserved_six_category_architecture": true,
+  "new_topic_pages": 0,
+  "new_routes": 0,
+  "editorial_methods": "Original prose drafted from topic insights in the supplied third-party Men's Health collection, then independently checked against official clinical references. Third-party article text and FAQ answers were not copied.",
+  "qualified_issues": [
+    "2026 AUA BPH guideline Part I-III available through abstracts; detailed numerical and clinical statements also supported by 2023 unabridged AUA and NIDDK materials",
+    "U.S. tadalafil label says it is not recommended in combination with alpha-blockers for BPH, notwithstanding guideline discussions of selected combinations",
+    "PDE5 inhibitors contraindicated with nitrates and riociguat",
+    "Post-treatment PDE5 use has not been shown reliably to restore spontaneous erections",
+    "No independent clinician peer review"
+  ],
+  "release_requirements": [
+    "Review substantive clinical copy and citations",
+    "Check changes are reproducibly generated from source JSON",
+    "Pass health hierarchy and content tests",
+    "Browser-verify first-party hosted review experience desktop and mobile",
+    "Receive explicit authorization to publish live and verify the published site"
+  ],
+  "production_approved": false,
+  "publication_verified": false
+}
