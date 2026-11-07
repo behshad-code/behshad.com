@@ -49,7 +49,7 @@ try{
   await page.goto(base+'/health/prostate/basics/',{waitUntil:'domcontentloaded'});
   await page.locator('footer a[href="/health/about/"]').click();
   assert(page.url().endsWith('/health/about/'),'About link from guide failed');
-  assert((await page.locator('main').textContent()).includes('not received independent clinician peer review'),'Editorial transparency missing');
+  assert((await page.locator('main').textContent()).includes('not been independently peer reviewed by a licensed clinician'),'Editorial transparency missing');
   await page.locator('footer a[href="/privacy/"]').click();
   assert(page.url().endsWith('/privacy/'),'Privacy link failed');
   assert((await page.locator('main').textContent()).includes('Men’s Health Compass'),'Health privacy notice missing');
