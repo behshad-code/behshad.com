@@ -4,6 +4,14 @@ A men's health educational publication within behshad.com, accessible at https:/
 
 **Start here for any future website change:** [Site architecture and editorial operating model](SITE-ARCHITECTURE.md). This document establishes the mandatory publication → topic → article hierarchy, permitted content at each level, research intake process, and release checklist.
 
+## V2.2 growth, discovery, and transparency (November 6, 2026)
+
+The publication now has an indexable publisher and editorial standards page at `/health/about/`, linked across the health guides. The existing `/privacy/` notice explicitly covers Men’s Health Compass, GoatCounter aggregate page views, and the on-device reference search and appointment-question workflow. The two top-level health pages carry linked publisher and page structured data; all six v1 guides have complementary nonclinical publisher and breadcrumb schema. The existing sitemap includes the new About page.
+
+The source-of-truth measurement, search-console verification and indexing checklist is in [GROWTH-AND-DISCOVERY.md](GROWTH-AND-DISCOVERY.md). The GitHub Actions [discovery check](check-discovery.mjs) now guards against missing metadata, public Health Compass links, accidentally omitted sitemap URLs, or loss of transparency/privacy links. No new analytics vendors, advertising scripts or affiliate links were added.
+
+Google Search Console and Bing Webmaster Tools property ownership, sitemap submissions, and actual search indexing/performance must be checked from authenticated owner accounts. These are not established by a successful source or browser test. No medical claims or V2.1 editorial manuscripts were changed in this release.
+
 ## Scope
 
 - /health/ is the publication's front page.

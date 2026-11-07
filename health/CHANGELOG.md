@@ -1,3 +1,11 @@
+## 2.2 | Discovery, publisher transparency and privacy | November 6, 2026
+
+Added a dedicated About and editorial standards page identifying the site publisher, AI-assisted drafting boundaries, lack of independent clinician peer review, fictional white-coat illustration and future affiliate disclosure principle. Linked About and Privacy unobtrusively in the health page footers while preserving the V2.1 design and all clinical content. Updated the existing /privacy/ notice for health-specific aggregate analytics and local-only question building. Added publisher/breadcrumb JSON-LD to relevant pages, placed the new page in the XML sitemap, and introduced automated crawl metadata/sitemap/trust-link checks and a Search Console / Bing owner setup runbook.
+
+No new analytics script, ad network, advertiser pixel, affiliate links, or personal visitor health tracking. Search engine property verification, indexing and traffic baseline remain external authenticated-account work, not claimed as completed by this code release. No health article clinical text or existing URLs were changed.
+
+---
+
 ## 2.1 | Integrated six-category prostate education | November 6, 2026
 
 Rebuilt the prostate landing page around **one** six-category navigation, replacing the redundant six-card flagship guide library and the second Explore Further category grid. Added six comprehensive evidence-linked category pillars, strengthened all 24 specialized supporting articles, clarified cross-cutting Insurance and Access, and preserved all six original guide routes and v1.0/v2.0 snapshots. Retained the approved health design, anatomy illustration, 36 curated references, 78-term glossary and private-on-device appointment question builder.
