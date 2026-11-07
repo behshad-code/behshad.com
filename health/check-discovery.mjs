@@ -19,12 +19,14 @@ visit(resolve(base, "health"));
 const sitemap = read("sitemap.xml");
 const robots = read("robots.txt");
 const privacy = read("privacy/index.html");
-assert(files.length >= 43, "Expected all published Health Compass pages and the About page");
+const healthPrivacy = read("health/privacy/index.html");
+assert(files.length >= 44, "Expected all published Health Compass pages and the About page");
 assert(robots.includes("User-agent: *") && robots.includes("Allow: /"), "The main site must allow normal crawling");
 assert(robots.includes("Sitemap: https://behshad.com/sitemap.xml"), "Root sitemap must be advertised");
 assert(!sitemap.includes("/sandbox/"), "Public sitemap must not list review sandboxes");
 assert(privacy.includes("Men’s Health Compass") && privacy.includes("GoatCounter"), "Privacy must cover the health publication and analytics");
 assert(existsSync(resolve(base, "health/about/index.html")), "Missing publisher/editorial transparency page");
+assert(healthPrivacy.includes("GoatCounter") && healthPrivacy.includes("affiliate"), "Health publication privacy notice missing analytics or funding information");
 
 const seen = new Set();
 let ldCount = 0;
@@ -43,7 +45,8 @@ for (const path of files) {
     assert(html.includes('property="' + prop + '"'), path + ": missing " + prop);
   }
   assert(html.includes('href="/health/about/"'), "No editorial About link: " + path);
-  assert(html.includes('href="/privacy/"'), "No Privacy link: " + path);
+  assert(html.includes('href="/health/privacy/"'), "No Health Privacy link: " + path);
+  assert(!html.includes("Behshad Beheshti"), "Personal publisher name must not appear in Health Compass pages: " + path);
   assert(html.includes('data-goatcounter="https://behshad.goatcounter.com/count"'), "Missing existing page-view analytics: " + path);
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     const obj = JSON.parse(m[1]);

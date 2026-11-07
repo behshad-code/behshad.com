@@ -22,7 +22,7 @@ const out=resolve(root,'health/qa-screenshots');
 mkdirSync(out,{recursive:true});
 let browser, checks=0, errors=[];
 const widths=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const routes=['/health/','/health/about/','/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
+const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  for(const vp of widths){
@@ -50,9 +50,9 @@ try{
   await page.locator('footer a[href="/health/about/"]').click();
   assert(page.url().endsWith('/health/about/'),'About link from guide failed');
   assert((await page.locator('main').textContent()).includes('not been independently peer reviewed by a licensed clinician'),'Editorial transparency missing');
-  await page.locator('footer a[href="/privacy/"]').click();
-  assert(page.url().endsWith('/privacy/'),'Privacy link failed');
-  assert((await page.locator('main').textContent()).includes('Men’s Health Compass'),'Health privacy notice missing');
+  await page.locator('footer a[href="/health/privacy/"]').click();
+  assert(page.url().endsWith('/health/privacy/'),'Privacy link failed');
+  assert((await page.locator('main').textContent()).includes("Men's Health Compass"),'Health privacy notice missing');
   checks+=4;
   await page.goto(base+'/health/prostate/treatments/',{waitUntil:'domcontentloaded'});
   assert(await page.locator('section#treatment-at-a-glance').count()===1,'Treatment comparison missing');
