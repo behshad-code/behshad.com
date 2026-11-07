@@ -1,0 +1,28 @@
+name: Health Compass discovery and privacy
+on:
+  pull_request:
+    paths:
+      - 'health/**'
+      - 'privacy/index.html'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '.github/workflows/health-discovery.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'health/**'
+      - 'privacy/index.html'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '.github/workflows/health-discovery.yml'
+permissions:
+  contents: read
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node health/check-discovery.mjs
