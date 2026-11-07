@@ -1,3 +1,9 @@
+## 2.2.1 | Publication identity and health privacy | November 6, 2026
+
+Removed the personal publisher/editor name from the Men's Health Compass About and editorial-methods content, homepage structured metadata, and six original guides' editor metadata. All Health Compass pages now link to a dedicated `/health/privacy/` summary. Added the privacy route to the sitemap and browser/discovery tests. No fictitious editorial committee is claimed, and no change was made to the main behshad.com privacy policy, unrelated websites, clinical guidance, ads, or analytics vendors.
+
+---
+
 ## 2.2 | Discovery, publisher transparency and privacy | November 6, 2026
 
 Added a dedicated About and editorial standards page identifying the site publisher, AI-assisted drafting boundaries, lack of independent clinician peer review, fictional white-coat illustration and future affiliate disclosure principle. Linked About and Privacy unobtrusively in the health page footers while preserving the V2.1 design and all clinical content. Updated the existing /privacy/ notice for health-specific aggregate analytics and local-only question building. Added publisher/breadcrumb JSON-LD to relevant pages, placed the new page in the XML sitemap, and introduced automated crawl metadata/sitemap/trust-link checks and a Search Console / Bing owner setup runbook.
