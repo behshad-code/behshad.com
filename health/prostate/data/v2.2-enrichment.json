@@ -1,0 +1,218 @@
+{
+  "version": "2.2",
+  "editorial_date": "2026-11-07",
+  "scope": "Two existing prostate specialist articles only. New original explanatory sections and question-and-answer FAQs; no new topics or URLs.",
+  "entries": [
+    {
+      "path": "basics/common-conditions",
+      "dateModified": "2026-11-07",
+      "sections": [
+        {
+          "heading": "Measure urinary symptoms before choosing a treatment",
+          "paragraphs": [
+            "A weak stream, urgency and waking to urinate can be frustrating, but the same symptoms do not always have the same cause. A clinician may ask you to complete the International Prostate Symptom Score (IPSS). It covers seven urinary symptoms, producing a score from 0 to 35; a separate question asks how much the symptoms affect daily life. The score is useful for comparing your symptoms over time, not for diagnosing BPH or ruling out cancer on its own.",
+            "The evaluation may include a medication review, examination and urine testing. In selected situations, a bladder diary, measurement of urine remaining after you void, or other tests can show whether the main problem is obstruction, bladder behavior or something else. A practical starting point is to bring a record of what happens, how often it happens and what bothers you most. A man with frequent nighttime urination may need a different evaluation from someone who cannot start a stream."
+          ],
+          "bullets": [
+            "A score of 0–7 is generally classified as mild, 8–19 as moderate, and 20–35 as severe; the impact on quality of life still matters.",
+            "An IPSS number does not measure prostate size or identify prostate cancer.",
+            "Tell the care team about cold remedies, antihistamines and other medicines that might make urination harder."
+          ],
+          "refs": [
+            "BPH26-I",
+            "NIDDK-BPH"
+          ]
+        },
+        {
+          "heading": "Why common BPH medicines work differently",
+          "paragraphs": [
+            "One group of medicines, called alpha-blockers, relaxes muscle around the prostate and bladder outlet. Examples include tamsulosin and alfuzosin. Some men notice better flow within days or weeks. These drugs do not shrink the prostate, and potential side effects include lightheadedness, changes in blood pressure and altered ejaculation. A history of planned cataract surgery is important to mention when discussing an alpha-blocker.",
+            "Another group, 5-alpha-reductase inhibitors, includes finasteride and dutasteride. These reduce conversion of testosterone into dihydrotestosterone (DHT), a hormone involved in prostate tissue growth. In men with an enlarged prostate, they may gradually reduce gland volume and lower the chance of future urinary retention or surgery. Benefits take months rather than days, and sexual side effects can occur. BPH is not simply proof of high testosterone; aging, hormones, prostate structure and bladder function all contribute.",
+            "The two medication classes are sometimes prescribed together for men whose symptoms and prostate enlargement make that approach appropriate. Medicines that reduce prostate size also tend to lower PSA measurements, which changes how later results must be interpreted. Anyone considering or already taking these medicines should make sure the clinician following their PSA knows the exact drug and when it was started."
+          ],
+          "bullets": [],
+          "refs": [
+            "BPH26-II",
+            "NIDDK-BPH"
+          ]
+        },
+        {
+          "heading": "Where daily tadalafil fits, and when combinations need caution",
+          "paragraphs": [
+            "Tadalafil is best known as an erectile dysfunction medicine, but a prescribed once-daily 5 mg regimen is also an established option for bothersome urinary symptoms of BPH, whether or not erectile dysfunction is present. It works through a different signaling pathway from alpha-blockers and prostate-shrinking drugs; it does not remove enlarged tissue. For a man dealing with both concerns, discussing both goals in one appointment can prevent an incomplete treatment plan.",
+            "Tadalafil must not be taken with nitrate medicines used for some heart conditions or with medicines such as riociguat, because blood pressure can fall dangerously. Combining it with an alpha-blocker may also lower blood pressure. The current U.S. Cialis prescribing information specifically does not recommend tadalafil plus an alpha-blocker for treatment of BPH, even though some professional guidance discusses selected combinations. Do not start, stop or combine these medicines without the prescribing clinician checking the indication and the full medication list."
+          ],
+          "bullets": [],
+          "refs": [
+            "BPH26-II",
+            "FDA-TAD"
+          ]
+        },
+        {
+          "heading": "What changes when medication is not enough",
+          "paragraphs": [
+            "Persistent symptoms do not automatically mean surgery is needed. The next step depends on what is causing them, how disruptive they are, how well medicines work and whether there are complications. A urologist may review prostate size and shape, residual urine, bladder function and the effects a procedure might have on ejaculation, erections and recovery.",
+            "Procedural options include techniques that remove tissue, reduce tissue volume or widen the urinary channel. They vary in durability, side effects, recovery requirements and the likelihood of needing another treatment. If urinary retention, repeated infection, bladder stones or kidney problems develop, the conversation may become more urgent. BPH procedures are different from radical prostatectomy for cancer, and a new device or less invasive approach is not automatically better for every anatomy or symptom pattern."
+          ],
+          "bullets": [],
+          "refs": [
+            "BPH26-III",
+            "NIDDK-BPH"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the size of my prostate predict how bad my urinary symptoms will be?",
+          "a": "Not reliably. A relatively small gland can still be associated with significant difficulty, while a larger gland may cause only modest symptoms. Bladder function, muscle tone, medicines and other conditions all influence the experience. A symptom score and appropriate evaluation are more useful than gland size alone.",
+          "refs": [
+            "NIDDK-BPH",
+            "BPH26-I"
+          ]
+        },
+        {
+          "q": "What does an IPSS score tell me?",
+          "a": "It puts seven common urinary symptoms on a consistent scale so you and your clinician can assess how much trouble you are having and whether care is helping. It is not a cancer test or a diagnosis by itself. The separate quality-of-life question matters because two people with the same score may want different approaches.",
+          "refs": [
+            "BPH26-I"
+          ]
+        },
+        {
+          "q": "Why can one BPH medicine help quickly while another takes months?",
+          "a": "Alpha-blockers ease the muscular tension around the urinary outlet, so some people notice a change relatively soon. Finasteride or dutasteride work on the hormonal process involved in tissue growth, so shrinking an enlarged prostate takes longer. Their uses and side effects differ, and the choice depends on the clinical findings.",
+          "refs": [
+            "BPH26-II",
+            "NIDDK-BPH"
+          ]
+        },
+        {
+          "q": "Can tadalafil address both urination problems and erections?",
+          "a": "For some men, yes. Daily tadalafil is a recognized treatment option for BPH symptoms as well as erectile dysfunction, but it is not suitable for everyone. Nitrates and riociguat are incompatible with it, and certain combinations with prostate or blood-pressure medicines need particular care. A clinician should review all medications before prescribing it.",
+          "refs": [
+            "FDA-TAD",
+            "BPH26-II"
+          ]
+        },
+        {
+          "q": "Will finasteride or dutasteride affect my PSA tests?",
+          "a": "Yes. These medicines commonly lower measured PSA, so a later value should not be compared with older results without accounting for treatment. Tell the clinician interpreting your PSA which medicine you take and when you started it. A lower PSA number on treatment does not itself rule out cancer.",
+          "refs": [
+            "BPH26-II"
+          ]
+        },
+        {
+          "q": "When do urinary symptoms need prompt medical attention?",
+          "a": "Seek urgent care if you cannot pass urine at all. Fever or chills with painful urinary symptoms, visible blood in urine, severe lower abdominal pain or feeling very unwell also call for prompt evaluation. Do not assume those symptoms are simply routine prostate enlargement.",
+          "refs": [
+            "NIDDK-BPH"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "living-well/sexual-health",
+      "dateModified": "2026-11-07",
+      "sections": [
+        {
+          "heading": "How erection medicines fit into prostate treatment recovery",
+          "paragraphs": [
+            "After prostate cancer treatment, changes in erectile function may reflect effects on nerves, blood vessels, hormone levels or a combination of factors. Sildenafil and tadalafil belong to a group called PDE5 inhibitors. They help the natural blood-flow response to sexual stimulation; they do not create desire or automatically produce an erection without arousal.",
+            "These medicines can make sexual activity possible for some men during recovery, but response depends on baseline erectile function, age, the treatment received and the extent of nerve or vascular injury. It is important not to confuse an erection achieved with medication with proof that the underlying nerves have fully recovered. Research has not established that taking a PDE5 inhibitor early after surgery reliably restores spontaneous, unassisted erections later. Recovery goals and other options belong in a discussion with the treating team."
+          ],
+          "bullets": [],
+          "refs": [
+            "AUA-ED",
+            "NCI-T"
+          ]
+        },
+        {
+          "heading": "Sildenafil and tadalafil: the practical differences",
+          "paragraphs": [
+            "The important difference is not that one medicine is universally stronger. Sildenafil is usually taken before anticipated sexual activity and has a shorter period of effect. Tadalafil can remain active for as long as about 36 hours and is also available in a daily prescribed schedule. The longer window does not mean a continuous erection. Either medicine still relies on sexual stimulation.",
+            "A high-fat meal may delay sildenafil's absorption and the time it takes to work; tadalafil is less affected by food. Side effects overlap, including headache, flushing, congestion and indigestion. Some people experience back or muscle discomfort with tadalafil or temporary visual effects with sildenafil. Individual response, other medicines, kidney or liver health, and preferences matter more than a generic ranking of the two. They should not be combined or used more often than prescribed."
+          ],
+          "bullets": [],
+          "refs": [
+            "FDA-SILD",
+            "FDA-TAD",
+            "AUA-ED"
+          ]
+        },
+        {
+          "heading": "Safety questions worth asking before taking an ED medicine",
+          "paragraphs": [
+            "PDE5 inhibitors must not be taken with nitrate drugs or nitrate-containing recreational substances, or with riociguat. Such combinations can cause a dangerous drop in blood pressure. Other drugs, including alpha-blockers used for BPH and some blood-pressure treatments, require a careful medication review because of additive blood-pressure effects. Tell every clinician treating chest pain or a medical emergency when you last used an ED medicine.",
+            "Seek urgent medical care for an erection lasting more than four hours or sudden loss of sight or hearing. Heart symptoms during sexual activity also require medical assessment. For men with significant cardiovascular disease, a clinician should assess whether sexual activity and the proposed medicine are appropriate. Do not make medication changes based only on a website comparison."
+          ],
+          "bullets": [],
+          "refs": [
+            "FDA-TAD",
+            "FDA-SILD",
+            "AUA-ED"
+          ]
+        },
+        {
+          "heading": "When erection changes deserve a wider health conversation",
+          "paragraphs": [
+            "Erectile dysfunction is not always solely a sexual problem. It can be associated with blood-vessel health, diabetes, smoking, high blood pressure, medication effects, low mood and other conditions. Professional guidance treats erectile dysfunction as a possible marker of cardiovascular risk. A change that began before cancer treatment, or seems different from what the treatment team expected, may justify a broader health review rather than simply trying a different tablet.",
+            "Low sexual desire and difficulty getting or maintaining an erection are different concerns. Hormone treatment for cancer can affect desire, while surgery and radiation may affect physical erectile response. The right evaluation depends on the actual symptom and treatment history. A sexual-medicine specialist can help when tablets are ineffective or unsuitable, alongside the rehabilitation, device and counseling options already discussed in this guide."
+          ],
+          "bullets": [],
+          "refs": [
+            "AUA-ED",
+            "NCI-T"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "If a tablet helps me get an erection, does that mean the nerves have recovered?",
+          "a": "Not necessarily. A medication-assisted erection shows that a blood-flow response can occur with help; it does not prove complete nerve recovery. Spontaneous erections and erections supported by a medicine are different outcomes, especially after prostatectomy.",
+          "refs": [
+            "AUA-ED",
+            "NCI-T"
+          ]
+        },
+        {
+          "q": "Why might sildenafil or tadalafil not work after prostate surgery?",
+          "a": "The medicine still needs enough functioning nerve and blood-vessel response to support an erection. Recovery varies, and correct use, sexual stimulation, timing and other health conditions matter. The care team can check for a treatable issue and discuss alternatives rather than assuming that one unsuccessful attempt settles the question.",
+          "refs": [
+            "AUA-ED",
+            "NCI-T"
+          ]
+        },
+        {
+          "q": "Is tadalafil better than sildenafil?",
+          "a": "Neither is the best choice for everyone. Tadalafil lasts longer and is less affected by meals; sildenafil has a shorter window. Effectiveness and side effects vary from person to person. Your other medications, recovery goals and health history should drive the decision.",
+          "refs": [
+            "FDA-SILD",
+            "FDA-TAD"
+          ]
+        },
+        {
+          "q": "Can I take an ED medicine if I also take a prostate or heart medicine?",
+          "a": "It depends on the exact medicine. Nitrates and riociguat must not be used with PDE5 inhibitors. Some BPH medicines, particularly alpha-blockers, can increase the risk of low blood pressure when combined. Show your complete prescription, over-the-counter and supplement list to the prescriber before taking an ED medication.",
+          "refs": [
+            "FDA-TAD",
+            "FDA-SILD"
+          ]
+        },
+        {
+          "q": "Could erectile dysfunction be a warning sign of a heart problem?",
+          "a": "It can be a marker of cardiovascular risk, although it does not by itself diagnose heart disease. Blood pressure, diabetes, smoking and cholesterol can be relevant. Following prostate treatment, nerve injury or hormone therapy may also explain changes; a clinician can help separate these possibilities.",
+          "refs": [
+            "AUA-ED"
+          ]
+        },
+        {
+          "q": "Are low libido and erectile dysfunction the same problem?",
+          "a": "No. Libido describes sexual interest; erectile function describes the physical ability to get or maintain an erection. A person may experience one change without the other. Prostate surgery, radiation, cancer hormone therapy, medications and emotional factors can affect these domains differently, so it helps to describe the specific concern.",
+          "refs": [
+            "NCI-T",
+            "AUA-ED"
+          ]
+        }
+      ]
+    }
+  ]
+}
