@@ -38,3 +38,12 @@
 @media(max-width:650px){.v21-primary-grid,.v21-path-list,.v2-pillar .v2-article .v2-grid{grid-template-columns:1fr}.v21-topic-card{padding:22px;min-height:0}.v21-topic-card h3{font-size:1.5rem}.v21-path-list a{min-height:0}.v21-paths-layout{gap:18px}.v2-pillar .v2-article section{scroll-margin-top:40px}}
 @media(prefers-reduced-motion:reduce){.v21-topic-card{transition:none}.v21-topic-card:hover,.v21-topic-card:focus-visible{transform:none}}
 @media print{.v21-primary-grid,.v21-path-list{display:block}.v21-topic-card,.v21-path-list li{break-inside:avoid;margin:10px 0}.v21-paths-section{padding:0}.v2-pillar .v2-table-wrap{overflow:visible}.v2-pillar .v2-table{min-width:0}}
+
+
+/* v2.2: answered FAQs on two existing deep guides; no navigation or layout change. */
+.v2-faq{margin-top:18px}
+.v2-faq-item{padding:15px 0 9px;border-top:1px solid #e2ece8}
+.v2-faq-item h3{font-size:1.06rem;line-height:1.5;margin:0 0 7px;color:#153946}
+.v2-faq-item p{margin:0 0 8px}
+.v2-faq-item .v2-evidence{margin-top:7px}
+@media print{.v2-faq-item{break-inside:avoid}}
