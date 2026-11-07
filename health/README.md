@@ -4,6 +4,12 @@ A men's health educational publication within behshad.com, accessible at https:/
 
 **Start here for any future website change:** [Site architecture and editorial operating model](SITE-ARCHITECTURE.md). This document establishes the mandatory publication → topic → article hierarchy, permitted content at each level, research intake process, and release checklist.
 
+## Publisher branding and health-specific privacy update (November 6, 2026)
+
+The public Health Compass About and editorial-methods pages use the publication name, not a personal publisher identity. The six legacy guide metadata records and the home page's publisher data are publication-based. The health section now has its own reader privacy notice at `/health/privacy/`, which summarizes GoatCounter analytics, local tools, external links, and any future affiliate disclosure, while the separate sitewide `/privacy/` policy remains unchanged. No fictional publishing committee or clinical board is claimed.
+
+All health article bodies, existing URLs, layouts, images, the root domain, and non-health areas remain unchanged. The health privacy page is included in the sitemap, and automated discovery and browser checks cover the new route and absence of personal publisher names in the Health Compass pages.
+
 ## V2.2 growth, discovery, and transparency (November 6, 2026)
 
 The publication now has an indexable publisher and editorial standards page at `/health/about/`, linked across the health guides. The existing `/privacy/` notice explicitly covers Men’s Health Compass, GoatCounter aggregate page views, and the on-device reference search and appointment-question workflow. The two top-level health pages carry linked publisher and page structured data; all six v1 guides have complementary nonclinical publisher and breadcrumb schema. The existing sitemap includes the new About page.
