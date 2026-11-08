@@ -1,0 +1,32 @@
+/* Recovery Essentials: scoped to this guide; preserve the health V2.1 theme. */
+.re-jump{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 8px}
+.re-jump a{display:inline-flex;align-items:center;padding:9px 12px;border:1px solid #b6d6cd;border-radius:999px;background:#f4faf7;color:#176c68;font-size:.84rem;font-weight:650;text-decoration:none}
+.re-jump a:hover,.re-jump a:focus-visible{background:#e4f2ed;border-color:#168374}
+.re-note{background:#f2f8f5;border:1px solid #d5e5e0;border-radius:12px;padding:20px 23px;margin:20px 0 25px}
+.re-note p{margin:5px 0!important;font-size:.94rem!important;line-height:1.65!important}
+.re-note strong{color:#164c4e}
+.re-checklist{list-style:none;padding-left:0!important;display:grid;gap:13px;margin:17px 0}
+.re-checklist li{padding:14px 15px 14px 43px!important;position:relative;border:1px solid #dce8e4;border-radius:10px;background:#fbfdfb;line-height:1.55!important}
+.re-checklist li:before{content:"✓";position:absolute;left:16px;top:14px;font-weight:800;color:#168374}
+.re-product{display:grid;grid-template-columns:135px 1fr;gap:24px;padding:25px;border:1px solid #cfe2dd;background:#fff;border-radius:15px;box-shadow:0 10px 25px rgba(9,52,61,.04);align-items:start;margin:22px 0}
+.re-product-visual{height:144px;border-radius:12px;background:linear-gradient(140deg,#e2f2ec,#f8fbf9);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #d6e9e2;color:#1d746c;text-align:center;gap:9px}
+.re-product-visual svg{width:45px;height:45px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.re-product-visual span{font-size:.73rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase}
+.re-product-body h3{font-size:1.25rem!important;margin:3px 0 11px!important;line-height:1.35}
+.re-product-kicker{font-size:.72rem!important;text-transform:uppercase;color:#177971!important;letter-spacing:.1em;font-weight:800;margin:0!important}
+.re-product-body p{margin:10px 0!important;font-size:.94rem!important;line-height:1.63!important}
+.re-product-aside{font-size:.81rem!important;color:#667f80!important}
+.re-product-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+.re-buy{background:#116d69;color:#fff!important;padding:12px 19px;border-radius:8px;display:inline-flex;align-items:center;gap:7px;text-decoration:none!important;font-size:.87rem;font-weight:750;min-height:44px}
+.re-buy:hover,.re-buy:focus-visible{background:#084e4d;outline-offset:3px}
+.re-paid{font-size:.82rem;color:#5b7074;font-weight:650}
+.re-supplies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:23px 0}
+.re-supply{border:1px solid #d6e5e0;background:#f9fcfa;border-radius:12px;padding:18px 20px}
+.re-supply h3{margin:0 0 7px!important;font-size:1.06rem!important}
+.re-supply p{font-size:.91rem!important;line-height:1.6!important;margin:0!important}
+.re-faq details{border-bottom:1px solid #d9e6e3;padding:16px 0}
+.re-faq summary{color:#164c4e;font-weight:750;cursor:pointer}
+.re-faq details p{margin:10px 0 0!important}
+.re-footnote{font-size:.83rem!important;color:#637e7f!important}
+@media(max-width:650px){.re-product{grid-template-columns:1fr;padding:18px;gap:16px}.re-product-visual{height:100px;flex-direction:row}.re-supplies{grid-template-columns:1fr}.re-note{padding:16px 18px}.re-jump a{font-size:.79rem}.re-buy{width:100%;justify-content:center}}
+@media print{.re-product{break-inside:avoid}.re-buy{background:none;color:#116d69!important;border:1px solid #116d69}.re-jump{display:none}}
