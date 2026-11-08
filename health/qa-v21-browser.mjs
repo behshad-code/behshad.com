@@ -67,6 +67,7 @@ try{
   await teaser.scrollIntoViewIfNeeded();
   const teaserPhoto=teaser.locator('img.re-teaser-image');
   assert(await teaserPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Teaser image did not load');
+  assert.equal(await teaserPhoto.evaluate(img=>getComputedStyle(img).objectFit),'contain','Recovery teaser must show the whole illustration');
   await teaser.click();
   assert(page.url().endsWith('/health/prostate/living-well/recovery-essentials/'),'Recovery companion link failed');
   const amazon=page.locator('a.re-buy');
@@ -80,6 +81,14 @@ try{
   const productPhoto=page.locator('.re-product-photo');
   await productPhoto.scrollIntoViewIfNeeded();
   assert(await productPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Depend product photograph did not load');
+  const productLinks=page.locator('a.re-product-photo-link, a.re-product-title-link, a.re-buy');
+  assert.equal(await productLinks.count(),3,'Photo, title and button must each link to Amazon');
+  const expectedAmazonHref='https://www.amazon.com/dp/B0G6GSZ89J/ref=nosim?tag=healthcompa0e-20';
+  for(const link of await productLinks.all()){
+   assert.equal(await link.getAttribute('href'),expectedAmazonHref,'Product links must use the same tracked Amazon URL');
+   assert((await link.getAttribute('rel')).includes('sponsored'),'Product affiliate link missing sponsored rel');
+   assert((await link.getAttribute('data-goatcounter-click')).includes('affiliate-amazon-us-depend-guards-B0G6GSZ89J'),'Product link missing click event');
+  }
   assert((await page.locator('.re-disclosure').textContent()).includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
   assert.equal(await page.locator('.re-note').filter({hasText:'Affiliate disclosure'}).count(),0,'Obtrusive affiliate box still present');
   await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
@@ -89,6 +98,19 @@ try{
   checks+=4;
   await page.close();
  }
+
+ // Tablet-sized Chromium test specifically covers the layout reported on iPad Safari.
+ const tablet=await browser.newPage({viewport:{width:820,height:1180},deviceScaleFactor:2});
+ await tablet.route('**/*',route=>route.request().url().startsWith(base)?route.continue():route.abort());
+ await tablet.goto(base+'/health/prostate/living-well/',{waitUntil:'domcontentloaded'});
+ const tabletImage=tablet.locator('a.re-teaser img.re-teaser-image');
+ assert(await tabletImage.evaluate(img=>img.decode().then(()=>img.naturalWidth>0&&getComputedStyle(img).objectFit==='contain').catch(()=>false)),'Tablet teaser must load without image cropping');
+ const tabletOverflow=await tablet.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+ assert(tabletOverflow<=2,'Tablet has horizontal overflow');
+ await tabletImage.scrollIntoViewIfNeeded();
+ await tablet.screenshot({path:resolve(out,'recovery-teaser-tablet.png'),fullPage:true});
+ await tablet.close();
+ checks+=2;
  assert.equal(errors.length,0,'Browser page errors: '+errors.join('; '));
  writeFileSync(resolve(out,'results.json'),JSON.stringify({status:'passed',checked_routes:routes.length,viewports:widths,checks,errors,notes:'Tests local branch files with real Chromium. Not a production-hosted visual verification.'},null,2)+'\n');
  console.log('v2.1 Chromium browser QA PASS: '+routes.length+' routes x '+widths.length+' viewports; '+checks+' checks');
