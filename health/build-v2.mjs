@@ -115,5 +115,17 @@ if(seenSupplements.size!==articles.length)throw Error("Expected supplements for 
 
 const pillars=Object.fromEntries(["basics","screening","diagnosis","treatments","living-well","research"].map(k=>[k,load("health/prostate/data/v2.1-pillars/"+k+".json")]));
 const pages=buildV2(articles,load('health/prostate/data/v2-sources.json'),load('health/prostate/data/v2-glossary.json'),pillars);
+// Practical companion navigation is part of the generator so rebuilds preserve it.
+// The guide itself is independently authored; only these contextual links are injected.
+const recoveryGuide='/health/prostate/living-well/recovery-essentials/';
+const livingPath='health/prostate/living-well/index.html';
+const continencePath='health/prostate/living-well/continence/index.html';
+const livingAnchor='</section><section id="pillar-2">';
+const livingBlurb='<div class="v2-callout"><p><strong>Practical preparation:</strong> Our new <a href="'+recoveryGuide+'">Prostate Surgery Recovery Essentials</a> guide covers a before-surgery checklist, everyday supplies to discuss with your care team, and optional urinary protection products.</p></div>';
+const continenceAnchor='</div></article><aside class="v2-aside"';
+const continenceCard='<a class="v2-card" href="'+recoveryGuide+'"><span class="kicker">Practical companion</span><h3>Prostate surgery recovery essentials</h3><p>A preparation checklist and everyday supplies to consider before and after surgery, including optional urinary protection.</p><span class="cta">Explore the guide →</span></a>';
+if(!pages[livingPath]?.includes(livingAnchor)||!pages[continencePath]?.includes(continenceAnchor))throw Error('Recovery companion page anchors changed');
+pages[livingPath]=pages[livingPath].replace(livingAnchor,livingBlurb+livingAnchor);
+pages[continencePath]=pages[continencePath].replace(continenceAnchor,continenceCard+continenceAnchor);
 for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content);}
 console.log('Generated',Object.keys(pages).length,'v2.1 files');
