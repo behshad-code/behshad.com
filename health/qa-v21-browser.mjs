@@ -22,7 +22,7 @@ const out=resolve(root,'health/qa-screenshots');
 mkdirSync(out,{recursive:true});
 let browser, checks=0, errors=[];
 const widths=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
+const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/living-well/recovery-essentials/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  for(const vp of widths){
@@ -60,6 +60,23 @@ try{
   await page.goto(base+'/health/prostate/resources/questions/',{waitUntil:'domcontentloaded'});
   await page.locator('[data-question-choice]').first().check();
   assert((await page.locator('[data-question-count]').textContent()).includes('1 selected'),'Question builder failed to update');
+  // Recovery essentials pilot: test both contextual navigation and the Amazon link metadata.
+  await page.goto(base+'/health/prostate/living-well/',{waitUntil:'domcontentloaded'});
+  await page.locator('#pillar-1 a[href="/health/prostate/living-well/recovery-essentials/"]').click();
+  assert(page.url().endsWith('/health/prostate/living-well/recovery-essentials/'),'Recovery companion link failed');
+  const amazon=page.locator('a.re-buy');
+  assert.equal(await amazon.count(),1,'Exactly one pilot affiliate product expected');
+  const target=new URL(await amazon.getAttribute('href'));
+  assert.equal(target.hostname,'www.amazon.com');
+  assert.equal(target.pathname,'/dp/B0G6GSZ89J/ref=nosim');
+  assert.equal(target.searchParams.get('tag'),'healthcompa0e-20','Affiliate tag missing');
+  assert((await amazon.getAttribute('rel')).includes('sponsored'),'Sponsored link disclosure missing');
+  assert.equal(await amazon.getAttribute('data-goatcounter-click'),'affiliate-amazon-us-depend-guards-B0G6GSZ89J','Product click event missing');
+  assert((await page.locator('.re-note').allTextContents()).join(' ').includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
+  await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
+  await page.goto(base+'/health/prostate/living-well/continence/',{waitUntil:'domcontentloaded'});
+  assert.equal(await page.locator('a.v2-card[href="/health/prostate/living-well/recovery-essentials/"]').count(),1,'Continence companion link missing');
+  checks+=9;
   checks+=4;
   await page.close();
  }
