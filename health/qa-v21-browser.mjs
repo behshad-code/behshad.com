@@ -62,7 +62,12 @@ try{
   assert((await page.locator('[data-question-count]').textContent()).includes('1 selected'),'Question builder failed to update');
   // Recovery essentials pilot: test both contextual navigation and the Amazon link metadata.
   await page.goto(base+'/health/prostate/living-well/',{waitUntil:'domcontentloaded'});
-  await page.locator('#pillar-1 a[href="/health/prostate/living-well/recovery-essentials/"]').click();
+  const teaser=page.locator('#pillar-1 a.re-teaser[href="/health/prostate/living-well/recovery-essentials/"]');
+  assert.equal(await teaser.count(),1,'Illustrated Recovery Essentials teaser missing');
+  await teaser.scrollIntoViewIfNeeded();
+  const teaserPhoto=teaser.locator('img.re-teaser-image');
+  assert(await teaserPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Teaser image did not load');
+  await teaser.click();
   assert(page.url().endsWith('/health/prostate/living-well/recovery-essentials/'),'Recovery companion link failed');
   const amazon=page.locator('a.re-buy');
   assert.equal(await amazon.count(),1,'Exactly one pilot affiliate product expected');
@@ -72,7 +77,11 @@ try{
   assert.equal(target.searchParams.get('tag'),'healthcompa0e-20','Affiliate tag missing');
   assert((await amazon.getAttribute('rel')).includes('sponsored'),'Sponsored link disclosure missing');
   assert.equal(await amazon.getAttribute('data-goatcounter-click'),'affiliate-amazon-us-depend-guards-B0G6GSZ89J','Product click event missing');
-  assert((await page.locator('.re-note').allTextContents()).join(' ').includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
+  const productPhoto=page.locator('.re-product-photo');
+  await productPhoto.scrollIntoViewIfNeeded();
+  assert(await productPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Depend product photograph did not load');
+  assert((await page.locator('.re-disclosure').textContent()).includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
+  assert.equal(await page.locator('.re-note').filter({hasText:'Affiliate disclosure'}).count(),0,'Obtrusive affiliate box still present');
   await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
   await page.goto(base+'/health/prostate/living-well/continence/',{waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('a.v2-card[href="/health/prostate/living-well/recovery-essentials/"]').count(),1,'Continence companion link missing');
