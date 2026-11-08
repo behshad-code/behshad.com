@@ -121,7 +121,7 @@ const recoveryGuide='/health/prostate/living-well/recovery-essentials/';
 const livingPath='health/prostate/living-well/index.html';
 const continencePath='health/prostate/living-well/continence/index.html';
 const livingAnchor='</section><section id="pillar-2">';
-const livingBlurb='<div class="v2-callout"><p><strong>Practical preparation:</strong> Our new <a href="'+recoveryGuide+'">Prostate Surgery Recovery Essentials</a> guide covers a before-surgery checklist, everyday supplies to discuss with your care team, and optional urinary protection products.</p></div>';
+const livingBlurb='<div class="v2-callout"><p><strong>Practical preparation:</strong> The <a href="'+recoveryGuide+'">Prostate Surgery Recovery Essentials</a> guide covers a before-surgery checklist, everyday supplies to discuss with your care team, and optional urinary protection products.</p></div>';
 const continenceAnchor='</div></article><aside class="v2-aside"';
 const continenceCard='<a class="v2-card" href="'+recoveryGuide+'"><span class="kicker">Practical companion</span><h3>Prostate surgery recovery essentials</h3><p>A preparation checklist and everyday supplies to consider before and after surgery, including optional urinary protection.</p><span class="cta">Explore the guide →</span></a>';
 if(!pages[livingPath]?.includes(livingAnchor)||!pages[continencePath]?.includes(continenceAnchor))throw Error('Recovery companion page anchors changed');
