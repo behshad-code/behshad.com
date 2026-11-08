@@ -57,4 +57,35 @@ for (const path of files) {
 assert(ldCount >= 37, "Unexpected loss of structured data across the V2.1 pages");
 for (const path of ["health/index.html", "health/prostate/index.html", "health/about/index.html"])
   assert(read(path).includes('type="application/ld+json"'), "Required top-level structured data missing: " + path);
-console.log("Discovery checks PASS:", files.length, "indexable Health Compass pages,", ldCount, "valid structured-data blocks, sitemap and trust links intact.");
+
+// Sitewide sitemap consistency check for other self-canonical public pages.
+// Health Compass pages are validated by the stricter checks above.
+const publicSections = ["ai", "ballot", "et", "ma", "transformation", "privacy", "terms"];
+const publicPages = ["index.html"];
+function visitPublic(dir) {
+  for (const name of readdirSync(dir)) {
+    const abs = join(dir, name);
+    if (statSync(abs).isDirectory()) visitPublic(abs);
+    else if (name === "index.html") publicPages.push(relative(base, abs).replaceAll("\\", "/"));
+  }
+}
+for (const dir of publicSections) visitPublic(resolve(base, dir));
+for (const path of publicPages) {
+  const html = read(path);
+  const expected = "https://behshad.com/" + path.replace(/index\.html$/, "");
+  const canonicalTag = [...html.matchAll(/<link\b[^>]*>/g)].map(m => m[0]).find(tag => /rel="canonical"/.test(tag));
+  const canonical = canonicalTag?.match(/href="([^"]+)"/)?.[1];
+  const robotsTag = [...html.matchAll(/<meta\b[^>]*>/g)].map(m => m[0]).find(tag => /name="robots"/.test(tag));
+  if (canonical === expected && !/content="noindex/i.test(robotsTag || "")) {
+    assert(sitemap.includes("<loc>" + expected + "</loc>"), "Indexable public page missing from sitemap: " + path);
+  }
+}
+const listedUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+assert.equal(listedUrls.length, new Set(listedUrls).size, "Duplicate sitemap URL");
+for (const url of listedUrls) {
+  assert(url.startsWith("https://behshad.com/"), "Unexpected sitemap domain: " + url);
+  const page = url.slice("https://behshad.com/".length);
+  assert(existsSync(resolve(base, page || "", "index.html")), "Sitemap target missing: " + url);
+}
+
+console.log("Discovery checks PASS:", files.length, "indexable Health Compass pages,", ldCount, "valid structured-data blocks, sitewide sitemap and trust links intact.");
