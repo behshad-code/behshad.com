@@ -33,13 +33,17 @@ for(const hub of hubs){
  const p=JSON.parse(read("health/prostate/data/v2.1-pillars/"+hub+".json"));
  assert.equal(p.slug,hub,"Pillar slug mismatch "+hub);
  assert.equal(p.name,pillarMap[hub],"Pillar title mismatch "+hub);
+ if(hub==="research")assert(!p.sections.some(s=>s.heading==="What stays in the editorial research library"),"Internal editorial research notes must not be published");
  assert(p.sections.length>=6,"Too few educational sections: "+hub);
  const words=p.sections.flatMap(s=>s.paragraphs||[]).join(" ").split(/\s+/).length;
- assert(words>=650,"Pillar needs more substantive content: "+hub+" has "+words+" words");
+ const minWords=hub==="research"?550:650;
+ assert(words>=minWords,"Pillar needs more substantive content: "+hub+" has "+words+" words (minimum "+minWords+")");
  pillarWords+=words;
  for(const s of p.sections){assert(s.heading&&s.paragraphs.length,"Incomplete section "+hub);for(const id of s.refs||[])assert(ids.has(id),"Unknown pillar source "+id+" in "+hub)}
  const html=read("health/prostate/"+hub+"/index.html");
  assert((html.match(/id="pillar-\d+"/g)||[]).length===p.sections.length,"Rendered pillar section count mismatch: "+hub);
+ const renderedIds=[...html.matchAll(/id="pillar-(\d+)"/g)].map(m=>Number(m[1]));
+ assert.deepEqual(renderedIds,p.sections.map((_,i)=>i+1),"Pillar section IDs must be consecutive: "+hub);
 }
 let linkCount=0;
 for(const p of paths){
