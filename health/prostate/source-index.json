@@ -398,6 +398,28 @@
       "institution": "U.S. FDA",
       "reviewed": "2026-11-06",
       "status": "Public reference candidate; clinical claims cross-checked where cited"
+    },
+    {
+      "id": "MSK-SURG",
+      "title": "About Your Prostate Surgery",
+      "url": "https://www.mskcc.org/cancer-care/patient-education/about-your-prostate-surgery",
+      "type": "Patient guidance",
+      "region": "United States",
+      "year": 2026,
+      "institution": "Memorial Sloan Kettering Cancer Center",
+      "reviewed": "2026-11-09",
+      "status": "Institutional surgical discharge guidance; facility-specific instructions not universal"
+    },
+    {
+      "id": "EAU-ED",
+      "title": "EAU Management of Erectile Dysfunction",
+      "url": "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/management-of-erectile-dysfunction",
+      "type": "Clinical guideline",
+      "region": "Europe",
+      "year": 2026,
+      "institution": "European Association of Urology",
+      "reviewed": "2026-11-09",
+      "status": "Professional sexual and reproductive health guideline; no established regimen guarantees unassisted erection recovery"
     }
   ]
 }
