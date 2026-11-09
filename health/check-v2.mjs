@@ -9,7 +9,7 @@ const slugs=["part1","part2","part3a","part3b","part4"];
 const articles=slugs.flatMap(p=>JSON.parse(read("health/prostate/data/v2-articles-"+p+".json")).articles);
 const index=JSON.parse(read("health/prostate/content-index.json"));
 assert.equal(index.schema_version,"2.1","Published index must be v2.1");
-assert.equal(index.pages.length,40,"Expected 40 prostate guide, pillar and reference routes");
+assert.equal(index.pages.length,42,"Expected 42 prostate guide, pillar and reference routes including V2.5 recovery guide and brochure");
 const sources=JSON.parse(read("health/prostate/data/v2-sources.json"));
 const glossary=JSON.parse(read("health/prostate/data/v2-glossary.json"));
 const ids=new Set(sources.map(x=>x.id));
