@@ -2,6 +2,9 @@
 
 Applies to this repository and all website development tasks.
 
+**Mandatory first read for every new website development session:** [AI-assisted GitHub connection and release runbook](.github/ASSISTANT-DEVELOPMENT-RUNBOOK.md). Use the connected GitHub app for authenticated repository work. A local shell `git clone` or DNS/network failure does **not** mean the GitHub app is disconnected. Verify connector status using repo metadata, an authenticated file read, and (if necessary) a scoped non-production branch test before asking for reconnection or changing the established workflow.
+
+
 1. Read `README.md` before editing. For any Men's Health Compass work also read `health/SITE-ARCHITECTURE.md` and `health/README.md` before changing pages. Treat the general `/health/` topic hub, `/health/<topic>/` home, and individual articles as separate content layers. Run `node health/check-hierarchy.mjs` before merging changes. Follow the approved preview hosting and security rules. The approved review method is a complete, navigable GitHub Pages sandbox in this repository at one stable `https://behshad.com/sandbox/<feature>-review/` entry URL. Keep an existing approved review URL unless the user requests a change.
 2. Never create or share raw.githack.com, rawcdn.githack.com, RawGit, or equivalent third-party rendering/caching previews. Never introduce an alternative preview provider without the user's explicit instruction.
 3. Public repositories and GitHub Pages sandboxes are public, even with `noindex`. Never commit credentials, confidential source documents, or private working material to any public branch.
