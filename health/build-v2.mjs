@@ -127,5 +127,40 @@ const continenceCard='<a class="v2-card" href="'+recoveryGuide+'"><span class="k
 if(!pages[livingPath]?.includes(livingAnchor)||!pages[continencePath]?.includes(continenceAnchor))throw Error('Recovery companion page anchors changed');
 pages[livingPath]=pages[livingPath].replace(livingAnchor,livingBlurb+livingAnchor);
 pages[continencePath]=pages[continencePath].replace(continenceAnchor,continenceCard+continenceAnchor);
+// V2.5: reproducible, additive recovery enrichment. The base v2.1 article and pillar
+// manuscripts remain intact; these reviewed additions are source-controlled overlays.
+// Re-running this generator must not remove published recovery guidance.
+const v25=load('health/prostate/data/v2.5-overlays.json');
+for(const item of v25.pages){
+ let html=pages[item.path];
+ if(typeof html!=='string'||!html.includes(item.before))throw Error('V2.5 page anchor missing: '+item.path);
+ if(html.includes(item.html))throw Error('V2.5 overlay already applied: '+item.path);
+ html=html.replace(item.before,item.after?item.before+item.html:item.html+item.before);
+ if(item.asideBefore){
+  const ai=html.indexOf('<aside class="v2-aside"');
+  if(ai<0)throw Error('V2.5 sidebar missing: '+item.path);
+  const before=html.slice(0,ai),aside=html.slice(ai);
+  if(!aside.includes(item.asideBefore))throw Error('V2.5 sidebar anchor missing: '+item.path);
+  html=before+aside.replace(item.asideBefore,item.asideHtml+item.asideBefore);
+ }
+ if(item.date)html=html.replaceAll('Updated November 6, 2026','Updated November 9, 2026').replaceAll('"dateModified":"2026-11-06"','"dateModified":"2026-11-09"');
+ pages[item.path]=html;
+}
+const contentIndexPath='health/prostate/content-index.json';
+const contentIndex=JSON.parse(pages[contentIndexPath]);
+for(const added of v25.indexEntries){
+ if(contentIndex.pages.some(p=>p.path===added.path))throw Error('Repeated V2.5 index route '+added.path);
+ const i=contentIndex.pages.findIndex(p=>p.path==='/health/prostate/living-well/continence/');
+ if(i<0)throw Error('Missing continence anchor in content index');
+ contentIndex.pages.splice(i,0,added);
+}
+pages[contentIndexPath]=JSON.stringify(contentIndex,null,2)+'\n';
+const srcIndexPath='health/prostate/source-index.json';
+const srcIndex=JSON.parse(pages[srcIndexPath]);
+for(const added of v25.sourceEntries){
+ if(srcIndex.sources.some(s=>s.id===added.id||s.url===added.url))throw Error('Repeated V2.5 source '+added.id);
+ srcIndex.sources.push(added);
+}
+pages[srcIndexPath]=JSON.stringify(srcIndex,null,2)+'\n';
 for(const [path,content] of Object.entries(pages)){const target=resolve(base,path);mkdirSync(dirname(target),{recursive:true});writeFileSync(target,content);}
 console.log('Generated',Object.keys(pages).length,'v2.1 files');
