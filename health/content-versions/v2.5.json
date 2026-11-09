@@ -1,7 +1,7 @@
 {
   "name": "Men's Health Compass Prostate Education",
   "version": "2.5",
-  "status": "publication candidate",
+  "status": "published",
   "owner_authorization": "User explicitly requested production implementation and publication on November 9, 2026",
   "release_date": "2026-11-09",
   "feature_branch": "mens-health-compass-v2-5-recovery",
@@ -36,5 +36,7 @@
   "protected_scope": "Keep six-category structure, approved illustrations, established URLs, existing V2.1 content, GoatCounter, privacy and other projects unchanged",
   "medical_review": "Independent licensed clinician peer review not performed; no personalized medical advice",
   "source_limits": "129 of 136 references retrieved in supplied compilation; claims selected and cross-checked against original institutional/guideline references; inaccessible and duplicate studies not treated as new verified guidance",
-  "release_verification": "Pending PR checks, merge, Pages deployment and live-page verification"
+  "release_verification": "GitHub V2.5 validation, discovery, hierarchy, desktop/mobile browser and four-page PDF print checks passed; PR #82 was merged to main. GitHub Pages production deployment run 42690035107 completed successfully on November 9, 2026. Public custom-domain page rendering could not be independently fetched by the assistant environment.",
+  "feature_pull_request": 82,
+  "production_release_commit": "bdabb4bed464e8a06a06738c2b85b5680dad70f1"
 }
