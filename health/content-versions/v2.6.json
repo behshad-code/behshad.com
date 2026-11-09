@@ -1,7 +1,7 @@
 {
   "name": "Men's Health Compass Prostate Education",
   "version": "2.6",
-  "status": "publication candidate",
+  "status": "published",
   "owner_authorization": "Owner explicitly instructed to finish and publish V2.6 on November 9, 2026",
   "release_date": "2026-11-09",
   "branch": "feature/mhc-v26-surgery-recovery-navigation-art",
@@ -38,5 +38,7 @@
     "health/qa-v21-browser.mjs",
     "health/qa-v21-hosted.mjs"
   ],
-  "publication_verification": "Pending PR checks, merge and GitHub Pages deployment"
+  "publication_verification": "V2.6 content generation, navigation, discovery, desktop/mobile Chromium, original SVG image loading, actual Poppler PDF rendering (four pages) and frozen hosted sandbox checks passed. PR #84 merged to main, and GitHub Pages deployment run 42712431358 completed successfully on November 9, 2026. Direct custom-domain rendering unavailable in assistant browsing environment.",
+  "feature_pull_request": 84,
+  "production_release_commit": "c4d95ac799a098d21dd3af534b5a22db76c355fe"
 }
