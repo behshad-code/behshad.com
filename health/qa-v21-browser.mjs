@@ -70,7 +70,7 @@ try{
   assert.equal(await teaserPhoto.evaluate(img=>getComputedStyle(img).objectFit),'contain','Recovery teaser must show the whole illustration');
   await teaser.click();
   assert(page.url().endsWith('/health/prostate/living-well/recovery-essentials/'),'Recovery companion link failed');
-  const amazon=page.locator('a.re-buy');
+  const amazon=page.locator('#urinary-protection a.re-buy');
   assert.equal(await amazon.count(),1,'Exactly one pilot affiliate product expected');
   const target=new URL(await amazon.getAttribute('href'));
   assert.equal(target.hostname,'www.amazon.com');
@@ -78,10 +78,10 @@ try{
   assert.equal(target.searchParams.get('tag'),'healthcompa0e-20','Affiliate tag missing');
   assert((await amazon.getAttribute('rel')).includes('sponsored'),'Sponsored link disclosure missing');
   assert.equal(await amazon.getAttribute('data-goatcounter-click'),'affiliate-amazon-us-depend-guards-B0G6GSZ89J','Product click event missing');
-  const productPhoto=page.locator('.re-product-photo');
+  const productPhoto=page.locator('#urinary-protection .re-product-photo');
   await productPhoto.scrollIntoViewIfNeeded();
   assert(await productPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Depend product photograph did not load');
-  const productLinks=page.locator('a.re-product-photo-link, a.re-product-title-link, a.re-buy');
+  const productLinks=page.locator('#urinary-protection a.re-product-photo-link, #urinary-protection a.re-product-title-link, #urinary-protection a.re-buy');
   assert.equal(await productLinks.count(),3,'Photo, title and button must each link to Amazon');
   const expectedAmazonHref='https://www.amazon.com/dp/B0G6GSZ89J/ref=nosim?tag=healthcompa0e-20';
   for(const link of await productLinks.all()){
@@ -89,6 +89,29 @@ try{
    assert((await link.getAttribute('rel')).includes('sponsored'),'Product affiliate link missing sponsored rel');
    assert((await link.getAttribute('data-goatcounter-click')).includes('affiliate-amazon-us-depend-guards-B0G6GSZ89J'),'Product link missing click event');
   }
+
+  // Each recommendation reuses the existing image-left card design and has 3 independently tracked hotspots.
+  const additionalProducts=[
+   ['sofy-fine-bed-pads','https://link.amazon/B0aIFZCdx'],
+   ['utopia-reusable-bed-pads','https://link.amazon/B09o3BMiD'],
+   ['mens-white-bathrobe','https://link.amazon/B01k5sBBO'],
+   ['mens-long-sleep-shirt','https://link.amazon/B022zd3ME']
+  ];
+  assert.equal(await page.locator('article.re-product').count(),5,'Five recovery product cards expected');
+  for(const [id,href] of additionalProducts){
+   const card=page.locator('article.re-product[data-recovery-product="'+id+'"]');
+   assert.equal(await card.count(),1,'Missing recovery product '+id);
+   const pic=card.locator('img.re-product-photo');
+   assert(await pic.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Recovery product image failed: '+id);
+   const links=card.locator('a.re-product-photo-link, a.re-product-title-link, a.re-buy');
+   assert.equal(await links.count(),3,'Image, title, and button required: '+id);
+   for(const link of await links.all()){
+    assert.equal(await link.getAttribute('href'),href,'Amazon destination mismatch: '+id);
+    assert((await link.getAttribute('rel')).includes('sponsored'),'Sponsored link missing: '+id);
+    assert((await link.getAttribute('data-goatcounter-click')).includes('affiliate-amazon-us-'+id),'GoatCounter event missing: '+id);
+   }
+  }
+  checks+=22;
   assert((await page.locator('.re-disclosure').textContent()).includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
   assert.equal(await page.locator('.re-note').filter({hasText:'Affiliate disclosure'}).count(),0,'Obtrusive affiliate box still present');
   await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
