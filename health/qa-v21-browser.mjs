@@ -130,7 +130,7 @@ try{
   assert.equal(pdfRes.status(),200,'PDF download must return 200');
   const bytes=await pdfRes.body(),pdfText=bytes.toString('latin1');
   assert(pdfText.startsWith('%PDF-1.4'),'Download is not a genuine PDF');
-  assert.equal((pdfText.match(/\\/Type \\/Page\\b/g)||[]).length,4,'PDF must have exactly four pages');
+  assert.equal((pdfText.match(/\/Type \/Page\b/g)||[]).length,4,'PDF must have exactly four pages');
   await page.screenshot({path:resolve(out,'recovery-compass-v26-'+vp.name+'.png'),fullPage:true});
   const alias=await page.request.get(base+'/health/prostate/living-well/recovery-compass/',{maxRedirects:0});
   assert.equal(alias.status(),200,'Legacy alias must remain reachable');
