@@ -1,3 +1,17 @@
+## 2.6 | Surgery & Recovery primary navigation and visual guide | November 9, 2026
+
+Moved the Surgery & Recovery experience out of the fourth-level Living Well location and into a primary Prostate Health category immediately after Treatment Options. The Prostate Health homepage now has one seven-category navigation, without a duplicate second directory. Living Well keeps one contextual link and its broad, cross-treatment role.
+
+Published the self-contained /health/prostate/surgery-recovery/ guide with three original, accessible and scalable anatomical, functional and seven-stage roadmap illustrations. The four-page guide is a real downloadable vector PDF at /health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf, not an HTML-only browser-print surrogate. It includes an evidence-based recovery sequence, safety warnings, functional rehabilitation and follow-up notes.
+
+The two original nested V2.5 addresses remain usable as noindex client-side redirects to the new primary route. Rewrote V2.5 article cross-references and generation overlays so future rebuilds preserve the flat hierarchy. Updated the public sitemap and canonical search metadata, content index, browser and PDF checks, version history and site operating model.
+
+Artwork is a simplified educational schematic, not patient-specific anatomy, medical imaging or a promise of surgical outcomes. The full guide remains educational only, and independent licensed clinician review has not been claimed. Preserved existing article URLs, prepared-source citations, recovery product disclosures, original images, approved overall branding, GoatCounter and unrelated projects.
+
+See `health/content-versions/v2.6.json` and `health/check-v26.mjs` for release inventory and validation.
+
+---
+
 ## 2.5 | Prostate Surgery Recovery Compass | November 9, 2026
 
 Added a surgery-specific seven-phase recovery journey under Living Well, spanning preparation, catheter care, post-catheter adjustment, physical rehabilitation, continence recovery, sexual function, one-year review and life beyond. The new printable four-page Recovery Compass uses the existing Men's Health Compass identity and browser-native Print / Save as PDF. It is not a substitute for surgical discharge instructions.
