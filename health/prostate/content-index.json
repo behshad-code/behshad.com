@@ -282,31 +282,6 @@
       "status": "published"
     },
     {
-      "path": "/health/prostate/living-well/recovery-compass/",
-      "title": "Prostate Surgery Recovery Compass",
-      "category": "Living Well",
-      "kind": "article",
-      "sources": [
-        "NCI-T",
-        "URO-REC",
-        "MSK-SURG",
-        "EAU-ED"
-      ],
-      "status": "published"
-    },
-    {
-      "path": "/health/prostate/living-well/recovery-compass/brochure/",
-      "title": "Four-page Prostate Surgery Recovery Compass",
-      "category": "Living Well",
-      "kind": "resource",
-      "sources": [
-        "URO-REC",
-        "MSK-SURG",
-        "EAU-ED"
-      ],
-      "status": "published"
-    },
-    {
       "path": "/health/prostate/living-well/continence/",
       "title": "Urinary continence and pelvic-floor recovery",
       "category": "Living Well",
@@ -385,6 +360,12 @@
     {
       "path": "/health/prostate/treatments/",
       "title": "Treatment Options",
+      "kind": "hub",
+      "status": "published"
+    },
+    {
+      "path": "/health/prostate/surgery-recovery/",
+      "title": "Surgery & Recovery",
       "kind": "hub",
       "status": "published"
     },
