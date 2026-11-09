@@ -38,7 +38,7 @@
     {
       "path": "health/prostate/living-well/index.html",
       "before": "<section id=\"related-guides\">",
-      "html": "<div class=\"v2-callout\" id=\"v26-surgery-link\"><p><strong>Preparing for radical prostatectomy?</strong> Visit the separate <a href=\"/health/prostate/surgery-recovery/\">Surgery &amp; Recovery</a> guide for an illustrated surgical timeline, urinary and sexual rehabilitation, warning signs and the four-page downloadable PDF. This Living Well guide continues to cover overall survivorship across treatment types.</p></div>",
+      "html": "<div class=\"v2-callout\" id=\"v26-surgery-link\"><p>For a stage-by-stage guide to prostate surgery, visit <a href=\"/health/prostate/surgery-recovery/\">Surgery &amp; Recovery</a>. This Living Well page continues to address broader survivorship across treatment types.</p></div>",
       "date": true
     },
     {
