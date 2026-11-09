@@ -1,3 +1,15 @@
+## 2.5 | Prostate Surgery Recovery Compass | November 9, 2026
+
+Added a surgery-specific seven-phase recovery journey under Living Well, spanning preparation, catheter care, post-catheter adjustment, physical rehabilitation, continence recovery, sexual function, one-year review and life beyond. The new printable four-page Recovery Compass uses the existing Men's Health Compass identity and browser-native Print / Save as PDF. It is not a substitute for surgical discharge instructions.
+
+Enriched the existing detailed continence, sexual health, survivorship and robotic prostatectomy operation pages in place; linked the nerve-sparing guide and general recovery-follow-up flagship to the new pathway. Added six practical questions to the existing private-on-device appointment checklist, preserved Recovery Essentials shopping separation, and indexed the new page and brochure for discovery.
+
+Clinical background includes the AUA/GURS/SUFU incontinence guideline (amended 2024), Memorial Sloan Kettering's March 2026 prostate surgery patient education and EAU sexual-function guidance. No universal healing promises, automatic surgery thresholds, unapproved recovery products, or claim of independent clinical review have been added.
+
+The original six-category hierarchy, existing URL paths, previously approved artwork, sitewide header/footer, GoatCounter, privacy, other content areas and main behshad.com/Ballot Compass remain unchanged. V2.5 edited content is reproducible through `health/prostate/data/v2.5-overlays.json`; the health build regression test protects against future generator overwrites. See `health/content-versions/v2.5.json`.
+
+---
+
 ## 2.2.1 | Publication identity and health privacy | November 6, 2026
 
 Removed the personal publisher/editor name from the Men's Health Compass About and editorial-methods content, homepage structured metadata, and six original guides' editor metadata. All Health Compass pages now link to a dedicated `/health/privacy/` summary. Added the privacy route to the sitemap and browser/discovery tests. No fictitious editorial committee is claimed, and no change was made to the main behshad.com privacy policy, unrelated websites, clinical guidance, ads, or analytics vendors.
