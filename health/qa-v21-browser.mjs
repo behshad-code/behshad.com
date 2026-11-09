@@ -22,7 +22,7 @@ const out=resolve(root,'health/qa-screenshots');
 mkdirSync(out,{recursive:true});
 let browser, checks=0, errors=[];
 const widths=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/living-well/recovery-essentials/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
+const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/living-well/recovery-essentials/','/health/prostate/living-well/recovery-compass/','/health/prostate/living-well/recovery-compass/brochure/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  for(const vp of widths){
@@ -115,6 +115,21 @@ try{
   assert((await page.locator('.re-disclosure').textContent()).includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
   assert.equal(await page.locator('.re-note').filter({hasText:'Affiliate disclosure'}).count(),0,'Obtrusive affiliate box still present');
   await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
+  // V2.5: verify the patient-facing surgery journey, the quick guide and print output.
+  await page.goto(base+'/health/prostate/living-well/recovery-compass/',{waitUntil:'domcontentloaded'});
+  assert.equal(await page.locator('.rc-phase').count(),7,'Recovery journey must have seven phases');
+  assert.equal(await page.locator('.rc-safety').count(),2,'Expected prompt-contact and emergency safety guidance');
+  await page.screenshot({path:resolve(out,'recovery-compass-'+vp.name+'.png'),fullPage:true});
+  await page.locator('a[href="/health/prostate/living-well/recovery-compass/brochure/"]').first().click();
+  assert(page.url().endsWith('/health/prostate/living-well/recovery-compass/brochure/'),'Four-page guide navigation failed');
+  assert.equal(await page.locator('.bp-sheet').count(),4,'Quick guide must show four sheets');
+  await page.screenshot({path:resolve(out,'recovery-brochure-'+vp.name+'.png'),fullPage:true});
+  if(vp.name==='desktop'){
+    const pdf=await page.pdf({path:resolve(out,'Prostate_Surgery_Recovery_Compass_V2.5.pdf'),printBackground:true,preferCSSPageSize:true,format:'Letter'});
+    const count=(pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length;
+    assert.equal(count,4,'Printed brochure must be exactly four pages, got '+count);
+  }
+  checks+=5;
   await page.goto(base+'/health/prostate/living-well/continence/',{waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('a.v2-card[href="/health/prostate/living-well/recovery-essentials/"]').count(),1,'Continence companion link missing');
   checks+=9;

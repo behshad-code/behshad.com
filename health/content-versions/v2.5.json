@@ -1,0 +1,40 @@
+{
+  "name": "Men's Health Compass Prostate Education",
+  "version": "2.5",
+  "status": "publication candidate",
+  "owner_authorization": "User explicitly requested production implementation and publication on November 9, 2026",
+  "release_date": "2026-11-09",
+  "feature_branch": "mens-health-compass-v2-5-recovery",
+  "previous_production_commit": "6d8f2b7699d32b6ff399f3246d5c7c9811f150eb",
+  "prior_versions": [
+    "health/content-versions/v2.1.json",
+    "health/content-versions/v2.0.json",
+    "health/content-versions/v1.0.json"
+  ],
+  "new_pages": [
+    "/health/prostate/living-well/recovery-compass/",
+    "/health/prostate/living-well/recovery-compass/brochure/"
+  ],
+  "enriched_pages": [
+    "/health/prostate/living-well/",
+    "/health/prostate/living-well/continence/",
+    "/health/prostate/living-well/sexual-health/",
+    "/health/prostate/living-well/survivorship/",
+    "/health/prostate/treatments/robotic-surgery/operation/",
+    "/health/prostate/treatments/robotic-surgery/nerve-sparing/",
+    "/health/prostate/recovery-follow-up/",
+    "/health/prostate/living-well/recovery-essentials/",
+    "/health/prostate/resources/questions/"
+  ],
+  "sources_added": [
+    "MSK-SURG",
+    "EAU-ED"
+  ],
+  "source_overlays": "health/prostate/data/v2.5-overlays.json",
+  "new_test": "health/check-v25.mjs",
+  "brochure_delivery": "Four-page print-ready HTML with native browser Print / Save as PDF and mobile presentation",
+  "protected_scope": "Keep six-category structure, approved illustrations, established URLs, existing V2.1 content, GoatCounter, privacy and other projects unchanged",
+  "medical_review": "Independent licensed clinician peer review not performed; no personalized medical advice",
+  "source_limits": "129 of 136 references retrieved in supplied compilation; claims selected and cross-checked against original institutional/guideline references; inaccessible and duplicate studies not treated as new verified guidance",
+  "release_verification": "Pending PR checks, merge, Pages deployment and live-page verification"
+}

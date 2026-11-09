@@ -20,6 +20,8 @@ jobs:
         run: node health/check-hierarchy.mjs
       - name: v2 pages and links
         run: node health/check-v2.mjs
+      - name: V2.5 recovery compass and booklet
+        run: node health/check-v25.mjs
       - name: Generated pages are current
         run: |
           node health/build-v2.mjs
