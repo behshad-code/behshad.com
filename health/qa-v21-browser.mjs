@@ -126,7 +126,7 @@ try{
   await page.screenshot({path:resolve(out,'recovery-brochure-'+vp.name+'.png'),fullPage:true});
   if(vp.name==='desktop'){
     const pdf=await page.pdf({path:resolve(out,'Prostate_Surgery_Recovery_Compass_V2.5.pdf'),printBackground:true,preferCSSPageSize:true,format:'Letter'});
-    const count=(pdf.toString('latin1').match(/\\/Type\\s*\\/Page\\b/g)||[]).length;
+    const count=(pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length;
     assert.equal(count,4,'Printed brochure must be exactly four pages, got '+count);
   }
   checks+=5;
