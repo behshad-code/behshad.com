@@ -22,6 +22,24 @@ jobs:
         run: node health/check-v2.mjs
       - name: V2.6 recovery compass and PDF
         run: node health/check-v26.mjs
+      - name: Render and inspect printable recovery PDF
+        run: |
+          if ! command -v pdfinfo >/dev/null || ! command -v pdftoppm >/dev/null; then
+            sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+          fi
+          pdfinfo health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf | grep -Eq '^Pages:[[:space:]]+4        run: |
+          node health/build-v2.mjs
+          git diff --exit-code -- health/prostate
+
+          mkdir -p health/qa-screenshots/v26-pdf
+          pdftoppm -f 1 -l 4 -scale-to 840 -png -r 96 health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf health/qa-screenshots/v26-pdf/recovery
+          test "$(find health/qa-screenshots/v26-pdf -name '*.png' | wc -l)" -eq 4
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: mhc-v26-pdf-render-proof
+          path: health/qa-screenshots/v26-pdf/
+          retention-days: 14
       - name: Generated pages are current
         run: |
           node health/build-v2.mjs
