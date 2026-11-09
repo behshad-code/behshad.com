@@ -132,8 +132,16 @@ try{
  assert(tabletOverflow<=2,'Tablet has horizontal overflow');
  await tabletImage.scrollIntoViewIfNeeded();
  await tablet.screenshot({path:resolve(out,'recovery-teaser-tablet.png'),fullPage:true});
+ await tablet.goto(base+'/health/prostate/living-well/recovery-essentials/',{waitUntil:'domcontentloaded'});
+ const tabletCards=tablet.locator('article.re-product');
+ assert.equal(await tabletCards.count(),5,'Five recovery product cards expected at tablet width');
+ const allTabletPhotosLoad=await tabletCards.locator('img.re-product-photo').evaluateAll(async imgs=>(await Promise.all(imgs.map(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)))).every(Boolean));
+ assert(allTabletPhotosLoad,'Tablet recovery product photos failed to load');
+ const productPageOverflow=await tablet.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+ assert(productPageOverflow<=2,'Recovery product list overflows tablet viewport');
+ await tablet.screenshot({path:resolve(out,'recovery-products-tablet.png'),fullPage:true});
  await tablet.close();
- checks+=2;
+ checks+=5;
  assert.equal(errors.length,0,'Browser page errors: '+errors.join('; '));
  writeFileSync(resolve(out,'results.json'),JSON.stringify({status:'passed',checked_routes:routes.length,viewports:widths,checks,errors,notes:'Tests local branch files with real Chromium. Not a production-hosted visual verification.'},null,2)+'\n');
  console.log('v2.1 Chromium browser QA PASS: '+routes.length+' routes x '+widths.length+' viewports; '+checks+' checks');
