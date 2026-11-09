@@ -28,11 +28,23 @@ assert(privacy.includes("Men’s Health Compass") && privacy.includes("GoatCount
 assert(existsSync(resolve(base, "health/about/index.html")), "Missing publisher/editorial transparency page");
 assert(healthPrivacy.includes("GoatCounter") && healthPrivacy.includes("affiliate"), "Health publication privacy notice missing analytics or funding information");
 
+const legacyRedirects={
+  "health/prostate/living-well/recovery-compass/index.html":"/health/prostate/surgery-recovery/",
+  "health/prostate/living-well/recovery-compass/brochure/index.html":"/health/prostate/surgery-recovery/"
+};
 const seen = new Set();
 let ldCount = 0;
 for (const path of files) {
   const html = read(path);
   const url = "https://behshad.com/" + path.replace(/index\.html$/, "");
+  if(legacyRedirects[path]){
+    const canonical=html.match(/<link rel="canonical" href="([^"]+)"/);
+    assert(canonical&&canonical[1]==="https://behshad.com"+legacyRedirects[path], "Legacy alias must point to primary Surgery & Recovery: "+path);
+    assert(html.includes('name="robots" content="noindex,follow"'), "Legacy alias must not compete in search: "+path);
+    assert(html.includes('http-equiv="refresh"')&&html.includes('window.location.replace'), "Legacy redirect missing: "+path);
+    assert(!sitemap.includes("<loc>"+url+"</loc>"), "Legacy alias must not appear in sitemap: "+path);
+    continue;
+  }
   assert(!seen.has(url), "Duplicate canonical URL: " + url);
   seen.add(url);
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/);

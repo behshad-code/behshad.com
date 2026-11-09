@@ -150,7 +150,7 @@ const contentIndexPath='health/prostate/content-index.json';
 const contentIndex=JSON.parse(pages[contentIndexPath]);
 for(const added of v25.indexEntries){
  if(contentIndex.pages.some(p=>p.path===added.path))throw Error('Repeated V2.5 index route '+added.path);
- const i=contentIndex.pages.findIndex(p=>p.path==='/health/prostate/living-well/continence/');
+ const i=contentIndex.pages.findIndex(p=>p.path===(added.kind==='hub'?'/health/prostate/living-well/':'/health/prostate/living-well/continence/'));
  if(i<0)throw Error('Missing continence anchor in content index');
  contentIndex.pages.splice(i,0,added);
 }

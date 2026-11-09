@@ -9,7 +9,7 @@ const slugs=["part1","part2","part3a","part3b","part4"];
 const articles=slugs.flatMap(p=>JSON.parse(read("health/prostate/data/v2-articles-"+p+".json")).articles);
 const index=JSON.parse(read("health/prostate/content-index.json"));
 assert.equal(index.schema_version,"2.1","Published index must be v2.1");
-assert.equal(index.pages.length,42,"Expected 42 prostate guide, pillar and reference routes including V2.5 recovery guide and brochure");
+assert.equal(index.pages.length,41,"Expected 41 indexed routes after replacing two nested V2.5 URLs with the primary Surgery & Recovery guide");
 const sources=JSON.parse(read("health/prostate/data/v2-sources.json"));
 const glossary=JSON.parse(read("health/prostate/data/v2-glossary.json"));
 const ids=new Set(sources.map(x=>x.id));
@@ -22,7 +22,7 @@ assert.equal(new Set(articles.map(x=>x.path)).size,24,"Unique article routes req
 assert.equal(glossary.length,78,"78 glossary entries expected");
 assert.equal(ids.size,sources.length,"Source IDs must be unique");
 assert.equal((topic.match(/class="guide-library-card"/g)||[]).length,0,"Prostate page cannot duplicate the flagship guide library");
-assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,6,"Prostate page must have one six-category navigation");
+assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,7,"Prostate page must have one seven-category navigation");
 assert.equal((topic.match(/class="prostate-research-card"/g)||[]).length,3,"Three research highlights maximum");
 assert.equal((topic.match(/class="v2-card"/g)||[]).length,0,"A secondary six-card Explore Further grid is prohibited");
 assert.equal((home.match(/class="guide-library-card"/g)||[]).length,0,"No guide library on general health home");

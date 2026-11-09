@@ -34,7 +34,7 @@ assert.equal(count(hub, /class="topic-feature topic-feature-with-anatomy"/g), 1,
 assert.equal(count(hub, /href="\/health\/prostate\/"/g), 1, 'Root must link once from topic tile to prostate hub');
 assert(!hub.includes('guide-library-section'), 'Article library must be on topic page, not general homepage');
 assert(!hub.includes('Prostate health · Practical guides'), 'Remove prostate-specific content from site root');
-assert.equal(count(prostate, /class="v21-topic-card"/g), 6, 'Prostate topic must have exactly six primary category cards');
+assert.equal(count(prostate, /class="v21-topic-card"/g), 7, 'Prostate topic must have exactly seven primary category cards');
 assert.equal(count(prostate, /class="guide-library-card"/g), 0, 'Do not keep a competing flagship card grid');
 assert.equal(count(prostate, /class="v2-card"/g), 0, 'Do not keep an Explore Further category grid');
 assert(!prostate.includes('Explore further') && !prostate.includes('The practical prostate guide library'), 'Old overlapping navigation headings must be removed');
@@ -56,4 +56,9 @@ for (const slug of guides) {
 }
 checkLinks(hub, 'Men\'s Health homepage');
 checkLinks(prostate, 'Prostate topic page');
-console.log('Health Compass v2.1 hierarchy: PASS (general hub → one six-category prostate home → deep guides)');
+assert(prostate.includes('href="/health/prostate/surgery-recovery/"'), 'Missing main Surgery & Recovery navigation');
+assert(existsSync(new URL('health/prostate/surgery-recovery/index.html', root)), 'Missing short primary Surgery & Recovery page');
+const order=['/basics/','/screening/','/diagnosis/','/treatments/','/surgery-recovery/','/living-well/','/research/'];
+const locations=order.map(slug=>prostate.indexOf('href="/health/prostate'+slug+'"'));
+assert(locations.every(x=>x>=0)&&locations.every((x,i)=>i===0||x>locations[i-1]), 'Seven categories must be ordered with Surgery & Recovery directly before Living Well');
+console.log('Health Compass v2.6 hierarchy: PASS (general hub → seven primary prostate areas → focused guides)');

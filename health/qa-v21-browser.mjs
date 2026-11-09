@@ -8,7 +8,7 @@ import {resolve,extname,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 const root=resolve(fileURLToPath(new URL('../',import.meta.url)));
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'application/javascript','.json':'application/json','.png':'image/png','.svg':'image/svg+xml','.webp':'image/webp','.xml':'application/xml','.txt':'text/plain'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'application/javascript','.json':'application/json','.png':'image/png','.svg':'image/svg+xml','.webp':'image/webp','.xml':'application/xml','.pdf':'application/pdf','.txt':'text/plain'};
 const server=createServer((req,res)=>{
  const rel=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
  const path=resolve(root,'.'+rel,rel.endsWith('/')?'index.html':'');
@@ -22,7 +22,7 @@ const out=resolve(root,'health/qa-screenshots');
 mkdirSync(out,{recursive:true});
 let browser, checks=0, errors=[];
 const widths=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/living-well/','/health/prostate/living-well/recovery-essentials/','/health/prostate/living-well/recovery-compass/','/health/prostate/living-well/recovery-compass/brochure/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
+const routes=['/health/','/health/about/','/health/privacy/','/health/prostate/','/health/prostate/basics/','/health/prostate/screening/','/health/prostate/diagnosis/','/health/prostate/treatments/','/health/prostate/surgery-recovery/','/health/prostate/living-well/','/health/prostate/living-well/recovery-essentials/','/health/prostate/research/','/health/prostate/rising-psa/','/health/prostate/tests-explained/','/health/prostate/active-surveillance/','/health/prostate/treatment-decisions/','/health/prostate/recovery-follow-up/','/health/prostate/insurance-access/','/health/prostate/treatments/robotic-surgery/operation/','/health/prostate/treatments/robotic-surgery/nerve-sparing/','/health/prostate/resources/sources/','/health/prostate/resources/glossary/','/health/prostate/resources/questions/','/health/prostate/resources/editorial-methods/'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  for(const vp of widths){
@@ -39,7 +39,7 @@ try{
    checks++;
   }
   await page.goto(base+'/health/prostate/',{waitUntil:'domcontentloaded'});
-  assert.equal(await page.locator('a.v21-topic-card').count(),6,'Six topic cards required');
+  assert.equal(await page.locator('a.v21-topic-card').count(),7,'Seven primary topic cards required');
   assert.equal(await page.locator('a.guide-library-card').count(),0,'No competing guide card grid');
   assert.equal(await page.locator('section#situations a').count(),6,'Six contextual question shortcuts');
   await page.screenshot({path:resolve(out,'prostate-'+vp.name+'.png'),fullPage:true});
@@ -115,21 +115,27 @@ try{
   assert((await page.locator('.re-disclosure').textContent()).includes('As an Amazon Associate I earn from qualifying purchases.'),'Affiliate disclosure missing');
   assert.equal(await page.locator('.re-note').filter({hasText:'Affiliate disclosure'}).count(),0,'Obtrusive affiliate box still present');
   await page.screenshot({path:resolve(out,'recovery-essentials-'+vp.name+'.png'),fullPage:true});
-  // V2.5: verify the patient-facing surgery journey, the quick guide and print output.
-  await page.goto(base+'/health/prostate/living-well/recovery-compass/',{waitUntil:'domcontentloaded'});
-  assert.equal(await page.locator('.rc-phase').count(),7,'Recovery journey must have seven phases');
-  assert.equal(await page.locator('.rc-safety').count(),2,'Expected prompt-contact and emergency safety guidance');
-  await page.screenshot({path:resolve(out,'recovery-compass-'+vp.name+'.png'),fullPage:true});
-  await page.locator('a[href="/health/prostate/living-well/recovery-compass/brochure/"]').first().click();
-  assert(page.url().endsWith('/health/prostate/living-well/recovery-compass/brochure/'),'Four-page guide navigation failed');
-  assert.equal(await page.locator('.bp-sheet').count(),4,'Quick guide must show four sheets');
-  await page.screenshot({path:resolve(out,'recovery-brochure-'+vp.name+'.png'),fullPage:true});
-  if(vp.name==='desktop'){
-    const pdf=await page.pdf({path:resolve(out,'Prostate_Surgery_Recovery_Compass_V2.5.pdf'),printBackground:true,preferCSSPageSize:true,format:'Letter'});
-    const count=(pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length;
-    assert.equal(count,4,'Printed brochure must be exactly four pages, got '+count);
+  // V2.6: test direct top-level recovery guide, illustration loading, true four-page PDF and legacy aliases.
+  await page.goto(base+'/health/prostate/surgery-recovery/',{waitUntil:'domcontentloaded'});
+  assert.equal(await page.locator('.rc-phase').count(),7,'Seven recovery phases required');
+  assert.equal(await page.locator('.rc-safety').count(),2,'Emergency and prompt contact sections required');
+  for(const name of ['prostatectomy-anatomy-comparison.svg','prostatectomy-recovery-roadmap.svg','prostatectomy-function-tracks.svg']){
+    const image=page.locator('img[src="/health/assets/'+name+'"]');
+    assert.equal(await image.count(),1,'Missing illustration '+name);
+    assert(await image.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Illustration did not render '+name);
   }
-  checks+=5;
+  const pdfHref='/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf';
+  assert(await page.locator('a[href="'+pdfHref+'"]').count()>=1,'Direct PDF download link missing');
+  const pdfRes=await page.request.get(base+pdfHref);
+  assert.equal(pdfRes.status(),200,'PDF download must return 200');
+  const bytes=await pdfRes.body(),pdfText=bytes.toString('latin1');
+  assert(pdfText.startsWith('%PDF-1.4'),'Download is not a genuine PDF');
+  assert.equal((pdfText.match(/\/Type \/Page\b/g)||[]).length,4,'PDF must have exactly four pages');
+  await page.screenshot({path:resolve(out,'recovery-compass-v26-'+vp.name+'.png'),fullPage:true});
+  const alias=await page.request.get(base+'/health/prostate/living-well/recovery-compass/',{maxRedirects:0});
+  assert.equal(alias.status(),200,'Legacy alias must remain reachable');
+  assert((await alias.text()).includes('http-equiv="refresh"'),'Legacy alias must redirect visitors');
+  checks+=8;
   await page.goto(base+'/health/prostate/living-well/continence/',{waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('a.v2-card[href="/health/prostate/living-well/recovery-essentials/"]').count(),1,'Continence companion link missing');
   checks+=9;

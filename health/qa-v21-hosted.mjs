@@ -22,7 +22,7 @@ try{
    checks++;
   }
   await page.goto(root+'health/prostate/',{waitUntil:'load'});
-  assert.equal(await page.locator('a.v21-topic-card').count(),6,'Six primary categories');
+  assert.equal(await page.locator('a.v21-topic-card').count(),6,'Six primary categories in the frozen V2.1 sandbox');
   assert.equal(await page.locator('a.guide-library-card').count(),0,'Competing guide grid');
   await page.locator('a.v21-topic-card').first().click();
   assert(page.url().endsWith('/health/prostate/basics/'),'Category click navigation');

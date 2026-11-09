@@ -4,6 +4,14 @@ A men's health educational publication within behshad.com, accessible at https:/
 
 **Start here for any future website change:** [Site architecture and editorial operating model](SITE-ARCHITECTURE.md). This document establishes the mandatory publication → topic → article hierarchy, permitted content at each level, research intake process, and release checklist.
 
+## Current production architecture: V2.6 (November 9, 2026)
+
+Men's Health Compass retains its general `/health/` publication home and one Prostate Health destination at `/health/prostate/`. The Prostate Health landing page now has **seven** primary subjects: Prostate Basics, Screening & PSA, Prostate Cancer, Treatment Options, Surgery & Recovery, Living Well, and Research & Updates.
+
+The new primary Surgery & Recovery page lives at `/health/prostate/surgery-recovery/`, not under Living Well. It includes three original accessible vector illustrations and a standalone four-page PDF at `/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf`. The short-lived earlier V2.5 URLs at `/health/prostate/living-well/recovery-compass/` and its `brochure/` path redirect there and are excluded from sitemap indexing. No original six flagship guides or specialist article paths were removed.
+
+Living Well remains the broader cross-treatment survivorship guide; it carries only a single contextual link to the surgery-specific journey. All existing content data overlays refer to the primary short URL. See `SITE-ARCHITECTURE.md`, `content-versions/v2.6.json` and `check-v26.mjs` for current information architecture, versioning and release checks. Older release notes below remain as historical context.
+
 ## Publisher branding and health-specific privacy update (November 6, 2026)
 
 The public Health Compass About and editorial-methods pages use the publication name, not a personal publisher identity. The six legacy guide metadata records and the home page's publisher data are publication-based. The health section now has its own reader privacy notice at `/health/privacy/`, which summarizes GoatCounter analytics, local tools, external links, and any future affiliate disclosure, while the separate sitewide `/privacy/` policy remains unchanged. No fictional publishing committee or clinical board is claimed.

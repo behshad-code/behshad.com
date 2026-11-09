@@ -1,0 +1,118 @@
+/* Men's Health Compass V2.5: additive recovery compass and four-page quick guide. */
+/* The approved health.css and v2.css are intentionally unchanged. */
+.rc-hero{background:radial-gradient(circle at 92% 10%,rgba(96,190,172,.20),transparent 38%),linear-gradient(135deg,#092c3a,#10565d 88%)}
+.rc-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.rc-hero .button{font-size:.86rem}
+.rc-page .v2-article>section{padding:38px 0}
+.rc-overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:26px;align-items:center}
+.rc-surgery-drawing{border-radius:14px;border:1px solid #d6e8e1;background:#f3faf7;padding:12px}
+.rc-surgery-drawing svg{display:block;width:100%;height:auto}
+.rc-surgery-drawing small{display:block;text-align:center;color:#647b7e;font-size:.72rem}
+.rc-text-link{display:block;margin:9px 0;color:#0d6d66;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.rc-track-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.rc-track{background:#fff;border:1px solid #d1e5de;border-radius:12px;padding:19px;box-shadow:0 5px 18px rgba(13,50,57,.035)}
+.rc-track span{color:#1b8075;font-size:.79rem;letter-spacing:.1em;font-weight:750}
+.rc-track h3{margin:5px 0 10px;font-size:1rem}.rc-track p{font-size:.89rem}
+.rc-timeline{margin-top:27px}
+.rc-timeline .rc-phase{display:grid;grid-template-columns:62px minmax(0,1fr);gap:18px;border:none;padding:0 0 30px!important;position:relative}
+.rc-phase-rail{display:flex;justify-content:center;position:relative}
+.rc-phase-rail:after{content:"";width:2px;background:#cde6db;position:absolute;top:44px;bottom:-31px;left:calc(50% - 1px)}
+.rc-phase:last-child .rc-phase-rail:after{display:none}
+.rc-step{border-radius:50%;width:44px;height:44px;background:#0a5360;color:#fff;display:grid;place-items:center;font-weight:800;font-size:.86rem;z-index:1}
+.rc-phase-body{padding:0 0 28px;border-bottom:1px solid #dfeae6}
+.rc-phase:last-child .rc-phase-body{border-bottom:none}
+.rc-phase-body h2{font-family:Georgia,serif;font-size:clamp(1.36rem,2vw,1.82rem);line-height:1.3;margin:6px 0 11px}
+.rc-phase-body p{margin-bottom:10px}
+.rc-phase-body ul{margin:10px 0 14px}
+.rc-time{color:#16756d;font-weight:800;text-transform:uppercase;letter-spacing:.065em;font-size:.75rem}
+.rc-safety-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin:20px 0}
+.rc-safety{background:#f2f8f4;border:1px solid #bedbd1;border-left:4px solid #157c70;border-radius:9px;padding:21px}
+.rc-safety.urgent{background:#fff5f2;border-color:#ebc9bf;border-left-color:#ac5641}
+.rc-safety h3{font-size:1.05rem}.rc-safety li{font-size:.93rem}
+.rc-safety.urgent p{font-size:.9rem}
+.rc-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.rc-link-grid a{display:flex;flex-direction:column;gap:7px;text-decoration:none;background:#fff;border:1px solid #d0e5dc;border-radius:11px;padding:18px}
+.rc-link-grid a:hover,.rc-link-grid a:focus-visible{border-color:#178072;box-shadow:0 4px 16px rgba(13,68,61,.07)}
+.rc-link-grid span{font-size:.84rem;line-height:1.54;color:#526e70}
+.rc-brochure{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(175px,.65fr);gap:25px;align-items:center;padding:26px;border-radius:15px;background:#eff7f2;border:1px solid #ccdfd6}
+.rc-brochure h3{font:400 1.6rem/1.25 Georgia,serif;margin:9px 0}
+.rc-brochure .button{margin-top:8px;background:#0d6765;color:#fff}
+.rc-mini-cover{aspect-ratio:8.5/11;border-radius:4px;background:linear-gradient(150deg,#0a303e,#146d70);color:#fff;padding:18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:7px 10px 17px rgba(8,39,43,.15)}
+.rc-mini-cover span{font-size:.62rem;letter-spacing:.12em;line-height:1.5;color:#b8ece1}
+.rc-mini-cover strong{font:400 clamp(1.2rem,2.3vw,2rem)/1.1 Georgia,serif}
+.rc-mini-cover small{font-size:.52rem;letter-spacing:.1em}
+@media(max-width:820px){.rc-overview,.rc-safety-grid{grid-template-columns:1fr}.rc-track-grid{grid-template-columns:1fr}.rc-mini-cover{max-width:175px}}
+@media(max-width:600px){.rc-link-grid,.rc-brochure{grid-template-columns:1fr}.rc-timeline .rc-phase{grid-template-columns:42px minmax(0,1fr);gap:12px}.rc-step{width:38px;height:38px}.rc-phase-rail:after{top:38px}.rc-brochure{padding:19px}.rc-mini-cover{display:none}.rc-hero .button{width:100%;justify-content:center}}
+
+/* Branded, 4-sheet companion: screen booklet and native browser Print / Save as PDF. */
+.bp-body{background:#e7f0ee;color:#183e45}
+.bp-toolbar{max-width:940px;margin:22px auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px;background:#fff;border:1px solid #cbded8;border-radius:9px}
+.bp-toolbar a{color:#0e6d66;font-weight:700}
+.bp-toolbar button{background:#0c6063;color:white;border:0;border-radius:6px;font:700 .87rem system-ui,sans-serif;cursor:pointer;padding:12px 18px}
+.bp-booklet{max-width:920px;margin:0 auto 45px}
+.bp-sheet{background:#fff;width:100%;min-height:1060px;margin:0 auto 26px;padding:54px 58px 42px;box-shadow:0 8px 28px rgba(10,53,60,.13);position:relative;display:flex;flex-direction:column;overflow:hidden}
+.bp-topline{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #c9dfd5;padding-bottom:13px;margin-bottom:30px;font-size:.75rem;color:#40766e;letter-spacing:.07em;font-weight:800}
+.bp-topline img{width:32px;height:32px;vertical-align:middle;margin-right:9px}
+.bp-sheet h1,.bp-sheet h2{font:400 2.9rem/1.09 Georgia,serif;letter-spacing:-.04em;color:#133a42;margin:7px 0 20px}
+.bp-sheet h2{font-size:2.24rem}
+.bp-sheet h3{font:750 1.08rem/1.28 system-ui,sans-serif;margin:0 0 9px;color:#113e49}
+.bp-sheet p,.bp-sheet li{font-size:.92rem;line-height:1.6;color:#395c61}
+.bp-sheet p{margin:0 0 12px}
+.bp-sheet .bp-kicker{font-size:.72rem;font-weight:800;letter-spacing:.14em;color:#147c70;text-transform:uppercase}
+.bp-subtitle{font-size:1.08rem!important;line-height:1.6!important;max-width:600px}
+.bp-illustration{background:#ecf6f2;border-radius:14px;border:1px solid #cee3da;padding:17px;margin:19px 0}
+.bp-illustration svg{width:100%;height:auto;display:block}
+.bp-illustration small{display:block;font-size:.66rem;color:#65817b;text-align:center}
+.bp-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:14px 0}
+.bp-box{padding:17px;border:1px solid #cfe0da;border-radius:9px;background:#f7faf8}
+.bp-box h3{margin-bottom:7px}
+.bp-box p,.bp-box li{font-size:.82rem}
+.bp-box ul{padding-left:17px;margin:5px 0}
+.bp-band{background:#103d48;color:#fff;padding:19px 22px;border-radius:10px;margin:18px 0}
+.bp-band h3,.bp-band p{color:#fff}
+.bp-phases{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}
+.bp-phase{border:1px solid #cfe3db;border-radius:9px;padding:13px 14px}
+.bp-phase b{display:block;font-size:.77rem;color:#0f746b;letter-spacing:.03em;margin-bottom:5px}
+.bp-phase strong{display:block;font-size:.94rem;margin-bottom:7px;color:#17434a}
+.bp-phase p{font-size:.79rem;margin:0}
+.bp-safety{border-left:4px solid #9f4636;background:#fff3ef;padding:14px 18px;margin:16px 0}
+.bp-safety p,.bp-safety li{font-size:.83rem}
+.bp-safety h3{color:#833425}
+.bp-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.bp-three .bp-box{background:#eef6f2}
+.bp-note{font-size:.78rem!important;color:#627e7c!important}
+.bp-sheet a{color:#09685f;text-underline-offset:3px}
+.bp-footer{margin-top:auto;border-top:1px solid #d8e8e1;padding-top:13px;display:flex;justify-content:space-between;gap:15px;color:#587a7a;font-size:.68rem}
+.bp-footer a{font-size:.68rem}
+.bp-sheet.cover{background:linear-gradient(150deg,#082f40 0%,#145a62 62%,#1a7e75 100%);color:#fff}
+.bp-sheet.cover .bp-topline{border-color:rgba(255,255,255,.32);color:#c6eee3}
+.bp-sheet.cover h1,.bp-sheet.cover h2,.bp-sheet.cover p{color:white}
+.bp-sheet.cover h1{font-size:4.6rem;max-width:660px}
+.bp-sheet.cover .bp-kicker{color:#b8ebde}
+.bp-sheet.cover .bp-illustration{background:rgba(255,255,255,.95)}
+.bp-sheet.cover .bp-footer{border-color:rgba(255,255,255,.3);color:#c7ebe4}
+.bp-sheet.cover .bp-footer a{color:#fff}
+.bp-statline{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px}
+.bp-statline span{border-top:2px solid #b7e5d8;padding-top:9px;font-size:.82rem;color:#e4f4ef;min-width:130px}
+@media(max-width:700px){.bp-toolbar{margin:10px 12px}.bp-sheet{min-height:0;padding:29px 24px;margin:12px 0}.bp-sheet h1{font-size:2.8rem!important}.bp-sheet h2{font-size:2rem}.bp-grid-2,.bp-three{grid-template-columns:1fr}.bp-phases{grid-template-columns:1fr}.bp-toolbar span{display:none}}
+@page{size:letter;margin:0}
+@media print{html,body{background:#fff!important;margin:0;padding:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}.bp-toolbar,.bp-no-print{display:none!important}.bp-booklet{max-width:none;margin:0}.bp-sheet{box-shadow:none;border:0;width:8.5in;height:11in;min-height:11in;max-height:11in;margin:0;box-sizing:border-box;padding:.51in .59in .42in;break-after:page;page-break-after:always;overflow:hidden}.bp-sheet:last-child{break-after:auto;page-break-after:auto}.bp-sheet h1{font-size:3.8rem!important}.bp-sheet h2{font-size:2.13rem}.bp-sheet p,.bp-sheet li{font-size:.82rem;line-height:1.48}.bp-sheet .bp-box p,.bp-sheet .bp-box li{font-size:.74rem}.bp-topline{margin-bottom:23px}.bp-grid-2,.bp-three{gap:10px}.bp-box{padding:12px}.bp-phase{padding:10px}.bp-phase p{font-size:.72rem}.bp-phases{gap:8px}.bp-sheet.cover h1{font-size:3.95rem!important}.bp-sheet.cover .bp-illustration{margin-top:22px}.bp-footer{font-size:.64rem}}
+
+
+/* V2.6: Surgery & Recovery as a primary category. Original illustrations, no nested subnavigation. */
+.v26-section-kicker{font:800 .73rem/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#167d73;margin:0 0 12px}
+.v26-visual{margin:22px 0 24px;background:#f0f7f3;border:1px solid #d0e3dc;border-radius:16px;overflow:hidden}
+.v26-visual img{display:block;width:100%;height:auto;object-fit:contain}
+.v26-visual figcaption{padding:12px 18px;color:#597579;font-size:.79rem;line-height:1.55;background:#fbfdfc}
+.v26-inline-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.v26-inline-links a{display:inline-block;padding:11px 15px;border:1px solid #acd6cc;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:700;background:#fff}
+.v26-inline-links a:focus-visible,.v26-inline-links a:hover{border-color:#218676;background:#edf8f5}
+.v26-roadmap img{min-width:0}
+.v26-pdf-panel{display:grid;grid-template-columns:minmax(190px,.55fr) minmax(0,1.45fr);gap:30px;align-items:center;padding:26px;border-radius:16px;border:1px solid #cadfd8;background:#eff7f3;margin-top:22px}
+.v26-pdf-badge{aspect-ratio:8.5/11;max-width:260px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#083343,#157976);color:white;box-shadow:0 14px 27px rgba(12,57,63,.18);border-radius:7px}
+.v26-pdf-badge span{font-size:.65rem;font-weight:800;letter-spacing:.11em;line-height:1.55;color:#bdf0e5}
+.v26-pdf-badge strong{font:400 clamp(1.6rem,3vw,2.55rem)/1.08 Georgia,serif}
+.v26-pdf-badge small{font-size:.67rem;line-height:1.5;letter-spacing:.09em}
+.v26-pdf-details h3{font:400 1.7rem/1.3 Georgia,serif;margin:0 0 14px}
+.v26-pdf-details .button{display:inline-flex;margin:13px 0 10px;background:#0e6465;color:#fff}
+.v26-pdf-details .v26-pdf-note{font-size:.81rem;color:#58767a}
+@media(max-width:720px){.v26-pdf-panel{grid-template-columns:1fr;padding:20px}.v26-pdf-badge{max-width:180px;aspect-ratio:8.5/10}.v26-pdf-badge strong{font-size:1.5rem}.v26-visual{margin:17px 0}.v26-inline-links{display:block}.v26-inline-links a{display:block;margin:9px 0}.v26-pdf-details .button{width:100%;text-align:center}}

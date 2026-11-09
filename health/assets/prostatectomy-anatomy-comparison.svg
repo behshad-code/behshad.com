@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 620" role="img" aria-labelledby="title description">
+<title id="title">Radical prostatectomy: simplified anatomy before and after</title><desc id="description">Side-by-side schematic showing the bladder above the prostate before surgery, the prostate surrounding the upper urethra, nearby nerve bundles and pelvic floor; after prostate removal the bladder is rejoined to the urethra. Not to scale.</desc>
+<defs>
+<linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9fcfa"/><stop offset="1" stop-color="#eaf4f1"/></linearGradient>
+<linearGradient id="bl" x1="0" x2=".8" y1="0" y2="1"><stop stop-color="#e3f4f1"/><stop offset="1" stop-color="#74b7b2"/></linearGradient>
+<linearGradient id="pr" x1="0" x2=".9" y1=".2" y2="1"><stop stop-color="#f4c5b2"/><stop offset="1" stop-color="#c07a69"/></linearGradient>
+<filter id="soft"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#1b5159" flood-opacity=".10"/></filter>
+</defs>
+<rect width="1220" height="620" rx="28" fill="#f0f7f4"/>
+<rect x="20" y="20" width="578" height="580" rx="22" fill="#fff" stroke="#c7e1d9" stroke-width="2"/>
+<rect x="622" y="20" width="578" height="580" rx="22" fill="#fff" stroke="#c7e1d9" stroke-width="2"/>
+<text x="53" y="66" font-family="Georgia,serif" font-size="30" fill="#123d4b">Before surgery</text>
+<text x="655" y="66" font-family="Georgia,serif" font-size="30" fill="#123d4b">After radical prostatectomy</text>
+<text x="54" y="94" font-family="Arial,sans-serif" font-size="16" fill="#617a80">Bladder, prostate, sphincter and nearby nerves</text>
+<text x="655" y="94" font-family="Arial,sans-serif" font-size="16" fill="#617a80">Bladder-to-urethra connection after removal</text>
+<!-- pelvic floor as muscular bowl -->
+<path d="M190 444 Q315 520 442 444" stroke="#b9d2cb" stroke-width="21" stroke-linecap="round" fill="none" opacity=".82"/>
+<path d="M793 444 Q918 520 1045 444" stroke="#b9d2cb" stroke-width="21" stroke-linecap="round" fill="none" opacity=".82"/>
+<!-- before bladder -->
+<path d="M264 146 C210 153 203 205 226 251 C243 287 273 297 316 299 C360 297 391 282 406 249 C430 201 413 151 358 146 C341 152 332 157 316 154 C301 155 284 151 264 146Z" fill="url(#bl)" stroke="#1a7b80" stroke-width="5" filter="url(#soft)"/>
+<path d="M260 205 Q315 248 376 205" fill="none" stroke="#c6eae4" stroke-width="13" opacity=".68"/>
+<!-- after bladder -->
+<path d="M865 146 C812 153 805 205 828 251 C845 287 875 297 918 299 C962 297 993 282 1008 249 C1032 201 1015 151 960 146 C944 152 934 157 918 154 C903 155 886 151 865 146Z" fill="url(#bl)" stroke="#1a7b80" stroke-width="5" filter="url(#soft)"/>
+<path d="M862 205 Q918 248 978 205" fill="none" stroke="#c6eae4" stroke-width="13" opacity=".68"/>
+<!-- before gland, urethra -->
+<path d="M316 285 L316 494" stroke="#257a8c" stroke-width="24" fill="none" stroke-linecap="round"/>
+<path d="M316 285 L316 495" stroke="#e3f7f0" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M269 298 C240 318 242 368 267 385 C287 401 341 403 362 384 C388 362 385 317 358 299 C347 293 335 300 316 303 C299 300 282 295 269 298 Z" fill="url(#pr)" stroke="#ae6657" stroke-width="5" filter="url(#soft)"/>
+<path d="M281 314 C259 345 274 381 305 382 M350 315 C372 343 360 377 329 381" stroke="#e6a897" stroke-width="7" fill="none" opacity=".7"/>
+<path d="M316 299 L316 397" stroke="#e3f7f0" stroke-width="8" fill="none"/>
+<!-- seminal vesicles -->
+<path d="M266 296 C231 276 230 250 246 239 C253 233 266 246 272 261" fill="#e9b1a2" stroke="#b06b5e" stroke-width="4"/>
+<path d="M364 296 C397 274 401 248 386 240 C378 234 366 247 361 264" fill="#e9b1a2" stroke="#b06b5e" stroke-width="4"/>
+<!-- nerves -->
+<path d="M240 295 C223 337 223 382 244 426" stroke="#d3a13f" stroke-width="8" fill="none" stroke-linecap="round"/>
+<path d="M390 295 C408 338 407 381 387 426" stroke="#d3a13f" stroke-width="8" fill="none" stroke-linecap="round"/>
+<!-- after bladder to urethra -->
+<path d="M918 287 L918 494" stroke="#257a8c" stroke-width="24" fill="none" stroke-linecap="round"/>
+<path d="M918 287 L918 494" stroke="#e3f7f0" stroke-width="9" fill="none" stroke-linecap="round"/>
+<ellipse cx="918" cy="303" rx="30" ry="12" fill="#d8efe5" stroke="#138575" stroke-width="5"/>
+<path d="M895 305 l-9 12 M907 311 l-3 12 M919 315 v12 M931 311 l3 12 M943 305 l9 12" stroke="#0d8174" stroke-width="3"/>
+<path d="M841 296 C826 343 828 384 847 425 M996 296 C1014 340 1012 385 993 424" stroke="#d3a13f" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="12 9"/>
+<!-- callout labels -->
+<g stroke="#557b7c" stroke-width="2" fill="none">
+<path d="M229 189 L151 164 L82 164"/><path d="M265 344 L151 355 L82 355"/>
+<path d="M316 468 L171 493 L83 493"/><path d="M237 391 L166 417 L82 417"/>
+<path d="M1001 194 L1082 171 L1150 171"/><path d="M945 305 L1070 332 L1150 332"/>
+<path d="M918 467 L1064 481 L1150 481"/><path d="M1001 395 L1077 418 L1150 418"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#254e56">
+<text x="80" y="157">Bladder</text><text x="80" y="348">Prostate</text><text x="80" y="411">Nerves</text><text x="80" y="488">Urethra</text>
+<text x="1149" y="163" text-anchor="end">Bladder</text><text x="1149" y="324" text-anchor="end">Reconnection</text><text x="1149" y="411" text-anchor="end">Nearby nerves</text><text x="1149" y="475" text-anchor="end">Urethra</text>
+</g>
+<rect x="45" y="548" width="1130" height="31" rx="8" fill="#e9f3ef"/>
+<text x="610" y="570" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#476d70">Simplified educational schematic, not to scale. Cancer location and the operative approach affect nerve preservation and recovery.</text>
+</svg>
