@@ -1,0 +1,43 @@
+// V2.6 release validation: seven primary subjects, true PDF, illustrations, flattened links.
+import assert from "node:assert/strict";
+import {readFileSync,existsSync} from "node:fs";
+import {resolve} from "node:path";
+const base=resolve(import.meta.dirname,"..");
+const read=p=>readFileSync(resolve(base,p),"utf8");
+const root="health/prostate/";
+const page=root+"surgery-recovery/index.html";
+const pdfPath="health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf";
+const pdf=readFileSync(resolve(base,pdfPath)).toString("latin1");
+const h=read(page),topic=read(root+"index.html"),sitemap=read("sitemap.xml");
+assert(topic.includes('href="/health/prostate/surgery-recovery/"'),"Surgery & Recovery must be directly accessible from topic home");
+assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,7,"Seven primary subjects required");
+assert(topic.indexOf('href="/health/prostate/treatments/"') < topic.indexOf('href="/health/prostate/surgery-recovery/"') && topic.indexOf('href="/health/prostate/surgery-recovery/"') < topic.indexOf('href="/health/prostate/living-well/"'),"Recovery subject must appear between Treatment Options and Living Well");
+assert(h.includes('<h1>Surgery &amp; Recovery</h1>'),"New page must be a primary topic, not another nested hub");
+assert(h.includes('rel="canonical" href="https://behshad.com/health/prostate/surgery-recovery/"'),"Missing short canonical");
+for(const n of ["what-changes","three-tracks","journey","when-to-call","deeper","quick-guide","sources","before","early","catheter","routine","progress","year","beyond"])assert(h.includes('id="'+n+'"'),"Missing section "+n);
+assert.equal((h.match(/class="rc-phase" id=/g)||[]).length,7,"All seven recovery phases required");
+for(const pic of ["prostatectomy-anatomy-comparison.svg","prostatectomy-recovery-roadmap.svg","prostatectomy-function-tracks.svg"]){
+ const p="health/assets/"+pic;
+ assert(existsSync(resolve(base,p)),"Missing original illustration "+p);
+ const art=read(p);assert(art.includes("<svg")&&art.includes("viewBox")&&art.includes("<title")&&art.includes("<desc"),"SVG accessibility missing "+p);
+ assert(h.includes('src="/health/assets/'+pic+'"'),"Illustration absent from primary page "+p);
+}
+assert(h.includes('href="/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf"'),"Direct PDF download missing");
+assert(pdf.startsWith("%PDF-1.4"),"Download file is not a genuine PDF");
+assert.equal((pdf.match(/\/Type \/Page\b/g)||[]).length,4,"The PDF must contain exactly four pages");
+assert(pdf.includes("/Count 4"),"PDF page tree count mismatch");
+assert(pdf.includes("xref\n")&&pdf.includes("startxref\n")&&pdf.includes("%%EOF"),"PDF cross reference or trailer missing");
+const offset=Number(pdf.match(/startxref\n(\d+)/)?.[1]);
+assert(Number.isInteger(offset)&&pdf.slice(offset,offset+5)==="xref\n","PDF cross-reference offset invalid");
+const old=[root+"living-well/recovery-compass/index.html",root+"living-well/recovery-compass/brochure/index.html"];
+for(const p of old){const a=read(p);assert(a.includes('http-equiv="refresh"')&&a.includes('window.location.replace')&&a.includes('name="robots" content="noindex,follow"'),"Nested legacy route must redirect and be noindex: "+p);}
+assert(sitemap.includes("<loc>https://behshad.com/health/prostate/surgery-recovery/</loc>"),"Primary route missing sitemap");
+assert(!sitemap.includes("living-well/recovery-compass/"),"Redirect aliases must not be in sitemap");
+const idx=JSON.parse(read(root+"content-index.json"));
+assert.equal(idx.pages.length,41,"Expected 41 original and new indexed pages");
+assert.equal(idx.pages.filter(x=>x.path==="/health/prostate/surgery-recovery/").length,1,"Primary content index must have one route");
+assert(!idx.pages.some(x=>x.path.includes("living-well/recovery-compass/")),"Legacy pages should not be published index entries");
+const living=read(root+"living-well/index.html");
+assert(living.includes('id="v26-surgery-link"')&&!living.includes('id="v25-surgery-compass"'),"Living Well should have one link, not a competing recovery hub");
+for(const match of h.matchAll(/href="#([^"]+)"/g))assert(h.includes('id="'+match[1]+'"'),"Broken page anchor "+match[1]);
+console.log("Health Compass V2.6 PASS: 7 primary subjects, 3 original illustrations, 7 recovery phases, actual 4-page PDF, 2 redirect aliases");
