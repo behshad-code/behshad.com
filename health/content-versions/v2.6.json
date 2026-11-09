@@ -1,0 +1,42 @@
+{
+  "name": "Men's Health Compass Prostate Education",
+  "version": "2.6",
+  "status": "publication candidate",
+  "owner_authorization": "Owner explicitly instructed to finish and publish V2.6 on November 9, 2026",
+  "release_date": "2026-11-09",
+  "branch": "feature/mhc-v26-surgery-recovery-navigation-art",
+  "prior_version": "health/content-versions/v2.5.json",
+  "primary_prostate_navigation": [
+    "Prostate Basics",
+    "Screening & PSA",
+    "Prostate Cancer",
+    "Treatment Options",
+    "Surgery & Recovery",
+    "Living Well",
+    "Research & Updates"
+  ],
+  "new_primary_route": "/health/prostate/surgery-recovery/",
+  "legacy_redirect_aliases": [
+    "/health/prostate/living-well/recovery-compass/",
+    "/health/prostate/living-well/recovery-compass/brochure/"
+  ],
+  "added_artwork": [
+    "/health/assets/prostatectomy-anatomy-comparison.svg",
+    "/health/assets/prostatectomy-function-tracks.svg",
+    "/health/assets/prostatectomy-recovery-roadmap.svg"
+  ],
+  "pdf": "/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf",
+  "pdf_pages": 4,
+  "clinical_scope": "General radical prostatectomy education, not personalized guidance. Three original illustrations are simplified explanatory schematics, not diagnostic medical images.",
+  "clinical_peer_review": "Not independently clinically peer reviewed",
+  "preservation": "Original six flagship guide routes, 24 specialist articles, all existing article sources, current photography and artwork, product links, privacy controls, analytics, main personal website and Ballot Compass are preserved.",
+  "quality_gates": [
+    "health/check-hierarchy.mjs",
+    "health/check-v2.mjs",
+    "health/check-v26.mjs",
+    "health/check-discovery.mjs",
+    "health/qa-v21-browser.mjs",
+    "health/qa-v21-hosted.mjs"
+  ],
+  "publication_verification": "Pending PR checks, merge and GitHub Pages deployment"
+}
