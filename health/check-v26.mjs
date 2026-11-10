@@ -11,6 +11,9 @@ const pdf=readFileSync(resolve(base,pdfPath)).toString("latin1");
 const h=read(page),topic=read(root+"index.html"),sitemap=read("sitemap.xml");
 assert(topic.includes('href="/health/prostate/surgery-recovery/"'),"Surgery & Recovery must be directly accessible from topic home");
 assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,7,"Seven primary subjects required");
+assert(!topic.includes("data-v26-recovery"),"Surgery & Recovery must use the same card design as the other topics");
+const card=topic.match(/<a class="v21-topic-card" href="\/health\/prostate\/surgery-recovery\/"[\s\S]*?<\/a>/)?.[0]||"";
+assert(card.includes("05 · EXPLORE THE CATEGORY")&&card.includes("Read the comprehensive guide"),"Surgery & Recovery card must have matching category styling and language");
 assert(topic.indexOf('href="/health/prostate/treatments/"') < topic.indexOf('href="/health/prostate/surgery-recovery/"') && topic.indexOf('href="/health/prostate/surgery-recovery/"') < topic.indexOf('href="/health/prostate/living-well/"'),"Recovery subject must appear between Treatment Options and Living Well");
 assert(h.includes('<h1>Surgery &amp; Recovery</h1>'),"New page must be a primary topic, not another nested hub");
 assert(h.includes('rel="canonical" href="https://behshad.com/health/prostate/surgery-recovery/"'),"Missing short canonical");
@@ -23,6 +26,18 @@ for(const pic of ["prostatectomy-anatomy-comparison.svg","prostatectomy-recovery
  assert(h.includes('src="/health/assets/'+pic+'"'),"Illustration absent from primary page "+p);
 }
 assert(h.includes('href="/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf"'),"Direct PDF download missing");
+const previewAsset="health/assets/prostate-surgery-recovery-guide-cover.svg";
+assert(existsSync(resolve(base,previewAsset)),"New guide preview cover missing");
+const preview=read(previewAsset);
+assert(preview.includes("viewBox")&&preview.includes("MEN'S HEALTH")&&preview.includes("behshad.com/health/prostate"),"Preview must contain the full title, brand and readable website URL");
+assert(h.includes('src="/health/assets/prostate-surgery-recovery-guide-cover.svg"'),"Corrected preview not used");
+assert(!h.includes('v26-pdf-badge')&&!h.includes("professionally laid-out")&&!h.includes("not a browser printout"),"Cut-off mock cover or promotional copy must not return");
+const css=read("health/prostate/surgery-recovery/recovery.css");
+assert(css.includes(".v26-pdf-cover img")&&css.includes("object-fit:contain"),"Guide cover must render without cropping");
+assert(!read("health/v2.css").includes("data-v26-recovery"),"Featured-card styles must not return");
+assert(pdf.includes("(behshad.com/health/prostate)"),"Website address should appear on PDF cover");
+const firstStream=pdf.match(/4 0 obj\n<< \/Length \d+ >>\nstream\n([\s\S]*?)endstream/)?.[1]||"";
+assert(firstStream.includes("(behshad.com/health/prostate)"),"Website address must be on the first PDF page, not just later references");
 assert(pdf.startsWith("%PDF-1.4"),"Download file is not a genuine PDF");
 assert.equal((pdf.match(/\/Type \/Page\b/g)||[]).length,4,"The PDF must contain exactly four pages");
 assert(pdf.includes("/Count 4"),"PDF page tree count mismatch");
