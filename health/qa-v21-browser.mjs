@@ -120,11 +120,11 @@ try{
   assert.equal(await page.locator('.rc-phase').count(),7,'Seven recovery phases required');
   const preview=page.locator('.v26-pdf-cover img');
   assert.equal(await preview.count(),1,'Updated recovery guide cover image missing');
+  await preview.scrollIntoViewIfNeeded(); // Lazy-loaded covers must enter the viewport before decode().
   assert(await preview.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'PDF cover image did not render');
   const previewMeasure=await preview.evaluate(img=>({imageW:img.getBoundingClientRect().width,containerW:img.parentElement.getBoundingClientRect().width,overflow:img.parentElement.scrollWidth-img.parentElement.clientWidth,fit:getComputedStyle(img).objectFit}));
   assert(previewMeasure.imageW<=previewMeasure.containerW+2&&previewMeasure.overflow<=2&&previewMeasure.fit==='contain','PDF cover overflows or crops on '+vp.name+': '+JSON.stringify(previewMeasure));
   assert(!(await page.locator('#quick-guide').textContent()).includes('professionally laid-out'),'Promotional copy should be removed');
-  const matchingCard=page.locator('a.v21-topic-card[href="/health/prostate/surgery-recovery/"]');
   await page.goto(base+'/health/prostate/',{waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('a.v21-topic-card[data-v26-recovery]').count(),0,'Surgery card should not be visually singled out');
   await page.goto(base+'/health/prostate/surgery-recovery/',{waitUntil:'domcontentloaded'});
