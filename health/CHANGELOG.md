@@ -1,3 +1,13 @@
+### V2.6 visual consistency and guide-cover correction | November 9, 2026
+
+The Surgery & Recovery home card now uses the same white card style, number label and call-to-action as the six other primary subjects. Removed the one-off double-width teal feature treatment.
+
+Replaced the cropped typographic PDF thumbnail with a self-contained accessible SVG cover that fits desktop and mobile. Replaced subjective promotional wording with a concise description of what readers will find in the four-page PDF. Updated the PDF's first-page cover with the visible URL `behshad.com/health/prostate` and a compass illustration in the unused upper-right area.
+
+The previously proposed white-coat portrait was not used because it could imply physician authorship or clinical endorsement that Men's Health Compass does not claim. Existing article text, recovery timeline, references, PDF page count, unrelated pages and navigation remain unchanged.
+
+---
+
 ## 2.6 | Surgery & Recovery primary navigation and visual guide | November 9, 2026
 
 Moved the Surgery & Recovery experience out of the fourth-level Living Well location and into a primary Prostate Health category immediately after Treatment Options. The Prostate Health homepage now has one seven-category navigation, without a duplicate second directory. Living Well keeps one contextual link and its broad, cross-treatment role.
