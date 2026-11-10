@@ -11,6 +11,8 @@ const pdf=readFileSync(resolve(base,pdfPath)).toString("latin1");
 const h=read(page),topic=read(root+"index.html"),sitemap=read("sitemap.xml");
 assert(topic.includes('href="/health/prostate/surgery-recovery/"'),"Surgery & Recovery must be directly accessible from topic home");
 assert.equal((topic.match(/class="v21-topic-card"/g)||[]).length,7,"Seven primary subjects required");
+assert(topic.includes('href="#topics">Explore seven categories</a>'),"Prostate topic jump navigation must say seven categories");
+assert(!topic.includes("Explore six categories"),"Outdated six-category navigation text should not return");
 assert(!topic.includes("data-v26-recovery"),"Surgery & Recovery must use the same card design as the other topics");
 const card=topic.match(/<a class="v21-topic-card" href="\/health\/prostate\/surgery-recovery\/"[\s\S]*?<\/a>/)?.[0]||"";
 assert(card.includes("05 · EXPLORE THE CATEGORY")&&card.includes("Read the comprehensive guide"),"Surgery & Recovery card must have matching category styling and language");
