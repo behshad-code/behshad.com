@@ -22,6 +22,7 @@ const privacy = read("privacy/index.html");
 const healthPrivacy = read("health/privacy/index.html");
 assert(files.length >= 44, "Expected all published Health Compass pages and the About page");
 assert(robots.includes("User-agent: *") && robots.includes("Allow: /"), "The main site must allow normal crawling");
+assert(read("index.html").includes('id="home"'), "Behshad.com must have a valid #home anchor");
 assert(robots.includes("Sitemap: https://behshad.com/sitemap.xml"), "Root sitemap must be advertised");
 assert(!sitemap.includes("/sandbox/"), "Public sitemap must not list review sandboxes");
 assert(privacy.includes("Men’s Health Compass") && privacy.includes("GoatCounter"), "Privacy must cover the health publication and analytics");
@@ -44,6 +45,10 @@ for (const path of files) {
     assert(html.includes('http-equiv="refresh"')&&html.includes('window.location.replace'), "Legacy redirect missing: "+path);
     assert(!sitemap.includes("<loc>"+url+"</loc>"), "Legacy alias must not appear in sitemap: "+path);
     continue;
+  }
+  assert(!html.includes('href="/#beyond"'), "Old Behshad.com Beyond destination remains: " + path);
+  if(html.includes('class="home-link"')) {
+    assert(html.includes('class="home-link" href="/#home"'), "Men's Health header must link to behshad.com/#home: " + path);
   }
   assert(!seen.has(url), "Duplicate canonical URL: " + url);
   seen.add(url);
