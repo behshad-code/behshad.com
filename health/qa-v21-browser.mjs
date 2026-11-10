@@ -123,7 +123,7 @@ try{
   await preview.scrollIntoViewIfNeeded();
   const previewResp=await page.request.get(base+'/health/assets/prostate-surgery-recovery-guide-cover.svg');
   assert.equal(previewResp.status(),200,'Guide cover SVG not served');
-  await page.waitForFunction(()=>{const img=document.querySelector('.v26-pdf-cover img');return !!img&&img.complete&&img.naturalWidth>0;},{timeout:12000});
+  await page.waitForFunction(()=>{const img=document.querySelector('.v26-pdf-cover img');return !!img&&img.complete&&img.naturalWidth>0;},undefined,{timeout:12000});
   const coverLoad=await preview.evaluate(img=>({complete:img.complete,naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,src:img.currentSrc}));
   assert(coverLoad.naturalWidth>0,'Guide cover SVG failed to render: '+JSON.stringify(coverLoad));
   const previewMeasure=await preview.evaluate(img=>({imageW:img.getBoundingClientRect().width,containerW:img.parentElement.getBoundingClientRect().width,overflow:img.parentElement.scrollWidth-img.parentElement.clientWidth,fit:getComputedStyle(img).objectFit}));
