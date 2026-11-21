@@ -1,0 +1,40 @@
+name: AdSense release browser QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/qa-adsense-release.mjs'
+      - '.github/workflows/adsense-release.yml'
+      - 'ma/**'
+      - 'et/**'
+      - 'transformation/**'
+      - 'health/**'
+      - 'ballot/**'
+      - 'index.html'
+      - 'site.*'
+      - 'sitemap.xml'
+      - 'privacy/**'
+      - 'docs/adsense/**'
+permissions:
+  contents: read
+jobs:
+  branch-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing browser tooling version
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test isolated branch at desktop tablet and mobile
+        run: node scripts/qa-adsense-release.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: adsense-branch-qa
+          path: qa-output/adsense/
+          retention-days: 14
