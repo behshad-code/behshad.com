@@ -44,7 +44,7 @@ This table is the current consolidated disposition of all 21 findings. Sections 
 - Authenticated Search Console: all three bridges remain indexed. The requested three-month comparison has a short available history; it does not support a material reason to remove established entries. M&A and Ballot root are discovered but unindexed; results remains unknown. All three important URLs pass live Google smartphone fetch, crawl/index permissions and self-canonical checks. No confirmed robots/canonical defect, no manual action and no security issue found. Sitemap is successful. No indexing request submitted.
 - AdSense still reports Needs attention / Low value content and ads.txt Not found. Publisher account ID matched the site ownership metadata. Ownership verification configuration was not changed; no review requested.
 - Recovery product event semantics are confirmed in configuration/documentation, **not by a captured server request**. Direct script inspection was blocked by the browser client and the GoatCounter dashboard is signed out. Do not bypass the blocker or report an observed event stream.
-- PDF structure: 4 pages, US Letter, unencrypted, no JavaScript, **untagged**. Delivery passes; assistive-technology reading order remains a documented limitation with HTML guide available.
+- PDF structure: 4 pages, US Letter, unencrypted, no JavaScript, **untagged**. Delivery passes. All four pages rendered and were visually inspected; no material unreadable or missing content found. The renderer reported fallback font warnings; assistive-technology reading order remains a documented limitation with HTML guide available.
 
 ## Exact decisions prepared for owner approval
 
