@@ -37,7 +37,7 @@ try{
      canonical:document.querySelector('link[rel="canonical"]')?.href,
      robots:document.querySelector('meta[name="robots"]')?.content,
      overflow:document.documentElement.scrollWidth-innerWidth,
-     missingAlt:[...document.images].filter(x=>!x.hasAttribute('alt')).length,
+     missingAlt:[...document.images].filter(x=>x.getClientRects().length>0&&!x.hasAttribute('alt')).length,
      brokenImages:[...document.images].filter(x=>x.src.startsWith(location.origin)&&x.complete&&x.naturalWidth===0).map(x=>x.getAttribute('src')),
      links:[...document.querySelectorAll('a[href]')].map(x=>x.getAttribute('href'))
     }));
