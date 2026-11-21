@@ -1,16 +1,16 @@
 # Behshad.com AdSense remediation register
 
 **Source baseline:** Phase 1 audit, November 15, 2026 (20 findings, ADS-01–ADS-20).  
-**Update:** November 21, 2026 Pacific time. Continued existing PR #90; authenticated evidence review and expanded isolated branch QA completed. Decisions and public-page edits below remain approval-gated.  
+**Update:** November 21, 2026 Pacific time. Approved branch corrections implemented following authenticated Work review; fresh test results are the remaining technical gate. Production merge and AdSense submission remain separately approval-gated.  
 **Production:** No approved Phase 2 changes have been merged or deployed. The statuses below describe the development-branch candidate only.
 
 | ID | Priority | Scope | Phase 2 development status | Release dependency |
 | --- | --- | --- | --- | --- |
-| ADS-01 | P1 | Three short executive bridge pages | Decision prepared; approval pending | Keep all three bridges indexable; restore production robots directives and original sitemap entries. Do not commit indexing changes before owner approval. |
+| ADS-01 | P1 | Three short executive bridge pages | Implemented: all three original index,follow directives and sitemap entries restored | Preserve established search entry points; no artificial filler, redirects or deletions. |
 | ADS-02 | P1 | M&A integration Home navigation | Implemented and branch browser verified | Home link label passed desktop/tablet/mobile; production awaits approved merge. |
-| ADS-03 | P1 | M&A internal pre-publication instruction | Partially implemented; final editorial approval pending | Public sources and internal reports checked. Proposed qualitative scorecard removes internal numeric data from both HTML and JS; exact publication copy below. |
-| ADS-04 | P1 | Health publication About and Privacy affiliate statements | Implemented and branch browser verified | Present-tense Amazon disclosure verified. Additional analytics-specific notice correction proposed under ADS-05; production pending. |
-| ADS-05 | P1 | Product-specific GoatCounter event semantics | Investigation completed with runtime limitation; privacy approval pending | 15 product-level hooks confirmed in live DOM plus loaded script reference. Official GoatCounter documentation defines automatic event binding. Direct script inspection blocked by browser client; analytics dashboard requires login. No event transmission capture or visitor-profile claim. Recommend removing product hooks. |
+| ADS-03 | P1 | M&A publication readiness | Implemented: five qualitative interactive workstream panels replace internal numeric task data in both HTML and JS; publication-safe source note added | Verify tabs, responsive presentation, published SEC links and target-versus-actual qualification. |
+| ADS-04 | P1 | Health About and Privacy affiliate statements | Implemented: Amazon affiliate notices and updated health-path privacy transparency | Verify disclosure, preserved affiliate destinations and no product-specific event markup. |
+| ADS-05 | P1 | Product-specific GoatCounter event semantics | Implemented privacy minimization: all 15 click hooks and associated event labels removed from Recovery Essentials | Verify no product-level events; page-view analytics retained. Past event receipt was not observable. |
 | ADS-06 | P1 | Ballot Compass 2026 results sitemap omission | Implemented and technically verified in branch | Results URL is in candidate sitemap; live Google fetch succeeds with correct canonical. Recorded URL remains unknown without sitemap association; release/index request separately gated. |
 | ADS-07 | P1 | Root hash-based navigation | No confirmed defect; preserve existing routing | All five root fragments pass rendered branch checks at three viewports. Fragment architecture is not established as an AdSense violation. |
 | ADS-08 | P1 | Live deployment/accessibility verification | Branch technical gate passed; post-release gate pending | 67 targeted acceptance groups passed, plus existing 5 workflows. Current production is unchanged; repeat affected live checks after approved Pages release. |
@@ -21,17 +21,34 @@
 | ADS-13 | P2 | Dated election results maintenance | Explicitly dated historical snapshot; proposed deferral | Public results page labels its November 10 review / November 9 data and unofficial status. No current-result rewrite or fresh factual certification performed. |
 | ADS-14 | P2 | Medical editorial validation | Ongoing editorial control; proposed deferral | No new specific clinical error established. Preserve sourced educational prose, evidence limits and no-clinician-review disclosure. This release is not an independent full medical review. |
 | ADS-15 | P2 | Recovery PDF accessibility | PDF delivery passed; accessibility limitation confirmed | Valid four-page letter-size, unencrypted PDF with no JavaScript; browser delivery passed. PDF is untagged; full reading order/screen-reader certification remains open. Existing HTML guide remains the accessible reading route; do not replace medical content. |
-| ADS-16 | P2 | ads.txt / advertising setup | Exact ads.txt proposal prepared; approval pending | Verified publisher account ID and official Google format. No ads.txt or advertising-script change committed. |
-| ADS-17 | P2 | Advertising privacy and consent | Required before ad activation; proposed deferred gate | No display-ad activation in this release. Update ad privacy notices and consent handling before serving ads; certified CMP/TCF for personalized EEA/UK/Swiss ads; non-personalized cookies can still require consent. |
+| ADS-16 | P2 | ads.txt / advertising setup | Implemented root verified publisher ads.txt record; advertising still inactive | Verify live file and AdSense ads.txt status after deployment; not a substitute for policy approval. |
+| ADS-17 | P2 | Advertising privacy and consent | Explicitly deferred until before serving display ads | Require accurate disclosure and applicable CMP/consent configuration before ads activate, including health/political audience limits. |
 | ADS-18 | P2 | Cross-publication governance | Optional governance enhancement; proposed deferral | Keep current separate publications and existing trust/navigation pages; no evidence requires a sitewide structural change. |
 | ADS-19 | P3 | Documentation maintenance | Optional internal documentation maintenance; proposed deferral | Six/seven-category historical documentation drift is not a visitor-facing AdSense defect. Maintain this consolidated register. |
-| ADS-20 | P2 | Regression and QA coverage | Expanded current-branch CI passed | New isolated release QA workflow: 18 routes x 3 viewports plus interaction/metadata/link/PDF groups, 67 passed, zero failures/browser errors. Final reviewed head must pass again after approved changes. |
+| ADS-20 | P2 | Regression and QA coverage | Expanded branch browser QA and source validation updated for final changes; fresh CI pending | Validate final head at desktop/tablet/mobile; existing 6 CI workflows and Pages deployment separately. |
 | ADS-21 | P1 | M&A production footer “Private mockup” | Implemented and branch browser verified | Copyright retains normal identity without Private mockup; pending production release. |
 
 
 ## Current closeout state (November 21, 2026)
 
-This table is the current consolidated disposition of all 21 findings. Sections headed Phase 2B below are historical evidence, not current open-work instructions. Proposed deferrals require owner acceptance as part of release review. No finding is closed merely to improve a count.
+This table is the current consolidated disposition of all 21 findings. Earlier approval proposals and Phase 2B sections below are historical evidence, not current open instructions. Optional items were accepted for deferral where they are not material release blockers.
+
+## Phase 2C implementation and next release gates, November 21, 2026
+
+The owner requested expedited completion following the four-action Work decision and acceptance of documented nonblocking deferrals. The current draft branch implements:
+
+1. ADS-01: Preserve all three currently indexed bridge pages with their original metadata and sitemap membership.
+2. ADS-03: Replace internal scorecard task counts and percentages with qualitative execution priorities/controls for five preserved tabs, remove the original numeric JS payload, clarify the 2014 pro forma revenue baseline, and replace preview instructions with SEC-linked scope/limitations.
+3. ADS-05: Remove all 15 product-granular analytics hooks and all associated titles from Recovery Essentials; preserve five Amazon affiliate products, 15 sponsored links and aggregate GoatCounter page views. Clarify health privacy in present tense.
+4. ADS-16: Add the verified Google publisher record at root /ads.txt, without injecting ad scripts or changing AdSense ownership.
+
+The following are accepted as nonblocking or later-stage work: full Safari and screen-reader testing, tagged-PDF accessibility improvements with existing HTML fallback, original event transmission history inaccessible to the browser, routine editorial maintenance, normal Google indexing lag, and full advertising consent configuration **before serving ads**. These are not represented as completed tests or exceptions to applicable law/policy.
+
+**Next actions:** Validate the exact branch head through all applicable GitHub Actions and targeted browser tests. Verify the final PR diff and request one explicit production merge authorization. Once merged, verify GitHub Pages deployment and live content, sitemap, metadata, affiliate links, privacy and ads.txt. Confirm current AdSense status and request a separate explicit resubmission authorization. No merge or AdSense submission is authorized by these branch-edit instructions.
+
+### Approved publication scope
+
+Keep the three original bridge URLs and complete published case studies. Preserve health clinical content, Ballot research, published designs, existing Amazon URLs, and unrelated PRs. No tracking pixels or display ads are introduced.
 
 - Production main remains `a88ecd6bc686546b52cd8af32b8106a0eb21b811`.
 - PR #90 remains draft and unmerged. Code QA head: `85bacf8d03f45c847917f566964e7cfa0435c607`. Subsequent register-only commits do not change website behavior.
@@ -46,7 +63,7 @@ This table is the current consolidated disposition of all 21 findings. Sections 
 - Recovery product event semantics are confirmed in configuration/documentation, **not by a captured server request**. Direct script inspection was blocked by the browser client and the GoatCounter dashboard is signed out. Do not bypass the blocker or report an observed event stream.
 - PDF structure: 4 pages, US Letter, unencrypted, no JavaScript, **untagged**. Delivery passes. All four pages rendered and were visually inspected; no material unreadable or missing content found. The renderer reported fallback font warnings; assistive-technology reading order remains a documented limitation with HTML guide available.
 
-## Exact decisions prepared for owner approval
+## Historical proposed changes now incorporated in Phase 2C (retained for audit trail)
 
 ### ADS-01: preserve indexed bridges
 
