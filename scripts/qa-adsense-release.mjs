@@ -43,8 +43,8 @@ try{
     }));
     assert.equal(meta.canonical,'https://behshad.com'+route,'canonical');
     // An omitted robots meta defaults to index/follow, as on both Ballot pages.
-    const bridge=['/transformation/business-2-0/','/ma/pace-arris-integration/','/ma/private-equity-diligence/'].includes(route);
-    if(!bridge)assert(!/noindex/i.test(meta.robots||''),'unexpected noindex');
+    // The three legacy executive bridge routes deliberately remain indexable.
+    assert(!/noindex/i.test(meta.robots||''),'unexpected noindex');
     assert(meta.overflow<=2,'horizontal document overflow '+meta.overflow);
     assert.equal(meta.missingAlt,0,'image alt attributes');
     assert.equal(meta.brokenImages.length,0,'broken local images: '+meta.brokenImages);
@@ -62,7 +62,7 @@ try{
   await check(vp.name+' M&A interactions',async()=>{
    assert.equal(await page.locator('nav[aria-label="Main navigation"] a').first().innerText(),'Home');
    assert(!/Private mockup/.test(await page.locator('footer').innerText()));
-   for(const name of ['timeline','decision','capability','value']){
+   for(const name of ['timeline','decision','score','capability','value']){
     const buttons=page.locator('[data-control="'+name+'"] button');
     for(let i=0;i<await buttons.count();i++){
      await buttons.nth(i).press('Enter');
@@ -70,6 +70,9 @@ try{
      assert((await page.locator('[data-render="'+name+'"]').innerText()).trim().length>20);
     }
    }
+   assert(!/Preview use only|Research and publication note|Internal scorecard/.test(await page.locator('main').innerText()),'no M&A draft editorial artifacts');
+   assert(/Sources and scope/.test(await page.locator('main').innerText()),'M&A source qualification');
+   assert.equal(await page.locator('[data-score-fill]').count(),0,'no numeric score bars');
    const skip=page.locator('a.skip');await skip.press('Enter');assert.equal(new URL(page.url()).hash,'#main');
    const menu=page.locator('[data-menu]');
    if(await menu.isVisible()){await menu.click();assert.equal(await menu.getAttribute('aria-expanded'),'true');}
@@ -86,10 +89,13 @@ try{
    assert(/Amazon Associate/i.test(await page.locator('main').innerText()));
    await page.goto(base+'/health/privacy/',{waitUntil:'networkidle'});
    assert(/affiliate links/i.test(await page.locator('main').innerText()));
+   assert(/We do not send product-specific recovery link clicks to GoatCounter/.test(await page.locator('main').innerText()));
    await page.goto(base+'/health/prostate/living-well/recovery-essentials/',{waitUntil:'networkidle'});
    assert(/As an Amazon Associate I earn from qualifying purchases/.test(await page.locator('main').innerText()));
    const links=await page.locator('a[rel~="sponsored"]').evaluateAll(nodes=>nodes.map(x=>({href:x.href,rel:x.rel})));
    assert.equal(links.length,15);
+   assert.equal(await page.locator('[data-goatcounter-click^="affiliate-amazon-us-"]').count(),0,'no granular recovery click events');
+   assert.equal(await page.locator('[data-goatcounter-title^="Amazon affiliate:"]').count(),0,'no granular recovery event labels');
    for(const link of links)assert(/noopener/.test(link.rel)&&/noreferrer/.test(link.rel));
    await page.screenshot({path:resolve(out,'recovery-'+vp.name+'.png'),fullPage:true});
   });
@@ -106,6 +112,10 @@ try{
   });
   await context.close();
  }
+ await check('ads.txt publisher record',async()=>{
+  const res=await fetch(base+'/ads.txt');assert.equal(res.status,200);
+  assert.equal((await res.text()).trim(),'google.com, pub-4294942200921720, DIRECT, f08c47fec0942fa0');
+ });
  await check('PDF delivery',async()=>{
   const res=await fetch(base+'/health/assets/Prostate_Surgery_Recovery_Compass_V2.6.pdf');
   assert.equal(res.status,200);assert.equal(res.headers.get('content-type'),'application/pdf');
