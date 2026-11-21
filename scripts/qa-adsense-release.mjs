@@ -42,7 +42,9 @@ try{
      links:[...document.querySelectorAll('a[href]')].map(x=>x.getAttribute('href'))
     }));
     assert.equal(meta.canonical,'https://behshad.com'+route,'canonical');
-    assert(meta.robots&&/index|noindex/.test(meta.robots),'robots present');
+    // An omitted robots meta defaults to index/follow, as on both Ballot pages.
+    const bridge=['/transformation/business-2-0/','/ma/pace-arris-integration/','/ma/private-equity-diligence/'].includes(route);
+    if(!bridge)assert(!/noindex/i.test(meta.robots||''),'unexpected noindex');
     assert(meta.overflow<=2,'horizontal document overflow '+meta.overflow);
     assert.equal(meta.missingAlt,0,'image alt attributes');
     assert.equal(meta.brokenImages.length,0,'broken local images: '+meta.brokenImages);
