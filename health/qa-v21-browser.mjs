@@ -77,7 +77,7 @@ try{
   assert.equal(target.pathname,'/dp/B0G6GSZ89J/ref=nosim');
   assert.equal(target.searchParams.get('tag'),'healthcompa0e-20','Affiliate tag missing');
   assert((await amazon.getAttribute('rel')).includes('sponsored'),'Sponsored link disclosure missing');
-  assert.equal(await amazon.getAttribute('data-goatcounter-click'),'affiliate-amazon-us-depend-guards-B0G6GSZ89J','Product click event missing');
+  assert.equal(await amazon.getAttribute('data-goatcounter-click'),null,'Product click tracking must remain disabled');
   const productPhoto=page.locator('#urinary-protection .re-product-photo');
   await productPhoto.scrollIntoViewIfNeeded();
   assert(await productPhoto.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'Depend product photograph did not load');
@@ -85,12 +85,12 @@ try{
   assert.equal(await productLinks.count(),3,'Photo, title and button must each link to Amazon');
   const expectedAmazonHref='https://www.amazon.com/dp/B0G6GSZ89J/ref=nosim?tag=healthcompa0e-20';
   for(const link of await productLinks.all()){
-   assert.equal(await link.getAttribute('href'),expectedAmazonHref,'Product links must use the same tracked Amazon URL');
+   assert.equal(await link.getAttribute('href'),expectedAmazonHref,'Product links must use the same tagged Amazon URL');
    assert((await link.getAttribute('rel')).includes('sponsored'),'Product affiliate link missing sponsored rel');
-   assert((await link.getAttribute('data-goatcounter-click')).includes('affiliate-amazon-us-depend-guards-B0G6GSZ89J'),'Product link missing click event');
+   assert.equal(await link.getAttribute('data-goatcounter-click'),null,'Product-specific click tracking must remain disabled');
   }
 
-  // Each recommendation reuses the existing image-left card design and has 3 independently tracked hotspots.
+  // Each recommendation reuses the existing image-left card design and has 3 affiliate links without product-level analytics.
   const additionalProducts=[
    ['sofy-fine-bed-pads','https://link.amazon/B0aIFZCdx'],
    ['utopia-reusable-bed-pads','https://link.amazon/B09o3BMiD'],
@@ -108,7 +108,7 @@ try{
    for(const link of await links.all()){
     assert.equal(await link.getAttribute('href'),href,'Amazon destination mismatch: '+id);
     assert((await link.getAttribute('rel')).includes('sponsored'),'Sponsored link missing: '+id);
-    assert((await link.getAttribute('data-goatcounter-click')).includes('affiliate-amazon-us-'+id),'GoatCounter event missing: '+id);
+    assert.equal(await link.getAttribute('data-goatcounter-click'),null,'Product-specific tracking must remain disabled: '+id);
    }
   }
   checks+=22;
